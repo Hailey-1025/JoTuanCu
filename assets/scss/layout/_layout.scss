@@ -1,0 +1,20 @@
+.bg-primary-v{
+    background: linear-gradient(360deg, #CEFF66 0%, #FCFF6F 100%);
+}
+.bg-primary-h{
+    background: linear-gradient(270deg, #CEFF66 0%, #FCFF6F 100%);
+}
+.btn-outline-shadow{
+    background: rgba($white, 0.6);
+    border: 2px solid $dark;
+    box-shadow: 4px 4px 0px -1px #CEFF66,4px 4px 0px 1px #FCFF6F inset;
+    &:hover{
+        border: 2px solid $dark;
+        background: $primary;
+        box-shadow: none;
+    }
+    &:active{
+        background: $primary !important;
+        box-shadow: 4px 4px 0px -1px #CEFF66,4px 4px 0px 1px #FCFF6F inset;
+    }
+}          
