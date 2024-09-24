@@ -1,0 +1,209 @@
+@mixin self-sm{
+    @media(min-width:576px){
+        @content ;
+    }
+}
+@mixin self-lg{
+    @media(min-width:992px){
+        @content ;
+    }
+}
+@mixin self-xxl{
+    @media(min-width:1400px){
+        @content ;
+    }
+}
+
+// banner
+.featured-banner{
+    max-width: 100%;
+    height: 300px;
+    z-index: 1;
+    @include self-sm{
+        height: 250px;
+    }
+    @include self-lg{
+        height: 350px;
+    }
+    @include self-xxl{
+        height: 600px;
+    }
+
+}
+// banner-左右
+.featured-banner-img{
+    width: 168px;
+    height: 168px;
+    z-index: 3;
+    @include self-sm{
+        width: 250px;
+        height: 250px;
+    }
+    @include self-lg{
+        width: 350px;
+        height: 350px;
+    }
+    @include self-xxl{
+        width: 600px;
+        height: 600px;
+        
+    }
+}
+// banner-中間
+.featured-banner-center{
+    width: 276px ;
+    height: 245px;
+    margin-top: 226px;
+    z-index: 2;
+    @include self-sm{
+        width: 451px;
+        height: 400px;
+        margin-top: 200px;
+    }
+    @include self-xxl{
+        width: 451px;
+        height: 400px;
+        margin-top: 200px;
+    }
+}
+.featured-banner-title{
+    margin-top: 60px;
+    @include self-sm{
+        margin-top: 120px;
+    }
+}
+.featured-title-img{
+    max-width: 115px;
+    height: 24px;
+    margin-left: 80px;
+    @include self-xxl{
+        max-width: 191px;
+        height: 40px;
+        margin-left: 130px;
+    }
+}
+// ++++
+.featured-banner-line{
+    bottom: -144px;
+    margin-left: 48px;
+}
+.people-line{
+    margin-bottom: 74px;
+    margin-right: 80px;
+}
+
+// ==============卡片區塊=================
+
+.featured-content{
+    max-width: 100%;
+    @include self-lg{
+        height: 2026px;
+    }
+}
+.people-circle{
+    margin-bottom: 175px;
+    margin-right: 44px;
+}
+.featured-card-all{
+    z-index: 5;
+    @include self-xxl{
+        top: -296px;
+    }
+}
+.featured-opacity80{
+    background-color: rgba(255, 255, 255, 0.8) !important; 
+}
+.bg-C0ED5F{
+    background: #C0ED5F;
+}
+.text-over{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3; // 限制行數為3行
+    text-overflow: ellipsis;
+}
+.heart-circle{
+    width: 40px;
+    height: 40px;
+}
+.featured-content{
+    .bi-heart-fill{
+        line-height: 0 !important;
+    }
+}
+
+s
+//========= Modal ===========
+.store-rounded{
+    border-radius: 4px;
+    @include self-lg{
+        border-radius: 20px;
+    }
+}
+.featuredSwiper{
+    .swiper-slide,.featuredSwiper-img{
+        width: 108px;
+        height: 108px;
+    }
+}
+.text-47481F{
+    color: #47481F;
+}
+.border-2px{
+    outline: 2px solid #333333;
+}
+.messageBoard{
+    @include self-lg{
+        padding-top: 24px !important;
+        padding-bottom: 143px !important;
+    }
+}
+.message-texarea {
+    ::placeholder {
+        color: #ced4da;
+    }
+    .featured-texarea{
+        height: 126px !important;
+        resize:none;
+    }
+    .btn{
+        padding: 8px 26px !important;
+        @include self-lg{
+            padding: 8px 54px !important;
+        }
+    }
+
+}
+.featured-modal{
+    li{
+        line-height: 0 !important;
+    }
+    .btn-close{
+        font-size: 16px;
+        @include self-lg{
+            font-size: 25px;
+        }
+
+    }
+    .modal-dialog{
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+}
+.touchStar{
+    cursor: pointer;
+}
+// QRcode
+.featuredQRcode{
+    .modal-content {
+        border-radius: 4.8px;
+    }
+    .modal-title{
+        color: #47481F;
+    }
+}
+// *,*::after,*::before{
+//     outline: 1px solid red;
+// }
+
