@@ -4,4 +4,11 @@ import 'bootstrap';
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
 
-console.log("Hello world!");
+// 精選商家-彈窗內商家圖片
+var swiper = new Swiper(".featuredSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    navigation: {
+        nextEl: ".swiper-button-next",
+    },
+});
