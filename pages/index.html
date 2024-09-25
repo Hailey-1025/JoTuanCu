@@ -9,10 +9,303 @@
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
-    <div class="my-5">
-      <img src="../assets/images/card-photo-11.png" alt="">
-    </div>
+  <%- include('./layout/header', {page: "index" }); -%>
+
+    <!-- <header class="container text-center">
+      <h1 class="mb-6 fw-normal fs-2 fs-lg-1">相遇於心<span class="d-none d-lg-inline-block">，</span><br class="d-block d-lg-none">同行於趣</h1>
+      <div class="d-flex justify-content-center">
+        <select class="form-select me-2" aria-label="Default select example" style="max-width: 342px;">
+          <option selected>選擇活動</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <select class="form-select me-2" aria-label="Default select example" style="max-width: 169px;">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <select class="form-select me-10" aria-label="Default select example" style="max-width: 169px;">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <button type="button" class="btn btn-outline-shadow">搜尋</button>
+      </div>
+    </header> -->
+
+    <!-- 新手指南 -->
+     <section class="qaBg ">
+       <div class="container py-16 py-lg-30">
+         <div class="row justify-content-center text-center mb-16 mb-lg-20">
+           <div class="col-lg-6">
+             <img class="mb-4" src="../assets/images/Decorative-lines-02.png" alt="photo">
+             <p>在這裡，我們相信共同的目標能夠讓陌生人成為朋友。無論你是想找人一起吃飯、看電影、旅遊、運動還是學習，JO團趣都是你最佳的選擇。快來加入我們，發起活動或參與其他人的活動，讓你的每一天都充滿樂趣和驚喜！</p>
+           </div>
+         </div>
+         <div class="row illustRead">
+           <div class="col-xl-6 text-center">
+             <img class="img-fluid" src="../assets/images/banner-09.png" alt="photo">
+           </div>
+           <div class="col-xl-6 d-flex flex-column justify-content-center align-items-center my-6 my-xl-0">
+             <div class="px-lg-40">
+               <div class="d-flex align-items-center">
+                 <img class="me-5" src="../assets/images/icon-01.png" alt="photo">
+                 <h3 class="fs-4">快速找到活動</h3>
+               </div>
+               <img class="mb-6" src="../assets/images/Decorative-lines-08.png" alt="photo">
+               <p>想加入現成的活動？在JO團趣上，你可以輕鬆瀏覽各種活動，找到最適合自己的那一場。</p>
+             </div>
+           </div>
+         </div>
+         <div class="row illustSport flex-column-reverse flex-xl-row">
+           <div class="col-xl-6 d-flex flex-column justify-content-center align-items-center my-6 my-xl-0">
+             <div class="px-lg-40">
+               <div class="d-flex align-items-center">
+                 <img class="me-5" src="../assets/images/icon-02.png" alt="photo">
+                 <h3 class="fs-4">輕鬆發起活動</h3>
+               </div>
+               <img class="mb-6" src="../assets/images/Decorative-lines-07.png" alt="photo">
+               <p>想吃美食、看電影還是出去玩?只需幾步,就能輕鬆發起自己的活動,吸引志同道合的朋友一起參加。</p>
+             </div>
+           </div>
+           <div class="col-xl-6 text-center mt-10 mt-xl-0">
+             <img class="img-fluid" src="../assets/images/banner-10.png" alt="photo">
+           </div>
+         </div>
+         <div class="row illustDrink mb-10">
+           <div class="col-xl-6 text-center mt-10 mt-xl-0">
+             <img class="img-fluid" src="../assets/images/banner-11.png" alt="photo">
+           </div>
+           <div class="col-xl-6 d-flex flex-column justify-content-center align-items-center my-6 my-xl-0">
+             <div class="px-lg-40">
+               <div class="d-flex align-items-center">
+                 <img class="me-5" src="../assets/images/icon-03.png" alt="photo">
+                 <h3 class="fs-4">交友與快樂兼得</h3>
+               </div>
+               <img class="mb-6" src="../assets/images/Decorative-lines-09.png" alt="photo">
+               <p>透過參加活動,你不僅能夠實現自己的目標,還能結交新朋友,擴展自己的社交圈。</p>
+             </div>
+           </div>
+         </div>
+         <div class="d-flex justify-content-center align-items-center flex-column">
+           <div class="text-center" style="width: 306px;">
+             <img class="mb-12" src="../assets/images/Decorative-lines-05.png" alt="photo">
+             <a href="QA.html" class="btn btn-outline-shadow d-block">立即加入JO團趣</a>
+             <div class="text-center mt-8">
+               <a class="fw-bold border-bottom border-dark " href="#" style="padding: 5.5px 4px;">
+                 查看新手指南
+                 <i class="bi bi-chevron-right"></i>
+               </a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+
+    <!-- 好評推薦 -->
+    <section class="bg-primary-h pt-40 pb-42">
+      <div class="container">
+        <h2 class="fw-light text-center mb-23">好評推薦</h2>
+      </div>
+    </section>
+
+    <!-- 熱門商家 -->
+    <section class="py-16 py-md-30 index-featuredShop">
+      <div class="container px-0 px-md-3">
+        <h2 class="fw-light fs-3 fs-md-2 text-center mb-12 mb-md-10">熱門商家</h2>
+        <div class="swiper-pagination position-static mb-12 mb-md-10"></div>
+        <div class="position-relative">
+          <div class="swiper index-featuredShopSwiper">
+            <div class="flex-nowrap swiper-wrapper">
+              <div class="swiper-slide h-auto">
+                <div class="card border-0 h-100 position-relative">
+                  <img src="../assets/images/card-11.png" class="card-img-top rounded-3" alt="...">
+                  <div class="position-absolute end-0 d-flex align-items-center m-4">
+                    <input type="checkbox" class="btn-check" id="btnLove01" autocomplete="off">
+                    <label class="btn btn-white border-0 rounded-pill" for="btnLove01" style="padding: 8px 10px;">
+                      <div class="heart"></div>
+                    </label>
+                  </div>
+                  <div class="card-body px-6 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-4">
+                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">咖啡藝廊</h4>
+                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
+                        <i class="bi bi-bookmark-fill me-2"></i>
+                        優惠中
+                      </small>
+                    </div>
+                    <p class="card-text mb-auto card-text-truncate">
+                      咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br>
+                      這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。<br>
+                      同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...
+                    </p>
+                    <div class="d-flex align-items-center my-6 text-gray-700">
+                      <i class="bi bi-geo-alt"></i>
+                      <p>台北市大安區光復南路120號</p>
+                    </div>
+                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="card border-0 h-100 position-relative">
+                  <img src="../assets/images/card-12.png" class="card-img-top rounded-3" alt="...">
+                  <div class="position-absolute end-0 d-flex align-items-center m-4">
+                    <input type="checkbox" class="btn-check" id="btnLove02" autocomplete="off">
+                    <label class="btn btn-white border-0 rounded-pill" for="btnLove02" style="padding: 8px 10px;">
+                      <div class="heart"></div>
+                    </label>
+                  </div>
+                  <div class="card-body px-6 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-4">
+                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">書香小巷</h4>
+                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
+                        <i class="bi bi-bookmark-fill me-2"></i>
+                        優惠中
+                      </small>
+                    </div>
+                    <p class="card-text mb-auto card-text-truncate">
+                      書香小巷是一間溫馨的獨立書店，無論你是愛好小說、詩歌還是專業書籍，都能在這裡找到心儀的讀物。店內設有舒適的閱讀角落和咖啡吧，你可以在這裡安靜地閱讀，享受片刻的寧靜。我們還不定期舉辦讀書會、作者簽書會和文化講座...
+                    </p>
+                    <div class="d-flex align-items-center my-6 text-gray-700">
+                      <i class="bi bi-geo-alt"></i>
+                      <p>台中市中山區吉林路87號</p>
+                    </div>
+                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="card border-0 h-100 position-relative">
+                  <img src="../assets/images/card-13.png" class="card-img-top rounded-3" alt="...">
+                  <div class="position-absolute end-0 d-flex align-items-center m-4">
+                    <input type="checkbox" class="btn-check" id="btnLove03" autocomplete="off">
+                    <label class="btn btn-white border-0 rounded-pill" for="btnLove03" style="padding: 8px 10px;">
+                      <div class="heart"></div>
+                    </label>
+                  </div>
+                  <div class="card-body px-6 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-4">
+                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">心靈療癒中心</h4>
+                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
+                        <i class="bi bi-bookmark-fill me-2"></i>
+                        優惠中
+                      </small>
+                    </div>
+                    <p class="card-text mb-auto card-text-truncate">
+                      心靈療癒中心是一個專門提供心靈成長和放鬆身心的場所。這裡提供多種療癒服務，包括冥想課程、瑜伽班、心理諮詢和能量療法，幫助顧客釋放壓力、平衡身心。無論你是尋求心靈成長還是單純想要放鬆自己,這裡都是你理想的選擇。
+                    </p>
+                    <div class="d-flex align-items-center my-6 text-gray-700">
+                      <i class="bi bi-geo-alt"></i>
+                      <p>台南市士林區天母東路67號</p>
+                    </div>
+                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="card border-0 h-100 position-relative">
+                  <img src="../assets/images/card-11.png" class="card-img-top rounded-3" alt="...">
+                  <div class="position-absolute end-0 d-flex align-items-center m-4">
+                    <input type="checkbox" class="btn-check" id="btnLove04" autocomplete="off">
+                    <label class="btn btn-white border-0 rounded-pill" for="btnLove04" style="padding: 8px 10px;">
+                      <div class="heart"></div>
+                    </label>
+                  </div>
+                  <div class="card-body px-6 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-4">
+                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">咖啡藝廊</h4>
+                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
+                        <i class="bi bi-bookmark-fill me-2"></i>
+                        優惠中
+                      </small>
+                    </div>
+                    <p class="card-text mb-auto card-text-truncate">
+                      咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br>
+                      這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。<br>
+                      同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...
+                    </p>
+                    <div class="d-flex align-items-center my-6 text-gray-700">
+                      <i class="bi bi-geo-alt"></i>
+                      <p>台北市大安區光復南路120號</p>
+                    </div>
+                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="card border-0 h-100 position-relative">
+                  <img src="../assets/images/card-12.png" class="card-img-top rounded-3" alt="...">
+                  <div class="position-absolute end-0 d-flex align-items-center m-4">
+                    <input type="checkbox" class="btn-check" id="btnLove05" autocomplete="off">
+                    <label class="btn btn-white border-0 rounded-pill" for="btnLove05" style="padding: 8px 10px;">
+                      <div class="heart"></div>
+                    </label>
+                  </div>
+                  <div class="card-body px-6 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-4">
+                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">書香小巷</h4>
+                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
+                        <i class="bi bi-bookmark-fill me-2"></i>
+                        優惠中
+                      </small>
+                    </div>
+                    <p class="card-text mb-auto card-text-truncate">
+                      書香小巷是一間溫馨的獨立書店，無論你是愛好小說、詩歌還是專業書籍，都能在這裡找到心儀的讀物。店內設有舒適的閱讀角落和咖啡吧，你可以在這裡安靜地閱讀，享受片刻的寧靜。我們還不定期舉辦讀書會、作者簽書會和文化講座...
+                    </p>
+                    <div class="d-flex align-items-center my-6 text-gray-700">
+                      <i class="bi bi-geo-alt"></i>
+                      <p>台中市中山區吉林路87號</p>
+                    </div>
+                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="card border-0 h-100 position-relative">
+                  <img src="../assets/images/card-13.png" class="card-img-top rounded-3" alt="...">
+                  <div class="position-absolute end-0 d-flex align-items-center m-4">
+                    <input type="checkbox" class="btn-check" id="btnLove06" autocomplete="off">
+                    <label class="btn btn-white border-0 rounded-pill" for="btnLove06" style="padding: 8px 10px;">
+                      <div class="heart"></div>
+                    </label>
+                  </div>
+                  <div class="card-body px-6 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-4">
+                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">心靈療癒中心</h4>
+                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
+                        <i class="bi bi-bookmark-fill me-2"></i>
+                        優惠中
+                      </small>
+                    </div>
+                    <p class="card-text mb-auto card-text-truncate">
+                      心靈療癒中心是一個專門提供心靈成長和放鬆身心的場所。這裡提供多種療癒服務，包括冥想課程、瑜伽班、心理諮詢和能量療法，幫助顧客釋放壓力、平衡身心。無論你是尋求心靈成長還是單純想要放鬆自己,這裡都是你理想的選擇。
+                    </p>
+                    <div class="d-flex align-items-center my-6 text-gray-700">
+                      <i class="bi bi-geo-alt"></i>
+                      <p>台南市士林區天母東路67號</p>
+                    </div>
+                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="text-center mt-8">
+          <a class="fw-bold border-bottom border-dark " href="featuredShop.html" style="padding: 5.5px 4px;">
+            查看更多商家
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
 
     <%- include('./layout/footer'); -%>
 
