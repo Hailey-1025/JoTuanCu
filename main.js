@@ -9,6 +9,6 @@ var swiper = new Swiper(".featuredSwiper", {
     slidesPerView: "auto",
     spaceBetween: 16,
     navigation: {
-        nextEl: ".swiper-button-next",
+        nextEl: ".swiper-next",
     },
 });

@@ -203,7 +203,13 @@ s
         color: #47481F;
     }
 }
-// *,*::after,*::before{
-//     outline: 1px solid red;
-// }
+*,*::after,*::before{
+    outline: 1px solid red;
+}
 
+.swiper-next{
+    padding: 4px 16px 4px 16px;
+    border: 1px solid #6C757D;
+    border-radius:100px;
+    line-height: 0;
+}
