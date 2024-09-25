@@ -3,7 +3,9 @@ import 'bootstrap';
 // swiper 這段 import 請不要動它，因為還沒寫輪播，所以會顯示錯誤
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
-<<<<<<< HEAD
+
+//interaction 
+//篩選部分
 const blockElement = document.getElementById('block');
 
 blockElement.addEventListener('change', function () {
@@ -28,6 +30,7 @@ typeElement.addEventListener('change', function () {
     }
 });
 
+
 var swiper = new Swiper(".storeSwiper", {
     slidesPerView: 4,
     navigation: {
@@ -48,7 +51,6 @@ var swiper = new Swiper(".storeSwiper", {
 });
 
 
-=======
 //index
 //熱門商家
 var swiper = new Swiper(".index-featuredShopSwiper", {
@@ -73,7 +75,6 @@ var swiper = new Swiper(".index-featuredShopSwiper", {
       centeredSlides: false,
     },
   },
->>>>>>> 65ccad78062487fb628f235b68bc2b9c26a0bd84
 
   pagination: {
     el: ".swiper-pagination",
