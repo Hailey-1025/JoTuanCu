@@ -1,0 +1,37 @@
+<nav class="sticky-top bg-light">
+    <div class="container py-2 py-lg-6 offcanvas-style">
+        <div class="navbar navbar-expand-lg justify-content-start py-0">
+            <a class="navbar-brand py-0 me-0" href="index.html">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="../assets/images/Logo-dark-lg.png">
+                    <img src="../assets/images/Logo-dark-sm.png" alt="logo">
+                </picture>
+            </a>
+            <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end align-items-lg-center border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 255px;">
+                <ul class="navbar-nav px-6 py-4">
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 <%= page === 'groupActivities' ? 'active' : '' %>" aria-current="page" href="groupActivities.html">揪團活動</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 <%= page === 'featuredShop' ? 'active' : '' %>" aria-current="page" href="featuredShop.html">精選商家</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 <%= page === 'interaction' ? 'active' : '' %>" aria-current="page" href="interaction.html">揪友交流</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 <%= page === '' ? 'active' : 'QA' %>" aria-current="page" href="#">新手指南</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn-close text-reset position-absolute d-lg-none bottom-0 start-50 translate-middle-x bg-white rounded-pill p-4 shadow mb-8" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <a href="#">
+                <img class="me-lg-2 ms-1" src="../assets/images/author-01.png" alt="myPhoto">
+                <span class="d-none d-lg-inline-block">Hailey</span>
+            </a>
+        </div>
+    </div>
+</nav>
