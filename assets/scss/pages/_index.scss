@@ -1,0 +1,268 @@
+// 新手指南
+.qaBg {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/Decorative-lines-03.png) no-repeat;
+        width: 21px;
+        height: 200px;
+        left: 0;
+        top: 0;
+        margin-top: 1333px;
+        margin-left: 80px;
+        display: none;
+
+        @include media-breakpoint-up(xl) {
+            display: block;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/Decorative-lines-03.png) no-repeat;
+        width: 21px;
+        height: 200px;
+        right: 0;
+        top: 0;
+        margin-top: 1333px;
+        margin-right: 80px;
+        display: none;
+
+        @include media-breakpoint-up(xl) {
+            display: block;
+        }
+    }
+}
+
+.illustRead {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../assets/images/illustrate-02.png) no-repeat;
+        background-size: contain;
+        width: 144px;
+        height: 108px;
+        top: calc(50% - 48px);
+
+        @media (min-width:576px) {
+            width: 228px;
+            height: 216px;
+            top: calc(50% - 20px);
+        }
+
+        @media (min-width:1200px) {
+            right: 0;
+            top: 0;
+        }
+
+        @media (min-width:1700px) {
+            width: 384px;
+            height: 287px;
+            left: 100%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.illustSport {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../assets/images/illustrate-01.png) no-repeat;
+        background-size: contain;
+        width: 136px;
+        height: 144px;
+        right: 0;
+        top: calc(50% - 48px);
+
+        @media (min-width:576px) {
+            width: 272px;
+            height: 288px;
+            right: calc(0% - 40px);
+        }
+
+        @media (min-width:1200px) {
+            left: calc(0% - 45px);
+            top: calc(0% - 69px);
+        }
+
+        @media (min-width:1700px) {
+            width: 415px;
+            height: 439px;
+            left: 0;
+            top: calc(0% - 69px);
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.illustDrink {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../assets/images/illustrate-03.png) no-repeat;
+        background-size: contain;
+        width: 104px;
+        height: 144px;
+        top: calc(50% - 48px);
+
+        @media (min-width:576px) {
+            width: 208px;
+            height: 288px;
+            top: calc(50% - 110px);
+        }
+
+        @media (min-width:1200px) {
+            right: calc(0% - 20px);
+            bottom: calc(0% - 36px);
+        }
+
+        @media (min-width:1700px) {
+            width: 354px;
+            height: 490px;
+            left: calc(100% + 90px);
+            bottom: calc(0% - 36px);
+            transform: translateX(-50%);
+        }
+    }
+}
+
+// 熱門商家
+.index-featuredShop {
+    position: relative;
+
+    // 背景裝飾
+    &::after {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/Decorative-lines-11.png) no-repeat;
+        width: 169px;
+        height: 154px;
+        top: 0;
+        left: 0;
+        margin-top: 24px;
+        margin-left: -32px;
+        z-index: -1;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 156px;
+            margin-left: 112px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/Decorative-lines-03.png) no-repeat;
+        width: 21px;
+        height: 200px;
+        bottom: 0;
+        right: 0;
+        margin-bottom: -80px;
+        margin-right: 24px;
+        z-index: -1;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 75px;
+            margin-right: 80px;
+        }
+    }
+
+    // 輪播條
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        border: 1px solid #D9D9D9;
+        background: #FAFAFA;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 40px;
+        border: 1px solid #333333;
+        background: #FCFF6F;
+        box-shadow: 4px 4px 0px -1px #CEFF66;
+        border-radius: 50rem;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 8px;
+    }
+
+    //輪播按鈕
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #333333;
+        background: #F2F2F2;
+        width: 48px;
+        height: 48px;
+        border-radius: 50rem;
+        position: absolute;
+        display: none;
+
+        &::after {
+            font-family: 'bootstrap-icons';
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        @media (min-width: 1460px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .swiper-button-next {
+        left: calc(100% + 24px);
+
+        &::after {
+            content: "\F285";
+        }
+    }
+
+    .swiper-button-prev {
+        left: calc(0% - 72px);
+
+        &::after {
+            content: "\F284";
+        }
+    }
+
+    // 熱門商家卡片內文
+    .card-text-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+
+    // 熱門商家圖片裝飾
+    .heart {
+        background: url(../assets/images/heart.svg) no-repeat;
+        width: 20px;
+        height: 24px;
+        display: block;
+    }
+
+    .btn-check:checked+.btn,
+    :not(.btn-check)+.btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+        .heart {
+            background: url(../assets/images/heart-fill.svg) no-repeat;
+        }
+    }
+}

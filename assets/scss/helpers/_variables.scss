@@ -151,7 +151,7 @@ $green-100: tint-color($green, 80%) !default;
 $green-200: tint-color($green, 60%) !default;
 $green-300: tint-color($green, 40%) !default;
 $green-400: tint-color($green, 20%) !default;
-$green-500: $green !default;
+$green-500: #C0ED5F; // $green !default;
 $green-600: shade-color($green, 20%) !default;
 $green-700: shade-color($green, 40%) !default;
 $green-800: shade-color($green, 60%) !default;
@@ -326,6 +326,7 @@ $theme-colors: (
   "gray-300":   #E5E5E5,
   "gray-500":   #BFBFBF,
   "gray-700":   #808080,
+  "green-500":  $green-500,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -430,9 +431,11 @@ $spacers: (
   11: $spacer * 2.75,
   12: $spacer * 3,
   16: $spacer * 4, // 64
+  18: $spacer * 4.5, // 72
   19: $spacer * 4.75, // 76
   20: $spacer * 5, // 80
-  22: $spacer * 5.5, // 88
+  22: $spacer * 5.75, // 92
+  23: $spacer * 5.5, // 88
   27: $spacer * 6.75, // 108
   30: $spacer * 7.5, // 120
   34: $spacer * 8.5, // 136
@@ -537,7 +540,7 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   xxl: 1320px
-) !default;
+  ) !default;
 // scss-docs-end container-max-widths
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -653,7 +656,7 @@ $font-weight-normal:          400 !default;
 $font-weight-medium:          500 !default;
 $font-weight-semibold:        600 !default;
 $font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+$font-weight-bolder:          900; // bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
@@ -1534,7 +1537,7 @@ $toast-header-border-color:         $toast-border-color !default;
 
 // scss-docs-start badge-variables
 $badge-font-size:                   .875em; // .75em !default;
-$badge-font-weight:                 700; // $font-weight-bold !default;
+$badge-font-weight:                 900; // $font-weight-bold !default;
 $badge-color:                       $dark; // $white !default;
 $badge-padding-y:                   .5em; // .35em !default;
 $badge-padding-x:                   .75em; // .65em !default;
