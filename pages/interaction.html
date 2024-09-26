@@ -8,26 +8,768 @@
   <title>揪友交流｜JO團趣</title>
 </head>
 
-<body style="background-color:#FAFAFA;">
-  <%- include('./layout/header'); -%>
+<body>
+  <%- include('./layout/header', {page: "interaction" }); -%>
     <div class="interaction">
-      <div class="banner d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+      <div class="banner d-flex flex-column flex-md-row justify-content-md-between">
         <img src="../assets/images/banner-08.png" alt="banner-08"
-          class="banner-08 pt-4 pt-md-0 pb-6 pb-md-0 px-8 px-md-0">
+          class="banner-08 pt-4 pt-md-0 pb-6 pb-md-0 px-8 px-md-0" style="height: 100%;">
         <div class="title d-flex flex-column align-items-center">
-          <p class="h2 text-center pb-4" style="font-weight: 300;">揪友交流</p>
-          <img src="../assets/images/Decorative-lines-02.png" alt="Decorative-lines-02" class="pb-4"
+          <p class="h2 text-center pb-4 pb-md-6" style="font-weight: 300;">揪友交流</p>
+          <img src="../assets/images/Decorative-lines-02.png" alt="Decorative-lines-02" class="pb-4 pb-md-6"
             style="width: 191px; height: 40px; object-fit:contain">
-          <p class="fs-8 pb-4" style="font-weight: 700;">將您揪團的心得與大家分享</p>
+          <p class="fs-8 pb-4 pb-md-6" style="font-weight: 700;">將您揪團的心得與大家分享</p>
           <button class="btn btn-outline-shadow">我要分享</button>
         </div>
         <img src="../assets/images/banner-07.png" alt="banner-07"
-          class="banner-07 pt-4 pt-md-0 pb-10 pb-md-0 px-8 px-md-0">
+          class="banner-07 pt-6 pt-md-0 pb-10 pb-md-0 px-8 px-md-0">
+      </div>
+
+      <div class="search">
+        <div class="container">
+          <div class="px-3 py-6 px-lg-0 pt-lg-10 pb-lg-6">
+            <div class="bg-white p-6" style="border-radius: 4px;">
+              <div class="d-lg-flex justify-content-lg-between">
+                <div>
+                  <form>
+                    <div class="input-group pb-4 pb-lg-0">
+                      <i class="input-group-text bi bi-geo-alt border-end-0" style="padding: 6px 0 6px 12px;"
+                        id="search"></i>
+                      <input type="text" class="form-control border-start-0"
+                        style="padding: 6px 12px 6px 12px; line-height: 1.5; box-shadow: none;" placeholder="搜尋店家"
+                        aria-label="搜尋店家" aria-describedby="search">
+                    </div>
+                  </form>
+                </div>
+                <div class="d-flex justify-content-end gap-4 d-none">
+                  <a href="#" class="border-bottom text-dark border-dark">排序 +</a>
+                  <a href="#" class="border-bottom text-dark border-dark">篩選 +</a>
+                </div>
+                <div class="d-lg-flex">
+                  <div>
+                    <div class="d-flex align-items-center pb-4 pb-lg-0 pe-lg-6">
+                      <p class="me-6 text-nowrap" style="color: #808080; font-weight: 500;">排序</p>
+                      <select class="form-select" aria-label="排序"
+                        style="padding: 6px 12px; box-shadow: none; color: #808080;">
+                        <option selected value="0">最多瀏覽</option>
+                        <option value="1">最多收藏</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="d-flex align-items-lg-center">
+                      <p class="me-6 text-nowrap" style="color: #808080; font-weight: 500;">篩選</p>
+                      <div class="w-100 d-lg-flex gap-lg-6">
+                        <select class="form-select mb-2 mb-lg-0" aria-label="地區"
+                          style="padding: 6px 12px; box-shadow: none; color: #808080;" id="block">
+                          <option selected value="0">地區（全部）</option>
+                          <option value="1">北部</option>
+                          <option value="2">中部</option>
+                          <option value="3">南部</option>
+                          <option value="4">東部</option>
+                        </select>
+                        <select class="form-select" aria-label="種類"
+                          style="padding: 6px 12px; box-shadow: none; color: #808080;" id="type">
+                          <option selected value="0">種類（全部）</option>
+                          <option value="1">日式料理</option>
+                          <option value="2">中式料理</option>
+                          <option value="3">西式料理</option>
+                          <option value="4">美式料理</option>
+                          <option value="5">泰式料理</option>
+                          <option value="6">其它</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="store">
+        <div class="container px-6 px-md-3">
+          <div class="row row-cols-1 row-cols-xl-2 gap-6 gap-md-0 g-md-6">
+            <!-- card-1 -->
+            <div class="col">
+              <div class="card h-100 border-0 d-md-flex flex-md-row">
+                <div class="position-relative">
+                  <img src="../assets/images/card-06.png" class="card-img-top" alt="store-card"
+                    style="background-color: #808080; border-radius: 20px 20px 0 0;">
+                  <button
+                    class="position-absolute bottom-0 start-50 translate-middle-x border-0 px-8 py-2 mb-4 text-nowrap"
+                    style="border-radius: 4px; font-weight: 700;" data-bs-toggle="modal"
+                    data-bs-target="#storeModal">查看完整內容</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body py-0 bg-white px-md-6 pt-md-3">
+                    <div>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
+                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white py-0 border-0 px-md-6 pb-md-3" style="border-radius: 0 0 20px 20px;">
+                    <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
+                      <div class="d-flex">
+                        <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-centerd justify-content-between border-top">
+                      <div class="d-flex align-items-center gap-2 py-4 py-xxl-0">
+                        <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                          style="width: 24px; height: 24px;">
+                        <p class="user-name fs-10" style="font-weight: 700;">李芳</p>
+                      </div>
+                      <div class="d-none d-xxl-flex flex-column justify-content-center gap-1 py-md-3"
+                        style="max-width: 157px;">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員等級：</p>
+                          <span class="fs-10 text-dark">金級</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員揪團次數：</p>
+                          <span class="fs-10 text-dark">25次</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col">
+              <div class="card h-100 border-0 d-md-flex flex-md-row">
+                <div class="position-relative">
+                  <img src="../assets/images/card-07.png" class="card-img-top" alt="store-card"
+                    style="background-color: #808080; border-radius: 20px 20px 0 0;">
+                  <button
+                    class="position-absolute bottom-0 start-50 translate-middle-x border-0 px-8 py-2 mb-4 text-nowrap"
+                    style="border-radius: 4px; font-weight: 700;">查看完整內容</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body py-0 bg-white px-md-6 pt-md-3">
+                    <div>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
+                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white py-0 border-0 px-md-6 pb-md-3" style="border-radius: 0 0 20px 20px;">
+                    <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
+                      <div class="d-flex">
+                        <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-centerd justify-content-between border-top">
+                      <div class="d-flex align-items-center gap-2 py-4 py-xxl-0">
+                        <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                          style="width: 24px; height: 24px;">
+                        <p class="user-name fs-10" style="font-weight: 700;">李芳</p>
+                      </div>
+                      <div class="d-none d-xxl-flex flex-column justify-content-center gap-1 py-md-3"
+                        style="max-width: 157px;">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員等級：</p>
+                          <span class="fs-10 text-dark">金級</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員揪團次數：</p>
+                          <span class="fs-10 text-dark">25次</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col">
+              <div class="card h-100 border-0 d-md-flex flex-md-row">
+                <div class="position-relative">
+                  <img src="../assets/images/card-08.png" class="card-img-top" alt="store-card"
+                    style="background-color: #808080; border-radius: 20px 20px 0 0;">
+                  <button
+                    class="position-absolute bottom-0 start-50 translate-middle-x border-0 px-8 py-2 mb-4 text-nowrap"
+                    style="border-radius: 4px; font-weight: 700;">查看完整內容</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body py-0 bg-white px-md-6 pt-md-3">
+                    <div>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
+                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white py-0 border-0 px-md-6 pb-md-3" style="border-radius: 0 0 20px 20px;">
+                    <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
+                      <div class="d-flex">
+                        <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-centerd justify-content-between border-top">
+                      <div class="d-flex align-items-center gap-2 py-4 py-xxl-0">
+                        <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                          style="width: 24px; height: 24px;">
+                        <p class="user-name fs-10" style="font-weight: 700;">李芳</p>
+                      </div>
+                      <div class="d-none d-xxl-flex flex-column justify-content-center gap-1 py-md-3"
+                        style="max-width: 157px;">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員等級：</p>
+                          <span class="fs-10 text-dark">金級</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員揪團次數：</p>
+                          <span class="fs-10 text-dark">25次</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col">
+              <div class="card h-100 border-0 d-md-flex flex-md-row">
+                <div class="position-relative">
+                  <img src="../assets/images/card-05.png" class="card-img-top" alt="store-card"
+                    style="background-color: #808080; border-radius: 20px 20px 0 0;">
+                  <button
+                    class="position-absolute bottom-0 start-50 translate-middle-x border-0 px-8 py-2 mb-4 text-nowrap"
+                    style="border-radius: 4px; font-weight: 700;">查看完整內容</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body py-0 bg-white px-md-6 pt-md-3">
+                    <div>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
+                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white py-0 border-0 px-md-6 pb-md-3" style="border-radius: 0 0 20px 20px;">
+                    <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
+                      <div class="d-flex">
+                        <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-centerd justify-content-between border-top">
+                      <div class="d-flex align-items-center gap-2 py-4 py-xxl-0">
+                        <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                          style="width: 24px; height: 24px;">
+                        <p class="user-name fs-10" style="font-weight: 700;">李芳</p>
+                      </div>
+                      <div class="d-none d-xxl-flex flex-column justify-content-center gap-1 py-md-3"
+                        style="max-width: 157px;">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員等級：</p>
+                          <span class="fs-10 text-dark">金級</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員揪團次數：</p>
+                          <span class="fs-10 text-dark">25次</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="col">
+              <div class="card h-100 border-0 d-md-flex flex-md-row">
+                <div class="position-relative">
+                  <img src="../assets/images/card-04.png" class="card-img-top" alt="store-card"
+                    style="background-color: #808080; border-radius: 20px 20px 0 0;">
+                  <button
+                    class="position-absolute bottom-0 start-50 translate-middle-x border-0 px-8 py-2 mb-4 text-nowrap"
+                    style="border-radius: 4px; font-weight: 700;">查看完整內容</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body py-0 bg-white px-md-6 pt-md-3">
+                    <div>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
+                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white py-0 border-0 px-md-6 pb-md-3" style="border-radius: 0 0 20px 20px;">
+                    <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
+                      <div class="d-flex">
+                        <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-centerd justify-content-between border-top">
+                      <div class="d-flex align-items-center gap-2 py-4 py-xxl-0">
+                        <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                          style="width: 24px; height: 24px;">
+                        <p class="user-name fs-10" style="font-weight: 700;">李芳</p>
+                      </div>
+                      <div class="d-none d-xxl-flex flex-column justify-content-center gap-1 py-md-3"
+                        style="max-width: 157px;">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員等級：</p>
+                          <span class="fs-10 text-dark">金級</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員揪團次數：</p>
+                          <span class="fs-10 text-dark">25次</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="col">
+              <div class="card h-100 border-0 d-md-flex flex-md-row">
+                <div class="position-relative">
+                  <img src="../assets/images/card-09.png" class="card-img-top" alt="store-card"
+                    style="background-color: #808080; border-radius: 20px 20px 0 0;">
+                  <button
+                    class="position-absolute bottom-0 start-50 translate-middle-x border-0 px-8 py-2 mb-4 text-nowrap"
+                    style="border-radius: 4px; font-weight: 700;">查看完整內容</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body py-0 bg-white px-md-6 pt-md-3">
+                    <div>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
+                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white py-0 border-0 px-md-6 pb-md-3" style="border-radius: 0 0 20px 20px;">
+                    <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
+                      <div class="d-flex">
+                        <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-centerd justify-content-between border-top">
+                      <div class="d-flex align-items-center gap-2 py-4 py-xxl-0">
+                        <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                          style="width: 24px; height: 24px;">
+                        <p class="user-name fs-10" style="font-weight: 700;">李芳</p>
+                      </div>
+                      <div class="d-none d-xxl-flex flex-column justify-content-center gap-1 py-md-3"
+                        style="max-width: 157px;">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員等級：</p>
+                          <span class="fs-10 text-dark">金級</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員揪團次數：</p>
+                          <span class="fs-10 text-dark">25次</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-7 -->
+            <div class="col">
+              <div class="card h-100 border-0 d-md-flex flex-md-row">
+                <div class="position-relative">
+                  <img src="../assets/images/card-10.png" class="card-img-top" alt="store-card"
+                    style="background-color: #808080; border-radius: 20px 20px 0 0;">
+                  <button
+                    class="position-absolute bottom-0 start-50 translate-middle-x border-0 px-8 py-2 mb-4 text-nowrap"
+                    style="border-radius: 4px; font-weight: 700;">查看完整內容</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body py-0 bg-white px-md-6 pt-md-3">
+                    <div>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
+                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white py-0 border-0 px-md-6 pb-md-3" style="border-radius: 0 0 20px 20px;">
+                    <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
+                      <div class="d-flex">
+                        <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-centerd justify-content-between border-top">
+                      <div class="d-flex align-items-center gap-2 py-4 py-xxl-0">
+                        <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                          style="width: 24px; height: 24px;">
+                        <p class="user-name fs-10" style="font-weight: 700;">李芳</p>
+                      </div>
+                      <div class="d-none d-xxl-flex flex-column justify-content-center gap-1 py-md-3"
+                        style="max-width: 157px;">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員等級：</p>
+                          <span class="fs-10 text-dark">金級</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員揪團次數：</p>
+                          <span class="fs-10 text-dark">25次</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-8 -->
+            <div class="col">
+              <div class="card h-100 border-0 d-md-flex flex-md-row">
+                <div class="position-relative">
+                  <img src="../assets/images/card-30.png" class="card-img-top" alt="store-card"
+                    style="background-color: #808080; border-radius: 20px 20px 0 0;">
+                  <button
+                    class="position-absolute bottom-0 start-50 translate-middle-x border-0 px-8 py-2 mb-4 text-nowrap"
+                    style="border-radius: 4px; font-weight: 700;">查看完整內容</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body py-0 bg-white px-md-6 pt-md-3">
+                    <div>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
+                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white py-0 border-0 px-md-6 pb-md-3" style="border-radius: 0 0 20px 20px;">
+                    <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
+                      <div class="d-flex">
+                        <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-centerd justify-content-between border-top">
+                      <div class="d-flex align-items-center gap-2 py-4 py-xxl-0">
+                        <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                          style="width: 24px; height: 24px;">
+                        <p class="user-name fs-10" style="font-weight: 700;">李芳</p>
+                      </div>
+                      <div class="d-none d-xxl-flex flex-column justify-content-center gap-1 py-md-3"
+                        style="max-width: 157px;">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員等級：</p>
+                          <span class="fs-10 text-dark">金級</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員揪團次數：</p>
+                          <span class="fs-10 text-dark">25次</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-9 -->
+            <div class="col">
+              <div class="card h-100 border-0 d-md-flex flex-md-row">
+                <div class="position-relative">
+                  <img src="../assets/images/card-29.png" class="card-img-top" alt="store-card"
+                    style="background-color: #808080; border-radius: 20px 20px 0 0;">
+                  <button
+                    class="position-absolute bottom-0 start-50 translate-middle-x border-0 px-8 py-2 mb-4 text-nowrap"
+                    style="border-radius: 4px; font-weight: 700;">查看完整內容</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body py-0 bg-white px-md-6 pt-md-3">
+                    <div>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
+                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white py-0 border-0 px-md-6 pb-md-3" style="border-radius: 0 0 20px 20px;">
+                    <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
+                      <div class="d-flex">
+                        <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-centerd justify-content-between border-top">
+                      <div class="d-flex align-items-center gap-2 py-4 py-xxl-0">
+                        <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                          style="width: 24px; height: 24px;">
+                        <p class="user-name fs-10" style="font-weight: 700;">李芳</p>
+                      </div>
+                      <div class="d-none d-xxl-flex flex-column justify-content-center gap-1 py-md-3"
+                        style="max-width: 157px;">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員等級：</p>
+                          <span class="fs-10 text-dark">金級</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員揪團次數：</p>
+                          <span class="fs-10 text-dark">25次</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-10 -->
+            <div class="col">
+              <div class="card h-100 border-0 d-md-flex flex-md-row">
+                <div class="position-relative">
+                  <img src="../assets/images/card-28.png" class="card-img-top" alt="store-card"
+                    style="background-color: #808080; border-radius: 20px 20px 0 0;">
+                  <button
+                    class="position-absolute bottom-0 start-50 translate-middle-x border-0 px-8 py-2 mb-4 text-nowrap"
+                    style="border-radius: 4px; font-weight: 700;">查看完整內容</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body py-0 bg-white px-md-6 pt-md-3">
+                    <div>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
+                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white py-0 border-0 px-md-6 pb-md-3" style="border-radius: 0 0 20px 20px;">
+                    <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
+                      <div class="d-flex">
+                        <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex">
+                        <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-centerd justify-content-between border-top">
+                      <div class="d-flex align-items-center gap-2 py-4 py-xxl-0">
+                        <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                          style="width: 24px; height: 24px;">
+                        <p class="user-name fs-10" style="font-weight: 700;">李芳</p>
+                      </div>
+                      <div class="d-none d-xxl-flex flex-column justify-content-center gap-1 py-md-3"
+                        style="max-width: 157px;">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員等級：</p>
+                          <span class="fs-10 text-dark">金級</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="fs-10" style="color: #808080;">會員揪團次數：</p>
+                          <span class="fs-10 text-dark">25次</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav aria-label="Page navigation" class="pt-10 pb-20 pb-md-30">
+        <ul class="pagination justify-content-center m-0">
+          <li class="page-item">
+            <a class="page-link">
+              <i class="bi bi-chevron-left"></i>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#"><i class="bi bi-three-dots"></i></a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link active" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item"><a class="page-link" href="#"><i class="bi bi-three-dots"></i></a></li>
+          <li class="page-item"><a class="page-link" href="#">20</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              <i class="bi bi-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Modal -->
+      <div class="modal fade" id="storeModal" tabindex="-1" aria-labelledby="storeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content flex-xl-row">
+            <button type="button" class="btn-close position-absolute top-0 end-0 p-0 mt-3 me-3 mt-xl-6 me-xl-6 fs-xl-5"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="header-modal-body container p-0 d-xl-flex">
+              <div class="row m-0">
+                <div class="col-xl-7 p-0 ps-xl-4 order-xl-1">
+                  <div class="header px-4 pt-10 border-0 p-xl-0">
+                    <h4 class="modal-title" id="storeModal">士林貳貳參丼飯</h4>
+                    <p class="fs-7 my-4">
+                      在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                    </p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex gap-1">
+                        <i class="bi bi-calendar4 fs-9" style="color: #808080;"></i>
+                        <time class="fs-9" style="color: #808080;">2024/03/22</time>
+                      </div>
+                      <div class="d-flex gap-1">
+                        <i class="bi bi-eye fs-9" style="color: #808080;"></i>
+                        <p class="fs-9" style="color: #808080;">623</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-5 p-0 pe-xl-4 order-xl-0">
+                  <div class="modal-body pt-4 pb-10 p-xl-0">
+                    <div>
+                      <div class="d-flex justify-content-center mb-4">
+                        <img src="../assets/images/card-06.png" alt="store-card" class="store-img">
+                      </div>
+                      <div class="swiper storeSwiper mb-4">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="../assets/images/card-06.png" alt="store-card" class="store-img-small">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../assets/images/card-06.png" alt="store-card" class="store-img-small">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../assets/images/card-06.png" alt="store-card" class="store-img-small">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../assets/images/card-06.png" alt="store-card" class="store-img-small">
+                          </div>
+                          <div class="swiper-slide d-none d-xl-block">
+                            <img src="../assets/images/card-06.png" alt="store-card" class="store-img-small">
+                          </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                      <div
+                        class="d-flex flex-column flex-xl-row justify-content-xl-between align-items-xl-center py-5 w-100"
+                        style="border-top: 1px solid #E5E5E5;">
+                        <div class="d-flex align-items-center gap-2 gap-xl-4 pb-4 pb-xl-0">
+                          <img src="../assets/images/author-01.png" class="user-img" alt="user"
+                            style="width: 40px; height: 40px;">
+                          <p class="fs-8" style="font-weight: 700;">李芳</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center gap-1">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <p class="fs-9" style="color: #808080;">會員等級：</p>
+                            <span class="fs-9 text-dark">金級</span>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <p class="fs-9" style="color: #808080;">會員揪團次數：</p>
+                            <span class="fs-9 text-dark">25次</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer border-0 mb-4 px-4">
+                <div class="comment p-4 mb-4 p-xl-6"
+                  style="background-color: #F8F8F8; border-radius: 20px; border: 1px solid #E5E5E5;">
+                  <div class="comment_content mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <div>
+                        <img src="../assets/images/author-02.png" alt="user-img">
+                      </div>
+                      <div class="other-user d-flex align-items-center justify-content-between">
+                        <p class="fs-8" style="font-weight: 700;">Tommy.C</p>
+                        <time datetime="2024/04/26" class="fs-10" style="color: #808080">2024/04/26</time>
+                      </div>
+                    </div>
+                    <div class="p-5 bg-white py-xl-6 px-xl-8" style="border-radius: 20px; border: 1px solid #E5E5E5;">
+                      <p>這間我也吃過，推薦!</p>
+                    </div>
+                  </div>
+                  <div class="comment_content">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <div>
+                        <img src="../assets/images/author-03.png" alt="user-img">
+                      </div>
+                      <div class="other-user d-flex align-items-center justify-content-between">
+                        <p class="fs-8" style="font-weight: 700;">Samew5151</p>
+                        <time datetime="2024/04/26" class="fs-10" style="color: #808080">2024/04/26</time>
+                      </div>
+                    </div>
+                    <div class="p-5 bg-white py-xl-6 px-xl-8" style="border-radius: 20px; border: 1px solid #E5E5E5;">
+                      <p>我也想去吃這間，求開團!</p>
+                    </div>
+                  </div>
+
+                </div>
+                <textarea class="form-control pt-6 ps-6 pe-6 pb-0 mb-4" rows="3" placeholder="留下評論......"
+                  id="floatingTextarea"
+                  style="border-radius: 4px; border: 1px solid #bfbfbf; min-height: 126px;"></textarea>
+                <div class="d-flex justify-content-end">
+                  <button class=" border-0 text-nowrap" style="border-radius: 4px; font-weight: 700; padding: 8px 54px;"
+                    data-bs-dismiss="modal">送出評論</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-
-
 
 
     <%- include('./layout/footer'); -%>
