@@ -151,7 +151,7 @@ $green-100: tint-color($green, 80%) !default;
 $green-200: tint-color($green, 60%) !default;
 $green-300: tint-color($green, 40%) !default;
 $green-400: tint-color($green, 20%) !default;
-$green-500: $green !default;
+$green-500: #c0ed5f; // $green !default;
 $green-600: shade-color($green, 20%) !default;
 $green-700: shade-color($green, 40%) !default;
 $green-800: shade-color($green, 60%) !default;
@@ -326,6 +326,7 @@ $theme-colors: (
   "gray-300": #e5e5e5,
   "gray-500": #bfbfbf,
   "gray-700": #808080,
+  "green-500": $green-500,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -428,11 +429,15 @@ $spacers: (
   4: $spacer,
   5: $spacer * 1.25,
   6: $spacer * 1.5,
+  7: $spacer * 1.75,
   8: $spacer * 2,
   9: $spacer * 2.25,
   10: $spacer * 2.5,
   11: $spacer * 2.75,
   12: $spacer * 3,
+  13: $spacer * 3.25,
+  14: $spacer * 3.5,
+  15: $spacer * 3.75,
   16: $spacer * 4,
   // 64
   18: $spacer * 4.5,
@@ -441,7 +446,9 @@ $spacers: (
   // 76
   20: $spacer * 5,
   // 80
-  22: $spacer * 5.5,
+  22: $spacer * 5.75,
+  // 92
+  23: $spacer * 5.5,
   // 88
   24: $spacer * 6,
   // 96
@@ -449,6 +456,12 @@ $spacers: (
   // 108
   30: $spacer * 7.5,
   // 120
+  31: $spacer * 7.75,
+  // 124
+  32: $spacer * 8,
+  // 128
+  33: $spacer * 8.25,
+  // 132
   34: $spacer * 8.5,
   // 136
   36: $spacer * 9,
@@ -469,6 +482,8 @@ $spacers: (
   // 200
   62: $spacer * 15.5,
   // 248
+  74: $spacer * 18.5,
+  // 296
   78: $spacer * 19.5,
   // 310
 ) !default;
@@ -677,7 +692,7 @@ $font-weight-normal: 400 !default;
 $font-weight-medium: 500 !default;
 $font-weight-semibold: 600 !default;
 $font-weight-bold: 700 !default;
-$font-weight-bolder: bolder !default;
+$font-weight-bolder: 900; // bolder !default;
 
 $font-weight-base: $font-weight-normal !default;
 
@@ -1620,7 +1635,7 @@ $toast-header-border-color: $toast-border-color !default;
 
 // scss-docs-start badge-variables
 $badge-font-size: 0.875em; // .75em !default;
-$badge-font-weight: 700; // $font-weight-bold !default;
+$badge-font-weight: 900; // $font-weight-bold !default;
 $badge-color: $dark; // $white !default;
 $badge-padding-y: 0.5em; // .35em !default;
 $badge-padding-x: 0.75em; // .65em !default;
@@ -1667,7 +1682,8 @@ $modal-footer-border-width: $modal-header-border-width !default;
 $modal-sm: 300px !default;
 $modal-md: 500px !default;
 $modal-lg: 800px !default;
-$modal-xl: 1140px !default;
+// $modal-xl:                          1140px !default;
+$modal-xl: 1200px !default;
 
 $modal-fade-transform: translate(0, -50px) !default;
 $modal-show-transform: none !default;

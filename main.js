@@ -3,19 +3,91 @@ import "bootstrap";
 // swiper 這段 import 請不要動它，因為還沒寫輪播，所以會顯示錯誤
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
-// const customIcon = document.querySelector(".custom-date-icon");
-// const dateInput = document.getElementById("dateInput");
+//interaction
+//篩選部分
+const blockElement = document.getElementById("block");
 
-// // 点击自定义图标时，触发日期选择器
-// customIcon.addEventListener("click", function () {
-//   dateInput.click(); // 触发日期输入框的点击效果
-//   console.log("Date input focused"); // 確認是否觸發
-// });
+blockElement.addEventListener("change", function () {
+  if (this.value === "0") {
+    this.style.color = "#808080"; // 灰色
+    this.style.fontWeight = "400"; // 字重回到普通
+  } else {
+    this.style.color = "#000000"; // 黑色
+    this.style.fontWeight = "700"; // 字重變粗
+  }
+});
 
-// const dateInput = document.getElementById("dateInput");
-// const customIcon = document.getElementById("customIcon");
+const typeElement = document.getElementById("type");
 
-// customIcon.addEventListener("click", function () {
-//   dateInput.focus(); // 聚焦日期輸入框
-//   dateInput.click(); // 觸發日期選擇器
-// });
+typeElement.addEventListener("change", function () {
+  if (this.value === "0") {
+    this.style.color = "#808080"; // 灰色
+    this.style.fontWeight = "400"; // 字重回到普通
+  } else {
+    this.style.color = "#000000"; // 黑色
+    this.style.fontWeight = "700"; // 字重變粗
+  }
+});
+
+var swiper = new Swiper(".storeSwiper", {
+  slidesPerView: 4,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    },
+  },
+});
+
+//index
+//熱門商家
+var swiper = new Swiper(".index-featuredShopSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  centeredSlides: true,
+
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 1.25,
+      spaceBetween: 24,
+      centeredSlides: true,
+    },
+    540: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      centeredSlides: false,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      centeredSlides: false,
+    },
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// 精選商家-彈窗內商家圖片
+var swiper = new Swiper(".featuredSwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".swiper-button-next",
+  },
+});
