@@ -1,0 +1,174 @@
+// 揪團活動 - banner -- 倫倫
+.btn-cusShadow {
+  box-shadow: 4px 4px 0 0 #ceff66, 4px 0px 0px 0px #fcff6f inset,
+    0px 4px 0px 0px #fcff6f inset;
+
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.groupActivities-bg-heading {
+  position: absolute;
+  z-index: -10;
+}
+
+.groupActivitiesLine01 {
+  position: absolute;
+  top: -130px;
+  z-index: -15;
+  overflow-x: hidden;
+}
+
+.groupActivities-banner-rwd {
+  position: relative;
+  z-index: -12;
+}
+
+@media screen and (max-width: 375px) {
+  .groupActivitiesLine01 {
+    top: -60px;
+  }
+
+  .letter-rwd {
+    letter-spacing: normal;
+  }
+
+  // .groupActivities-banner-rwd {
+  //   margin-top: -40px;
+  // }
+}
+
+@media screen and (max-width: 375px) {
+  .groupActivities-banner-rwd {
+    margin-top: -40px;
+  }
+}
+
+// 揪團活動 - Jo到夥伴 -- 倫倫
+
+// .groupActivities-search {
+//   background: linear-gradient(to right, #fcff6f, #ceff66);
+//   position: relative;
+
+//   input[type="date"]::-webkit-calendar-picker-indicator {
+//     display: none;
+//     -webkit-appearance: none;
+//   }
+
+//   input[type="date"] {
+//     // position: relative;
+//     color: transparent; /* 隐藏默认的年月日格式 */
+//     // z-index: 1;
+//   }
+
+//   input[type="date"]::before {
+//     content: attr(data-placeholder); /* 使用 data-placeholder 属性设置占位符 */
+//     position: absolute;
+//     left: 36px;
+//     color: #808080;
+//     pointer-events: none;
+//   }
+// }
+.groupActivities-search {
+  background: linear-gradient(to right, #fcff6f, #ceff66);
+  position: relative;
+}
+
+/* 隱藏默認日期圖標 */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  position: absolute;
+  left: 8px;
+  opacity: 0;
+}
+
+input[type="date"]::before {
+  content: "選擇日期"; /* 自定義佔位符 */
+  position: absolute;
+  left: 36px;
+  color: #808080; /* 佔位符顏色 */
+  pointer-events: none; /* 禁用事件 */
+}
+
+// input[type="date"] {
+//   padding-right: 30px; /* 為自定義圖標預留空間 */
+// }
+
+input[type="date"] {
+  position: relative; /* 設置相對定位以配合自定義圖標 */
+  // padding-right: 40px; /* 為自定義圖標預留空間 */
+  z-index: 1; /* 提高層級 */
+  // pointer-events: none;
+  color: transparent;
+  // background-color: transparent;
+  // pointer-events: none;
+  // text-indent: -9999px;
+}
+
+/* 圖標容器 */
+.custom-icon {
+  position: relative;
+  // display: inline-block;
+}
+
+/* 自定義日期圖標 */
+.custom-icon img {
+  position: absolute;
+  z-index: 2;
+  left: 12px;
+  top: 8px;
+  // transform: translateY(-50%);
+  pointer-events: none;
+  // width: 20px;
+  // height: 20px;
+  cursor: pointer;
+}
+
+// .custom-date-icon {
+//   cursor: pointer;
+// }
+
+.groupActivities-search-deco {
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+}
+
+@media screen and (max-width: 1500px) {
+  .groupActivities-search-deco {
+    transform: scale(0.8);
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .groupActivities-search-deco {
+    transform: scale(0.6);
+    right: -80px;
+    bottom: -40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .groupActivities-search-deco {
+    transform: scale(0.4);
+    right: -120px;
+    bottom: -80px;
+  }
+}
+
+.groupActivities-locationIcon {
+  top: 8px;
+  left: 12px;
+}
+
+.groupActivities-search-cusInput {
+  padding-left: 36px;
+}
+
+.groupActivities-search-cusSelect {
+  padding: 8px 12px 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #808080;
+}
