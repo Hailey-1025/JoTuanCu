@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>揪團活動</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header', {page: "groupActivities" }); -%>
+
+    <!-- 揪團活動 - banner -- 倫倫 -->
+    <section class="groupActivities overflow-hidden">
+      <div class="container mb-md-10 mb-0">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="d-flex justify-content-center position-relative pt-md-10 pt-12"
+            >
+              <picture class="groupActivitiesLine01">
+                <source
+                  media="(max-width: 375px)"
+                  srcset="../assets/images/groupActivitiesLine01-sm.png"
+                />
+
+                <img
+                  src="../assets/images/groupActivitiesLine01.png"
+                  alt="groupActivitiesLine01"
+                />
+              </picture>
+
+              <picture class="groupActivities-bg-heading">
+                <source
+                  media="(max-width: 575px)"
+                  srcset="../assets/images/groupActivities-bg-heading-sm.png"
+                />
+
+                <img
+                  src="../assets/images/bg-heading.png"
+                  alt="groupActivities-bg-heading"
+                />
+              </picture>
+
+              <div class="d-flex flex-column align-items-center pt-md-24 pt-18">
+                <h2 class="fs-md-1 fs-sm-118 fs-3 fw-normal">找伴就來揪團趣</h2>
+                <p
+                  class="mt-md-6 mb-md-12 mt-sm-12 mb-sm-16 my-4 fs-sm-9 fs-10 letter-rwd text-center"
+                  style="width: 321px"
+                >
+                  不論你是想揪伴吃飯、看電影、運動、旅遊，這裡都可以滿足你的需求。想找到志同道合的夥伴嗎？立馬開團吧！
+                </p>
+                <button
+                  type="button"
+                  class="btn border-2 border-dark btn-cusShadow"
+                >
+                  馬上Jo!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <picture class="groupActivities-banner-rwd d-flex justify-content-center">
+        <!-- <source
+          media="(max-width: 767px)"
+          srcset="../assets/images/banner-02-sm.png"
+        /> -->
+
+        <source
+          media="(max-width: 375px)"
+          srcset="../assets/images/banner-02-sm.png"
+        />
+
+        <img
+          src="../assets/images/banner-02.png"
+          alt="banner-02"
+          class="img-fluid"
+        />
+      </picture>
+    </section>
+
+    <!-- 揪團活動 - Jo到夥伴 -- 倫倫 -->
+    <section class="groupActivities-search py-50 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-9 col-12 mx-auto">
+            <div
+              class="border border-dark p-xl-20 p-md-16 p-6 rounded-3 bg-white"
+            >
+              <h3 class="fs-lg-4 fs-5 text-center mb-10">
+                想要快速 Jo 到夥伴嗎？
+              </h3>
+              <form class="d-flex flex-column">
+                <select
+                  class="form-select form-select-sm mb-2 groupActivities-search-cusSelect"
+                  aria-label="Small select example"
+                >
+                  <option selected>選擇活動</option>
+                  <option value="food">美食</option>
+                </select>
+                <div class="mb-2 position-relative">
+                  <label for="locationInput" class="form-label d-none"
+                    >選擇地點</label
+                  >
+                  <img
+                    src="../assets/images/groupActivities-search-locationIcon.png"
+                    alt="groupActivities-search-locationIcon"
+                    class="position-absolute groupActivities-locationIcon"
+                  />
+                  <input
+                    type="text"
+                    class="form-control groupActivities-search-cusInput"
+                    id="locationInput"
+                    placeholder="選擇地點"
+                  />
+                </div>
+
+                <!-- <div class="mb-10 position-relative">
+                  <label for="dateInput" class="form-label d-none"
+                    >選擇日期</label
+                  >
+                  <img
+                    src="../assets/images/groupActivities-search-dateIcon.png"
+                    alt="groupActivities-search-dateIcon"
+                    class="position-absolute align-middle groupActivities-locationIcon custom-date-icon"
+                  />
+                  <input
+                    type="date"
+                    class="form-control groupActivities-search-cusInput"
+                    id="dateInput"
+                    data-placeholder="選擇日期"
+                  />
+                </div> -->
+                <div class="custom-icon mb-10">
+                  <input
+                    type="date"
+                    id="dateInput"
+                    class="form-control groupActivities-search-cusInput"
+                    data-placeholder="選擇日期"
+                  />
+                  <img
+                    src="../assets/images/groupActivities-search-dateIcon.png"
+                    alt="Calendar Icon"
+                    id="customIcon"
+                    class="groupActivities-locationIcon"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  class="btn border-2 border-dark btn-cusShadow mx-auto"
+                >
+                  試試這個吧！
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="../assets/images/illustrate-03.png"
+        alt="illustrate-03.png"
+        class="groupActivities-search-deco d-md-block d-none"
+      />
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
