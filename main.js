@@ -3,6 +3,44 @@ import "bootstrap";
 // swiper 這段 import 請不要動它，因為還沒寫輪播，所以會顯示錯誤
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
+// 揪團活動 - Jo到夥伴 (選擇日期功能) -- 倫倫
+const dateInput = document.getElementById("dateInput");
+
+dateInput.addEventListener("click", function () {
+  dateInput.classList.add("cus-input-focus");
+});
+
+// 在 document 上添加 click 事件监听器
+document.addEventListener("click", function (event) {
+  // 检查点击的目标是否是 dateInput
+  if (!dateInput.contains(event.target)) {
+    dateInput.classList.remove("cus-input-focus");
+  }
+});
+
+dateInput.addEventListener("change", function () {
+  const styleSheet = document.styleSheets[0];
+
+  if (dateInput.value) {
+    styleSheet.insertRule(
+      'input[type="date"].custom-date::before { color: transparent; }',
+      styleSheet.cssRules.length
+    );
+    dateInput.classList.add("text-dark");
+  } else {
+    styleSheet.insertRule(
+      'input[type="date"].custom-date::before { color: #808080; }',
+      styleSheet.cssRules.length
+    );
+    dateInput.classList.remove("text-dark");
+  }
+
+  // 使用 Promise 以实现并行执行
+  Promise.resolve().then(() => {
+    dateInput.classList.remove("cus-input-focus"); // 同时移除
+  });
+});
+
 //interaction
 //篩選部分
 const blockElement = document.getElementById("block");
