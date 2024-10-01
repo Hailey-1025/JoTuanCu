@@ -3,6 +3,9 @@ import 'bootstrap';
 // swiper 這段 import 請不要動它，因為還沒寫輪播，所以會顯示錯誤
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
+
+
+
 //index
 //熱門商家
 var swiper = new Swiper(".index-featuredShopSwiper", {
@@ -43,6 +46,7 @@ var swiper = new Swiper(".featuredSwiper", {
     slidesPerView: "auto",
     spaceBetween: 16,
     navigation: {
-        nextEl: ".swiper-next",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });

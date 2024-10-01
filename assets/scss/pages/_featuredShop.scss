@@ -3,6 +3,11 @@
         @content ;
     }
 }
+@mixin self-md{
+    @media(min-width:768px){
+        @content ;
+    }
+}
 @mixin self-lg{
     @media(min-width:992px){
         @content ;
@@ -53,39 +58,47 @@
 .featured-banner-center{
     width: 276px ;
     height: 245px;
-    margin-top: 226px;
-    z-index: 2;
+    margin-top: 104px;
     @include self-sm{
-        width: 451px;
-        height: 400px;
-        margin-top: 200px;
+        width: 276px;
+        height: 245px;
+        margin-top: 60px;
     }
     @include self-xxl{
         width: 451px;
         height: 400px;
-        margin-top: 200px;
+        margin-top: 0;
     }
 }
-.featured-banner-title{
-    margin-top: 60px;
+.featuredShop-h1{
+    max-width: 192px;
+    height: auto;
+    margin-top: 59px;
+    padding: 13px 0px;
     @include self-sm{
-        margin-top: 120px;
+        max-width: 130px;
+        margin-top: 80px;
+    }
+    @include self-xxl{
+        max-width: 320px;
+        margin-top: 80px;
     }
 }
 .featured-title-img{
     max-width: 115px;
-    height: 24px;
-    margin-left: 80px;
+    height: auto;
+    margin-top: 127px;
     @include self-xxl{
         max-width: 191px;
-        height: 40px;
-        margin-left: 130px;
+        margin-top: 216px;
+
     }
 }
 // ++++
 .featured-banner-line{
     bottom: -144px;
     margin-left: 48px;
+    z-index: 9999;
 }
 .people-line{
     margin-bottom: 74px;
@@ -95,9 +108,11 @@
 // ==============卡片區塊=================
 
 .featured-content{
-    max-width: 100%;
-    @include self-lg{
+    @include self-xxl{
         height: 2026px;
+    }
+    .card{
+        background-color: rgba(255, 255, 255, 0.8) !important; 
     }
 }
 .people-circle{
@@ -127,13 +142,27 @@
     width: 40px;
     height: 40px;
 }
-.featured-content{
-    .bi-heart-fill{
-        line-height: 0 !important;
+.featured{
+    .heart {
+        background: url("/assets/images/heart.svg") no-repeat;
+        width: 20px;
+        height: 24px;
+        display: block;
     }
+
+    .btn-check:checked+.btn,
+    :not(.btn-check)+.btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+        .heart {
+            background: url("/assets/images/heart-fill.svg") no-repeat;
+        }
+    }
+    
 }
 
-s
+
 //========= Modal ===========
 .store-rounded{
     border-radius: 4px;
@@ -145,6 +174,14 @@ s
     .swiper-slide,.featuredSwiper-img{
         width: 108px;
         height: 108px;
+    }
+    .swiper-button-prev,.swiper-button-next{
+        width: 15px;
+        height: 24px;
+        color: #fff;
+        &::after{
+            font-size: 24px;
+        }
     }
 }
 .text-47481F{
@@ -173,29 +210,69 @@ s
             padding: 8px 54px !important;
         }
     }
+    li{
+        line-height: 0 !important;
+
+    }
+    
 
 }
 .featured-modal{
     li{
         line-height: 0 !important;
     }
+    .featured-modal-close{
+        top: 16px;
+        right: 16px;
+        &:focus{
+            --bs-btn-close-focus-shadow: none !important;
+        }
+        @include self-lg{
+            top: -16px;
+            right: -16px; 
+        } 
+    }
     .btn-close{
         font-size: 16px;
         @include self-lg{
             font-size: 25px;
         }
-
     }
     .modal-dialog{
         padding-top: 40px !important;
         padding-bottom: 40px !important;
     }
+    // 評分星星
+    .star {
+        background: url("/assets/images/star.png") no-repeat;
+        background-size: cover;
+        width: 16px;
+        height: 16px;
+        display: block;
+        
+    }
+
+    .btn-check:checked+.btn,
+    :not(.btn-check)+.btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+        .star {
+            background: url("/assets/images/star-full.png") no-repeat;
+            background-size: cover;
+        }
+    }
 }
-.touchStar{
-    cursor: pointer;
+.starGroup{
+    .btn{
+        padding: 0 !important;
+        
+    }
 }
+
+
 // QRcode
-.featuredQRcode{
+.featuredQRcode,.featuredSuccess{
     .modal-content {
         border-radius: 4.8px;
     }
@@ -203,13 +280,8 @@ s
         color: #47481F;
     }
 }
-*,*::after,*::before{
-    outline: 1px solid red;
-}
+// *,*::after,*::before{
+//     outline: 1px solid red;
+    
+// }
 
-.swiper-next{
-    padding: 4px 16px 4px 16px;
-    border: 1px solid #6C757D;
-    border-radius:100px;
-    line-height: 0;
-}
