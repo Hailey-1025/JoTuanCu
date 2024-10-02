@@ -4,87 +4,87 @@ import "bootstrap";
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
 // 揪團活動 - Jo到夥伴 (選擇日期功能) -- 倫倫
-const dateInput = document.getElementById("dateInput");
+// const dateInput = document.getElementById("dateInput");
 
-dateInput.addEventListener("click", function () {
-  dateInput.classList.add("cus-input-focus");
-});
+// dateInput.addEventListener("click", function () {
+//   dateInput.classList.add("cus-input-focus");
+// });
 
-// 在 document 上添加 click 事件监听器
-document.addEventListener("click", function (event) {
-  // 检查点击的目标是否是 dateInput
-  if (!dateInput.contains(event.target)) {
-    dateInput.classList.remove("cus-input-focus");
-  }
-});
+// // 在 document 上添加 click 事件监听器
+// document.addEventListener("click", function (event) {
+//   // 检查点击的目标是否是 dateInput
+//   if (!dateInput.contains(event.target)) {
+//     dateInput.classList.remove("cus-input-focus");
+//   }
+// });
 
-dateInput.addEventListener("change", function () {
-  const styleSheet = document.styleSheets[0];
+// dateInput.addEventListener("change", function () {
+//   const styleSheet = document.styleSheets[0];
 
-  if (dateInput.value) {
-    styleSheet.insertRule(
-      'input[type="date"].custom-date::before { color: transparent; }',
-      styleSheet.cssRules.length
-    );
-    dateInput.classList.add("text-dark");
-  } else {
-    styleSheet.insertRule(
-      'input[type="date"].custom-date::before { color: #808080; }',
-      styleSheet.cssRules.length
-    );
-    dateInput.classList.remove("text-dark");
-  }
+//   if (dateInput.value) {
+//     styleSheet.insertRule(
+//       'input[type="date"].custom-date::before { color: transparent; }',
+//       styleSheet.cssRules.length
+//     );
+//     dateInput.classList.add("text-dark");
+//   } else {
+//     styleSheet.insertRule(
+//       'input[type="date"].custom-date::before { color: #808080; }',
+//       styleSheet.cssRules.length
+//     );
+//     dateInput.classList.remove("text-dark");
+//   }
 
-  // 使用 Promise 以实现并行执行
-  Promise.resolve().then(() => {
-    dateInput.classList.remove("cus-input-focus"); // 同时移除
-  });
-});
+//   // 使用 Promise 以实现并行执行
+//   Promise.resolve().then(() => {
+//     dateInput.classList.remove("cus-input-focus"); // 同时移除
+//   });
+// });
 
-//interaction
-//篩選部分
-const blockElement = document.getElementById("block");
+// //interaction
+// //篩選部分
+// const blockElement = document.getElementById("block");
 
-blockElement.addEventListener("change", function () {
-  if (this.value === "0") {
-    this.style.color = "#808080"; // 灰色
-    this.style.fontWeight = "400"; // 字重回到普通
-  } else {
-    this.style.color = "#000000"; // 黑色
-    this.style.fontWeight = "700"; // 字重變粗
-  }
-});
+// blockElement.addEventListener("change", function () {
+//   if (this.value === "0") {
+//     this.style.color = "#808080"; // 灰色
+//     this.style.fontWeight = "400"; // 字重回到普通
+//   } else {
+//     this.style.color = "#000000"; // 黑色
+//     this.style.fontWeight = "700"; // 字重變粗
+//   }
+// });
 
-const typeElement = document.getElementById("type");
+// const typeElement = document.getElementById("type");
 
-typeElement.addEventListener("change", function () {
-  if (this.value === "0") {
-    this.style.color = "#808080"; // 灰色
-    this.style.fontWeight = "400"; // 字重回到普通
-  } else {
-    this.style.color = "#000000"; // 黑色
-    this.style.fontWeight = "700"; // 字重變粗
-  }
-});
+// typeElement.addEventListener("change", function () {
+//   if (this.value === "0") {
+//     this.style.color = "#808080"; // 灰色
+//     this.style.fontWeight = "400"; // 字重回到普通
+//   } else {
+//     this.style.color = "#000000"; // 黑色
+//     this.style.fontWeight = "700"; // 字重變粗
+//   }
+// });
 
-var swiper = new Swiper(".storeSwiper", {
-  slidesPerView: 4,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+// var swiper = new Swiper(".storeSwiper", {
+//   slidesPerView: 4,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
 
-  breakpoints: {
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 16,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    },
-  },
-});
+//   breakpoints: {
+//     1200: {
+//       slidesPerView: 4,
+//       spaceBetween: 16,
+//       navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//       },
+//     },
+//   },
+// });
 
 //index
 //最新活動
