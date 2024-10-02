@@ -132,7 +132,7 @@
         @media (min-width:1700px) {
             width: 354px;
             height: 490px;
-            left: calc(100% + 90px);
+            left: calc(100% + 25px);
             bottom: calc(0% - 36px);
             transform: translateX(-50%);
         }
@@ -340,9 +340,9 @@
 // 星星
 .star {
     background: url(../assets/images/starLine.svg) no-repeat;
-    background-size: contain;
-    width: 16px;
-    height: 16px;
+    background-size: auto;
+    width: 18px;
+    height: 18px;
     display: block;
 }
 

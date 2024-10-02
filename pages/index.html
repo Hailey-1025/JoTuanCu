@@ -284,9 +284,35 @@
     </section>
 
     <!-- 好評推薦 -->
-    <section class="bg-primary-h pt-40 pb-42">
+    <section class="bg-primary-h pt-40 pb-42 position-relative">
+      <div class="position-absolute top-0 end-0 mt-6 mt-lg-30 me-4 me-lg-26"
+        style="background: url(../assets/images/Decorative-lines-06.png) no-repeat; width: 138px;height: 114px;"></div>
       <div class="container">
         <h2 class="fw-light text-center mb-23">好評推薦</h2>
+      </div>
+
+      <!-- swiper -->
+      <div class="row">
+        <div class="col-4">
+          <div class="row">
+            <div class="col-12">
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+      </div>
+
+
+      <div class="text-center mt-8">
+        <a class="fw-bold border-bottom border-dark " href="interaction.html" style="padding: 5.5px 4px;">
+          查看更多
+          <i class="bi bi-chevron-right"></i>
+        </a>
       </div>
     </section>
 
@@ -579,185 +605,223 @@
               <div class="modal-body row p-0">
                 <div class="col-lg-5 d-flex flex-column">
                   <div class="my-6 d-block d-lg-none">
-                  <h5 class="fs-md-4 mb-4">書香小巷</h5>
-                  <div class="d-flex">
-                    <div class="d-flex align-items-center">
-                      <p class="fs-7">4.3</p>
-                      <img src="../assets/images/star.svg" alt="photo" class="ms-1">
-                    </div>
-                    <small class="d-flex align-items-center badge bg-green-500 py-2 px-3 ms-4">
-                      <i class="bi bi-bookmark-fill me-2"></i>
-                      優惠中
-                    </small>
-                  </div>
-                </div>
-                <div>
-                  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                    class="swiper indexModalMySwiper2">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide mb-4">
-                        <img class="img-fluid modalRounded" src="../assets/images/card-11.png" style="width: 1000px;" />
-                      </div>
-                      <div class="swiper-slide mb-4">
-                        <img class="img-fluid modalRounded" src="../assets/images/card-35.jpg" />
-                      </div>
-                      <div class="swiper-slide mb-4">
-                        <img class="img-fluid modalRounded" src="../assets/images/card-36.jpg" />
-                      </div>
-                      <div class="swiper-slide mb-4">
-                        <img class="img-fluid modalRounded" src="../assets/images/card-37.jpg" />
-                      </div>
-                    </div>
-                  </div>
-                  <div thumbsSlider="" class="swiper indexModalMySwiper mb-4">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img class="img-fluid modalRounded" src="../assets/images/card-11.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="img-fluid modalRounded" src="../assets/images/card-35.jpg" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="img-fluid modalRounded" src="../assets/images/card-36.jpg" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="img-fluid modalRounded" src="../assets/images/card-37.jpg" />
-                      </div>
-                    </div>
-                    <div class="swiper-button-next swiper-button-next-indexModalMySwiper"></div>
-                    <div class="swiper-button-prev swiper-button-prev-indexModalMySwiper"></div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center text-gray-700 mb-2">
-                  <i class="bi bi-geo-alt me-1 px-1"></i>
-                  <small>台北馬山 2000文創園區</small>
-                </div>
-                <div class="d-flex align-items-center text-gray-700 mb-2">
-                  <i class="bi bi-clock me-1 px-1"></i>
-                  <small>周一 ~ 周日<span class="ms-6 ms-md-4">08:00~22:00</span></small>
-                </div>
-                <picture>
-                  <source media="(min-width: 375px)" srcset="../assets/images/map-lg.png">
-                  <img class="mb-4 img-fluid" src="../assets/images/map-sm.png" alt="photo">
-                </picture>
-                <a href="#saledropdown" data-bs-toggle="dropdown" aria-expanded="false"
-                  class="btn btn-outline-shadow d-block mt-auto mb-6 mb-lg-0">領取優惠券</a>
-                <div class="dropdown-menu top-50 start-50 translate-middle p-4 border-0"
-                  aria-labelledby="dropdownMenuButton1" style="width: 300px;height: 300px;">
-                  <div class="d-flex justify-content-between">
-                    <h5>領取優惠券</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-7 d-flex flex-column">
-                <div class="mb-6 d-none d-lg-block">
-                  <h5 class="fs-md-4 mb-4">書香小巷</h5>
-                  <div class="d-flex">
-                    <div class="d-flex align-items-center">
-                      <p class="fs-7">4.3</p>
-                      <img src="../assets/images/star.svg" alt="photo" class="ms-1">
-                    </div>
-                    <small class="d-flex align-items-center badge bg-green-500 py-2 px-3 ms-4">
-                      <i class="bi bi-bookmark-fill me-2"></i>
-                      優惠中
-                    </small>
-                  </div>
-                </div>
-                <div class="bg-light p-4 p-md-6 border rounded-3 mb-auto modalHeight-100 overflow-y-scroll">
-                  <section class="mb-4">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="fs-md-4 mb-4">書香小巷</h5>
+                    <div class="d-flex">
                       <div class="d-flex align-items-center">
-                        <img src="../assets/images/author-02.png" alt="photo">
-                        <h6 class="fs-8 ms-4">劉明</h6>
+                        <p class="fs-7">4.3</p>
+                        <img src="../assets/images/star.svg" alt="photo" class="ms-1">
                       </div>
-                      <small class="text-gray-700">2024/04/26 </small>
+                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3 ms-4">
+                        <i class="bi bi-bookmark-fill me-2"></i>
+                        優惠中
+                      </small>
                     </div>
-                    <div class="bg-white border rounded-3 p-5 py-lg-6 px-lg-8">
-                      <div class="d-flex align-items-center mb-4">
-                        <p>評分：</p>
-                        <div class="d-flex align-items-center">
-                          <img class="me-2" src="../assets/images/star.svg" alt="photo">
-                          <img class="me-2" src="../assets/images/star.svg" alt="photo">
-                          <img class="me-2" src="../assets/images/star.svg" alt="photo">
-                          <img class="me-2" src="../assets/images/star.svg" alt="photo">
-                          <img src="../assets/images/starLine.svg" alt="photo">
+                  </div>
+                  <div>
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                      class="swiper indexModalMySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide mb-4 position-relative">
+                          <img class="img-fluid modalRounded" src="../assets/images/card-11.png"
+                            style="width: 1000px;" />
+                          <div class="position-absolute top-0 end-0 d-flex align-items-center m-4 z-3">
+                            <input type="checkbox" class="btn-check" id="swiperBtnLove01" autocomplete="off">
+                            <label class="btn btn-white border-0 rounded-pill" for="swiperBtnLove01"
+                              style="padding: 8px 10px;">
+                              <div class="heart"></div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="swiper-slide mb-4 position-relative">
+                          <img class="img-fluid modalRounded" src="../assets/images/card-35.jpg" />
+                          <div class="position-absolute top-0 end-0 d-flex align-items-center m-4 z-3">
+                            <input type="checkbox" class="btn-check" id="swiperBtnLove02" autocomplete="off">
+                            <label class="btn btn-white border-0 rounded-pill" for="swiperBtnLove02"
+                              style="padding: 8px 10px;">
+                              <div class="heart"></div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="swiper-slide mb-4 position-relative">
+                          <img class="img-fluid modalRounded" src="../assets/images/card-36.jpg" />
+                          <div class="position-absolute top-0 end-0 d-flex align-items-center m-4 z-3">
+                            <input type="checkbox" class="btn-check" id="swiperBtnLove03" autocomplete="off">
+                            <label class="btn btn-white border-0 rounded-pill" for="swiperBtnLove03"
+                              style="padding: 8px 10px;">
+                              <div class="heart"></div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="swiper-slide mb-4 position-relative">
+                          <img class="img-fluid modalRounded" src="../assets/images/card-37.jpg" />
+                          <div class="position-absolute top-0 end-0 d-flex align-items-center m-4 z-3">
+                            <input type="checkbox" class="btn-check" id="swiperBtnLove04" autocomplete="off">
+                            <label class="btn btn-white border-0 rounded-pill" for="swiperBtnLove04"
+                              style="padding: 8px 10px;">
+                              <div class="heart"></div>
+                            </label>
+                          </div>
                         </div>
                       </div>
-                      <p>邊喝咖啡邊閱讀的好去處!!</p>
                     </div>
-                  </section>
-                  <section>
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                      <div class="d-flex align-items-center">
-                        <img src="../assets/images/author-03.png" alt="photo">
-                        <h6 class="fs-8 ms-4">Samew5151</h6>
-                      </div>
-                      <small class="text-gray-700">2024/04/26 </small>
-                    </div>
-                    <div class="bg-white border rounded-3 p-5 py-lg-6 px-lg-8">
-                      <div class="d-flex align-items-center mb-4">
-                        <p>評分：</p>
-                        <div class="d-flex align-items-center">
-                          <img class="me-2" src="../assets/images/star.svg" alt="photo">
-                          <img class="me-2" src="../assets/images/star.svg" alt="photo">
-                          <img class="me-2" src="../assets/images/star.svg" alt="photo">
-                          <img class="me-2" src="../assets/images/star.svg" alt="photo">
-                          <img src="../assets/images/star.svg" alt="photo">
+                    <div thumbsSlider="" class="swiper indexModalMySwiper mb-4">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img class="img-fluid modalRounded" src="../assets/images/card-11.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="img-fluid modalRounded" src="../assets/images/card-35.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="img-fluid modalRounded" src="../assets/images/card-36.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="img-fluid modalRounded" src="../assets/images/card-37.jpg" />
                         </div>
                       </div>
-                      <p>書籍眾多，讓人放鬆的地方</p>
-                    </div>
-                  </section>
-                </div>
-                <textarea class="form-control border-gray-500 p-6 modalTextrea my-4" id="exampleFormControlTextarea1"
-                  rows="3" placeholder="留下評論......" style="resize:none;height: 126px;"></textarea>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center">
-                    <p>評分：</p>
-                    <div class="d-flex align-items-center">
-                      <div class="d-flex justify-content-center align-items-center me-2">
-                        <input type="checkbox" class="btn-check" id="Starmodal-1" autocomplete="off">
-                        <label class="btn btn-white border-0 rounded-pill p-0" for="Starmodal-1">
-                          <div class="star"></div>
-                        </label>
-                      </div>
-                      <div class="d-flex justify-content-center align-items-center me-2">
-                        <input type="checkbox" class="btn-check" id="Starmodal-2" autocomplete="off">
-                        <label class="btn btn-white border-0 rounded-pill p-0" for="Starmodal-2">
-                          <div class="star"></div>
-                        </label>
-                      </div>
-                      <div class="d-flex justify-content-center align-items-center me-2">
-                        <input type="checkbox" class="btn-check" id="Starmodal-3" autocomplete="off">
-                        <label class="btn btn-white border-0 rounded-pill p-0" for="Starmodal-3">
-                          <div class="star"></div>
-                        </label>
-                      </div>
-                      <div class="d-flex justify-content-center align-items-center me-2">
-                        <input type="checkbox" class="btn-check" id="Starmodal-4" autocomplete="off">
-                        <label class="btn btn-white border-0 rounded-pill p-0" for="Starmodal-4">
-                          <div class="star"></div>
-                        </label>
-                      </div>
-                      <div class="d-flex justify-content-center align-items-center me-2">
-                        <input type="checkbox" class="btn-check" id="Starmodal-5" autocomplete="off">
-                        <label class="btn btn-white border-0 rounded-pill p-0" for="Starmodal-5">
-                          <div class="star"></div>
-                        </label>
-                      </div>
+                      <div class="swiper-button-next swiper-button-next-indexModalMySwiper"></div>
+                      <div class="swiper-button-prev swiper-button-prev-indexModalMySwiper"></div>
                     </div>
                   </div>
-                  <a href="#" class="btn btn-primary px-6 px-lg-13">送出評論</a>
+                  <div class="d-flex align-items-center text-gray-700 mb-2">
+                    <i class="bi bi-geo-alt me-1 px-1"></i>
+                    <small>台北馬山 2000文創園區</small>
+                  </div>
+                  <div class="d-flex align-items-center text-gray-700 mb-2">
+                    <i class="bi bi-clock me-1 px-1"></i>
+                    <small>周一 ~ 周日<span class="ms-6 ms-md-4">08:00~22:00</span></small>
+                  </div>
+                  <picture>
+                    <source media="(min-width: 375px)" srcset="../assets/images/map-lg.png">
+                    <img class="mb-4 img-fluid" src="../assets/images/map-sm.png" alt="photo">
+                  </picture>
+                  <a href="#saledropdown" data-bs-toggle="dropdown" aria-expanded="false"
+                    class="btn btn-outline-shadow d-block mt-auto mb-6 mb-lg-0">領取優惠券</a>
+                  <!-- 優惠券 -->
+                  <div class="dropdown-menu top-50 start-50 translate-middle p-4 border-0 bg-white"
+                    aria-labelledby="dropdownMenuButton1" style="width: 300px; height: 318px;">
+                    <div class="d-flex justify-content-between">
+                      <h5>領取優惠券</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="dropdown" aria-label="Close"></button>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center my-4">
+                      <img src="../assets/images/qrcode.png" alt="qrcode">
+                      <p class="my-4">2 本 95 折</p>
+                    </div>
+                    <div class="d-flex justify-content-end mt-3">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="dropdown"
+                        aria-label="Close">關閉</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7 d-flex flex-column">
+                  <div class="mb-6 d-none d-lg-block">
+                    <h5 class="fs-md-4 mb-4">書香小巷</h5>
+                    <div class="d-flex">
+                      <div class="d-flex align-items-center">
+                        <p class="fs-7">4.3</p>
+                        <img src="../assets/images/star.svg" alt="photo" class="ms-1">
+                      </div>
+                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3 ms-4">
+                        <i class="bi bi-bookmark-fill me-2"></i>
+                        優惠中
+                      </small>
+                    </div>
+                  </div>
+                  <div class="bg-light p-4 p-md-6 border rounded-3 mb-auto modalHeight-100 overflow-y-scroll">
+                    <section class="mb-4">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/author-02.png" alt="photo">
+                          <h6 class="fs-8 ms-4">劉明</h6>
+                        </div>
+                        <small class="text-gray-700">2024/04/26 </small>
+                      </div>
+                      <div class="bg-white border rounded-3 p-5 py-lg-6 px-lg-8">
+                        <div class="d-flex align-items-center mb-4">
+                          <p>評分：</p>
+                          <div class="d-flex align-items-center">
+                            <img class="me-2" src="../assets/images/star.svg" alt="photo">
+                            <img class="me-2" src="../assets/images/star.svg" alt="photo">
+                            <img class="me-2" src="../assets/images/star.svg" alt="photo">
+                            <img class="me-2" src="../assets/images/star.svg" alt="photo">
+                            <img src="../assets/images/starLine.svg" alt="photo">
+                          </div>
+                        </div>
+                        <p>邊喝咖啡邊閱讀的好去處!!</p>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="d-flex align-items-center">
+                          <img src="../assets/images/author-03.png" alt="photo">
+                          <h6 class="fs-8 ms-4">Samew5151</h6>
+                        </div>
+                        <small class="text-gray-700">2024/04/26 </small>
+                      </div>
+                      <div class="bg-white border rounded-3 p-5 py-lg-6 px-lg-8">
+                        <div class="d-flex align-items-center mb-4">
+                          <p>評分：</p>
+                          <div class="d-flex align-items-center">
+                            <img class="me-2" src="../assets/images/star.svg" alt="photo">
+                            <img class="me-2" src="../assets/images/star.svg" alt="photo">
+                            <img class="me-2" src="../assets/images/star.svg" alt="photo">
+                            <img class="me-2" src="../assets/images/star.svg" alt="photo">
+                            <img src="../assets/images/star.svg" alt="photo">
+                          </div>
+                        </div>
+                        <p>書籍眾多，讓人放鬆的地方</p>
+                      </div>
+                    </section>
+                  </div>
+                  <form>
+                    <textarea class="form-control border-gray-500 p-6 modalTextrea my-4"
+                      id="exampleFormControlTextarea1" rows="3" placeholder="留下評論......"
+                      style="resize:none;height: 126px;" required></textarea>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <p>評分：</p>
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex justify-content-center align-items-center me-2">
+                            <input type="checkbox" class="btn-check" id="Starmodal-1" autocomplete="off">
+                            <label class="btn btn-white border-0 rounded-pill p-0" for="Starmodal-1">
+                              <div class="star"></div>
+                            </label>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center me-2">
+                            <input type="checkbox" class="btn-check" id="Starmodal-2" autocomplete="off">
+                            <label class="btn btn-white border-0 rounded-pill p-0" for="Starmodal-2">
+                              <div class="star"></div>
+                            </label>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center me-2">
+                            <input type="checkbox" class="btn-check" id="Starmodal-3" autocomplete="off">
+                            <label class="btn btn-white border-0 rounded-pill p-0" for="Starmodal-3">
+                              <div class="star"></div>
+                            </label>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center me-2">
+                            <input type="checkbox" class="btn-check" id="Starmodal-4" autocomplete="off">
+                            <label class="btn btn-white border-0 rounded-pill p-0" for="Starmodal-4">
+                              <div class="star"></div>
+                            </label>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center me-2">
+                            <input type="checkbox" class="btn-check" id="Starmodal-5" autocomplete="off">
+                            <label class="btn btn-white border-0 rounded-pill p-0" for="Starmodal-5">
+                              <div class="star"></div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary px-6 px-lg-13">送出評論</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- 優惠券 -->
-
       </div>
     </section>
 
