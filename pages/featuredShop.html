@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-haant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>精選商家</title>
+    <title>精選商家｜JO團趣</title>
     <link rel="stylesheet" href="../assets/scss/all.scss">
 </head>
 <body>
@@ -13,28 +13,30 @@
         <div class="featured-banner-img position-absolute top-0 start-0" style="background-image: url(../assets/images/banner-14.png); background-size: contain;"></div>
         <div class="featured-banner-img position-absolute top-0 end-0" style="background-image: url(../assets/images/banner-13.png); background-size: contain;"></div>
         <!-- +++++ -->
-        <div class="featured-banner-line position-absolute d-none d-lg-block" style="background-image: url(../assets/images/Decorative-lines-03.png); height: 200px; width: 21px;"></div>
+        <div class="featured-banner-line position-absolute d-none d-lg-block" style="background: url(../assets/images/Decorative-lines-03.png) no-repeat ; height: 200px; width: 21px;"></div>
         <!-- title -->
-        <div class="featured-banner-center position-absolute top-0 start-50 translate-middle" style="background-image: url(../assets/images/bg-heading.png);background-size: contain;">
-            <p class="featured-banner-title fs-3 fs-lg-2 fw-light text-center">精選商家</p>
-            <img class="featured-title-img mt-2 mt-lg-6" src="../assets/images/Decorative-lines-04.png" alt="++++">
+        <div class="d-flex justify-content-center">
+            <div class="featured-banner-center position-relative d-flex flex-column align-items-center" style="background-image: url(../assets/images/bg-heading.png);background-size: contain;">
+                <img class="featuredShop-h1 position-absolute" src="../assets/images/featuredShop-h1.png" alt="h1">
+                <img class="featured-title-img position-absolute" src="../assets/images/Decorative-lines-04.png" alt="++++">
+            </div>
         </div>
     </div>
-
     <!-- 卡片區塊 -->
     <div class="featured-content container-fluid position-relative d-flex justify-content-center" >
-        <div class="featured-card-all position-absolute">
+        <div class="featured-card-all position-absolute w-100">
             <section class="featured-opacity80 container overflow-hidden mb-10 rounded-3">
-                <div class="row g-6 px-sm-10 py-sm-10">
+                <div class="row g-6 p-4 px-sm-10 py-sm-10 ">
                     <!-- 1 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card position-relative border-0 rounded-3">
                             <img class="rounded-3 card-img-top" src="../assets/images/card-11.png" alt="img" >
-                            <button class="border-0">
-                                <div class="heart-circle d-block bg-white rounded-circle position-absolute top-0 end-0 mt-4 me-4 d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-heart-fill fs-7 text-danger lh-0 mb-0"></i>
-                                </div>
-                            </button>
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart01" autocomplete="off" checked>
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart01" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
                                     <h5 class="card-title me-4 mb-0">咖啡藝廊</h5>
@@ -50,18 +52,19 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card position-relative border-0 rounded-3">
                             <img class="rounded-3 card-img-top" src="../assets/images/card-12.png" alt="img" >
-                            <button class="border-0">
-                                <div class="heart-circle d-block bg-white rounded-circle position-absolute top-0 end-0 mt-4 me-4 d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-heart-fill fs-7 text-danger lh-0"></i>
-                                </div>
-                            </button>
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart02" autocomplete="off" checked>
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart02" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
-                                    <h5 class="card-title me-4 mb-0">咖啡藝廊</h5>
+                                    <h5 class="card-title me-4 mb-0">漫畫天地</h5>
                                     <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
                                 </div>
-                                <p class="card-text text-over mb-6 ">咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br class="d-sm-none">這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...</p>
-                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
+                                <p class="card-text text-over mb-6 ">漫畫天地是一個專為漫畫迷打造的夢幻場所，提供各類漫畫、動漫周邊商品，還會定期舉辦簽名會及漫畫創作講座，讓粉絲們不僅能購買心愛的漫畫，也能與作者近距離互動，體驗豐富的動漫文化。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>臺北市中正區信義路100號</p>
                                 <button type="button" class="btn btn-gray-200 w-100 h9 rounded-1" data-bs-toggle="modal" data-bs-target="#featuredModal">查看完整內容</button>
                             </div>
                         </div>
@@ -70,18 +73,19 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card position-relative border-0 rounded-3">
                             <img class="rounded-3 card-img-top" src="../assets/images/card-13.png" alt="img" >
-                            <button class="border-0">
-                                <div class="heart-circle d-block bg-white rounded-circle position-absolute top-0 end-0 mt-4 me-4 d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-heart-fill fs-7 text-danger lh-0"></i>
-                                </div>
-                            </button>
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart03" autocomplete="off" checked>
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart03" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
-                                    <h5 class="card-title me-4 mb-0">咖啡藝廊</h5>
+                                    <h5 class="card-title me-4 mb-0">香氣工坊</h5>
                                     <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
                                 </div>
-                                <p class="card-text text-over mb-6 ">咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br class="d-sm-none">這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...</p>
-                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
+                                <p class="card-text text-over mb-6 ">香氣工坊專注於天然香精的製作，致力於讓客戶感受到香氛的魅力。這裡不僅有各式香精產品，還提供香氛調配課程，讓顧客能親自創造獨特的香氣，感受生活中的美好與愉悅。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>高雄市鼓山區蓮海路45號</p>
                                 <button type="button" class="btn btn-gray-200 w-100 h9 rounded-1" data-bs-toggle="modal" data-bs-target="#featuredModal">查看完整內容</button>
                             </div>
                         </div>
@@ -90,18 +94,19 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card position-relative border-0 rounded-3">
                             <img class="rounded-3 card-img-top" src="../assets/images/card-25.png" alt="img" >
-                            <button class="border-0">
-                                <div class="heart-circle d-block bg-white rounded-circle position-absolute top-0 end-0 mt-4 me-4 d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-heart-fill fs-7 text-danger lh-0"></i>
-                                </div>
-                            </button>
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart04" autocomplete="off" checked>
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart04" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
-                                    <h5 class="card-title me-4 mb-0">咖啡藝廊</h5>
+                                    <h5 class="card-title me-4 mb-0">動力健身房</h5>
                                     <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
                                 </div>
-                                <p class="card-text text-over mb-6 ">咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br class="d-sm-none">這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...</p>
-                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
+                                <p class="card-text text-over mb-6 ">動力健身房是一個全方位的健身中心，設有先進的健身設備及多樣化的團體課程，如瑜伽、有氧舞蹈等。無論是新手還是專業健身者，這裡都能提供個性化的健身計畫，助你達成健康目標。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台中市南區建國北路88號</p>
                                 <button type="button" class="btn btn-gray-200 w-100 h9 rounded-1" data-bs-toggle="modal" data-bs-target="#featuredModal">查看完整內容</button>
                             </div>
                         </div>
@@ -110,18 +115,19 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card position-relative border-0 rounded-3">
                             <img class="rounded-3 card-img-top" src="../assets/images/card-26.png" alt="img" >
-                            <button class="border-0">
-                                <div class="heart-circle d-block bg-white rounded-circle position-absolute top-0 end-0 mt-4 me-4 d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-heart fs-7 text-danger lh-0"></i>
-                                </div>
-                            </button>
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart05" autocomplete="off">
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart05" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
-                                    <h5 class="card-title me-4 mb-0">咖啡藝廊</h5>
+                                    <h5 class="card-title me-4 mb-0">創意市集</h5>
                                     <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
                                 </div>
-                                <p class="card-text text-over mb-6 ">咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br class="d-sm-none">這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...</p>
-                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
+                                <p class="card-text text-over mb-6 ">創意市集是一個結合在地藝術家與設計師的平台，提供各式手作商品及文創產品，讓顧客能欣賞到獨特的藝術作品。定期舉辦市集活動和工作坊，促進創意交流，成為探索與支持在地藝術的重要據點。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市信義區松壽路22號</p>
                                 <button type="button" class="btn btn-gray-200 w-100 h9 rounded-1" data-bs-toggle="modal" data-bs-target="#featuredModal">查看完整內容</button>
                             </div>
                         </div>
@@ -130,17 +136,18 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card position-relative border-0 rounded-3">
                             <img class="rounded-3 card-img-top" src="../assets/images/card-27.png" alt="img" >
-                            <button class="border-0">
-                                <div class="heart-circle d-block bg-white rounded-circle position-absolute top-0 end-0 mt-4 me-4 d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-heart fs-7 text-danger lh-0"></i>
-                                </div>
-                            </button>
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart06" autocomplete="off">
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart06" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
-                                    <h5 class="card-title me-4 mb-0">咖啡藝廊</h5>
+                                    <h5 class="card-title me-4 mb-0">知識之源圖書館</h5>
                                 </div>
-                                <p class="card-text text-over mb-6 ">咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br class="d-sm-none">這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...</p>
-                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
+                                <p class="card-text text-over mb-6 ">知識之源圖書館擁有豐富的書籍藏量，提供安靜舒適的閱讀空間，讓讀者可以沉浸於書海之中。定期舉辦講座、書友會和親子活動，鼓勵社區居民探索知識的魅力，提升閱讀風氣。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>新北市板橋區文化路118號</p>
                                 <button type="button" class="btn btn-gray-200 w-100 h9 rounded-1" data-bs-toggle="modal" data-bs-target="#featuredModal">查看完整內容</button>
                             </div>
                         </div>
@@ -149,18 +156,19 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card position-relative border-0 rounded-3">
                             <img class="rounded-3 card-img-top" src="../assets/images/card-28.png" alt="img" >
-                            <button class="border-0">
-                                <div class="heart-circle d-block bg-white rounded-circle position-absolute top-0 end-0 mt-4 me-4 d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-heart fs-7 text-danger lh-0"></i>
-                                </div>
-                            </button>
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart07" autocomplete="off">
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart07" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
-                                    <h5 class="card-title me-4 mb-0">咖啡藝廊</h5>
+                                    <h5 class="card-title me-4 mb-0">風情麵店</h5>
                                     <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
                                 </div>
-                                <p class="card-text text-over mb-6 ">咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br class="d-sm-none">這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...</p>
-                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
+                                <p class="card-text text-over mb-6 ">義大利風情義大利麵店專注於提供正宗的義大利美食，所有菜品皆由新鮮食材製作，包括手工義大利麵和薄底披薩。餐廳氛圍溫馨，適合家庭聚餐或浪漫約會，讓每位顧客都能享受一場美食盛宴。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>園市桃園區中正路145號</p>
                                 <button type="button" class="btn btn-gray-200 w-100 h9 rounded-1" data-bs-toggle="modal" data-bs-target="#featuredModal">查看完整內容</button>
                             </div>
                         </div>
@@ -169,17 +177,18 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card position-relative border-0 rounded-3">
                             <img class="rounded-3 card-img-top" src="../assets/images/card-29.png" alt="img" >
-                            <button class="border-0">
-                                <div class="heart-circle d-block bg-white rounded-circle position-absolute top-0 end-0 mt-4 me-4 d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-heart fs-7 text-danger lh-0"></i>
-                                </div>
-                            </button>
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart08" autocomplete="off">
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart08" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
-                                    <h5 class="card-title me-4 mb-0">咖啡藝廊</h5>
+                                    <h5 class="card-title me-4 mb-0">夜幕酒吧</h5>
                                 </div>
-                                <p class="card-text text-over mb-6 ">咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br class="d-sm-none">這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...</p>
-                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
+                                <p class="card-text text-over mb-6 ">夜幕酒吧以其獨特的調酒藝術和輕食而聞名，是放鬆和社交的理想場所。酒吧內部裝潢時尚，氛圍舒適，無論是和朋友聚會還是單獨享受，這裡都能帶來愉悅的夜晚體驗。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大同區南京西路200號</p>
                                 <button type="button" class="btn btn-gray-200 w-100 h9 rounded-1" data-bs-toggle="modal" data-bs-target="#featuredModal">查看完整內容</button>
                             </div>
                         </div>
@@ -188,18 +197,20 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card position-relative border-0 rounded-3">
                             <img class="rounded-3 card-img-top" src="../assets/images/card-30.png" alt="img" >
-                            <button class="border-0">
-                                <div class="heart-circle d-block bg-white rounded-circle position-absolute top-0 end-0 mt-4 me-4 d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-heart fs-7 text-danger lh-0"></i>
-                                </div>
-                            </button>
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart09" autocomplete="off">
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart09" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
-                                    <h5 class="card-title me-4 mb-0">咖啡藝廊</h5>
+                                    <h5 class="card-title me-4 mb-0">星空酒吧</h5>
                                     <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
                                 </div>
-                                <p class="card-text text-over mb-6 ">咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br class="d-sm-none">這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...</p>
-                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
+                                <p class="card-text text-over mb-6 ">星空酒吧結合天文主題和美酒，設有觀星平台讓顧客在星空下品酒。除了特調飲品，酒吧內還會舉辦天文講座和活動，讓顧客在享受飲品的同時，探索宇宙的奧秘，增添夜晚的神秘色彩。
+                                </p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台中市北區中清路12號</p>
                                 <button type="button" class="btn btn-gray-200 w-100 h9 rounded-1" data-bs-toggle="modal" data-bs-target="#featuredModal">查看完整內容</button>
                             </div>
                         </div>
@@ -248,6 +259,7 @@
                     </ul>
                 </nav>
             </div>
+            <%- include('./layout/footer'); -%>
         </div>
         <!-- 左下插圖 -->
         <div class="people-circle position-absolute bottom-0 end-0 d-none d-xxl-block" style="background-image: url(../assets/images/bg-heading-2.png); background-size: contain; background-repeat: no-repeat; width: 391px; height: 344px;"></div>
@@ -255,14 +267,12 @@
         <div class="people-line position-absolute bottom-0 end-0 d-none d-xxl-block" style="background-image: url(../assets/images/Decorative-lines-03.png); background-size: contain; width: 21px;height: 200px;"></div>
     </div>
 
-
-
     <!-- Modal -->
     <div class="modal fade featured-modal" id="featuredModal" tabindex="-1" aria-labelledby="featuredModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content position-relative">
-                <div class="modal-body container">
-                    <button type="button" class="btn-close position-absolute end-0 me-6" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content position-relative px-0 px-lg-10 py-4 py-lg-10">
+                <div class="modal-body container-fluid">
+                    <button type="button" class="featured-modal-close btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="row flex-lg-row-reverse">
                         <!-- 標題 -->
                         <div class="col-12 d-lg-none mb-6">
@@ -278,9 +288,12 @@
                         <!-- 圖片+商家資訊 -->
                         <div class="col-12 col-lg-5 mb-6 mb-lg-0 order-lg-2 d-flex flex-column">
                             <div class="position-relative">
-                                <img src="../assets/images/card-06.png" class="rounded mb-4 w-100 img-fluid" alt="img">
-                                <div class="heart-circle d-lg-none bg-white rounded-circle position-absolute top-0 end-0 mt-4 me-4 d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-heart-fill fs-7 text-danger lh-0"></i>
+                                <img src="../assets/images/card-06.png" class="store-rounded mb-4 w-100 img-fluid" alt="img">
+                                <div class="position-absolute top-0 end-0 d-flex align-items-center m-4 d-lg-none">
+                                    <input type="checkbox" class="btn-check" id="btnHeart10" autocomplete="off" checked>
+                                    <label class="btn btn-white border-0 rounded-pill" for="btnHeart10" style="padding: 8px 10px;">
+                                        <div class="heart"></div>
+                                    </label>
                                 </div>
                             </div>
                             <!-- mobile-商家圖片 -->
@@ -298,7 +311,8 @@
                                     <div class="swiper-slide"><img class="featuredSwiper-img rounded-3" src="../assets/images/card-06.png" alt="img" ></div>
                                     <div class="swiper-slide"><img class="featuredSwiper-img rounded-3" src="../assets/images/card-06.png" alt="img" ></div>
                                 </div>
-                                <div class="swiper-button-next"><i class="bi bi-chevron-right"></i></div>
+                                <div class="swiper-button-prev top-50"></div>
+                                <div class="swiper-button-next top-50"></div>
                             </div>
                             <p class="fs-10 text-gray-700 mb-2"><i class="bi bi-geo-alt me-1"></i>台北馬山 2000文創園區</p>
                             <p class="fs-10 text-gray-700 mb-2"><i class="bi bi-clock me-1"></i>周一 ~ 周日 <span class="ms-6">13:00 - 20:00</span> </p>
@@ -315,7 +329,7 @@
                                 <div class="d-flex align-items-center">
                                     <p class="fs-7 me-1">4.3</p>
                                     <img class="me-4" src="../assets/images/star-full.png" alt="star" width="16" height="16">
-                                    <p class="h10 badge bg-C0ED5F text-dark ms-4"><i class="bi bi-bookmark-fill me-2"></i>優惠中</p>
+                                    <p class="h10 badge bg-C0ED5F text-dark"><i class="bi bi-bookmark-fill me-2"></i>優惠中</p>
                                 </div>
                             </div>
                             <!-- 留言板 -->
@@ -323,7 +337,7 @@
                                 <!-- 1 -->
                                 <div class="d-flex align-items-center mb-2">
                                     <img class="me-4" src="../assets/images/author-02.png" alt="people">
-                                    <h8>劉明</h8>
+                                    <h8 class="fw-bold">劉明</h8>
                                     <p class="fs-10 text-gray-700 ms-auto">2024/04/26</p>
                                 </div>
                                 <div class="bg-white mb-4 rounded-3 py-5 py-lg-6 ps-5 ps-lg-8">
@@ -342,7 +356,7 @@
                                 <!-- 2 -->
                                 <div class="d-flex align-items-center mb-2">
                                     <img class="me-4" src="../assets/images/author-03.png" alt="people">
-                                    <h8>Samew5151</h8>
+                                    <h8 class="fw-bold">Samew5151</h8>
                                     <p class="fs-10 text-gray-700 ms-auto">2024/04/26</p>
                                 </div>
                                 <div class="bg-white rounded-3 py-5 py-lg-6 ps-5 ps-lg-8">
@@ -360,49 +374,85 @@
                                 </div>
                             </div>
                             <!-- 輸入框+評分 -->
-                            <div class="message-texarea mt-auto">
-                                <textarea class="featured-texarea form-control border-gray-500 mb-4" placeholder="留下評論......" ></textarea>
+                            <form class="message-texarea mt-auto" id="commentForm">
+                                <textarea id="messageText"  class="featured-texarea form-control border-gray-500 mb-4" placeholder="留下評論......" required></textarea>
                                 <div class="d-flex align-items-center">
                                     <p>評分：</p>
-                                    <ul class="list-unstyled d-flex d-grid gap-2 mb-0">
-                                        <li class="touchStar p-0 lh-0"><img src="../assets/images/star.png" alt="star" width="16" height="16"></li>
-                                        <li class="touchStar"><img src="../assets/images/star.png" alt="star" width="16" height="16"></li>
-                                        <li class="touchStar"><img src="../assets/images/star.png" alt="star" width="16" height="16"></li>
-                                        <li class="touchStar"><img src="../assets/images/star.png" alt="star" width="16" height="16"></li>
-                                        <li class="touchStar"><img src="../assets/images/star.png" alt="star" width="16" height="16"></li>
+                                    <ul class="starGroup list-unstyled d-flex align-items-center d-grid gap-2 mb-0">
+                                        <li class="lh-0">
+                                            <input type="checkbox" class="btn-check" id="btnStar01" autocomplete="off">
+                                            <label class="btn border-0 p-0 " for="btnStar01">
+                                                <div class="star"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="btn-check" id="btnStar02" autocomplete="off">
+                                            <label class="btn border-0 p-0" for="btnStar02">
+                                                <div class="star"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="btn-check" id="btnStar03" autocomplete="off">
+                                            <label class="btn border-0 p-0" for="btnStar03">
+                                                <div class="star"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="btn-check" id="btnStar04" autocomplete="off">
+                                            <label class="btn border-0 p-0" for="btnStar04">
+                                                <div class="star"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="btn-check" id="btnStar05" autocomplete="off">
+                                            <label class="btn border-0 p-0" for="btnStar05">
+                                                <div class="star"></div>
+                                            </label>
+                                        </li>
                                     </ul>
-                                    <button class="message-btn btn btn-primary ms-auto h9 flex-nowrap">送出評論</button>
+                                    <button type="submit" class="message-btn btn btn-primary ms-auto h9 flex-nowrap">送出評論</button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
     <!-- QRcode-modal -->
     <div class="featuredQRcode modal fade" id="featured-QRcode" tabindex="-1" aria-labelledby="featured-QRcode" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header border-0">
+            <div class="modal-content bg-white">
+                <div class="modal-header border-0 bg-white">
                     <h6 class="modal-title">領取優惠券</h6>
-                    <button type="button" class="btn-close fs-9" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close fs-9 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body mx-4 border-0 d-flex flex-column align-items-center">
+                <div class="modal-body mx-4 border-0 d-flex flex-column align-items-center bg-white">
                     <img class="mb-4" src="../assets/images/qrcode.png" alt="QRcode" width="120" height="120">
                     <p class="mb-4">2 本 95 折</p>
                 </div>
-                <div class="modal-footer border-0">
+                <div class="modal-footer border-0 bg-white">
                     <button type="button" class="btn btn-gray-200 h9" data-bs-dismiss="modal">關閉</button>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- 評論成功-modal -->
+        <div class="featuredSuccess modal fade" id="featuredSuccess" tabindex="-1" aria-labelledby="featuredSuccess" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-white">
+                    <div class="modal-body mx-4 border-0 d-flex flex-column align-items-center bg-white">
+                        <h6 class="modal-title">評論成功</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
 </div>
 
 
-    <%- include('./layout/footer'); -%>
+
     <script type="module" src="../main.js"></script>
 </body>
 </html>

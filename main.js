@@ -85,9 +85,10 @@ var swiper = new Swiper(".index-featuredShopSwiper", {
 
 // 精選商家-彈窗內商家圖片
 var swiper = new Swiper(".featuredSwiper", {
-  slidesPerView: "auto",
-  spaceBetween: 16,
-  navigation: {
-    nextEl: ".swiper-button-next",
-  },
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
