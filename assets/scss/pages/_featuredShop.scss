@@ -1,0 +1,287 @@
+@mixin self-sm{
+    @media(min-width:576px){
+        @content ;
+    }
+}
+@mixin self-md{
+    @media(min-width:768px){
+        @content ;
+    }
+}
+@mixin self-lg{
+    @media(min-width:992px){
+        @content ;
+    }
+}
+@mixin self-xxl{
+    @media(min-width:1400px){
+        @content ;
+    }
+}
+
+// banner
+.featured-banner{
+    max-width: 100%;
+    height: 300px;
+    z-index: 1;
+    @include self-sm{
+        height: 250px;
+    }
+    @include self-lg{
+        height: 350px;
+    }
+    @include self-xxl{
+        height: 600px;
+    }
+
+}
+// banner-左右
+.featured-banner-img{
+    width: 168px;
+    height: 168px;
+    z-index: 3;
+    @include self-sm{
+        width: 250px;
+        height: 250px;
+    }
+    @include self-lg{
+        width: 350px;
+        height: 350px;
+    }
+    @include self-xxl{
+        width: 600px;
+        height: 600px;
+        
+    }
+}
+// banner-中間
+.featured-banner-center{
+    width: 276px ;
+    height: 245px;
+    margin-top: 104px;
+    @include self-sm{
+        width: 276px;
+        height: 245px;
+        margin-top: 60px;
+    }
+    @include self-xxl{
+        width: 451px;
+        height: 400px;
+        margin-top: 0;
+    }
+}
+.featuredShop-h1{
+    max-width: 192px;
+    height: auto;
+    margin-top: 59px;
+    padding: 13px 0px;
+    @include self-sm{
+        max-width: 130px;
+        margin-top: 80px;
+    }
+    @include self-xxl{
+        max-width: 320px;
+        margin-top: 80px;
+    }
+}
+.featured-title-img{
+    max-width: 115px;
+    height: auto;
+    margin-top: 127px;
+    @include self-xxl{
+        max-width: 191px;
+        margin-top: 216px;
+
+    }
+}
+// ++++
+.featured-banner-line{
+    bottom: -144px;
+    margin-left: 48px;
+    z-index: 9999;
+}
+.people-line{
+    margin-bottom: 74px;
+    margin-right: 80px;
+}
+
+// ==============卡片區塊=================
+
+.featured-content{
+    @include self-xxl{
+        height: 2026px;
+    }
+    .card{
+        background-color: rgba(255, 255, 255, 0.8) !important; 
+    }
+}
+.people-circle{
+    margin-bottom: 175px;
+    margin-right: 44px;
+}
+.featured-card-all{
+    z-index: 5;
+    @include self-xxl{
+        top: -296px;
+    }
+}
+.featured-opacity80{
+    background-color: rgba(255, 255, 255, 0.8) !important; 
+}
+.bg-C0ED5F{
+    background: #C0ED5F;
+}
+.text-over{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3; // 限制行數為3行
+    text-overflow: ellipsis;
+}
+.heart-circle{
+    width: 40px;
+    height: 40px;
+}
+.featured{
+    .heart {
+        background: url("/assets/images/heart.svg") no-repeat;
+        width: 20px;
+        height: 24px;
+        display: block;
+    }
+
+    .btn-check:checked+.btn,
+    :not(.btn-check)+.btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+        .heart {
+            background: url("/assets/images/heart-fill.svg") no-repeat;
+        }
+    }
+    
+}
+
+
+//========= Modal ===========
+.store-rounded{
+    border-radius: 4px;
+    @include self-lg{
+        border-radius: 20px;
+    }
+}
+.featuredSwiper{
+    .swiper-slide,.featuredSwiper-img{
+        width: 108px;
+        height: 108px;
+    }
+    .swiper-button-prev,.swiper-button-next{
+        width: 15px;
+        height: 24px;
+        color: #fff;
+        &::after{
+            font-size: 24px;
+        }
+    }
+}
+.text-47481F{
+    color: #47481F;
+}
+.border-2px{
+    outline: 2px solid #333333;
+}
+.messageBoard{
+    @include self-lg{
+        padding-top: 24px !important;
+        padding-bottom: 143px !important;
+    }
+}
+.message-texarea {
+    ::placeholder {
+        color: #ced4da;
+    }
+    .featured-texarea{
+        height: 126px !important;
+        resize:none;
+    }
+    .btn{
+        padding: 8px 26px !important;
+        @include self-lg{
+            padding: 8px 54px !important;
+        }
+    }
+    li{
+        line-height: 0 !important;
+
+    }
+    
+
+}
+.featured-modal{
+    li{
+        line-height: 0 !important;
+    }
+    .featured-modal-close{
+        top: 16px;
+        right: 16px;
+        &:focus{
+            --bs-btn-close-focus-shadow: none !important;
+        }
+        @include self-lg{
+            top: -16px;
+            right: -16px; 
+        } 
+    }
+    .btn-close{
+        font-size: 16px;
+        @include self-lg{
+            font-size: 25px;
+        }
+    }
+    .modal-dialog{
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    // 評分星星
+    .star {
+        background: url("/assets/images/star.png") no-repeat;
+        background-size: cover;
+        width: 16px;
+        height: 16px;
+        display: block;
+        
+    }
+
+    .btn-check:checked+.btn,
+    :not(.btn-check)+.btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+        .star {
+            background: url("/assets/images/star-full.png") no-repeat;
+            background-size: cover;
+        }
+    }
+}
+.starGroup{
+    .btn{
+        padding: 0 !important;
+        
+    }
+}
+
+
+// QRcode
+.featuredQRcode,.featuredSuccess{
+    .modal-content {
+        border-radius: 4.8px;
+    }
+    .modal-title{
+        color: #47481F;
+    }
+}
+// *,*::after,*::before{
+//     outline: 1px solid red;
+    
+// }
+
