@@ -176,6 +176,48 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.error("Date input element not found");
   }
+
+  const activitySelect = document.getElementById("activitySelect");
+
+  // 默认 select 的文本颜色
+  activitySelect.style.color = "#808080";
+
+  // 监听 select 下拉框点击事件，重置颜色
+  activitySelect.addEventListener("click", function () {
+    // 当点击时，重置所有选项的颜色为灰色
+    for (let i = 0; i < activitySelect.options.length; i++) {
+      activitySelect.options[i].style.color = "#808080";
+    }
+  });
+
+  // 监听选择更改事件
+  activitySelect.addEventListener("change", function () {
+    // 将选中项的文本颜色设置为深色
+    this.options[this.selectedIndex].style.color = "#333333";
+    // 改变 select 自身显示的文本颜色为深色
+    this.style.color = "#333333";
+  });
+
+  const locationSelect = document.getElementById("locationSelect");
+
+  // 默认 select 的文本颜色
+  locationSelect.style.color = "#808080";
+
+  // 监听 select 下拉框点击事件，重置颜色
+  locationSelect.addEventListener("click", function () {
+    // 当点击时，重置所有选项的颜色为灰色
+    for (let i = 0; i < locationSelect.options.length; i++) {
+      locationSelect.options[i].style.color = "#808080";
+    }
+  });
+
+  // 监听选择更改事件
+  locationSelect.addEventListener("change", function () {
+    // 将选中项的文本颜色设置为深色
+    this.options[this.selectedIndex].style.color = "#333333";
+    // 改变 select 自身显示的文本颜色为深色
+    this.style.color = "#333333";
+  });
 });
 
 //interaction
