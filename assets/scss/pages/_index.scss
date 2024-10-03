@@ -1,3 +1,6 @@
+// 最新消息
+
+
 // 新手指南
 .qaBg {
     position: relative;
@@ -83,9 +86,9 @@
         top: calc(50% - 48px);
 
         @media (min-width:576px) {
-            width: 272px;
-            height: 288px;
-            right: calc(0% - 40px);
+            width: 242px;
+            height: 258px;
+            right: calc(0% - 5px);
         }
 
         @media (min-width:1200px) {
@@ -129,7 +132,7 @@
         @media (min-width:1700px) {
             width: 354px;
             height: 490px;
-            left: calc(100% + 90px);
+            left: calc(100% + 25px);
             bottom: calc(0% - 36px);
             transform: translateX(-50%);
         }
@@ -176,6 +179,11 @@
             margin-right: 80px;
         }
     }
+}
+
+//輪播+共用
+.index-newActivity,
+.index-featuredShop {
 
     // 輪播條
     .swiper-pagination-bullet {
@@ -201,14 +209,20 @@
 
     //輪播按鈕
     .swiper-button-next,
-    .swiper-button-prev {
+    .swiper-button-prev{
+        content: "";
+    }
+    .swiper-button-next-indexNewActivity,
+    .swiper-button-prev-indexNewActivity,
+    .swiper-button-next-indexFeaturedShop,
+    .swiper-button-prev-indexFeaturedShop {
         color: #333333;
         background: #F2F2F2;
         width: 48px;
         height: 48px;
         border-radius: 50rem;
         position: absolute;
-        display: none;
+        display: none; 
 
         &::after {
             font-family: 'bootstrap-icons';
@@ -222,16 +236,17 @@
             align-items: center;
         }
     }
-
-    .swiper-button-next {
+    .swiper-button-next-indexNewActivity,
+    .swiper-button-next-indexFeaturedShop {
         left: calc(100% + 24px);
 
         &::after {
             content: "\F285";
         }
     }
-
-    .swiper-button-prev {
+    
+    .swiper-button-prev-indexNewActivity,
+    .swiper-button-prev-indexFeaturedShop {
         left: calc(0% - 72px);
 
         &::after {
@@ -239,7 +254,7 @@
         }
     }
 
-    // 熱門商家卡片內文
+    // 卡片內文
     .card-text-truncate {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -248,7 +263,7 @@
         -webkit-line-clamp: 3;
     }
 
-    // 熱門商家圖片裝飾
+    // 愛心圖片裝飾
     .heart {
         background: url(../assets/images/heart.svg) no-repeat;
         width: 20px;
@@ -264,5 +279,84 @@
         .heart {
             background: url(../assets/images/heart-fill.svg) no-repeat;
         }
+    }
+}
+
+
+// modal
+.swiper-button-next-indexModalMySwiper,
+.swiper-button-prev-indexModalMySwiper {
+    color: white;
+    border-radius: 50rem;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    &::after {
+        font-family: 'bootstrap-icons';
+        line-height: 1.5;
+        font-weight: 900;
+        font-size: 24px;
+    }
+
+    @media (min-width: 1460px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.swiper-button-next-indexModalMySwiper {
+    right: 0;
+    
+    &::after {
+        content: "\F285";
+    }
+}
+
+.swiper-button-prev-indexModalMySwiper {
+    left: 0;
+    
+    &::after {
+        content: "\F284";
+    }
+}
+.modalTextrea::placeholder{
+    color: #D9D9D9;
+}
+.modalRounded{
+    border-radius: 4px;
+    @media (min-width:992px) {
+        border-radius: 20px;
+    }
+}
+.modalHeight-100{
+    height: auto;
+    @media (min-width:992px) {
+        height: 100%;
+    }
+}
+
+// 星星
+.star {
+    background: url(../assets/images/starLine.svg) no-repeat;
+    background-size: auto;
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.btn-check:checked+.btn,
+:not(.btn-check)+.btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+    .star {
+        background: url(../assets/images/star.svg) no-repeat;
+    }
+}
+.btn-check + .btn:hover{
+    .star {
+        background: url(../assets/images/star.svg) no-repeat;
     }
 }
