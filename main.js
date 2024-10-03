@@ -132,6 +132,52 @@ var swiper = new Swiper(".storeSwiper", {
   },
 });
 
+// 揪團活動 - Jo到夥伴 (選擇日期功能) -- 倫倫
+document.addEventListener("DOMContentLoaded", function () {
+  const dateInput = document.getElementById("dateInput");
+
+  if (dateInput) {
+    // 确认 dateInput 不为 null
+
+    dateInput.addEventListener("click", function () {
+      dateInput.classList.add("cus-input-focus");
+    });
+
+    // 在 document 上添加 click 事件监听器
+    document.addEventListener("click", function (event) {
+      // 检查点击的目标是否是 dateInput
+      if (!dateInput.contains(event.target)) {
+        dateInput.classList.remove("cus-input-focus");
+      }
+    });
+
+    dateInput.addEventListener("change", function () {
+      const styleSheet = document.styleSheets[0];
+
+      if (dateInput.value) {
+        styleSheet.insertRule(
+          'input[type="date"].custom-date::before { color: transparent; }',
+          styleSheet.cssRules.length
+        );
+        dateInput.classList.add("text-dark");
+      } else {
+        styleSheet.insertRule(
+          'input[type="date"].custom-date::before { color: #808080; }',
+          styleSheet.cssRules.length
+        );
+        dateInput.classList.remove("text-dark");
+      }
+
+      // 使用 Promise 以实现并行执行
+      Promise.resolve().then(() => {
+        dateInput.classList.remove("cus-input-focus"); // 同时移除
+      });
+    });
+  } else {
+    console.error("Date input element not found");
+  }
+});
+
 //interaction
 //篩選部分
 
@@ -157,42 +203,4 @@ typeElement.addEventListener("change", function () {
     this.style.color = "#000000"; // 黑色
     this.style.fontWeight = "700"; // 字重變粗
   }
-});
-
-// 揪團活動 - Jo到夥伴 (選擇日期功能) -- 倫倫
-const dateInput = document.getElementById("dateInput");
-
-dateInput.addEventListener("click", function () {
-  dateInput.classList.add("cus-input-focus");
-});
-
-// 在 document 上添加 click 事件监听器
-document.addEventListener("click", function (event) {
-  // 检查点击的目标是否是 dateInput
-  if (!dateInput.contains(event.target)) {
-    dateInput.classList.remove("cus-input-focus");
-  }
-});
-
-dateInput.addEventListener("change", function () {
-  const styleSheet = document.styleSheets[0];
-
-  if (dateInput.value) {
-    styleSheet.insertRule(
-      'input[type="date"].custom-date::before { color: transparent; }',
-      styleSheet.cssRules.length
-    );
-    dateInput.classList.add("text-dark");
-  } else {
-    styleSheet.insertRule(
-      'input[type="date"].custom-date::before { color: #808080; }',
-      styleSheet.cssRules.length
-    );
-    dateInput.classList.remove("text-dark");
-  }
-
-  // 使用 Promise 以实现并行执行
-  Promise.resolve().then(() => {
-    dateInput.classList.remove("cus-input-focus"); // 同时移除
-  });
 });
