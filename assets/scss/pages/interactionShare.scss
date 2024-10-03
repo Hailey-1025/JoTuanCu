@@ -1,0 +1,56 @@
+.interactionShare {
+    .form-container {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    // input[type="text"],
+    // input[type="date"],
+    // input[type="file"],
+    // textarea {
+    //     width: 100%;
+    //     padding: 10px;
+    //     border: 1px solid #ccc;
+    //     border-radius: 4px;
+    //     font-size: 16px;
+    // }
+
+
+    .photo-upload {
+        text-align: center;
+        border: 2px dashed #ccc;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .submit-btn {
+        text-align: right;
+    }
+
+    button {
+        border: 2px solid transparent !important;
+    }
+
+    button:hover{
+        border: 2px solid #333333 !important;
+    }
+
+    button:active {
+        box-shadow: 4px 4px 0px -1px #CEFF66, 4px 4px 0px 1px #FCFF6F inset;
+    }
+
+    @media screen and (max-width: 400px) {
+        .label-custom{
+            width: 21px;
+        }
+    }
+}
