@@ -9,7 +9,7 @@ var swiper = new Swiper(".index-newActivitySwiper", {
   slidesPerView: 1,
   spaceBetween: 24,
   centeredSlides: true,
-  
+
   breakpoints: {
     "@0.00": {
       slidesPerView: 1.25,
@@ -37,7 +37,6 @@ var swiper = new Swiper(".index-newActivitySwiper", {
     prevEl: ".swiper-button-prev-indexNewActivity",
   },
 });
-
 
 // 熱門商家
 var swiper = new Swiper(".index-featuredShopSwiper", {
@@ -104,15 +103,14 @@ var swiper2 = new Swiper(".indexModalMySwiper2", {
   },
 });
 
-
 // 精選商家-彈窗內商家圖片
-var swiper = new Swiper(".featuredSwiper",{
-    slidesPerView: "auto",
-    spaceBetween: 16,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+var swiper = new Swiper(".featuredSwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 var swiper = new Swiper(".storeSwiper", {
@@ -134,6 +132,32 @@ var swiper = new Swiper(".storeSwiper", {
   },
 });
 
+//interaction
+//篩選部分
+
+const blockElement = document.getElementById("block");
+
+blockElement.addEventListener("change", function () {
+  if (this.value === "0") {
+    this.style.color = "#808080"; // 灰色
+    this.style.fontWeight = "400"; // 字重回到普通
+  } else {
+    this.style.color = "#000000"; // 黑色
+    this.style.fontWeight = "700"; // 字重變粗
+  }
+});
+
+const typeElement = document.getElementById("type");
+
+typeElement.addEventListener("change", function () {
+  if (this.value === "0") {
+    this.style.color = "#808080"; // 灰色
+    this.style.fontWeight = "400"; // 字重回到普通
+  } else {
+    this.style.color = "#000000"; // 黑色
+    this.style.fontWeight = "700"; // 字重變粗
+  }
+});
 
 // 揪團活動 - Jo到夥伴 (選擇日期功能) -- 倫倫
 const dateInput = document.getElementById("dateInput");
@@ -171,30 +195,4 @@ dateInput.addEventListener("change", function () {
   Promise.resolve().then(() => {
     dateInput.classList.remove("cus-input-focus"); // 同时移除
   });
-});
-
-//interaction
-//篩選部分
-const blockElement = document.getElementById("block");
-
-blockElement.addEventListener("change", function () {
-  if (this.value === "0") {
-    this.style.color = "#808080"; // 灰色
-    this.style.fontWeight = "400"; // 字重回到普通
-  } else {
-    this.style.color = "#000000"; // 黑色
-    this.style.fontWeight = "700"; // 字重變粗
-  }
-});
-
-const typeElement = document.getElementById("type");
-
-typeElement.addEventListener("change", function () {
-  if (this.value === "0") {
-    this.style.color = "#808080"; // 灰色
-    this.style.fontWeight = "400"; // 字重回到普通
-  } else {
-    this.style.color = "#000000"; // 黑色
-    this.style.fontWeight = "700"; // 字重變粗
-  }
 });

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>揪團活動</title>
+    <title>揪團活動｜JO團趣</title>
   </head>
 
   <body>
@@ -12,47 +12,58 @@
 
     <!-- 揪團活動 - banner -- 倫倫 -->
     <section class="groupActivities overflow-hidden">
-      <div class="container mb-md-10 mb-0">
+      <div class="banner-deco-wrap">
+        <picture class="groupActivities-bg-heading-line-cus">
+          <source
+            media="(max-width: 575px)"
+            srcset="../assets/images/groupActivities-bg-heading-line-sm.svg"
+          />
+
+          <img
+            src="../assets/images/groupActivities-bg-heading-line.svg"
+            alt="groupActivities-bg-heading-line"
+          />
+        </picture>
+      </div>
+      <div class="container groupActivitiesBanner">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 mb-sm-10 mb-0">
             <div
-              class="d-flex justify-content-center position-relative pt-md-10 pt-12"
+              class="d-flex justify-content-center position-relative pt-sm-10 pt-12"
             >
-              <picture class="groupActivitiesLine01">
-                <source
-                  media="(max-width: 375px)"
-                  srcset="../assets/images/groupActivitiesLine01-sm.png"
-                />
-
-                <img
-                  src="../assets/images/groupActivitiesLine01.png"
-                  alt="groupActivitiesLine01"
-                />
-              </picture>
-
-              <picture class="groupActivities-bg-heading">
+              <picture class="groupActivities-bg-heading-cus">
                 <source
                   media="(max-width: 575px)"
-                  srcset="../assets/images/groupActivities-bg-heading-sm.png"
+                  srcset="../assets/images/groupActivities-bg-heading-sm.svg"
                 />
 
                 <img
-                  src="../assets/images/bg-heading.png"
+                  src="../assets/images/groupActivities-bg-heading.svg"
                   alt="groupActivities-bg-heading"
                 />
               </picture>
+              <div class="d-flex flex-column align-items-center pt-sm-27 pt-18">
+                <picture class="groupActivitiesBannerTitle">
+                  <source
+                    media="(max-width: 575px)"
+                    srcset="../assets/images/groupActivitiesBannerTitleSm.svg"
+                  />
 
-              <div class="d-flex flex-column align-items-center pt-md-24 pt-18">
-                <h2 class="fs-md-1 fs-sm-118 fs-3 fw-normal">找伴就來揪團趣</h2>
+                  <img
+                    src="../assets/images/groupActivitiesBannerTitle.svg"
+                    alt="groupActivitiesBannerTitle"
+                  />
+                </picture>
+
                 <p
-                  class="mt-md-6 mb-md-12 mt-sm-12 mb-sm-16 my-4 fs-sm-9 fs-10 letter-rwd text-center"
+                  class="mt-sm-3 mt-4 mb-sm-12 mb-4 fs-sm-9 fs-10 letter-rwd text-center"
                   style="width: 321px"
                 >
                   不論你是想揪伴吃飯、看電影、運動、旅遊，這裡都可以滿足你的需求。想找到志同道合的夥伴嗎？立馬開團吧！
                 </p>
                 <button
                   type="button"
-                  class="btn border-2 border-dark btn-cusShadow"
+                  class="btn border-2 border-dark btn-outline-shadow"
                 >
                   馬上Jo!
                 </button>
@@ -63,11 +74,6 @@
       </div>
 
       <picture class="groupActivities-banner-rwd d-flex justify-content-center">
-        <!-- <source
-          media="(max-width: 767px)"
-          srcset="../assets/images/banner-02-sm.png"
-        /> -->
-
         <source
           media="(max-width: 375px)"
           srcset="../assets/images/banner-02-sm.png"
@@ -82,7 +88,9 @@
     </section>
 
     <!-- 揪團活動 - Jo到夥伴 -- 倫倫 -->
-    <section class="groupActivities-search py-50 overflow-hidden">
+    <section
+      class="groupActivities-search py-sm-50 pt-20 pb-30 overflow-hidden"
+    >
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-9 col-12 mx-auto">
@@ -97,24 +105,32 @@
                   class="form-select form-select-sm mb-2 groupActivities-search-cusSelect"
                   aria-label="Small select example"
                 >
-                  <option selected>選擇活動</option>
+                  <option value="" disabled selected hidden>選擇活動</option>
+                  <option value="sport">運動</option>
+                  <option value="learn">學習</option>
                   <option value="food">美食</option>
+                  <option value="travel">旅遊</option>
+                  <option value="activities">休閒活動</option>
                 </select>
-                <div class="mb-2 position-relative">
-                  <label for="locationInput" class="form-label d-none"
-                    >選擇地點</label
-                  >
+                <div class="position-relative">
                   <img
                     src="../assets/images/groupActivities-search-locationIcon.png"
                     alt="groupActivities-search-locationIcon"
                     class="position-absolute groupActivities-locationIcon"
                   />
-                  <input
-                    type="text"
-                    class="form-control groupActivities-search-cusInput"
-                    id="locationInput"
-                    placeholder="選擇地點"
-                  />
+                  <select
+                    class="form-select form-select-sm mb-2 form-select-cusLocation"
+                    aria-label="Small select example"
+                  >
+                    <option value="" disabled selected hidden>選擇地點</option>
+                    <option value="Keelung">基隆</option>
+                    <option value="Taipei">台北</option>
+                    <option value="NewTaipei">新北</option>
+                    <option value="Taichung">台中</option>
+                    <option value="Tainan">台南</option>
+                    <option value="Kaohsiung">高雄</option>
+                    <option value="Other">其他</option>
+                  </select>
                 </div>
 
                 <!-- <div class="mb-10 position-relative">
@@ -151,7 +167,7 @@
                 </div>
                 <button
                   type="submit"
-                  class="btn border-2 border-dark btn-cusShadow mx-auto"
+                  class="btn border-2 border-dark btn-outline-shadow mx-auto"
                 >
                   試試這個吧！
                 </button>
