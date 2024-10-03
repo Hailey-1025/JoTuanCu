@@ -9,7 +9,7 @@ var swiper = new Swiper(".index-newActivitySwiper", {
   slidesPerView: 1,
   spaceBetween: 24,
   centeredSlides: true,
-  
+
   breakpoints: {
     "@0.00": {
       slidesPerView: 1.25,
@@ -106,24 +106,26 @@ var swiper2 = new Swiper(".indexModalMySwiper2", {
 
 
 // 精選商家-彈窗內商家圖片
-var swiper = new Swiper(".featuredSwiper",{
-    slidesPerView: "auto",
-    spaceBetween: 16,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
-var swiper = new Swiper(".storeSwiper", {
-  slidesPerView: 4,
+var swiper = new Swiper(".featuredSwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
 
+//interaction
+var swiper = new Swiper(".storeSwiper", {
+  spaceBetween: 4,
+  slidesPerView: 4,
+  spaceBetween: 13,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   breakpoints: {
-    1200: {
+    992: {
       slidesPerView: 4,
       spaceBetween: 16,
       navigation: {

@@ -76,6 +76,14 @@
         box-shadow: 0px 10px 40px 0px #0000000F;
         border-radius: 20px;
 
+        button {
+            border: 2px solid transparent !important;
+        }
+
+        button:hover{
+            border: 2px solid #333333 !important;
+        }
+
         button:active {
             box-shadow: 4px 4px 0px -1px #CEFF66, 4px 4px 0px 1px #FCFF6F inset;
         }
@@ -121,23 +129,10 @@
     .modal {
 
         --bs-modal-margin: 1.5rem;
-
-        .swiper-slide img {
-            display: block;
-            object-fit: cover;
-        }
     
         .swiper{
             width: auto;
             max-width: 416px;
-        }
-    
-        .swiper-wrapper{
-            justify-content: space-between;
-        }
-    
-        .swiper-slide{
-            width: 64px !important;
         }
     
         .swiper-button-next, .swiper-button-prev{
@@ -147,8 +142,16 @@
         }
     
         .footer {
+
+            button {
+                border: 2px solid transparent !important;
+            }
+
             button:active {
-                box-shadow: 4px 4px 0px -1px #CEFF66, 4px 4px 0px 1px #FCFF6F inset;
+                box-shadow: 4px 4px 0px -1px #CEFF66,4px 4px 0px 1px #FCFF6F inset;
+            }
+            button:hover{
+                border: 2px solid #333333 !important;
             }
         }
     
@@ -159,17 +162,7 @@
             /* 調整透明度 (1 是完全不透明) */
         }
 
-        .other-user {
-            width: 207px;
-        }
-
-        .store-img {
-            border-radius: 4px;
-        }
-
-        .store-img-small {
-            width: 64px;
-            height: 64px;
+        .store-img,.store-img-small {
             border-radius: 4px;
         }
 
@@ -184,8 +177,6 @@
             }
 
             .store-img-small {
-                width: 108px;
-                height: 108px;
                 border-radius: 20px;
             }
 
@@ -212,10 +203,6 @@
             .swiper{
                 width: 100%;
                 max-width: 100%;
-            }
-        
-            .swiper-slide{
-                width: auto !important;
             }
 
         }
