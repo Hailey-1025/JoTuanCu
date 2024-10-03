@@ -177,3 +177,43 @@ input[type="date"] {
   color: #808080;
   cursor: pointer;
 }
+
+.groupActivitiesNextDeco {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.groupActivities-cus-card {
+  background-color: #fff;
+}
+
+.groupActivities-cus-card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.cus-groupActivities-card-body {
+  padding: 16px 24px;
+  background-color: #fff;
+}
+
+.groupActivities-cus-card-footer {
+  padding: 20px 24px;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  &:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.cus-groupActivities-card-body-heart {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  cursor: pointer;
+}
