@@ -113,15 +113,17 @@ var swiper = new Swiper(".featuredSwiper", {
   },
 });
 
+//interaction
 var swiper = new Swiper(".storeSwiper", {
+  spaceBetween: 4,
   slidesPerView: 4,
+  spaceBetween: 13,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
   breakpoints: {
-    1200: {
+    992: {
       slidesPerView: 4,
       spaceBetween: 16,
       navigation: {

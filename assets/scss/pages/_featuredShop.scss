@@ -33,7 +33,6 @@
     @include self-xxl{
         height: 600px;
     }
-
 }
 // banner-左右
 .featured-banner-img{
@@ -70,13 +69,14 @@
         margin-top: 0;
     }
 }
+// 大標題
 .featuredShop-h1{
     max-width: 192px;
     height: auto;
     margin-top: 59px;
     padding: 13px 0px;
     @include self-sm{
-        max-width: 130px;
+        max-width: 256px;
         margin-top: 80px;
     }
     @include self-xxl{
@@ -88,10 +88,13 @@
     max-width: 115px;
     height: auto;
     margin-top: 127px;
+    @include self-sm{
+        max-width: 153px;
+        margin-top: 171.5px;
+    }
     @include self-xxl{
         max-width: 191px;
         margin-top: 216px;
-
     }
 }
 // ++++
@@ -128,6 +131,7 @@
 .featured-opacity80{
     background-color: rgba(255, 255, 255, 0.8) !important; 
 }
+
 .bg-C0ED5F{
     background: #C0ED5F;
 }
@@ -138,6 +142,7 @@
     -webkit-line-clamp: 3; // 限制行數為3行
     text-overflow: ellipsis;
 }
+// 愛心樣式
 .heart-circle{
     width: 40px;
     height: 40px;
@@ -149,7 +154,6 @@
         height: 24px;
         display: block;
     }
-
     .btn-check:checked+.btn,
     :not(.btn-check)+.btn:active,
     .btn:first-child:active,
@@ -161,8 +165,6 @@
     }
     
 }
-
-
 //========= Modal ===========
 .store-rounded{
     border-radius: 4px;
@@ -179,17 +181,16 @@
         width: 15px;
         height: 24px;
         color: #fff;
+        top: calc(50% + 12px);
         &::after{
             font-size: 24px;
         }
     }
 }
 .text-47481F{
-    color: #47481F;
+    color: #47481F !important;
 }
-.border-2px{
-    outline: 2px solid #333333;
-}
+
 .messageBoard{
     @include self-lg{
         padding-top: 24px !important;
@@ -199,6 +200,8 @@
 .message-texarea {
     ::placeholder {
         color: #ced4da;
+        padding-top: 12px; //不讓輸入的字貼齊邊線，已有推12px
+        padding-left: 12px; //不讓輸入的字貼齊邊線，已有推12px
     }
     .featured-texarea{
         height: 126px !important;
@@ -212,18 +215,14 @@
     }
     li{
         line-height: 0 !important;
-
     }
-    
-
 }
 .featured-modal{
     li{
         line-height: 0 !important;
     }
     .featured-modal-close{
-        top: 16px;
-        right: 16px;
+        z-index: 999999;
         &:focus{
             --bs-btn-close-focus-shadow: none !important;
         }
@@ -244,42 +243,31 @@
     }
     // 評分星星
     .star {
-        background: url("/assets/images/star.png") no-repeat;
-        background-size: cover;
+        background-image: url(/assets/images/star.png);
+        background-repeat: no-repeat;
+        background-size: cover !important;
         width: 16px;
         height: 16px;
         display: block;
-        
     }
-
     .btn-check:checked+.btn,
     :not(.btn-check)+.btn:active,
     .btn:first-child:active,
     .btn.active,
     .btn.show {
         .star {
-            background: url("/assets/images/star-full.png") no-repeat;
-            background-size: cover;
+            background-image: url(/assets/images/star-full.png);
         }
     }
 }
 .starGroup{
     .btn{
         padding: 0 !important;
-        
     }
 }
+// 優惠券
 
 
-// QRcode
-.featuredQRcode,.featuredSuccess{
-    .modal-content {
-        border-radius: 4.8px;
-    }
-    .modal-title{
-        color: #47481F;
-    }
-}
 // *,*::after,*::before{
 //     outline: 1px solid red;
     
