@@ -10,8 +10,8 @@
     <%- include('./layout/header', {page: "featuredShop" }); -%>
 <div class="featured">
     <div class="featured-banner position-relative container-fluid">
-        <div class="featured-banner-img position-absolute top-0 start-0" style="background-image: url(../assets/images/banner-14.png); background-size: contain;"></div>
-        <div class="featured-banner-img position-absolute top-0 end-0" style="background-image: url(../assets/images/banner-13.png); background-size: contain;"></div>
+        <div class="featured-banner-img position-absolute top-0 start-0" style="background-image: url(../assets/images/banner-14.png); background-size: contain; background-repeat: no-repeat;"></div>
+        <div class="featured-banner-img position-absolute top-0 end-0" style="background-image: url(../assets/images/banner-13.png); background-size: contain; background-repeat: no-repeat;"></div>
         <!-- +++++ -->
         <div class="featured-banner-line position-absolute d-none d-lg-block" style="background: url(../assets/images/Decorative-lines-03.png) no-repeat ; height: 200px; width: 21px;"></div>
         <!-- title -->
@@ -23,10 +23,10 @@
         </div>
     </div>
     <!-- 卡片區塊 -->
-    <div class="featured-content container-fluid position-relative d-flex justify-content-center" >
-        <div class="featured-card-all position-absolute w-100">
-            <section class="featured-opacity80 container overflow-hidden mb-10 rounded-3">
-                <div class="row g-6 p-4 px-sm-10 py-sm-10 ">
+    <div class="featured-content position-relative d-flex justify-content-center" >
+        <div class="featured-card-all position-absolute w-100 px-2">
+            <section class="featured-opacity80 container overflow-hidden mb-10 rounded-3 p-4 p-sm-10">
+                <div class="row g-6">
                     <!-- 1 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card position-relative border-0 rounded-3">
@@ -268,12 +268,11 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade featured-modal" id="featuredModal" tabindex="-1" aria-labelledby="featuredModal" aria-hidden="true">
+    <div class="modal fade featured-modal px-6" id="featuredModal" tabindex="-1" aria-labelledby="featuredModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content position-relative px-0 px-lg-10 py-4 py-lg-10">
-                <div class="modal-body container-fluid">
-                    <button type="button" class="featured-modal-close btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="row flex-lg-row-reverse">
+            <div class="modal-content position-relative p-4 p-md-10">
+                <button type="button" class="featured-modal-close btn-close position-absolute end-0 top-0 m-6" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body row p-0 flex-lg-row-reverse">
                         <!-- 標題 -->
                         <div class="col-12 d-lg-none mb-6">
                             <div>
@@ -311,15 +310,29 @@
                                     <div class="swiper-slide"><img class="featuredSwiper-img rounded-3" src="../assets/images/card-06.png" alt="img" ></div>
                                     <div class="swiper-slide"><img class="featuredSwiper-img rounded-3" src="../assets/images/card-06.png" alt="img" ></div>
                                 </div>
-                                <div class="swiper-button-prev top-50"></div>
-                                <div class="swiper-button-next top-50"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
                             </div>
                             <p class="fs-10 text-gray-700 mb-2"><i class="bi bi-geo-alt me-1"></i>台北馬山 2000文創園區</p>
                             <p class="fs-10 text-gray-700 mb-2"><i class="bi bi-clock me-1"></i>周一 ~ 周日 <span class="ms-6">13:00 - 20:00</span> </p>
                             <!-- map -->
                             <img class="w-100 mb-4 d-xxl-none" src="../assets/images/map-sm.png" alt="map" height="100">
                             <img class="w-100 mb-4 d-none d-xxl-block " src="../assets/images/map-lg.png" alt="map">
-                            <button class="btn btn-outline-primary text-47481F border-2px h9 w-100 mb-6 mb-lg-0 mt-auto" data-bs-toggle="modal" data-bs-target="#featured-QRcode">領取優惠券</button>
+                            <a href="#saledropdown" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-outline-shadow d-block mt-auto mb-lg-0">領取優惠券</a>
+                            <!-- 優惠券 -->
+                            <div class="featuredShop-QR dropdown-menu top-50 start-50 translate-middle p-4 border-0 bg-white" aria-labelledby="dropdownMenuButton1" style="width: 300px; height: 318px;">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="text-47481F">領取優惠券</h6>
+                                    <button type="button" class="btn-close p-2" data-bs-dismiss="dropdown" aria-label="Close"></button>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center align-items-center my-4">
+                                    <img src="../assets/images/qrcode.png" alt="qrcode">
+                                    <p class="my-4">2 本 95 折</p>
+                                </div>
+                                <div class="d-flex justify-content-end mt-3">
+                                    <button type="button" class="btn btn-secondary " data-bs-dismiss="dropdown" aria-label="Close">關閉</button>
+                                </div>
+                            </div>
                         </div>
                         <!-- 留言 -->
                         <div class="col-12 col-lg-7 order-lg-1 d-flex flex-column ">
@@ -340,7 +353,7 @@
                                     <h8 class="fw-bold">劉明</h8>
                                     <p class="fs-10 text-gray-700 ms-auto">2024/04/26</p>
                                 </div>
-                                <div class="bg-white mb-4 rounded-3 py-5 py-lg-6 ps-5 ps-lg-8">
+                                <div class="bg-white mb-4 rounded-3 border border-1 py-5 py-lg-6 ps-5 ps-lg-8">
                                     <div class="d-flex mb-4">
                                         <p>評分：</p>
                                         <ul class="list-unstyled d-flex align-items-center d-grid gap-2 mb-0">
@@ -359,7 +372,7 @@
                                     <h8 class="fw-bold">Samew5151</h8>
                                     <p class="fs-10 text-gray-700 ms-auto">2024/04/26</p>
                                 </div>
-                                <div class="bg-white rounded-3 py-5 py-lg-6 ps-5 ps-lg-8">
+                                <div class="bg-white rounded-3 border border-1 py-5 py-lg-6 ps-5 ps-lg-8">
                                     <div class="d-flex mb-4">
                                         <p>評分：</p>
                                         <ul class="list-unstyled d-flex align-items-center d-grid gap-2 mb-0">
@@ -414,27 +427,9 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+
                 </div>
 
-            </div>
-        </div>
-    </div>
-    <!-- QRcode-modal -->
-    <div class="featuredQRcode modal fade" id="featured-QRcode" tabindex="-1" aria-labelledby="featured-QRcode" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content bg-white">
-                <div class="modal-header border-0 bg-white">
-                    <h6 class="modal-title">領取優惠券</h6>
-                    <button type="button" class="btn-close fs-9 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body mx-4 border-0 d-flex flex-column align-items-center bg-white">
-                    <img class="mb-4" src="../assets/images/qrcode.png" alt="QRcode" width="120" height="120">
-                    <p class="mb-4">2 本 95 折</p>
-                </div>
-                <div class="modal-footer border-0 bg-white">
-                    <button type="button" class="btn btn-gray-200 h9" data-bs-dismiss="modal">關閉</button>
-                </div>
             </div>
         </div>
     </div>
