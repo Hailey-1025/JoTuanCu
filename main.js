@@ -38,7 +38,6 @@ var swiper = new Swiper(".index-newActivitySwiper", {
   },
 });
 
-
 // 熱門商家
 var swiper = new Swiper(".index-featuredShopSwiper", {
   slidesPerView: 1,
@@ -104,7 +103,6 @@ var swiper2 = new Swiper(".indexModalMySwiper2", {
   },
 });
 
-
 // 精選商家-彈窗內商家圖片
 var swiper = new Swiper(".featuredSwiper", {
   slidesPerView: "auto",
@@ -136,47 +134,97 @@ var swiper = new Swiper(".storeSwiper", {
   },
 });
 
-
 // 揪團活動 - Jo到夥伴 (選擇日期功能) -- 倫倫
-const dateInput = document.getElementById("dateInput");
+document.addEventListener("DOMContentLoaded", function () {
+  const dateInput = document.getElementById("dateInput");
 
-dateInput.addEventListener("click", function () {
-  dateInput.classList.add("cus-input-focus");
-});
+  if (dateInput) {
+    // 确认 dateInput 不为 null
 
-// 在 document 上添加 click 事件监听器
-document.addEventListener("click", function (event) {
-  // 检查点击的目标是否是 dateInput
-  if (!dateInput.contains(event.target)) {
-    dateInput.classList.remove("cus-input-focus");
-  }
-});
+    dateInput.addEventListener("click", function () {
+      dateInput.classList.add("cus-input-focus");
+    });
 
-dateInput.addEventListener("change", function () {
-  const styleSheet = document.styleSheets[0];
+    // 在 document 上添加 click 事件监听器
+    document.addEventListener("click", function (event) {
+      // 检查点击的目标是否是 dateInput
+      if (!dateInput.contains(event.target)) {
+        dateInput.classList.remove("cus-input-focus");
+      }
+    });
 
-  if (dateInput.value) {
-    styleSheet.insertRule(
-      'input[type="date"].custom-date::before { color: transparent; }',
-      styleSheet.cssRules.length
-    );
-    dateInput.classList.add("text-dark");
+    dateInput.addEventListener("change", function () {
+      const styleSheet = document.styleSheets[0];
+
+      if (dateInput.value) {
+        styleSheet.insertRule(
+          'input[type="date"].custom-date::before { color: transparent; }',
+          styleSheet.cssRules.length
+        );
+        dateInput.classList.add("text-dark");
+      } else {
+        styleSheet.insertRule(
+          'input[type="date"].custom-date::before { color: #808080; }',
+          styleSheet.cssRules.length
+        );
+        dateInput.classList.remove("text-dark");
+      }
+
+      // 使用 Promise 以实现并行执行
+      Promise.resolve().then(() => {
+        dateInput.classList.remove("cus-input-focus"); // 同时移除
+      });
+    });
   } else {
-    styleSheet.insertRule(
-      'input[type="date"].custom-date::before { color: #808080; }',
-      styleSheet.cssRules.length
-    );
-    dateInput.classList.remove("text-dark");
+    console.error("Date input element not found");
   }
 
-  // 使用 Promise 以实现并行执行
-  Promise.resolve().then(() => {
-    dateInput.classList.remove("cus-input-focus"); // 同时移除
+  const activitySelect = document.getElementById("activitySelect");
+
+  // 默认 select 的文本颜色
+  activitySelect.style.color = "#808080";
+
+  // 监听 select 下拉框点击事件，重置颜色
+  activitySelect.addEventListener("click", function () {
+    // 当点击时，重置所有选项的颜色为灰色
+    for (let i = 0; i < activitySelect.options.length; i++) {
+      activitySelect.options[i].style.color = "#808080";
+    }
+  });
+
+  // 监听选择更改事件
+  activitySelect.addEventListener("change", function () {
+    // 将选中项的文本颜色设置为深色
+    this.options[this.selectedIndex].style.color = "#333333";
+    // 改变 select 自身显示的文本颜色为深色
+    this.style.color = "#333333";
+  });
+
+  const locationSelect = document.getElementById("locationSelect");
+
+  // 默认 select 的文本颜色
+  locationSelect.style.color = "#808080";
+
+  // 监听 select 下拉框点击事件，重置颜色
+  locationSelect.addEventListener("click", function () {
+    // 当点击时，重置所有选项的颜色为灰色
+    for (let i = 0; i < locationSelect.options.length; i++) {
+      locationSelect.options[i].style.color = "#808080";
+    }
+  });
+
+  // 监听选择更改事件
+  locationSelect.addEventListener("change", function () {
+    // 将选中项的文本颜色设置为深色
+    this.options[this.selectedIndex].style.color = "#333333";
+    // 改变 select 自身显示的文本颜色为深色
+    this.style.color = "#333333";
   });
 });
 
 //interaction
 //篩選部分
+
 const blockElement = document.getElementById("block");
 
 blockElement.addEventListener("change", function () {
