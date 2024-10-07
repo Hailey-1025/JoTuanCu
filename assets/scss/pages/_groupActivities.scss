@@ -1,25 +1,4 @@
 // 揪團活動 - banner -- 倫倫
-// .groupActivitiesBanner {
-//   background-image: url(../images/groupActivities-bg-heading.svg);
-
-//   background-repeat: no-repeat;
-//   background-position: center 40px;
-// }
-
-// .groupActivitiesBanner::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 50%;
-//   transform: translateX(-22%);
-//   width: 100vw; /* 让伪元素超出原本的容器尺寸 */
-//   max-width: 100%;
-//   height: 150%; /* 同样使其高度超出 */
-//   background-image: url(../images/groupActivities-bg-heading-line.svg);
-//   background-repeat: no-repeat;
-//   background-position: center center;
-//   z-index: -1; /* 确保背景图片在容器的背后 */
-// }
 .groupActivities {
   position: relative;
 }

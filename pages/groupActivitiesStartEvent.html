@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>揪團活動｜JO團趣</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header', {page: "groupActivities" }); -%>
+
+    <section class="groupActivities-startEvent py-20">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="border border-dark rounded-3 bg-white">
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-12">
+                  <div class="py-lg-10 ps-lg-20 pe-lg-0 p-10 h-100">
+                    <div class="h-100 uploadWrap">
+                      <div
+                        class="d-flex flex-column align-items-center justify-content-center h-100 py-lg-0 py-15"
+                        style="
+                          border: 2px dashed #808080;
+                          background-color: #d3d3d3;
+                        "
+                      >
+                        <p>請至少上傳一張圖片</p>
+                        <button
+                          type="button"
+                          class="text-white rounded-2 py-3 px-10 my-2 fw-light"
+                          style="background-color: gray; border: none"
+                          id="uploadButton"
+                        >
+                          點選上傳圖片
+                        </button>
+                        <input
+                          type="file"
+                          id="fileInput"
+                          style="display: none"
+                        />
+                        <p>上傳檔案大小上限：128MB</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <div class="py-lg-10 pe-lg-20 ps-lg-0 pt-0 pb-10 px-10 h-100">
+                    <div class="h-100">
+                      <div class="mb-3">
+                        <h3 class="fs-5 mb-2">活動主題</h3>
+                        <input
+                          class="w-100 groupActivities-startEvent-cusInput"
+                          type="text"
+                          placeholder="請填寫活動名稱"
+                        />
+                      </div>
+
+                      <div>
+                        <h3 class="fs-5 mb-2">活動描述</h3>
+
+                        <textarea
+                          class="w-100 groupActivities-startEvent-cusTextarea"
+                          type="text"
+                          style="height: 200px"
+                          placeholder="請填寫活動名稱"
+                          name="groupActivitiesStartEventCusTextarea"
+                          id="groupActivitiesStartEventCusTextarea"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

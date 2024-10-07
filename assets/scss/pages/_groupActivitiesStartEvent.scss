@@ -1,0 +1,29 @@
+.groupActivities-startEvent {
+  background: linear-gradient(to right, #fcff6f, #ceff66);
+}
+
+.groupActivities-startEvent-cusInput {
+  padding: 8px 12px 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #808080;
+}
+
+.groupActivities-startEvent-cusTextarea {
+  padding: 8px 12px 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #808080;
+  border-width: 2px;
+  border-color: rgb(118, 118, 118);
+  resize: none;
+}
+
+.uploadWrap {
+  padding-bottom: 6px;
+}
+@media screen and (max-width: 991px) {
+  .uploadWrap {
+    padding-bottom: 0px;
+  }
+}

@@ -222,6 +222,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// 揪團活動 - 馬上JO(發起活動) - 點選上傳圖片功能 -- 倫倫
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("uploadButton")
+    .addEventListener("click", function () {
+      document.getElementById("fileInput").click();
+    });
+});
+
 //interaction
 //篩選部分
 
