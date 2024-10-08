@@ -1,6 +1,5 @@
 // *,*::after,*::before{
 //     outline: 1px solid red;
-    
 // }
 // 背景圖片
 // 1
@@ -100,8 +99,6 @@
         }
     }
 }
-
-
 .accordion-text{
     font-size: 20px !important;
     @include self-lg{
