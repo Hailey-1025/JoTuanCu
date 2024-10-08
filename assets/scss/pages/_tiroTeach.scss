@@ -1,0 +1,111 @@
+// *,*::after,*::before{
+//     outline: 1px solid red;
+    
+// }
+// 背景圖片
+// 1
+.searchActivity{
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../assets/images/illustrate-02.png) no-repeat;
+        background-size: contain;
+        width: 144px;
+        height: 108px;
+        top: calc(50% - 48px);
+        @media (min-width:576px) {
+            width: 228px;
+            height: 216px;
+            top: calc(50% - 20px);
+        }
+        @media (min-width:1210px) {
+            right: 0;
+            top: 0;
+        }
+        @media (min-width:1750px) {
+            width: 384px;
+            height: 287px;
+            left: 100%;
+            transform: translateX(-50%);
+        }
+    }
+}
+// 2
+.initiate{
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url(/assets/images/Decorative-lines-07.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 270px;
+        height: 27px;
+        top: calc(100% - 8px);
+    }
+}
+.callActivity{
+    &::before{
+        content: "";
+        position: absolute;
+        background: url(../assets/images/illustrate-01.png) no-repeat;
+        background-size: contain;
+        width: 136px;
+        height: 144px;
+        right: 0;
+        top: calc(50% - 48px);
+        @media (min-width:576px) {
+            width: 242px;
+            height: 258px;
+            right: calc(0% - 5px);
+        }
+        @media (min-width:1210px) {
+            left: calc(0% - 45px);
+            top: calc(0% - 69px);
+        }
+        @media (min-width:1750px) {
+            width: 415px;
+            height: 439px;
+            left: 0;
+            top: calc(0% - 69px);
+            transform: translateX(-50%);
+        }
+    }
+}
+// 3
+.friendHappy{
+    &::after {
+        
+        content: "";
+        position: absolute;
+        background: url(../assets/images/illustrate-03.png) no-repeat;
+        background-size: contain;
+        width: 104px;
+        height: 144px;
+        top: calc(50% - 48px);
+        @media (min-width:576px) {
+            width: 208px;
+            height: 288px;
+            top: calc(50% - 110px);
+        }
+        @media (min-width:1210px) {
+            right: calc(0% - 20px);
+            top: initial;
+            bottom: 0;
+        }
+        @media (min-width:1750px) {
+            width: 354px;
+            height: 490px;
+            left: calc(100% + 25px);
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
+.accordion-text{
+    font-size: 20px !important;
+    @include self-lg{
+        font-size: 28px !important;
+        
+    }
+}
