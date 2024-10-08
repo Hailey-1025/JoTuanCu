@@ -196,8 +196,12 @@
 }
 
 .groupActivities-startEvent-locationIcon {
-  top: 8px;
+  position: absolute;
+  z-index: 2;
   left: 12px;
+  top: 8px;
+  pointer-events: none;
+  cursor: pointer;
 }
 
 .groupActivities-startEvent-dateInputWrap {

@@ -404,6 +404,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  // 設定原始和點擊後的圖片路徑
+  const originalSrc = "../../assets/images/heart.svg";
+  const activeSrc = "../../assets/images/clickHeart.svg";
+
+  // 選取所有 .cus-groupActivities-card-body-heart 圖片
+  const hearts = document.querySelectorAll(
+    ".cus-groupActivities-card-body-heart"
+  );
+
+  // 為每個圖片添加點擊事件監聽器
+  hearts.forEach((heart) => {
+    heart.addEventListener("click", function () {
+      // 切換圖片src
+      if (heart.src.includes("heart.svg")) {
+        heart.src = activeSrc; // 切換到已填滿的心形圖片
+      } else {
+        heart.src = originalSrc; // 切回原始心形圖片
+      }
+    });
+  });
+});
+
 //interaction
 //篩選部分
 

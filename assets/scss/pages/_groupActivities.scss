@@ -100,6 +100,15 @@ input[type="date"] {
   }
 }
 
+.groupActivities-locationIcon {
+  position: absolute;
+  z-index: 2;
+  left: 12px;
+  top: 8px;
+  pointer-events: none;
+  cursor: pointer;
+}
+
 .groupActivities-search-deco {
   position: absolute;
   right: 80px;
