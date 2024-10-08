@@ -69,7 +69,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .cus-input-focus {
-  box-shadow: 0px 0px 0px 4px #fdffb6;
+  box-shadow: 0px 0px 0px 4px #fcff6f40;
 }
 
 input[type="date"]::before {
@@ -89,16 +89,15 @@ input[type="date"] {
 /* 圖標容器 */
 .custom-icon {
   position: relative;
-}
 
-/* 自定義日期圖標 */
-.custom-icon img {
-  position: absolute;
-  z-index: 2;
-  left: 12px;
-  top: 8px;
-  pointer-events: none;
-  cursor: pointer;
+  & > img {
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    top: 8px;
+    pointer-events: none;
+    cursor: pointer;
+  }
 }
 
 .groupActivities-search-deco {
@@ -129,11 +128,6 @@ input[type="date"] {
     right: -120px;
     bottom: -80px;
   }
-}
-
-.groupActivities-locationIcon {
-  top: 8px;
-  left: 12px;
 }
 
 .groupActivities-search-cusInput {

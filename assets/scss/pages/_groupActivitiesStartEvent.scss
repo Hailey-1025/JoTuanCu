@@ -2,21 +2,78 @@
   background: linear-gradient(to right, #fcff6f, #ceff66);
 }
 
+.groupActivities-startEvent-timeInputWrap {
+  position: relative;
+
+  // 隱藏預設時鐘圖案
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  // 設定自訂義預設字樣
+  input[type="time"]::before {
+    content: "選擇時間"; /* 自定義佔位符 */
+    position: absolute;
+    left: 36px;
+    color: #808080; /* 佔位符顏色 */
+    pointer-events: none; /* 禁用事件 */
+  }
+
+  // 隱藏預設時間字樣
+  input[type="time"] {
+    position: relative; /* 設置相對定位以配合自定義圖標 */
+    z-index: 1; /* 提高層級 */
+    color: transparent;
+    padding-left: 36px;
+  }
+
+  & > i {
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    top: 8px;
+    pointer-events: none;
+    cursor: pointer;
+  }
+}
+
 .groupActivities-startEvent-cusInput {
   padding: 8px 12px 8px 16px;
   border-radius: 4px;
   font-size: 16px;
-  color: #808080;
+  color: #333333;
+  border: 1px solid #333333;
+  &:focus {
+    outline: none; /* 移除預設的外框 */
+    // border: 1px solid #333333; /* 設定邊框顏色 */
+    // background-color: #f0f8ff; /* 改變背景顏色 */
+    box-shadow: 0px 0px 0px 4px #fcff6f40; /* 添加陰影 */
+  }
 }
 
 .groupActivities-startEvent-cusTextarea {
   padding: 8px 12px 8px 16px;
   border-radius: 4px;
   font-size: 16px;
-  color: #808080;
-  border-width: 2px;
-  border-color: rgb(118, 118, 118);
+  color: #333333;
+  // border-width: 2px;
+  // border-color: rgb(118, 118, 118);
   resize: none;
+  border: 1px solid #333333;
+  &:focus {
+    outline: none; /* 移除預設的外框 */
+    // border: 1px solid #333333; /* 設定邊框顏色 */
+    // background-color: #f0f8ff; /* 改變背景顏色 */
+    box-shadow: 0px 0px 0px 4px #fcff6f40; /* 添加陰影 */
+  }
 }
 
 .uploadWrap {
@@ -26,4 +83,63 @@
   .uploadWrap {
     padding-bottom: 0px;
   }
+}
+
+.form-select-startEvent-cusLocation {
+  --bs-form-select-bg-img: none;
+  padding: 8px 12px 8px 36px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #808080;
+  cursor: pointer;
+}
+
+.groupActivities-startEvent-locationIcon {
+  top: 8px;
+  left: 12px;
+}
+
+.groupActivities-startEvent-dateInputWrap {
+  position: relative;
+
+  & > img {
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    top: 8px;
+    pointer-events: none;
+    cursor: pointer;
+  }
+}
+
+.groupActivities-startEvent-dateInput {
+  padding-left: 36px;
+}
+
+.groupActivities-startEvent-locationIcon {
+  top: 8px;
+  left: 12px;
+}
+
+.groupActivities-startEvent-numberInput {
+  /* 適用於 Chrome、Safari、Edge */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* 適用於 Firefox */
+  input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+}
+
+.groupActivities-startEvent-activityType {
+  padding: 8px 12px 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #808080;
+  cursor: pointer;
 }

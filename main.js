@@ -227,8 +227,170 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("uploadButton")
     .addEventListener("click", function () {
-      document.getElementById("fileInput").click();
+      document.getElementById("fileUpload").click();
     });
+
+  document.getElementById("fileUpload").addEventListener("change", function () {
+    const fileInput = document.getElementById("fileUpload");
+
+    // 檢查是否選擇了文件
+    if (!fileInput.files.length) {
+      alert("請上傳一張圖片！");
+    }
+  });
+
+  document
+    .getElementById("uploadForm")
+    .addEventListener("submit", function (event) {
+      const fileInput = document.getElementById("fileUpload");
+
+      // 確保選擇了文件
+      if (!fileInput.files.length) {
+        event.preventDefault(); // 防止表單提交
+        alert("請上傳一張圖片！");
+      }
+    });
+});
+
+// 揪團活動 - 馬上JO(發起活動) - 點選日期功能 -- 倫倫
+document.addEventListener("DOMContentLoaded", function () {
+  const startEventDateInput = document.getElementById(
+    "groupActivitiesStartEventDateInput"
+  );
+
+  if (startEventDateInput) {
+    // 确认 dateInput 不为 null
+
+    startEventDateInput.addEventListener("click", function () {
+      startEventDateInput.classList.add("cus-input-focus");
+    });
+
+    // 在 document 上添加 click 事件监听器
+    document.addEventListener("click", function (event) {
+      // 检查点击的目标是否是 dateInput
+      if (!startEventDateInput.contains(event.target)) {
+        startEventDateInput.classList.remove("cus-input-focus");
+      }
+    });
+
+    startEventDateInput.addEventListener("change", function () {
+      const styleSheet = document.styleSheets[0];
+
+      if (startEventDateInput.value) {
+        styleSheet.insertRule(
+          'input[type="date"].groupActivities-startEvent-custom-date::before { color: transparent; }',
+          styleSheet.cssRules.length
+        );
+        startEventDateInput.classList.add("text-dark");
+      } else {
+        styleSheet.insertRule(
+          'input[type="date"].groupActivities-startEvent-custom-date::before { color: #808080; }',
+          styleSheet.cssRules.length
+        );
+        startEventDateInput.classList.remove("text-dark");
+      }
+
+      // 使用 Promise 以实现并行执行
+      Promise.resolve().then(() => {
+        startEventDateInput.classList.remove("cus-input-focus"); // 同时移除
+      });
+    });
+  } else {
+    console.error("Date input element not found");
+  }
+
+  // 揪團活動 - 馬上JO(發起活動) - 點選時間功能 -- 倫倫
+  const groupActivitiesStartEventTimeInput = document.getElementById(
+    "groupActivitiesStartEventTimeInput"
+  );
+
+  if (groupActivitiesStartEventTimeInput) {
+    // 确认 dateInput 不为 null
+
+    groupActivitiesStartEventTimeInput.addEventListener("click", function () {
+      groupActivitiesStartEventTimeInput.classList.add("cus-input-focus");
+    });
+
+    // 在 document 上添加 click 事件监听器
+    document.addEventListener("click", function (event) {
+      // 检查点击的目标是否是 dateInput
+      if (!groupActivitiesStartEventTimeInput.contains(event.target)) {
+        groupActivitiesStartEventTimeInput.classList.remove("cus-input-focus");
+      }
+    });
+
+    groupActivitiesStartEventTimeInput.addEventListener("change", function () {
+      const styleSheet = document.styleSheets[0];
+
+      if (groupActivitiesStartEventTimeInput.value) {
+        styleSheet.insertRule(
+          'input[type="time"].groupActivities-startEvent-custom-time::before { color: transparent; }',
+          styleSheet.cssRules.length
+        );
+        groupActivitiesStartEventTimeInput.classList.add("text-dark");
+      } else {
+        styleSheet.insertRule(
+          'input[type="time"].groupActivities-startEvent-custom-time::before { color: #808080; }',
+          styleSheet.cssRules.length
+        );
+        groupActivitiesStartEventTimeInput.classList.remove("text-dark");
+      }
+
+      // 使用 Promise 以实现并行执行
+      Promise.resolve().then(() => {
+        groupActivitiesStartEventTimeInput.classList.remove("cus-input-focus"); // 同时移除
+      });
+    });
+  } else {
+    console.error("Date input element not found");
+  }
+
+  // 揪團活動 - 馬上JO(發起活動) - 選單文字點選後顏色更改功能 -- 倫倫
+  const activityStartEventSelect = document.getElementById(
+    "activityStartEventSelect"
+  );
+
+  // 默认 select 的文本颜色
+  activityStartEventSelect.style.color = "#808080";
+
+  // 监听 select 下拉框点击事件，重置颜色
+  activityStartEventSelect.addEventListener("click", function () {
+    // 当点击时，重置所有选项的颜色为灰色
+    for (let i = 0; i < activityStartEventSelect.options.length; i++) {
+      activityStartEventSelect.options[i].style.color = "#808080";
+    }
+  });
+
+  // 监听选择更改事件
+  activityStartEventSelect.addEventListener("change", function () {
+    // 将选中项的文本颜色设置为深色
+    this.options[this.selectedIndex].style.color = "#333333";
+    // 改变 select 自身显示的文本颜色为深色
+    this.style.color = "#333333";
+  });
+
+  const locationStartEventSelect = document.getElementById(
+    "locationStartEventSelect"
+  );
+
+  // 默认 select 的文本颜色
+  locationStartEventSelect.style.color = "#808080";
+
+  // 监听 select 下拉框点击事件，重置颜色
+  locationStartEventSelect.addEventListener("click", function () {
+    // 当点击时，重置所有选项的颜色为灰色
+    for (let i = 0; i < locationStartEventSelect.options.length; i++) {
+      locationStartEventSelect.options[i].style.color = "#808080";
+    }
+  });
+
+  // 监听选择更改事件
+  locationStartEventSelect.addEventListener("change", function () {
+    // 将选中项的文本颜色设置为深色
+    this.options[this.selectedIndex].style.color = "#333333";
+    // 改变 select 自身显示的文本颜色为深色
+    this.style.color = "#333333";
+  });
 });
 
 //interaction
