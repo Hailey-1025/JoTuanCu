@@ -224,32 +224,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // 揪團活動 - 馬上JO(發起活動) - 點選上傳圖片功能 -- 倫倫
 document.addEventListener("DOMContentLoaded", function () {
+  // 上傳檔案功能modal
+  const fileUploadModalWrap = document.getElementById("fileUploadModalWrap");
+  const closeModal = document.getElementsByClassName("fileUploadModalClose")[0];
+  const fileUploadInput = document.getElementById("fileUpload");
+
+  const startJoTeamModalWrap = document.getElementById("startJoTeamModalWrap");
+  const startJoTeamCloseModal = document.getElementsByClassName(
+    "startJoTeamModalClose"
+  )[0];
+
   document
     .getElementById("uploadButton")
     .addEventListener("click", function () {
-      document.getElementById("fileUpload").click();
+      fileUploadInput.click();
     });
-
-  document.getElementById("fileUpload").addEventListener("change", function () {
-    const fileInput = document.getElementById("fileUpload");
-
-    // 檢查是否選擇了文件
-    if (!fileInput.files.length) {
-      alert("請上傳一張圖片！");
-    }
-  });
 
   document
     .getElementById("uploadForm")
     .addEventListener("submit", function (event) {
-      const fileInput = document.getElementById("fileUpload");
-
       // 確保選擇了文件
-      if (!fileInput.files.length) {
+      if (!fileUploadInput.files.length) {
         event.preventDefault(); // 防止表單提交
-        alert("請上傳一張圖片！");
+        fileUploadModalWrap.style.display = "block";
+      } else {
+        event.preventDefault(); // 防止表單提交
+        startJoTeamModalWrap.style.display = "block";
       }
     });
+
+  closeModal.onclick = function () {
+    fileUploadModalWrap.style.display = "none";
+  };
+
+  startJoTeamCloseModal.onclick = function () {
+    startJoTeamModalWrap.style.display = "none";
+    document.getElementById("uploadForm").submit(); // 手動觸發表單提交
+  };
 });
 
 // 揪團活動 - 馬上JO(發起活動) - 點選日期功能 -- 倫倫
