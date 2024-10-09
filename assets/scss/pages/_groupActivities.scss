@@ -1,40 +1,48 @@
 // 揪團活動 - banner -- 倫倫
-.btn-cusShadow {
-  box-shadow: 4px 4px 0 0 #ceff66, 4px 0px 0px 0px #fcff6f inset,
-    0px 4px 0px 0px #fcff6f inset;
-
-  background-color: rgba(255, 255, 255, 0.8);
+.groupActivities {
+  position: relative;
 }
 
-.groupActivities-bg-heading {
+.banner-deco-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -15;
+}
+.groupActivities-bg-heading-cus,
+.groupActivities-bg-heading-line-cus {
   position: absolute;
   z-index: -10;
 }
 
-.groupActivitiesLine01 {
-  position: absolute;
-  top: -130px;
-  z-index: -15;
-  overflow-x: hidden;
+.groupActivities-bg-heading-line-cus {
+  left: 50%;
+  transform: translate(-29%, -200px);
 }
 
-.groupActivities-banner-rwd {
-  position: relative;
-  z-index: -12;
+.groupActivitiesBannerTitle {
+  padding-top: 22px;
+  padding-bottom: 20px;
 }
 
-@media screen and (max-width: 375px) {
-  .groupActivitiesLine01 {
-    top: -60px;
+@media screen and (max-width: 575px) {
+  .groupActivities-bg-heading-line-cus {
+    transform: translate(-29%, -130px);
+  }
+
+  .groupActivitiesBannerTitle {
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 
   .letter-rwd {
     letter-spacing: normal;
   }
+}
 
-  // .groupActivities-banner-rwd {
-  //   margin-top: -40px;
-  // }
+.groupActivities-banner-rwd {
+  position: relative;
+  z-index: -12;
 }
 
 @media screen and (max-width: 375px) {
@@ -44,30 +52,6 @@
 }
 
 // 揪團活動 - Jo到夥伴 -- 倫倫
-
-// .groupActivities-search {
-//   background: linear-gradient(to right, #fcff6f, #ceff66);
-//   position: relative;
-
-//   input[type="date"]::-webkit-calendar-picker-indicator {
-//     display: none;
-//     -webkit-appearance: none;
-//   }
-
-//   input[type="date"] {
-//     // position: relative;
-//     color: transparent; /* 隐藏默认的年月日格式 */
-//     // z-index: 1;
-//   }
-
-//   input[type="date"]::before {
-//     content: attr(data-placeholder); /* 使用 data-placeholder 属性设置占位符 */
-//     position: absolute;
-//     left: 36px;
-//     color: #808080;
-//     pointer-events: none;
-//   }
-// }
 .groupActivities-search {
   background: linear-gradient(to right, #fcff6f, #ceff66);
   position: relative;
@@ -77,7 +61,6 @@
 input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   position: absolute;
-  // left: 8px;
   top: 0;
   left: 0;
   width: 100%;
@@ -86,7 +69,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .cus-input-focus {
-  box-shadow: 0px 0px 0px 4px #fdffb6;
+  box-shadow: 0px 0px 0px 4px #fcff6f40;
 }
 
 input[type="date"]::before {
@@ -97,13 +80,8 @@ input[type="date"]::before {
   pointer-events: none; /* 禁用事件 */
 }
 
-// input[type="date"] {
-//   padding-right: 30px; /* 為自定義圖標預留空間 */
-// }
-
 input[type="date"] {
   position: relative; /* 設置相對定位以配合自定義圖標 */
-  // padding-right: 40px; /* 為自定義圖標預留空間 */
   z-index: 1; /* 提高層級 */
   color: transparent;
 }
@@ -111,19 +89,23 @@ input[type="date"] {
 /* 圖標容器 */
 .custom-icon {
   position: relative;
-  // display: inline-block;
+
+  & > img {
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    top: 8px;
+    pointer-events: none;
+    cursor: pointer;
+  }
 }
 
-/* 自定義日期圖標 */
-.custom-icon img {
+.groupActivities-locationIcon {
   position: absolute;
   z-index: 2;
   left: 12px;
   top: 8px;
-  // transform: translateY(-50%);
   pointer-events: none;
-  // width: 20px;
-  // height: 20px;
   cursor: pointer;
 }
 
@@ -157,11 +139,6 @@ input[type="date"] {
   }
 }
 
-.groupActivities-locationIcon {
-  top: 8px;
-  left: 12px;
-}
-
 .groupActivities-search-cusInput {
   padding-left: 36px;
 }
@@ -171,4 +148,54 @@ input[type="date"] {
   border-radius: 4px;
   font-size: 16px;
   color: #808080;
+  cursor: pointer;
+}
+
+.form-select-cusLocation {
+  --bs-form-select-bg-img: none;
+  padding: 8px 12px 8px 36px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #808080;
+  cursor: pointer;
+}
+
+.groupActivitiesNextDeco {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.groupActivities-cus-card {
+  background-color: #fff;
+}
+
+.groupActivities-cus-card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.cus-groupActivities-card-body {
+  padding: 16px 24px;
+  background-color: #fff;
+}
+
+.groupActivities-cus-card-footer {
+  padding: 20px 24px;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  &:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.cus-groupActivities-card-body-heart {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  cursor: pointer;
 }

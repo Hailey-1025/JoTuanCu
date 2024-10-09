@@ -15,11 +15,13 @@
         <img src="../assets/images/banner-08.png" alt="banner-08"
           class="banner-08 pt-4 pt-md-0 pb-6 pb-md-0 px-8 px-md-0" style="height: 100%;">
         <div class="title d-flex flex-column align-items-center">
-          <p class="h2 text-center pb-4 pb-md-6" style="font-weight: 300;">揪友交流</p>
+          <!-- <p class="h2 text-center pb-4 pb-md-6" style="font-weight: 300;">揪友交流</p> -->
+          <img src="../assets/images/interaction.svg" alt="揪友交流" class="pb-md-6 d-none d-md-block">
+          <img src="../assets/images/interaction-s.svg" alt="揪友交流" class="pb-4 d-md-none">
           <img src="../assets/images/Decorative-lines-02.png" alt="Decorative-lines-02" class="pb-4 pb-md-6"
             style="width: 191px; height: 40px; object-fit:contain">
           <p class="fs-8 pb-4 pb-md-6" style="font-weight: 700;">將您揪團的心得與大家分享</p>
-          <button class="btn btn-outline-shadow">我要分享</button>
+          <a href="interactionShare.html"><button class="btn btn-outline-shadow">我要分享</button></a>
         </div>
         <img src="../assets/images/banner-07.png" alt="banner-07"
           class="banner-07 pt-6 pt-md-0 pb-10 pb-md-0 px-8 px-md-0">
@@ -28,7 +30,7 @@
       <div class="search">
         <div class="container">
           <div class="px-3 py-6 px-lg-0 pt-lg-10 pb-lg-6">
-            <div class="bg-white p-6" style="border-radius: 4px;">
+            <div class="bg-white p-6" style="border-radius: 20px; box-shadow: 0px 10px 40px 0px #0000000F;">
               <div class="d-lg-flex justify-content-lg-between">
                 <div>
                   <form>
@@ -51,8 +53,9 @@
                       <p class="me-6 text-nowrap" style="color: #808080; font-weight: 500;">排序</p>
                       <select class="form-select" aria-label="排序"
                         style="padding: 6px 12px; box-shadow: none; color: #808080;">
-                        <option selected value="0">最多瀏覽</option>
-                        <option value="1">最多收藏</option>
+                        <option selected value="0">全部</option>
+                        <option value="1">最新上傳</option>
+                        <option value="1">最多瀏覽</option>
                       </select>
                     </div>
                   </div>
@@ -71,12 +74,11 @@
                         <select class="form-select" aria-label="種類"
                           style="padding: 6px 12px; box-shadow: none; color: #808080;" id="type">
                           <option selected value="0">種類（全部）</option>
-                          <option value="1">日式料理</option>
-                          <option value="2">中式料理</option>
-                          <option value="3">西式料理</option>
-                          <option value="4">美式料理</option>
-                          <option value="5">泰式料理</option>
-                          <option value="6">其它</option>
+                          <option value="1">運動</option>
+                          <option value="2">學習</option>
+                          <option value="3">聚餐</option>
+                          <option value="4">旅遊</option>
+                          <option value="5">休閒活動</option>
                         </select>
                       </div>
                     </div>
@@ -158,9 +160,9 @@
                 <div class="d-flex flex-column justify-content-between">
                   <div class="card-body py-0 bg-white px-md-6 pt-md-3">
                     <div>
-                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">樓梯跑步</h5>
                       <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
-                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                        一起挑戰樓梯跑步吧！💪 無論你是新手還是老手，這是一項讓全身動起來的好運動！不僅可以增強腿部力量，還能提升心肺功能，一起突破自我，燃燒卡路里🔥。
                       </p>
                     </div>
                   </div>
@@ -168,11 +170,11 @@
                     <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
                       <div class="d-flex">
                         <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/20</time>
                       </div>
                       <div class="d-flex">
                         <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">128</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-centerd justify-content-between border-top">
@@ -211,9 +213,9 @@
                 <div class="d-flex flex-column justify-content-between">
                   <div class="card-body py-0 bg-white px-md-6 pt-md-3">
                     <div>
-                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">街頭攝影</h5>
                       <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
-                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                        城市的每個角落，都藏著一個未被發現的故事。街頭攝影，用鏡頭捕捉瞬間，記錄生活中最真實的情感和風景。每一張照片，都是一個靜止的片刻，訴說著時間的流動與人們的故事。來吧，走上街頭，讓鏡頭替你講述那些平凡中的不凡。
                       </p>
                     </div>
                   </div>
@@ -221,11 +223,11 @@
                     <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
                       <div class="d-flex">
                         <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/15</time>
                       </div>
                       <div class="d-flex">
                         <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">769</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-centerd justify-content-between border-top">
@@ -264,9 +266,9 @@
                 <div class="d-flex flex-column justify-content-between">
                   <div class="card-body py-0 bg-white px-md-6 pt-md-3">
                     <div>
-                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">戴記扁食</h5>
                       <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
-                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                        老字號的美味等著你！戴記扁食，以濃郁湯頭與手工餛飩著名，是許多人心中的深夜食堂。無論你是第一次品嚐，還是熟悉的老朋友，都歡迎來一起享受這經典味道！
                       </p>
                     </div>
                   </div>
@@ -274,11 +276,11 @@
                     <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
                       <div class="d-flex">
                         <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/13</time>
                       </div>
                       <div class="d-flex">
                         <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">1120</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-centerd justify-content-between border-top">
@@ -317,9 +319,9 @@
                 <div class="d-flex flex-column justify-content-between">
                   <div class="card-body py-0 bg-white px-md-6 pt-md-3">
                     <div>
-                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">手作陶藝工作坊</h5>
                       <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
-                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                        放下忙碌的生活，來感受陶土在指尖流動的樂趣吧！在這次的手作陶藝工作坊中，我們將親手打造屬於自己的獨特作品，無論是花瓶、擺飾，還是小物件，都能讓你發揮創意！
                       </p>
                     </div>
                   </div>
@@ -327,11 +329,11 @@
                     <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
                       <div class="d-flex">
                         <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/08</time>
                       </div>
                       <div class="d-flex">
                         <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">265</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-centerd justify-content-between border-top">
@@ -370,9 +372,9 @@
                 <div class="d-flex flex-column justify-content-between">
                   <div class="card-body py-0 bg-white px-md-6 pt-md-3">
                     <div>
-                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">陶藝製作體驗</h5>
                       <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
-                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                        想要親手捏出屬於自己的陶器嗎？來參加我們的陶藝製作體驗吧！無論是初學者還是有經驗的手作愛好者，都可以在這裡享受與陶土親密接觸的樂趣。你將在專業老師的指導下，完成自己的獨特作品，體驗從泥土到藝術品的創作過程！
                       </p>
                     </div>
                   </div>
@@ -380,11 +382,11 @@
                     <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
                       <div class="d-flex">
                         <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/02</time>
                       </div>
                       <div class="d-flex">
                         <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">143</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-centerd justify-content-between border-top">
@@ -423,9 +425,9 @@
                 <div class="d-flex flex-column justify-content-between">
                   <div class="card-body py-0 bg-white px-md-6 pt-md-3">
                     <div>
-                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">市集漫遊</h5>
                       <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
-                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                        讓我們一起走進充滿故事的老街市集，體驗最本土化的市井生活。無論是街邊的老店、經典小吃，還是市集中的人情味，都讓這裡成為一個有溫度的角落。一起漫步、發掘那些被時光悄悄雕琢的風景。
                       </p>
                     </div>
                   </div>
@@ -433,11 +435,11 @@
                     <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
                       <div class="d-flex">
                         <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/02/20</time>
                       </div>
                       <div class="d-flex">
                         <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">245</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-centerd justify-content-between border-top">
@@ -476,9 +478,9 @@
                 <div class="d-flex flex-column justify-content-between">
                   <div class="card-body py-0 bg-white px-md-6 pt-md-3">
                     <div>
-                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">精釀啤酒之夜</h5>
                       <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
-                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                        想要一起來體驗各式精釀啤酒的魅力嗎？從經典到小眾，這裡有你沒喝過的驚喜口味！邀請你加入我們的啤酒之夜，享受微醺時光，搭配美味小點，來一場味蕾的狂歡！
                       </p>
                     </div>
                   </div>
@@ -486,11 +488,11 @@
                     <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
                       <div class="d-flex">
                         <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/02/18</time>
                       </div>
                       <div class="d-flex">
                         <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">864</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-centerd justify-content-between border-top">
@@ -529,9 +531,9 @@
                 <div class="d-flex flex-column justify-content-between">
                   <div class="card-body py-0 bg-white px-md-6 pt-md-3">
                     <div>
-                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">酒吧夜晚聚會</h5>
                       <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
-                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                        想要在週末放鬆一下嗎？來到這個氛圍滿分的酒吧，與朋友們一起享受美酒佳餚，聊聊生活、工作，度過愉快的夜晚！這裡有精緻的調酒、咖啡，以及多樣的小點心，無論你是喜歡小酌還是靜靜地品咖啡，都能找到屬於你的樂趣。
                       </p>
                     </div>
                   </div>
@@ -539,11 +541,11 @@
                     <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
                       <div class="d-flex">
                         <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/02/10</time>
                       </div>
                       <div class="d-flex">
                         <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">612</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-centerd justify-content-between border-top">
@@ -582,9 +584,9 @@
                 <div class="d-flex flex-column justify-content-between">
                   <div class="card-body py-0 bg-white px-md-6 pt-md-3">
                     <div>
-                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">書香咖啡館</h5>
+                      <h5 class="card-title fs-9 py-2 pb-md-5 m-0 text-dark fs-md-5">咖啡廳慢生活</h5>
                       <p class="card-text text-ellipsis text-dark fs-10 fs-md-9 mb-md-5">
-                        在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
+                        來到這個溫馨的咖啡廳，享受一段輕鬆愉快的時光吧！無論是工作、學習、還是純粹的放鬆，這裡的氛圍都會讓你感到舒適自在。點一杯你喜歡的咖啡，與好友們聊聊天、交換書籍、分享生活趣事，讓這段時間充滿溫暖與愉快。
                       </p>
                     </div>
                   </div>
@@ -592,11 +594,11 @@
                     <div class="d-flex align-items-center justify-content-between py-2 pt-md-0">
                       <div class="d-flex">
                         <i class="bi bi-calendar4 fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/03/22</time>
+                        <time class="fs-11 fs-md-9" style="color: #808080;">2024/02/02</time>
                       </div>
                       <div class="d-flex">
                         <i class="bi bi-eye fs-11 me-1 fs-md-9" style="color: #808080;"></i>
-                        <p class="fs-11 fs-md-9" style="color: #808080;">623</p>
+                        <p class="fs-11 fs-md-9" style="color: #808080;">157</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-centerd justify-content-between border-top">
@@ -657,7 +659,7 @@
               <div class="row m-0">
                 <div class="col-xl-7 p-0 ps-xl-4 order-xl-1">
                   <div class="header px-4 pt-10 border-0 p-xl-0">
-                    <h4 class="modal-title" id="storeModal">士林貳貳參丼飯</h4>
+                    <h4 class="modal-title" id="storeModal">書香咖啡館</h4>
                     <p class="fs-7 my-4">
                       在一個有點復古風的民宅裡用餐的心情,餐點也很令人垂涎三尺,平價CP值高。椒麻舒肥雞會讓你有股衝動叫第二碗。豬排肉咬起來會感受到真的在吃肉,外裹麵皮只是點綴。不會Q麻糬,是看了評價而點,我也推薦給大家。
                     </p>
@@ -682,19 +684,19 @@
                       <div class="swiper storeSwiper mb-4">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
-                            <img src="../assets/images/card-06.png" alt="store-card" class="store-img-small">
+                            <img src="../assets/images/card-06.png" alt="store-card" class="img-fluid store-img-small">
                           </div>
                           <div class="swiper-slide">
-                            <img src="../assets/images/card-06.png" alt="store-card" class="store-img-small">
+                            <img src="../assets/images/card-06.png" alt="store-card" class="img-fluid store-img-small">
                           </div>
                           <div class="swiper-slide">
-                            <img src="../assets/images/card-06.png" alt="store-card" class="store-img-small">
+                            <img src="../assets/images/card-06.png" alt="store-card" class="img-fluid store-img-small">
                           </div>
                           <div class="swiper-slide">
-                            <img src="../assets/images/card-06.png" alt="store-card" class="store-img-small">
+                            <img src="../assets/images/card-06.png" alt="store-card" class="img-fluid store-img-small">
                           </div>
                           <div class="swiper-slide d-none d-xl-block">
-                            <img src="../assets/images/card-06.png" alt="store-card" class="store-img-small">
+                            <img src="../assets/images/card-06.png" alt="store-card" class="img-fluid store-img-small">
                           </div>
 
                         </div>
@@ -729,11 +731,11 @@
                   style="background-color: #F8F8F8; border-radius: 20px; border: 1px solid #E5E5E5;">
                   <div class="comment_content mb-4">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                      <div>
+                      <div class="d-flex align-items-center gap-4">
                         <img src="../assets/images/author-02.png" alt="user-img">
-                      </div>
-                      <div class="other-user d-flex align-items-center justify-content-between">
                         <p class="fs-8" style="font-weight: 700;">Tommy.C</p>
+                      </div>
+                      <div>
                         <time datetime="2024/04/26" class="fs-10" style="color: #808080">2024/04/26</time>
                       </div>
                     </div>
@@ -743,11 +745,11 @@
                   </div>
                   <div class="comment_content">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                      <div>
+                      <div class="d-flex align-items-center gap-4">
                         <img src="../assets/images/author-03.png" alt="user-img">
-                      </div>
-                      <div class="other-user d-flex align-items-center justify-content-between">
                         <p class="fs-8" style="font-weight: 700;">Samew5151</p>
+                      </div>
+                      <div>
                         <time datetime="2024/04/26" class="fs-10" style="color: #808080">2024/04/26</time>
                       </div>
                     </div>
@@ -759,7 +761,7 @@
                 </div>
                 <textarea class="form-control pt-6 ps-6 pe-6 pb-0 mb-4" rows="3" placeholder="留下評論......"
                   id="floatingTextarea"
-                  style="border-radius: 4px; border: 1px solid #bfbfbf; min-height: 126px;"></textarea>
+                  style="border-radius: 4px; border: 1px solid #bfbfbf; min-height: 126px; resize:none;"></textarea>
                 <div class="d-flex justify-content-end">
                   <button class=" border-0 text-nowrap" style="border-radius: 4px; font-weight: 700; padding: 8px 54px;"
                     data-bs-dismiss="modal">送出評論</button>

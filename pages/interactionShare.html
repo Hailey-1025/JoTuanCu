@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>心得資訊｜JO團趣</title>
+</head>
+
+<body>
+    <%- include('./layout/header', {page: "interaction" }); -%>
+        <div class="interactionShare container py-5">
+            <div class="form-container">
+                <h2 class="text-center mb-5">心得資訊</h2>
+                <form>
+                    <div class="d-flex gap-4 mb-3 pb-2 border-bottom">
+                        <label class="text-nowrap">心得類型</label>
+                        <label class="label-custom"><input class="me-2" type="radio" name="category" value="運動">運動</label>
+                        <label class="label-custom"><input class="me-2" type="radio" name="category" value="學習">學習</label>
+                        <label class="label-custom"><input class="me-2" type="radio" name="category" value="聚餐" checked>聚餐</label>
+                        <label class="label-custom"><input class="me-2" type="radio" name="category" value="旅遊">旅遊</label>
+                        <label class="label-custom"><input class="me-2" type="radio" name="category" value="休閒活動">休閒活動</label>
+                    </div>
+
+                    <div class="d-flex gap-4 mb-3 pb-2 border-bottom align-items-center">
+                        <label class="text-nowrap" for="title">心得標題</label>
+                        <input class="w-100 p-2 border-0" type="text" id="title" name="title" placeholder="請輸入標題">
+                    </div>
+
+                    <div class="d-flex gap-4 mb-3 pb-2 border-bottom align-items-center">
+                        <label class="text-nowrap" for="date">活動日期</label>
+                        <input class="w-100 p-2 border-0" type="text" id="date" placeholder="0000年00月00日">
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="pb-2" for="photo">活動照片</label>
+                        <div class="photo-upload">
+                            <input class="pb-5" type="file" id="photo" name="photo" multiple style="width: 196px;">
+                            <p class="fs-10" style="color: #808080;">請至少上傳一張照片，最多四張</p>
+                            <p class="fs-10" style="color: #808080;">上傳檔案大小上限：128MB</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="pb-2" for="content">心得內容</label>
+                        <textarea class="w-100 form-control" id="content" name="content" rows="5"
+                            placeholder="請留下您的心得..."></textarea>
+                    </div>
+
+                    <div class="submit-btn mb-5">
+                        <button type="submit"
+                            style="border-radius: 4px; font-weight: 700; padding: 8px 54px;">送出</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
