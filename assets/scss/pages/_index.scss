@@ -1,0 +1,614 @@
+// 刊頭
+.indexH1 {
+    float: left;
+    background-image: url(../assets/images/indexHeaderMobile.png);
+    width: 327px;
+    height: 145px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 2;
+
+    @media (min-width:768px) {
+        background-image: url(../assets/images/indexHeader.png);
+        width: 713px;
+        height: 76px;
+        background-size: contain;
+    }
+}
+
+.indexBgRound{
+    background: url(../assets/images/bg-heading.png) no-repeat;
+    background-position: 50% 0;
+    @media (min-width:768px) {
+        background-position: center;
+    }
+}
+
+.indexBgLine {
+    position: relative;
+    overflow-x: hidden;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/Decorative-lines-01.png) no-repeat;
+        width: 1767px;
+        height: 1570px;
+        top: -15%;
+        left: 50%;
+        transform: translateX(-30%);
+        z-index: -2;
+    }
+    @media (min-width:768px) {
+        &::after{
+            top: -10%;
+        }
+    }
+
+    @media (min-width:992px) {
+        &::after {
+            top: -5%;
+        }
+    }
+}
+
+.indexBg {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/img-bannerA.png) no-repeat;
+        background-size: contain;
+        width: 150px;
+        height: 205px;
+        left: 0;
+        bottom: calc(0% + 140px);
+        z-index: -1;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/img-bannerB.png) no-repeat;
+        background-size: contain;
+        width: 125px;
+        height: 185px;
+        right: 0;
+        bottom: calc(0% + 146px);
+        z-index: -1;
+    }
+
+    @media (min-width:576px) {
+        &::after {
+            width: 309px;
+            height: 508px;
+            bottom: calc(0% + 50px);
+        }
+
+        &::before {
+            width: 279px;
+            height: 490px; 
+            bottom: calc(0% + 50px);
+        }
+    }
+    @media (min-width:768px) {
+        &::after {
+            width: 409px;
+            height: 608px;
+            bottom: 0;
+        }
+
+        &::before {
+            width: 279px;
+            height: 490px; 
+            top: 20%; 
+        }
+    }
+
+
+    @media (min-width:1200px) {
+        &::after {
+            width: 509px;
+            height: 708px;
+        }
+
+        &::before {
+            width: 379px;
+            height: 590px;
+        }
+    }
+
+    @media (min-width:1400px) {
+        &::after {
+            width: 609px;
+            height: 808px;
+        }
+
+        &::before {
+            width: 479px;
+            height: 690px;
+            top: 0;
+        }
+    }
+}
+
+.indexSelectMax{
+    width: 100%;
+    @media (min-width:992px) {
+        width: 342px;
+    }
+}
+.indexSelectMin{
+    width: 100%;
+    @media (min-width:992px) {
+        width: 169px;
+    }
+}
+
+
+// 最新活動
+.index-newActivity {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/banner-12.png) no-repeat;
+        background-size: contain;
+        top: 3%;
+        right: 60px;
+        transform: translate(0, -100%);
+        width: 133px;
+        height: 124px;
+        z-index: 3;
+    }
+
+    @media (min-width:576px) {
+        &::after {
+            width: calc(470px / 2);
+            height: calc(344px / 2);
+        }
+    }
+
+    @media (min-width:992px) {
+        &::after {
+            width: 370px;
+            height: 244px;
+        }
+    }
+
+    @media (min-width:1600px) {
+        &::after {
+            width: 470px;
+            height: 344px;
+            right: calc(0% + 112px);
+            transform: translate(50%, -50%);
+        }
+    }
+
+    &::before {
+        display: none;
+    }
+
+    @media (min-width:768px) {
+        &::before {
+            position: absolute;
+            content: "";
+            background: url(../assets/images/Decorative-lines-10.png) no-repeat;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 19px;
+            height: 158px;
+            display: block;
+        }
+    }
+}
+
+.plus {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../assets/images/Decorative-lines-03.png) no-repeat;
+        width: 21px;
+        height: 200px;
+        bottom: calc(-100% - 91px);
+        right: calc(0% + 24px);
+    }
+
+    @media (min-width:576px) {
+        bottom: -100%;
+        right: calc(0% + 80px);
+    }
+}
+
+
+// 新手指南
+.qaBg {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/Decorative-lines-03.png) no-repeat;
+        width: 21px;
+        height: 200px;
+        left: 0;
+        top: 0;
+        margin-top: 1333px;
+        margin-left: 80px;
+        display: none;
+
+        @include media-breakpoint-up(xl) {
+            display: block;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/Decorative-lines-03.png) no-repeat;
+        width: 21px;
+        height: 200px;
+        right: 0;
+        top: 0;
+        margin-top: 1333px;
+        margin-right: 80px;
+        display: none;
+
+        @include media-breakpoint-up(xl) {
+            display: block;
+        }
+    }
+}
+
+.illustRead {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../assets/images/illustrate-02.png) no-repeat;
+        background-size: contain;
+        width: 144px;
+        height: 108px;
+        top: calc(50% - 48px);
+
+        @media (min-width:576px) {
+            width: 228px;
+            height: 216px;
+            top: calc(50% - 20px);
+        }
+
+        @media (min-width:1200px) {
+            right: 0;
+            top: 0;
+        }
+
+        @media (min-width:1700px) {
+            width: 384px;
+            height: 287px;
+            left: calc(100% - 15px);
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.illustSport {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../assets/images/illustrate-01.png) no-repeat;
+        background-size: contain;
+        width: 136px;
+        height: 144px;
+        right: 0;
+        top: calc(50% - 48px);
+
+        @media (min-width:576px) {
+            width: 242px;
+            height: 258px;
+            right: calc(0% - 5px);
+        }
+
+        @media (min-width:1200px) {
+            left: calc(0% - 45px);
+            top: calc(0% - 69px);
+        }
+
+        @media (min-width:1700px) {
+            width: 415px;
+            height: 439px;
+            left: 0;
+            top: calc(0% - 69px);
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.illustDrink {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../assets/images/illustrate-03.png) no-repeat;
+        background-size: contain;
+        width: 104px;
+        height: 144px;
+        top: calc(50% - 48px);
+
+        @media (min-width:576px) {
+            width: 208px;
+            height: 288px;
+            top: calc(50% - 110px);
+        }
+
+        @media (min-width:1200px) {
+            right: calc(0% - 20px);
+            bottom: calc(0% - 36px);
+        }
+
+        @media (min-width:1700px) {
+            width: 354px;
+            height: 490px;
+            left: 100%;
+            bottom: calc(0% - 36px);
+            transform: translateX(-50%);
+        }
+    }
+}
+
+// 好評推薦
+// 卡片內文
+.card-text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.card-text-truncate4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+.card-text-truncate2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+// 熱門商家
+.index-featuredShop {
+    position: relative;
+
+    // 背景裝飾
+    &::after {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/Decorative-lines-11.png) no-repeat;
+        width: 169px;
+        height: 154px;
+        top: 0;
+        left: 0;
+        margin-top: 24px;
+        margin-left: -32px;
+        z-index: -1;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 156px;
+            margin-left: 112px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: url(../assets/images/Decorative-lines-03.png) no-repeat;
+        width: 21px;
+        height: 200px;
+        bottom: 0;
+        right: 0;
+        margin-bottom: -80px;
+        margin-right: 24px;
+        z-index: -1;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 75px;
+            margin-right: 80px;
+        }
+    }
+}
+
+//輪播+共用
+.index-newActivity,
+.index-featuredShop {
+
+    // 輪播條
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        border: 1px solid #D9D9D9;
+        background: #FAFAFA;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 40px;
+        border: 1px solid #333333;
+        background: #FCFF6F;
+        box-shadow: 4px 4px 0px -1px #CEFF66;
+        border-radius: 50rem;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 8px;
+    }
+
+    //輪播按鈕
+    .swiper-button-next,
+    .swiper-button-prev {
+        content: "";
+    }
+
+    .swiper-button-next-indexNewActivity,
+    .swiper-button-prev-indexNewActivity,
+    .swiper-button-next-indexFeaturedShop,
+    .swiper-button-prev-indexFeaturedShop {
+        color: #333333;
+        background: #F2F2F2;
+        width: 48px;
+        height: 48px;
+        border-radius: 50rem;
+        position: absolute;
+        display: none;
+
+        &::after {
+            font-family: 'bootstrap-icons';
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        @media (min-width: 1460px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .swiper-button-next-indexNewActivity,
+    .swiper-button-next-indexFeaturedShop {
+        left: calc(100% + 24px);
+
+        &::after {
+            content: "\F285";
+        }
+    }
+
+    .swiper-button-prev-indexNewActivity,
+    .swiper-button-prev-indexFeaturedShop {
+        left: calc(0% - 72px);
+
+        &::after {
+            content: "\F284";
+        }
+    }
+
+
+
+    // 愛心圖片裝飾
+    .heart {
+        background: url(../assets/images/heart.svg) no-repeat;
+        width: 20px;
+        height: 24px;
+        display: block;
+    }
+
+    .btn-check:checked+.btn,
+    :not(.btn-check)+.btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+        .heart {
+            background: url(../assets/images/heart-fill.svg) no-repeat;
+        }
+    }
+}
+
+
+// modal
+.swiper-button-next-indexModalMySwiper,
+.swiper-button-prev-indexModalMySwiper {
+    color: white;
+    border-radius: 50rem;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    &::after {
+        font-family: 'bootstrap-icons';
+        line-height: 1.5;
+        font-weight: 900;
+        font-size: 24px;
+    }
+
+    @media (min-width: 1460px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.swiper-button-next-indexModalMySwiper {
+    right: 0;
+
+    &::after {
+        content: "\F285";
+    }
+}
+
+.swiper-button-prev-indexModalMySwiper {
+    left: 0;
+
+    &::after {
+        content: "\F284";
+    }
+}
+
+.modalTextrea::placeholder {
+    color: #D9D9D9;
+}
+
+.modalRounded {
+    border-radius: 4px;
+
+    @media (min-width:992px) {
+        border-radius: 20px;
+    }
+}
+
+.modalHeight-100 {
+    height: auto;
+
+    @media (min-width:992px) {
+        height: 100%;
+    }
+}
+
+// 星星
+.star {
+    background: url(../assets/images/starLine.svg) no-repeat;
+    background-size: auto;
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.btn-check:checked+.btn,
+:not(.btn-check)+.btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+    .star {
+        background: url(../assets/images/star.svg) no-repeat;
+    }
+}
+
+.btn-check+.btn:hover {
+    .star {
+        background: url(../assets/images/star.svg) no-repeat;
+    }
+}
