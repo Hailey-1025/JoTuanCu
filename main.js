@@ -38,6 +38,21 @@ var swiper = new Swiper(".index-newActivitySwiper", {
   },
 });
 
+// 好評推薦
+var swiper = new Swiper(".recommendSwiper", {
+  slidesPerView: 2,
+  centeredSlides: true,
+  spaceBetween: 24,
+  grabCursor: true,
+});
+var swiper = new Swiper(".recommendSwiperPhone", {
+  slidesPerView: 1.8,
+  centeredSlides: true,
+  spaceBetween: 24,
+  grabCursor: true,
+});
+
+
 // 熱門商家
 var swiper = new Swiper(".index-featuredShopSwiper", {
   slidesPerView: 1,
