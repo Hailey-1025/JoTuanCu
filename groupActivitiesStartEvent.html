@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>揪團活動｜JO團趣</title>
+    <script type="module" crossorigin src="/JoTuanCu/assets/main-a3e3353b.js"></script>
+    <link rel="stylesheet" href="/JoTuanCu/assets/main-1b82ab71.css">
+  </head>
+
+  <body>
+    <nav class="sticky-top bg-light">
+    <div class="container-fluid py-2 py-lg-6 px-xl-20 offcanvas-style">
+        <div class="navbar navbar-expand-lg justify-content-start py-0">
+            <a class="navbar-brand py-0 me-0" href="index.html">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="data:image/png;base64,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 ">
+                    <img src="data:image/png;base64,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" alt="logo">
+                </picture>
+            </a>
+            <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end align-items-lg-center border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 255px;">
+                <ul class="navbar-nav px-6 py-4">
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 active" aria-current="page" href="groupActivities.html">揪團活動</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="featuredShop.html">精選商家</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="interaction.html">揪友交流</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 QA" aria-current="page" href="#">新手指南</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn-close text-reset position-absolute d-lg-none bottom-0 start-50 translate-middle-x bg-white rounded-pill p-4 shadow mb-8" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <a href="#">
+                <img class="me-lg-2 ms-1" src="data:image/png;base64,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" alt="myPhoto">
+                <span class="d-none d-lg-inline-block">Hailey</span>
+            </a>
+        </div>
+    </div>
+</nav>
+    <section class="groupActivities-startEvent py-20">
+      <div class="container">
+        <form action="#" id="uploadForm">
+          <div class="row mb-8">
+            <div class="col-12">
+              <div class="border border-dark rounded-3 bg-white">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-6 col-12">
+                    <div class="py-lg-10 ps-lg-20 pe-lg-0 p-10 h-100">
+                      <div class="h-100 uploadWrap">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center h-100 py-lg-0 py-15"
+                          style="
+                            border: 2px dashed #808080;
+                            background-color: #d3d3d3;
+                          "
+                        >
+                          <p>請至少上傳一張圖片</p>
+                          <button
+                            type="button"
+                            class="text-white rounded-2 py-3 px-10 my-2 fw-light"
+                            style="background-color: gray; border: none"
+                            id="uploadButton"
+                          >
+                            點選上傳圖片
+                          </button>
+                          <input
+                            type="file"
+                            id="fileUpload"
+                            name="fileUpload"
+                            accept="image/*"
+                            style="display: none"
+                          />
+
+                          <p>上傳檔案大小上限：128MB</p>
+                          <div
+                            class="fileUploadModalWrap"
+                            id="fileUploadModalWrap"
+                          >
+                            <div id="fileUploadModal" class="fileUploadModal">
+                              <div
+                                class="fileUploadModal-content"
+                                id="fileUploadModalContent"
+                              >
+                                <span class="fileUploadModalClose"
+                                  >&times;</span
+                                >
+                                <p style="padding-top: 20px">
+                                  請上傳一張圖片！
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="startJoTeamModalWrap"
+                            id="startJoTeamModalWrap"
+                          >
+                            <div id="startJoTeamModal" class="startJoTeamModal">
+                              <div
+                                class="startJoTeamModal-content"
+                                id="startJoTeamModalContent"
+                              >
+                                <span class="startJoTeamModalClose"
+                                  >&times;</span
+                                >
+                                <p
+                                  class="text-center"
+                                  style="padding-top: 20px"
+                                >
+                                  恭喜您！<br />成功發起了一個新的揪團！
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <div
+                      class="py-lg-10 pe-lg-20 ps-lg-0 pt-0 pb-10 px-10 h-100"
+                    >
+                      <div class="h-100">
+                        <div class="mb-3">
+                          <h3 class="fs-5 mb-2">活動主題</h3>
+                          <input
+                            class="w-100 groupActivities-startEvent-cusInput"
+                            type="text"
+                            placeholder="請填寫活動名稱"
+                            name="activitiesTitle"
+                            required
+                          />
+                        </div>
+
+                        <div>
+                          <h3 class="fs-5 mb-2">活動描述</h3>
+
+                          <textarea
+                            class="w-100 groupActivities-startEvent-cusTextarea"
+                            type="text"
+                            style="height: 200px"
+                            placeholder="請填寫活動描述"
+                            name="activitiesDescribe"
+                            id="groupActivitiesStartEventCusTextarea"
+                            required
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="border border-dark rounded-3 bg-white py-10">
+                <div class="row mb-8">
+                  <div class="col-12">
+                    <div
+                      class="row d-flex flex-lg-row flex-column justify-content-center px-lg-0 px-10"
+                    >
+                      <div class="col-lg-3 col-12 mb-lg-0 mb-4">
+                        <h3 class="fs-5 text-lg-center text-start">活動地點</h3>
+                      </div>
+                      <div class="col-lg-5 col-12">
+                        <div class="position-relative mb-4">
+                          <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEoSURBVHgB3ZLhbcJADIV9iP9tN2CEZILABmzQdAJgglwngE7QZoROEJgANmhHyAbp5+ZddRKg/gZL1nNsn/1sx+z2JSQjxvgIrNC51OUUQtg1TdOmvImSZ8BRia/oEz4vthmGYYH9pZyxgzuAFoyXaMj/jJYBu8aowJdEDRoeNKp/8v0tfwccJuLd5tRILNASu9NsJqqVPyhw7lVxCey9mzof8NVpAT6jP+izKv9JP9XLwivD/cMpUeBdC6nwRSV795N3eEMbzdADC5J8/77mMg3tW1LBca3o/BoPYkutfjwcskG3dl22GbW/Kt2lw+FqNJPlHVz8cCuCRZY8A2obb/ArIa/GT7amtR+ylOvoVPKfL9g5hR3woJjfaJ3Hp3YuEe2UXNsdyg+xVX/bOniYTAAAAABJRU5ErkJggg=="
+                            alt="groupActivities-startEvent-locationIcon"
+                            class="position-absolute groupActivities-startEvent-locationIcon"
+                          />
+                          <select
+                            class="form-select form-select-sm form-select-startEvent-cusLocation"
+                            aria-label="Small select example"
+                            id="locationStartEventSelect"
+                            name="activitiesLocation"
+                            required
+                          >
+                            <option value="" disabled selected hidden>
+                              選擇地點
+                            </option>
+                            <option value="Keelung">基隆</option>
+                            <option value="Taipei">台北</option>
+                            <option value="NewTaipei">新北</option>
+                            <option value="Taichung">台中</option>
+                            <option value="Tainan">台南</option>
+                            <option value="Kaohsiung">高雄</option>
+                            <option value="Other">其他</option>
+                          </select>
+                        </div>
+                        <div>
+                          <input
+                            class="w-100 groupActivities-startEvent-cusInput"
+                            type="text"
+                            placeholder="請填寫活動地址"
+                            name="activitiesAddress"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-8">
+                  <div class="col-12">
+                    <div
+                      class="row d-flex flex-lg-row flex-column justify-content-center px-lg-0 px-10"
+                    >
+                      <div class="col-lg-3 col-12 mb-lg-0 mb-4">
+                        <h3 class="fs-5 text-lg-center text-start">活動時間</h3>
+                      </div>
+                      <div class="col-lg-5 col-12">
+                        <div
+                          class="groupActivities-startEvent-dateInputWrap mb-4"
+                        >
+                          <label
+                            for="groupActivitiesStartEventDateInput"
+                            class="form-label d-none"
+                            >選擇日期</label
+                          >
+                          <input
+                            type="date"
+                            id="groupActivitiesStartEventDateInput"
+                            class="form-control groupActivities-startEvent-dateInput groupActivities-startEvent-custom-date"
+                            name="activitiesDate"
+                            required
+                          />
+                          <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAYCAYAAADKx8xXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB6SURBVHgB7ZLBCYAwDEUT6QCO0BWcyBncIN3AjRzBEewI3aD+QBEUhLTgRX3QkvDzIIcQfQwR2axZd8k93XPKOIQw5pxn1D3ZiMwsDpKgGbBKtFiY83BWLTJVog63iIdNlajTUSO/+JSY9IysQpmNDt+Et1TIqTivZwdR0y0znCRvXgAAAABJRU5ErkJggg=="
+                            alt="Calendar Icon"
+                            id="groupActivities-startEvent-customIcon"
+                            class="groupActivities-startEvent-locationIcon"
+                          />
+                        </div>
+                        <div class="groupActivities-startEvent-timeInputWrap">
+                          <label
+                            for="groupActivitiesStartEventTimeInput"
+                            class="form-label d-none"
+                            >選擇時間</label
+                          >
+                          <input
+                            type="time"
+                            id="groupActivitiesStartEventTimeInput"
+                            class="form-control groupActivities-startEvent-timeInput groupActivities-startEvent-custom-time"
+                            name="activitiesTime"
+                            required
+                          />
+                          <i
+                            class="bi bi-clock"
+                            style="font-size: 16px; color: #808080"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-8">
+                  <div class="col-12">
+                    <div
+                      class="row d-flex flex-lg-row flex-column justify-content-center px-lg-0 px-10"
+                    >
+                      <div class="col-lg-3 col-12 mb-lg-0 mb-4">
+                        <h3 class="fs-5 text-lg-center text-start">活動人數</h3>
+                      </div>
+                      <div
+                        class="col-lg-5 col-12 groupActivities-startEvent-numberInput"
+                      >
+                        <input
+                          class="w-100 groupActivities-startEvent-cusInput"
+                          type="number"
+                          value="2"
+                          min="2"
+                          name="activitiesPeopleNum"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-8">
+                  <div class="col-12">
+                    <div
+                      class="row d-flex flex-lg-row flex-column justify-content-center px-lg-0 px-10"
+                    >
+                      <div class="col-lg-3 col-12 mb-lg-0 mb-4">
+                        <h3 class="fs-5 text-lg-center text-start">活動類型</h3>
+                      </div>
+                      <div class="col-lg-5 col-12">
+                        <select
+                          class="form-select form-select-sm groupActivities-startEvent-activityType"
+                          aria-label="Small select example"
+                          id="activityStartEventSelect"
+                          name="activitiesType"
+                          required
+                        >
+                          <option value="" disabled selected hidden>
+                            選擇活動
+                          </option>
+                          <option value="sport">運動</option>
+                          <option value="learn">學習</option>
+                          <option value="food">美食</option>
+                          <option value="travel">旅遊</option>
+                          <option value="activities">休閒活動</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-12">
+                  <div class="col-12">
+                    <div
+                      class="row d-flex flex-lg-row flex-column justify-content-center px-lg-0 px-10"
+                    >
+                      <div class="col-lg-3 col-12 mb-lg-0 mb-4">
+                        <h3 class="fs-5 text-lg-center text-start">活動費用</h3>
+                      </div>
+                      <div class="col-lg-5 col-12">
+                        <div>
+                          <input
+                            class="w-100 groupActivities-startEvent-cusInput"
+                            type="text"
+                            placeholder="請輸入活動費用"
+                            name="activitiesCost"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 d-flex">
+                    <button
+                      type="submit"
+                      class="btn border-2 border-dark btn-outline-shadow mx-auto rounded-pill"
+                    >
+                      發起揪團
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-dark">
+    <div class="container-fluid py-10 pb-lg-6 px-xl-20">
+        <div class="d-flex flex-column flex-lg-row align-items-center mb-6">
+            <img class="me-lg-10 mb-10 mb-lg-0" src="/JoTuanCu/assets/Logo-8db3101b.png" alt="logo">
+            <ul class="d-flex flex-column flex-lg-row align-items-center mb-10 mb-lg-0 ps-0 list-unstyled">
+               <li><a class="link-white d-block py-2 px-lg-6" href="index.html">首頁</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="groupActivities.html">揪團活動</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="featuredShop.html">精選商家</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="interaction.html">揪友交流</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="QA.html">新手指南</a></li> 
+            </ul>
+            <ul class="d-flex align-items-center mb-0 ps-0 list-unstyled ms-lg-auto">
+                <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHbSURBVHgBrVTdTeNAEJ6ZNTmQTjr7TnfSPWEqIOmAq+BIBdABdADpACogHQAVAB2ECjBPPPBjg5ACMbvDjB1DftZAEJ+0Xu+u9/P8fDMINUhTDi08rKIxywAclruYEUAPrD2JooXEdw99RI4Gm3KwwQBh3Q/lZpes60wS4zjZfZNpbl+IYvgA5HLy5PL2n+h7b4pwSHb0plV+ZNbl/ypSKsn68dCyOrJM4rhJjUasQwhaCFhZFQZyV0Oli0AfzpgtYI7rTBg41/o7Hqvzm7tBBlwuNERMgw157aBa54jO6siQ+eBnON+u1pdpf0XiFBMZSRo3R70g11gKLMAKQj0YX1yDq7S/jkR7pVU8+WloTf6fkFRnH4OQLb55ztCkV9F+BTgM6o5+/fiGnr2OTDrg+vYxBY8qSMsJZsRQIh7PMAvY2VOJzdSRZlNncSGpyksV8aRVFOTL4KbpGKFHBuYPoBDuhOlERzpEUmvVnr4Xe453wINcmgZFUeGy94MZ0VXxF76KIHdlSuDzSKSaimQVhGql1KdWw8wJgrI5tKvSfMmGdgvtGjNamox2mjHCilRMF1LsvkOknmzfuUZrlExRW8YXIhFT1nnyO1o41j2VUmDMYmbnDpciv36fAYiryvTwFDATAAAAAElFTkSuQmCC" alt="facebook"></a></li>
+                <li class="mx-6"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAASCAYAAAC5DOVpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIaSURBVHgBjVTdcdNAEN5dOXLyAJEGeOBN6cAdxKkgUIFdAlRgXEFCBVYqSFxBnAqgA8QTM/z4ZAVGYyW6ZVeW7cNWGH0zmvvZ+77b2x8hODCGA6DlwCL2ECAAwAAawMCJ2FJbltNX4dFsvY/ryc8sHxLTBVcikAojhaeA1ZmgnsdU+u/DENPaozz6tViyfF/M/cMptMC3FWdU8bLiYmOQxUQ39UAbIWN+9+bZ8nrlxIqrIaqeOV8Unyzb9GVweLZL/GHyPhGdEnAKlqdheJQIeSKmISMOoeQFElzrvKMECWgPEeN/b88jJrqVGEa6thpewksRGhfWjg89bxY+96/0nAWqOLSlY9ogJEHmd+T7kXjXR4QbMY984Dcq5F6OzFFnu+SNWAnQFz8iQk9InWm9/VW+u3lW3DJ5I4lRvMlgDYIGkOcNZEgcoe2VbNW74AH+RHs8aAQ/XWM1Djrd41ZizPBZhkgzuWtDoCGo188O7v4jtm0dsv5HJXhEE5MVA62/73VtaebFFkMD3ARsxDSwInDma0aZYxmre8VjxYcXx93xvhSna7FE6ixyTa+lOGU4MdnjueWyp4cz27062cngo2ZdpRCTakMrWj5jWraTi71W1HjoxlwaXedtRLQXpS8v6x+EtpfzCzL5EIm0+7Vh9SkprF13IZVeDXWbSUxn99x9q89H95y66hOeM2PfTcg+hCgXEeGNWyJ/ATQuMhkuN0h2AAAAAElFTkSuQmCC" alt="instagram"></a></li>
+                <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAASCAYAAAC5DOVpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGzSURBVHgBpVTdUcJAEN5dmKAvAv48+GTsADugA+1ArEBLsAOgAuhAqAA6kA7ImzMqJPCCRNh1NwNMgCQj+s1csre39923t3eHsMKHP6vmcvQIgCU4ACLcJS60y2UM0Byf/qyGRC34IxBwcFp0biKy8WQ+FAAX/gFCuMtHUhOIRKSPCB1yCp2Nc7FwmaWmo7XdeBaoRMpGk7nsUD2dFY+akII3f+Y6RD3YFvFM+6HZRIbL8rFH7Nyo6cX9W2SWmhH5vmwqava6b39TZc2qx8wPqWS2R/ZnCuv+TK58naT2o7ah2lXzW3ra7o34onzcT1eGFEACUGQglKuvuiXNoBobDpKVaUVWVsBh+MyAd7pEoIsMmJdN82vpPUT04AiKptzIN/PtE6tmoBt7bfsBv8BoGrZ0o2ur7l41S0LfvXgBUokmX08xov00DQJSEQpf/Wl4n0kEWN/1U1Kw3QgWads1G0/nL/GjMZqEjSQiQx4yEF0zARfzi4a+KqiK7TFw0+LXZF5WkLA0iKgikLEwwiBKc8nSzFYoFciGd35S6OK6965vGiHd6tSDHkc9c/0pO81rPU4/nifiTN6TtqoAAAAASUVORK5CYII=" alt="line"></a></li>
+             </ul>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center text-gray-700 text-center">
+            <small class="mb-2 mb-lg-0">JO團趣 ©2024 Copyrights All Rights Reserved</small>
+            <small>本專題僅為學習用途,不做任何商業使用,圖片來源請見 GitHub Repo</small>
+        </div>
+    </div>
+</footer>
+    
+  </body>
+</html>
