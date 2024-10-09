@@ -11,208 +11,372 @@
 <body>
   <%- include('./layout/header', {page: "index" }); -%>
 
-    <!-- <header class="container text-center">
-      <h1 class="mb-6 fw-normal fs-2 fs-lg-1">相遇於心<span class="d-none d-lg-inline-block">，</span><br class="d-block d-lg-none">同行於趣</h1>
-      <div class="d-flex justify-content-center">
-        <select class="form-select me-2" aria-label="Default select example" style="max-width: 342px;">
-          <option selected>選擇活動</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-        <select class="form-select me-2" aria-label="Default select example" style="max-width: 169px;">
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-        <select class="form-select me-10" aria-label="Default select example" style="max-width: 169px;">
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-        <button type="button" class="btn btn-outline-shadow">搜尋</button>
-      </div>
-    </header> -->
 
-    <!-- 最新活動 -->
-    <section class="py-16 py-md-30 index-newActivity">
-      <div class="container px-0 px-md-3">
-        <h2 class="fw-light fs-3 fs-md-2 text-center mb-12 mb-md-10">最新活動</h2>
-        <div class="wiper-pagination swiper-pagination-indexNewActivity position-static mb-12 mb-md-10 text-center">
+    <!-- 刊頭 -->
+    <header class="indexBgLine">
+      <div class="pt-lg-35 pb-78 pb-lg-73 indexBg">
+        <div class="py-10 py-md-27 indexBgRound">
+          <div class="container text-center d-flex justify-content-center py-md-5 mb-6">
+            <h1 class="indexH1">相遇於心，同行於趣</h1>
+          </div>
+          <div class="container">
+            <div class="d-flex justify-content-center flex-column flex-lg-row">
+              <select class="form-select me-2 mb-2 mb-lg-0 indexSelectMax" aria-label="Default select example">
+                <option selected>選擇活動</option>
+                <option value="1">運動</option>
+                <option value="2">學習</option>
+                <option value="3">聚餐</option>
+                <option value="4">旅遊</option>
+                <option value="5">休閒活動</option>
+              </select>
+              <div class="d-flex mb-6 mb-lg-0">
+                <select class="form-select me-2 indexSelectMin" aria-label="Default select example">
+                  <option selected>選擇地點</option>
+                  <option value="1">台北市</option>
+                  <option value="2">新北市</option>
+                  <option value="3">桃園市</option>
+                  <option value="4">台中市</option>
+                  <option value="5">台南市</option>
+                  <option value="6">高雄市</option>
+                </select>
+                <div class="custom-icon me-lg-10 indexSelectMin">
+                  <label for="dateInput" class="form-label d-none">選擇日期</label>
+                  <input type="date" id="dateInput"
+                    class="form-control groupActivities-search-cusInput custom-date cus-input-focus">
+                  <img src="../assets/images/groupActivities-search-dateIcon.png" alt="Calendar Icon" id="customIcon"
+                    class="groupActivities-locationIcon">
+                </div>
+              </div>
+              <button type="button" class="btn btn-outline-shadow">搜尋</button>
+            </div>
+          </div>
         </div>
-        <div class="position-relative">
-          <div class="swiper index-newActivitySwiper">
-            <div class="flex-nowrap swiper-wrapper">
-              <div class="swiper-slide h-auto">
-                <div class="card border-0 h-100 position-relative">
-                  <img src="../assets/images/card-11.png" class="card-img-top rounded-3" alt="...">
-                  <div class="position-absolute end-0 d-flex align-items-center m-4">
-                    <input type="checkbox" class="btn-check" id="newActivityBtnLove01" autocomplete="off">
-                    <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove01"
-                      style="padding: 8px 10px;">
-                      <div class="heart"></div>
-                    </label>
-                  </div>
-                  <div class="card-body px-6 d-flex flex-column">
-                    <div class="d-flex align-items-center mb-4">
-                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">咖啡藝廊</h4>
-                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
-                        <i class="bi bi-bookmark-fill me-2"></i>
-                        優惠中
-                      </small>
+        <div class="container text-center mt-10 mt-lg-16">
+          <h3 class="mb-2 fs-7">吃喝玩樂．學習運動</h3>
+          <p class="text-gray-700">來JO團趣，找到你的夥伴，<br class="d-md-none ">創造美好回憶！</p>
+        </div>
+      </div>
+      <!-- 最新活動 -->
+      <section style="background: linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, #F2F2F2 100%);">
+        <div class="plus"></div>
+        <div class="container px-0 px-md-3 py-16 py-md-30 index-newActivity">
+          <h2 class="fw-light fs-3 fs-md-2 text-center mb-12 mb-md-10">最新活動</h2>
+          <div class="wiper-pagination swiper-pagination-indexNewActivity position-static text-center">
+          </div>
+          <div class="position-relative">
+            <div class="swiper pt-12 pt-md-10 pb-8 index-newActivitySwiper">
+              <div class="flex-nowrap swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card border-0 rounded-3 shadow">
+                    <img src="../assets/images/card-01.png" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-body px-6 position-relative bg-white pb-6">
+                      <div class="d-flex align-items-center mb-4">
+                        <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">台中美食探索之旅</h4>
+                        <div class="position-absolute end-0 d-flex align-items-center m-4">
+                          <input type="checkbox" class="btn-check" id="newActivityBtnLove01" autocomplete="off">
+                          <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove01"
+                            style="padding: 8px 10px;">
+                            <div class="heart"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700 mb-1">
+                        <i class="bi bi-geo-alt me-1"></i>
+                        <p>台中市逢甲夜市</p>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-calendar4 me-1"></i>
+                        <p class="pe-2">2024/08/05</p>
+                        <div class="border-end py-2"></div>
+                        <p class="ps-2">18:00</p>
+                      </div>
                     </div>
-                    <p class="card-text mb-auto card-text-truncate">
-                      咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br>
-                      這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。<br>
-                      同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...
-                    </p>
-                    <div class="d-flex align-items-center my-6 text-gray-700">
-                      <i class="bi bi-geo-alt"></i>
-                      <p>台北市大安區光復南路120號</p>
+                    <div class="card-footer bg-white rounded-bottom-3 py-5 px-6">
+                      <div class="d-flex align-items-center">
+                        <img class="me-2" src="../assets/images/author-01.png" alt="photo">
+                        <p class="text-gray-700">Taylor</p>
+                      </div>
                     </div>
-                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide h-auto">
-                <div class="card border-0 h-100 position-relative">
-                  <img src="../assets/images/card-11.png" class="card-img-top rounded-3" alt="...">
-                  <div class="position-absolute end-0 d-flex align-items-center m-4">
-                    <input type="checkbox" class="btn-check" id="newActivityBtnLove01" autocomplete="off">
-                    <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove01"
-                      style="padding: 8px 10px;">
-                      <div class="heart"></div>
-                    </label>
-                  </div>
-                  <div class="card-body px-6 d-flex flex-column">
-                    <div class="d-flex align-items-center mb-4">
-                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">咖啡藝廊</h4>
-                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
-                        <i class="bi bi-bookmark-fill me-2"></i>
-                        優惠中
-                      </small>
-                    </div>
-                    <p class="card-text mb-auto card-text-truncate">
-                      咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br>
-                      這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。<br>
-                      同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...
-                    </p>
-                    <div class="d-flex align-items-center my-6 text-gray-700">
-                      <i class="bi bi-geo-alt"></i>
-                      <p>台北市大安區光復南路120號</p>
-                    </div>
-                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide h-auto">
-                <div class="card border-0 h-100 position-relative">
-                  <img src="../assets/images/card-11.png" class="card-img-top rounded-3" alt="...">
-                  <div class="position-absolute end-0 d-flex align-items-center m-4">
-                    <input type="checkbox" class="btn-check" id="newActivityBtnLove01" autocomplete="off">
-                    <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove01"
-                      style="padding: 8px 10px;">
-                      <div class="heart"></div>
-                    </label>
-                  </div>
-                  <div class="card-body px-6 d-flex flex-column">
-                    <div class="d-flex align-items-center mb-4">
-                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">咖啡藝廊</h4>
-                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
-                        <i class="bi bi-bookmark-fill me-2"></i>
-                        優惠中
-                      </small>
+                <div class="swiper-slide">
+                  <div class="card border-0 rounded-3 shadow">
+                    <img src="../assets/images/card-02.png" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-body px-6 position-relative bg-white pb-6">
+                      <div class="d-flex align-items-center mb-4">
+                        <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">瑜伽冥想工作坊</h4>
+                        <div class="position-absolute end-0 d-flex align-items-center m-4">
+                          <input type="checkbox" class="btn-check" id="newActivityBtnLove02" autocomplete="off">
+                          <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove02"
+                            style="padding: 8px 10px;">
+                            <div class="heart"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700 mb-1">
+                        <i class="bi bi-geo-alt me-1"></i>
+                        <p class="text-truncate">台北市大安區光復南路120號</p>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-calendar4 me-1"></i>
+                        <p class="pe-2">2024/08/10</p>
+                        <div class="border-end py-2"></div>
+                        <p class="ps-2">15:00</p>
+                      </div>
                     </div>
-                    <p class="card-text mb-auto card-text-truncate">
-                      咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br>
-                      這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。<br>
-                      同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...
-                    </p>
-                    <div class="d-flex align-items-center my-6 text-gray-700">
-                      <i class="bi bi-geo-alt"></i>
-                      <p>台北市大安區光復南路120號</p>
+                    <div class="card-footer bg-white rounded-bottom-3 py-5 px-6">
+                      <div class="d-flex align-items-center">
+                        <img class="me-2" src="../assets/images/author-01.png" alt="photo">
+                        <p class="text-gray-700">Taylor</p>
+                      </div>
                     </div>
-                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide h-auto">
-                <div class="card border-0 h-100 position-relative">
-                  <img src="../assets/images/card-11.png" class="card-img-top rounded-3" alt="...">
-                  <div class="position-absolute end-0 d-flex align-items-center m-4">
-                    <input type="checkbox" class="btn-check" id="newActivityBtnLove01" autocomplete="off">
-                    <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove01"
-                      style="padding: 8px 10px;">
-                      <div class="heart"></div>
-                    </label>
-                  </div>
-                  <div class="card-body px-6 d-flex flex-column">
-                    <div class="d-flex align-items-center mb-4">
-                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">咖啡藝廊</h4>
-                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
-                        <i class="bi bi-bookmark-fill me-2"></i>
-                        優惠中
-                      </small>
-                    </div>
-                    <p class="card-text mb-auto card-text-truncate">
-                      咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br>
-                      這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。<br>
-                      同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...
-                    </p>
-                    <div class="d-flex align-items-center my-6 text-gray-700">
-                      <i class="bi bi-geo-alt"></i>
-                      <p>台北市大安區光復南路120號</p>
-                    </div>
-                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide h-auto">
-                <div class="card border-0 h-100 position-relative">
-                  <img src="../assets/images/card-11.png" class="card-img-top rounded-3" alt="...">
-                  <div class="position-absolute end-0 d-flex align-items-center m-4">
-                    <input type="checkbox" class="btn-check" id="newActivityBtnLove01" autocomplete="off">
-                    <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove01"
-                      style="padding: 8px 10px;">
-                      <div class="heart"></div>
-                    </label>
+                <div class="swiper-slide">
+                  <div class="card border-0 rounded-3 shadow">
+                    <img src="../assets/images/card-03.png" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-body px-6 position-relative bg-white pb-6">
+                      <div class="d-flex align-items-center mb-4">
+                        <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">高雄電影同好會</h4>
+                        <div class="position-absolute end-0 d-flex align-items-center m-4">
+                          <input type="checkbox" class="btn-check" id="newActivityBtnLove03" autocomplete="off">
+                          <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove03"
+                            style="padding: 8px 10px;">
+                            <div class="heart"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700 mb-1">
+                        <i class="bi bi-geo-alt me-1"></i>
+                        <p>高雄市夢時代影城</p>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-calendar4 me-1"></i>
+                        <p class="pe-2">2024/08/15</p>
+                        <div class="border-end py-2"></div>
+                        <p class="ps-2">14:00</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white rounded-bottom-3 py-5 px-6">
+                      <div class="d-flex align-items-center">
+                        <img class="me-2" src="../assets/images/author-01.png" alt="photo">
+                        <p class="text-gray-700">Taylor</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body px-6 d-flex flex-column">
-                    <div class="d-flex align-items-center mb-4">
-                      <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">咖啡藝廊</h4>
-                      <small class="d-flex align-items-center badge bg-green-500 py-2 px-3">
-                        <i class="bi bi-bookmark-fill me-2"></i>
-                        優惠中
-                      </small>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 rounded-3 shadow">
+                    <img src="../assets/images/card-05.png" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-body px-6 position-relative bg-white pb-6">
+                      <div class="d-flex align-items-center mb-4">
+                        <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">美食大探索</h4>
+                        <div class="position-absolute end-0 d-flex align-items-center m-4">
+                          <input type="checkbox" class="btn-check" id="newActivityBtnLove04" autocomplete="off">
+                          <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove04"
+                            style="padding: 8px 10px;">
+                            <div class="heart"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700 mb-1">
+                        <i class="bi bi-geo-alt me-1"></i>
+                        <p>台北市永康街小吃區</p>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-calendar4 me-1"></i>
+                        <p class="pe-2">2024/08/22</p>
+                        <div class="border-end py-2"></div>
+                        <p class="ps-2">12:00</p>
+                      </div>
                     </div>
-                    <p class="card-text mb-auto card-text-truncate">
-                      咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br>
-                      這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。<br>
-                      同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...
-                    </p>
-                    <div class="d-flex align-items-center my-6 text-gray-700">
-                      <i class="bi bi-geo-alt"></i>
-                      <p>台北市大安區光復南路120號</p>
+                    <div class="card-footer bg-white rounded-bottom-3 py-5 px-6">
+                      <div class="d-flex align-items-center">
+                        <img class="me-2" src="../assets/images/author-01.png" alt="photo">
+                        <p class="text-gray-700">Taylor</p>
+                      </div>
                     </div>
-                    <a href="#" class="btn btn-gray-200 d-block">查看完整內容</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 rounded-3 shadow">
+                    <img src="../assets/images/card-07.png" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-body px-6 position-relative bg-white pb-6">
+                      <div class="d-flex align-items-center mb-4">
+                        <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">山間健行</h4>
+                        <div class="position-absolute end-0 d-flex align-items-center m-4">
+                          <input type="checkbox" class="btn-check" id="newActivityBtnLove05" autocomplete="off">
+                          <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove05"
+                            style="padding: 8px 10px;">
+                            <div class="heart"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700 mb-1">
+                        <i class="bi bi-geo-alt me-1"></i>
+                        <p>新竹市18尖山步道</p>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-calendar4 me-1"></i>
+                        <p class="pe-2">2024/08/10</p>
+                        <div class="border-end py-2"></div>
+                        <p class="ps-2">08:00</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white rounded-bottom-3 py-5 px-6">
+                      <div class="d-flex align-items-center">
+                        <img class="me-2" src="../assets/images/author-01.png" alt="photo">
+                        <p class="text-gray-700">Taylor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 rounded-3 shadow">
+                    <img src="../assets/images/card-23.png" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-body px-6 position-relative bg-white pb-6">
+                      <div class="d-flex align-items-center mb-4">
+                        <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">書店漫遊</h4>
+                        <div class="position-absolute end-0 d-flex align-items-center m-4">
+                          <input type="checkbox" class="btn-check" id="newActivityBtnLove06" autocomplete="off">
+                          <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove06"
+                            style="padding: 8px 10px;">
+                            <div class="heart"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700 mb-1">
+                        <i class="bi bi-geo-alt me-1"></i>
+                        <p>台中市勤美誠品</p>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-calendar4 me-1"></i>
+                        <p class="pe-2">2024/07/21</p>
+                        <div class="border-end py-2"></div>
+                        <p class="ps-2">11:00</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white rounded-bottom-3 py-5 px-6">
+                      <div class="d-flex align-items-center">
+                        <img class="me-2" src="../assets/images/author-01.png" alt="photo">
+                        <p class="text-gray-700">Taylor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 rounded-3 shadow">
+                    <img src="../assets/images/card-24.png" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-body px-6 position-relative bg-white pb-6">
+                      <div class="d-flex align-items-center mb-4">
+                        <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">文青咖啡下午茶</h4>
+                        <div class="position-absolute end-0 d-flex align-items-center m-4">
+                          <input type="checkbox" class="btn-check" id="newActivityBtnLove07" autocomplete="off">
+                          <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove07"
+                            style="padding: 8px 10px;">
+                            <div class="heart"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700 mb-1">
+                        <i class="bi bi-geo-alt me-1"></i>
+                        <p>新北市淡水老街咖啡館</p>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-calendar4 me-1"></i>
+                        <p class="pe-2">2024/08/06</p>
+                        <div class="border-end py-2"></div>
+                        <p class="ps-2">14:30</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white rounded-bottom-3 py-5 px-6">
+                      <div class="d-flex align-items-center">
+                        <img class="me-2" src="../assets/images/author-01.png" alt="photo">
+                        <p class="text-gray-700">Taylor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 rounded-3 shadow">
+                    <img src="../assets/images/card-29.png" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-body px-6 position-relative bg-white pb-6">
+                      <div class="d-flex align-items-center mb-4">
+                        <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">品酒會</h4>
+                        <div class="position-absolute end-0 d-flex align-items-center m-4">
+                          <input type="checkbox" class="btn-check" id="newActivityBtnLove08" autocomplete="off">
+                          <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove08"
+                            style="padding: 8px 10px;">
+                            <div class="heart"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700 mb-1">
+                        <i class="bi bi-geo-alt me-1"></i>
+                        <p>台中市大里區酒吧</p>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-calendar4 me-1"></i>
+                        <p class="pe-2">2024/09/02</p>
+                        <div class="border-end py-2"></div>
+                        <p class="ps-2">18:30</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white rounded-bottom-3 py-5 px-6">
+                      <div class="d-flex align-items-center">
+                        <img class="me-2" src="../assets/images/author-01.png" alt="photo">
+                        <p class="text-gray-700">Taylor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 rounded-3 shadow">
+                    <img src="../assets/images/card-25.png" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-body px-6 position-relative bg-white pb-6">
+                      <div class="d-flex align-items-center mb-4">
+                        <h4 class="card-title mb-0 fs-6 fs-lg-5 me-4">游泳鍛鍊</h4>
+                        <div class="position-absolute end-0 d-flex align-items-center m-4">
+                          <input type="checkbox" class="btn-check" id="newActivityBtnLove09" autocomplete="off">
+                          <label class="btn btn-white border-0 rounded-pill" for="newActivityBtnLove09"
+                            style="padding: 8px 10px;">
+                            <div class="heart"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700 mb-1">
+                        <i class="bi bi-geo-alt me-1"></i>
+                        <p>高雄市美麗島捷運站健身房</p>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-calendar4 me-1"></i>
+                        <p class="pe-2">2024/09/07</p>
+                        <div class="border-end py-2"></div>
+                        <p class="ps-2">10:00</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-white rounded-bottom-3 py-5 px-6">
+                      <div class="d-flex align-items-center">
+                        <img class="me-2" src="../assets/images/author-01.png" alt="photo">
+                        <p class="text-gray-700">Taylor</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next swiper-button-next-indexNewActivity"></div>
+            <div class="swiper-button-prev swiper-button-prev-indexNewActivity"></div>
           </div>
-          <div class="swiper-button-next swiper-button-next-indexNewActivity"></div>
-          <div class="swiper-button-prev swiper-button-prev-indexNewActivity"></div>
+          <div class="text-center">
+            <a class="fw-bold border-bottom border-dark " href="featuredShop.html" style="padding: 5.5px 4px;">
+              查看更多商家
+              <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
         </div>
-        <div class="text-center mt-8">
-          <a class="fw-bold border-bottom border-dark " href="featuredShop.html" style="padding: 5.5px 4px;">
-            查看更多商家
-            <i class="bi bi-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-    </section>
+      </section>
+    </header>
 
     <!-- 新手指南 -->
     <section class="qaBg ">
@@ -284,27 +448,653 @@
     </section>
 
     <!-- 好評推薦 -->
-    <section class="bg-primary-h pt-40 pb-42 position-relative">
-      <div class="position-absolute top-0 end-0 mt-6 mt-lg-30 me-4 me-lg-26"
-        style="background: url(../assets/images/Decorative-lines-06.png) no-repeat; width: 138px;height: 114px;"></div>
+    <section class="bg-primary-h py-16 pt-md-40 pb-md-42 position-relative">
+      <div class="position-absolute top-0 end-0 mt-6 mt-lg-30 me-4 me-lg-26" style="background: url(../assets/images/Decorative-lines-06.png) no-repeat; width: 69px;height: 57px; background-size: contain;
+        @media (min-width: 768px) {
+          width: 138px;height: 114px;
+        }"></div>
       <div class="container">
-        <h2 class="fw-light text-center mb-23">好評推薦</h2>
+        <h2 class="fw-light text-center mb-12 mb-md-23">好評推薦</h2>
       </div>
 
       <!-- swiper -->
-      <div class="row">
-        <div class="col-4">
-          <div class="row">
-            <div class="col-12">
-             
+      <div class="swiper recommendSwiper d-none d-xl-block">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="row g-4">
+              <div class="col-6">
+                <div class="card border-0 rounded-3">
+                  <div class="row g-0">
+                    <div class="col-md-6 position-relative">
+                      <img src="../assets/images/card-04.png" class="rounded-start-3 img-fluid object-fit-cover h-100 w-100" alt="photo">
+                      <button type="button"
+                        class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                        style="width: 80%;">查看完整內容</button>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body py-1 px-4 d-flex flex-column justify-content-center h-100">
+                        <div class="my-1">
+                          <h4 class="fs-6 card-title mb-0 text-truncate">陶藝時光工作坊</h4>
+                          <p class="card-text my-1 card-text-truncate2 fs-10">
+                            在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-calendar4 me-1"></i>
+                            <p class="pe-2">2024/08/10</p>
+                          </div>
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-eye me-1"></i>
+                            <p class="pe-2">623</p>
+                          </div>
+                        </div>
+                        <div class="py-2 border-top">
+                          <div class="d-flex align-items-center mb-1">
+                            <img class="me-2" src="../assets/images/author-01.png" alt="photo"
+                              style="width: 24px;height: 24px;">
+                            <p class="fw-bold">李芳</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員等級：</p>
+                            <p>金級</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員揪團次數：</p>
+                            <p>25次</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card border-0 rounded-3">
+                  <div class="row g-0">
+                    <div class="col-md-6 position-relative">
+                      <img src="../assets/images/card-05.png" class="rounded-start-3 img-fluid object-fit-cover h-100 w-100" alt="photo">
+                      <button type="button"
+                        class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                        style="width: 80%;">查看完整內容</button>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body py-1 px-4 d-flex flex-column justify-content-center h-100">
+                        <div class="my-1">
+                          <h4 class="fs-6 card-title mb-0 text-truncate">阿嬤的味道小吃店</h4>
+                          <p class="card-text my-1 card-text-truncate2 fs-10">
+                            在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-calendar4 me-1"></i>
+                            <p class="pe-2">2024/08/10</p>
+                          </div>
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-eye me-1"></i>
+                            <p class="pe-2">623</p>
+                          </div>
+                        </div>
+                        <div class="py-2 border-top">
+                          <div class="d-flex align-items-center mb-1">
+                            <img class="me-2" src="../assets/images/author-01.png" alt="photo"
+                              style="width: 24px;height: 24px;">
+                            <p class="fw-bold">李芳</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員等級：</p>
+                            <p>金級</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員揪團次數：</p>
+                            <p>25次</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card border-0 rounded-3">
+                  <div class="row g-0">
+                    <div class="col-md-6 position-relative">
+                      <img src="../assets/images/card-04.png" class="rounded-start-3 img-fluid object-fit-cover h-100 w-100" alt="photo">
+                      <button type="button"
+                        class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                        style="width: 80%;">查看完整內容</button>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body py-1 px-4 d-flex flex-column justify-content-center h-100">
+                        <div class="my-1">
+                          <h4 class="fs-6 card-title mb-0 text-truncate">陶藝時光工作坊</h4>
+                          <p class="card-text my-1 card-text-truncate2 fs-10">
+                            在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-calendar4 me-1"></i>
+                            <p class="pe-2">2024/08/10</p>
+                          </div>
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-eye me-1"></i>
+                            <p class="pe-2">623</p>
+                          </div>
+                        </div>
+                        <div class="py-2 border-top">
+                          <div class="d-flex align-items-center mb-1">
+                            <img class="me-2" src="../assets/images/author-01.png" alt="photo"
+                              style="width: 24px;height: 24px;">
+                            <p class="fw-bold">李芳</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員等級：</p>
+                            <p>金級</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員揪團次數：</p>
+                            <p>25次</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card border-0 rounded-3">
+                  <div class="row g-0">
+                    <div class="col-md-6 position-relative">
+                      <img src="../assets/images/card-04.png" class="rounded-start-3 img-fluid object-fit-cover h-100 w-100" alt="photo">
+                      <button type="button"
+                        class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                        style="width: 80%;">查看完整內容</button>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body py-1 px-4 d-flex flex-column justify-content-center h-100">
+                        <div class="my-1">
+                          <h4 class="fs-6 card-title mb-0 text-truncate">陶藝時光工作坊</h4>
+                          <p class="card-text my-1 card-text-truncate2 fs-10">
+                            在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-calendar4 me-1"></i>
+                            <p class="pe-2">2024/08/10</p>
+                          </div>
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-eye me-1"></i>
+                            <p class="pe-2">623</p>
+                          </div>
+                        </div>
+                        <div class="py-2 border-top">
+                          <div class="d-flex align-items-center mb-1">
+                            <img class="me-2" src="../assets/images/author-01.png" alt="photo"
+                              style="width: 24px;height: 24px;">
+                            <p class="fw-bold">李芳</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員等級：</p>
+                            <p>金級</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員揪團次數：</p>
+                            <p>25次</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 rounded-3">
+              <div class="row g-0">
+                <div class="col-md-6 position-relative">
+                  <img src="../assets/images/card-06.png" class="rounded-start-3 img-fluid object-fit-cover h-100 w-100" alt="photo">
+                  <button type="button"
+                    class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-10"
+                    style="width: 80%;">查看完整內容</button>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body py-5 px-10">
+                    <div class="my-5">
+                      <h4 class="fs-4 card-title mb-0">書香咖啡館</h4>
+                      <p class="card-text my-7 card-text-truncate4">
+                        在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-5">
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-calendar4 me-1"></i>
+                        <p class="pe-2">2024/08/10</p>
+                      </div>
+                      <div class="d-flex align-items-center text-gray-700">
+                        <i class="bi bi-eye me-1"></i>
+                        <p class="pe-2">623</p>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center py-5 border-top">
+                      <div class="d-flex align-items-center">
+                        <img class="me-4" src="../assets/images/author-01.png" alt="photo">
+                        <p class="text-gray-700">Taylor</p>
+                      </div>
+                      <div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="text-gray-700 me-1">會員等級：</p>
+                          <p>金級</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="text-gray-700 me-1">會員揪團次數：</p>
+                          <p>25次</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row g-4">
+              <div class="col-6">
+                <div class="card border-0 rounded-3">
+                  <div class="row g-0">
+                    <div class="col-md-6 position-relative">
+                      <img src="../assets/images/card-04.png" class="rounded-start-3 img-fluid object-fit-cover h-100 w-100" alt="photo">
+                      <button type="button"
+                        class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                        style="width: 80%;">查看完整內容</button>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body py-1 px-4 d-flex flex-column justify-content-center h-100">
+                        <div class="my-1">
+                          <h4 class="fs-6 card-title mb-0 text-truncate">陶藝時光工作坊</h4>
+                          <p class="card-text my-1 card-text-truncate2 fs-10">
+                            在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-calendar4 me-1"></i>
+                            <p class="pe-2">2024/08/10</p>
+                          </div>
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-eye me-1"></i>
+                            <p class="pe-2">623</p>
+                          </div>
+                        </div>
+                        <div class="py-2 border-top">
+                          <div class="d-flex align-items-center mb-1">
+                            <img class="me-2" src="../assets/images/author-01.png" alt="photo"
+                              style="width: 24px;height: 24px;">
+                            <p class="fw-bold">李芳</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員等級：</p>
+                            <p>金級</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員揪團次數：</p>
+                            <p>25次</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card border-0 rounded-3">
+                  <div class="row g-0">
+                    <div class="col-md-6 position-relative">
+                      <img src="../assets/images/card-04.png" class="rounded-start-3 img-fluid object-fit-cover h-100 w-100" alt="photo">
+                      <button type="button"
+                        class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                        style="width: 80%;">查看完整內容</button>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body py-1 px-4 d-flex flex-column justify-content-center h-100">
+                        <div class="my-1">
+                          <h4 class="fs-6 card-title mb-0 text-truncate">陶藝時光工作坊</h4>
+                          <p class="card-text my-1 card-text-truncate2 fs-10">
+                            在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-calendar4 me-1"></i>
+                            <p class="pe-2">2024/08/10</p>
+                          </div>
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-eye me-1"></i>
+                            <p class="pe-2">623</p>
+                          </div>
+                        </div>
+                        <div class="py-2 border-top">
+                          <div class="d-flex align-items-center mb-1">
+                            <img class="me-2" src="../assets/images/author-01.png" alt="photo"
+                              style="width: 24px;height: 24px;">
+                            <p class="fw-bold">李芳</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員等級：</p>
+                            <p>金級</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員揪團次數：</p>
+                            <p>25次</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card border-0 rounded-3">
+                  <div class="row g-0">
+                    <div class="col-md-6 position-relative">
+                      <img src="../assets/images/card-04.png" class="rounded-start-3 img-fluid object-fit-cover h-100 w-100" alt="photo">
+                      <button type="button"
+                        class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                        style="width: 80%;">查看完整內容</button>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body py-1 px-4 d-flex flex-column justify-content-center h-100">
+                        <div class="my-1">
+                          <h4 class="fs-6 card-title mb-0 text-truncate">陶藝時光工作坊</h4>
+                          <p class="card-text my-1 card-text-truncate2 fs-10">
+                            在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-calendar4 me-1"></i>
+                            <p class="pe-2">2024/08/10</p>
+                          </div>
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-eye me-1"></i>
+                            <p class="pe-2">623</p>
+                          </div>
+                        </div>
+                        <div class="py-2 border-top">
+                          <div class="d-flex align-items-center mb-1">
+                            <img class="me-2" src="../assets/images/author-01.png" alt="photo"
+                              style="width: 24px;height: 24px;">
+                            <p class="fw-bold">李芳</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員等級：</p>
+                            <p>金級</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員揪團次數：</p>
+                            <p>25次</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card border-0 rounded-3">
+                  <div class="row g-0">
+                    <div class="col-md-6 position-relative">
+                      <img src="../assets/images/card-04.png" class="rounded-start-3 img-fluid object-fit-cover h-100 w-100" alt="photo">
+                      <button type="button"
+                        class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                        style="width: 80%;">查看完整內容</button>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body py-1 px-4 d-flex flex-column justify-content-center h-100">
+                        <div class="my-1">
+                          <h4 class="fs-6 card-title mb-0 text-truncate">陶藝時光工作坊</h4>
+                          <p class="card-text my-1 card-text-truncate2 fs-10">
+                            在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-calendar4 me-1"></i>
+                            <p class="pe-2">2024/08/10</p>
+                          </div>
+                          <div class="d-flex align-items-center text-gray-700 fs-11">
+                            <i class="bi bi-eye me-1"></i>
+                            <p class="pe-2">623</p>
+                          </div>
+                        </div>
+                        <div class="py-2 border-top">
+                          <div class="d-flex align-items-center mb-1">
+                            <img class="me-2" src="../assets/images/author-01.png" alt="photo"
+                              style="width: 24px;height: 24px;">
+                            <p class="fw-bold">李芳</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員等級：</p>
+                            <p>金級</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between fs-11">
+                            <p class="text-gray-700 me-1">會員揪團次數：</p>
+                            <p>25次</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-8">
+      </div>
+
+      <!-- swiperPhone -->
+      <div class="swiper recommendSwiperPhone d-block d-xl-none">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card rounded-3 border-0">
+              <div class="position-relative">
+                <img src="../assets/images/card-04.png" class="card-img-top rounded-top-3" alt="photo">
+                <button type="button"
+                  class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                  style="width: 80%;">查看完整內容</button>
+              </div>
+              <div class="card-body py-0">
+                <h4 class="card-title fs-9 my-2">陶藝時光工作坊</h4>
+                <p class="card-text card-text-truncate fs-10">
+                  在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-calendar4 me-1"></i>
+                    <p class="pe-2">2024/03/22</p>
+                  </div>
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-eye me-1"></i>
+                    <p class="pe-2">623</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center py-4 border-top">
+                  <img class="me-2" src="../assets/images/author-01.png" alt="photo" style="width: 24px;height: 24px;">
+                  <p class="fw-bold">李芳</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded-3 border-0">
+              <div class="position-relative">
+                <img src="../assets/images/card-05.png" class="card-img-top rounded-top-3" alt="photo">
+                <button type="button"
+                  class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                  style="width: 80%;">查看完整內容</button>
+              </div>
+              <div class="card-body py-0">
+                <h4 class="card-title fs-9 my-2">阿嬤的味道小吃店</h4>
+                <p class="card-text card-text-truncate fs-10">
+                  在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-calendar4 me-1"></i>
+                    <p class="pe-2">2024/03/22</p>
+                  </div>
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-eye me-1"></i>
+                    <p class="pe-2">623</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center py-4 border-top">
+                  <img class="me-2" src="../assets/images/author-01.png" alt="photo" style="width: 24px;height: 24px;">
+                  <p class="fw-bold">李芳</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded-3 border-0">
+              <div class="position-relative">
+                <img src="../assets/images/card-06.png" class="card-img-top rounded-top-3" alt="photo">
+                <button type="button"
+                  class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                  style="width: 80%;">查看完整內容</button>
+              </div>
+              <div class="card-body py-0">
+                <h4 class="card-title fs-9 my-2">書香咖啡館</h4>
+                <p class="card-text card-text-truncate fs-10">
+                  在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-calendar4 me-1"></i>
+                    <p class="pe-2">2024/03/22</p>
+                  </div>
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-eye me-1"></i>
+                    <p class="pe-2">623</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center py-4 border-top">
+                  <img class="me-2" src="../assets/images/author-01.png" alt="photo" style="width: 24px;height: 24px;">
+                  <p class="fw-bold">李芳</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded-3 border-0">
+              <div class="position-relative">
+                <img src="../assets/images/card-07.png" class="card-img-top rounded-top-3" alt="photo">
+                <button type="button"
+                  class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                  style="width: 80%;">查看完整內容</button>
+              </div>
+              <div class="card-body py-0">
+                <h4 class="card-title fs-9 my-2">台北市區慢跑</h4>
+                <p class="card-text card-text-truncate fs-10">
+                  在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-calendar4 me-1"></i>
+                    <p class="pe-2">2024/03/22</p>
+                  </div>
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-eye me-1"></i>
+                    <p class="pe-2">623</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center py-4 border-top">
+                  <img class="me-2" src="../assets/images/author-01.png" alt="photo" style="width: 24px;height: 24px;">
+                  <p class="fw-bold">李芳</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded-3 border-0">
+              <div class="position-relative">
+                <img src="../assets/images/card-08.png" class="card-img-top rounded-top-3" alt="photo">
+                <button type="button"
+                  class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                  style="width: 80%;">查看完整內容</button>
+              </div>
+              <div class="card-body py-0">
+                <h4 class="card-title fs-9 my-2 text-truncate">台中街頭的攝影探索</h4>
+                <p class="card-text card-text-truncate fs-10">
+                  在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-calendar4 me-1"></i>
+                    <p class="pe-2">2024/03/22</p>
+                  </div>
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-eye me-1"></i>
+                    <p class="pe-2">623</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center py-4 border-top">
+                  <img class="me-2" src="../assets/images/author-01.png" alt="photo" style="width: 24px;height: 24px;">
+                  <p class="fw-bold">李芳</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded-3 border-0">
+              <div class="position-relative">
+                <img src="../assets/images/card-09.png" class="card-img-top rounded-top-3" alt="photo">
+                <button type="button"
+                  class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                  style="width: 80%;">查看完整內容</button>
+              </div>
+              <div class="card-body py-0">
+                <h4 class="card-title fs-9 my-2">陶藝時光工作坊</h4>
+                <p class="card-text card-text-truncate fs-10">
+                  在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-calendar4 me-1"></i>
+                    <p class="pe-2">2024/03/22</p>
+                  </div>
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-eye me-1"></i>
+                    <p class="pe-2">623</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center py-4 border-top">
+                  <img class="me-2" src="../assets/images/author-01.png" alt="photo" style="width: 24px;height: 24px;">
+                  <p class="fw-bold">李芳</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded-3 border-0">
+              <div class="position-relative">
+                <img src="../assets/images/card-10.png" class="card-img-top rounded-top-3" alt="photo">
+                <button type="button"
+                  class="btn btn-gray-200  position-absolute bottom-0 start-50 translate-middle-x mb-4 px-0"
+                  style="width: 80%;">查看完整內容</button>
+              </div>
+              <div class="card-body py-0">
+                <h4 class="card-title fs-9 my-2">阿嬤的味道小吃店</h4>
+                <p class="card-text card-text-truncate fs-10">
+                  在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容在這裡不僅能喝到美味的咖啡，還能和大家一起討論書籍內容</p>
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-calendar4 me-1"></i>
+                    <p class="pe-2">2024/03/22</p>
+                  </div>
+                  <div class="d-flex align-items-center text-gray-700 fs-11">
+                    <i class="bi bi-eye me-1"></i>
+                    <p class="pe-2">623</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center py-4 border-top">
+                  <img class="me-2" src="../assets/images/author-01.png" alt="photo" style="width: 24px;height: 24px;">
+                  <p class="fw-bold">李芳</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         </div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
       </div>
 
 
