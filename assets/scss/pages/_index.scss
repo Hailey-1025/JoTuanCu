@@ -18,9 +18,10 @@
     }
 }
 
-.indexBgRound{
+.indexBgRound {
     background: url(../images/bg-heading.png) no-repeat;
     background-position: 50% 0;
+
     @media (min-width:768px) {
         background-position: center;
     }
@@ -41,8 +42,9 @@
         transform: translateX(-30%);
         z-index: -2;
     }
+
     @media (min-width:768px) {
-        &::after{
+        &::after {
             top: -10%;
         }
     }
@@ -90,10 +92,11 @@
 
         &::before {
             width: 279px;
-            height: 490px; 
+            height: 490px;
             bottom: calc(0% + 50px);
         }
     }
+
     @media (min-width:768px) {
         &::after {
             width: 409px;
@@ -103,8 +106,8 @@
 
         &::before {
             width: 279px;
-            height: 490px; 
-            top: 20%; 
+            height: 490px;
+            top: 20%;
         }
     }
 
@@ -135,14 +138,17 @@
     }
 }
 
-.indexSelectMax{
+.indexSelectMax {
     width: 100%;
+
     @media (min-width:992px) {
         width: 342px;
     }
 }
-.indexSelectMin{
+
+.indexSelectMin {
     width: 100%;
+
     @media (min-width:992px) {
         width: 169px;
     }
@@ -375,6 +381,7 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
 }
+
 .card-text-truncate4 {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -382,12 +389,23 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
 }
+
 .card-text-truncate2 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+}
+
+.recommendSwiper {
+    .swiper-slide:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 418px;
+        max-height: 100%;
+    }
 }
 
 // 熱門商家
