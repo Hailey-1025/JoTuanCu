@@ -5,6 +5,24 @@
         display: block;
     }
 
+    h1 {
+
+        background-image: url(../images/interaction-s.svg);
+        width: 192px;
+        height: 72px;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: 768px) {
+        h1 {
+            background-image: url(../images/interaction.svg);
+            width: 320px;
+            height: 120px;
+        }
+    }
+
     @media screen and (min-width: 768px) {
 
         .banner-08,
@@ -80,7 +98,7 @@
             border: 2px solid transparent !important;
         }
 
-        button:hover{
+        button:hover {
             border: 2px solid #333333 !important;
         }
 
@@ -129,18 +147,19 @@
     .modal {
 
         --bs-modal-margin: 1.5rem;
-    
-        .swiper{
+
+        .swiper {
             width: auto;
             max-width: 416px;
         }
-    
-        .swiper-button-next, .swiper-button-prev{
+
+        .swiper-button-next,
+        .swiper-button-prev {
             --swiper-navigation-size: 24px;
             color: white;
             font-weight: 900;
         }
-    
+
         .footer {
 
             button {
@@ -148,13 +167,14 @@
             }
 
             button:active {
-                box-shadow: 4px 4px 0px -1px #CEFF66,4px 4px 0px 1px #FCFF6F inset;
+                box-shadow: 4px 4px 0px -1px #CEFF66, 4px 4px 0px 1px #FCFF6F inset;
             }
-            button:hover{
+
+            button:hover {
                 border: 2px solid #333333 !important;
             }
         }
-    
+
         #floatingTextarea::placeholder {
             color: #D9D9D9;
             /* 自定義顏色 */
@@ -162,7 +182,8 @@
             /* 調整透明度 (1 是完全不透明) */
         }
 
-        .store-img,.store-img-small {
+        .store-img,
+        .store-img-small {
             border-radius: 4px;
         }
 
@@ -200,7 +221,7 @@
                 padding-left: 0 !important;
             }
 
-            .swiper{
+            .swiper {
                 width: 100%;
                 max-width: 100%;
             }
