@@ -116,7 +116,7 @@
                 </select>
                 <div class="position-relative">
                   <img
-                    src="../assets/images/groupActivities-search-locationIcon.png"
+                    src="../assets/images/groupActivities-search-locationIcon.svg"
                     alt="groupActivities-search-locationIcon"
                     class="position-absolute groupActivities-locationIcon"
                   />
@@ -147,7 +147,7 @@
                     required
                   />
                   <img
-                    src="../assets/images/groupActivities-search-dateIcon.png"
+                    src="../assets/images/groupActivities-search-dateIcon.svg"
                     alt="Calendar Icon"
                     id="customIcon"
                     class="groupActivities-locationIcon"
@@ -166,14 +166,16 @@
       </div>
 
       <img
-        src="../assets/images/illustrate-03.png"
-        alt="illustrate-03.png"
+        src="../assets/images/illustrate-03.svg"
+        alt="illustrate-03.svg"
         class="groupActivities-search-deco d-md-block d-none"
       />
     </section>
 
     <!-- 揪團活動 - 活動一覽 -- 倫倫 -->
-    <section class="pt-sm-30 pb-sm-30 pt-30 pb-20 position-relative">
+    <section
+      class="pt-sm-30 pb-sm-30 pt-30 pb-20 position-relative groupActivities-list"
+    >
       <img
         src="../assets/images/groupActivitiesNextDeco.svg"
         alt="groupActivitiesNextDeco"
@@ -184,11 +186,15 @@
       <div class="container">
         <div class="row gy-6">
           <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card rounded-3 groupActivities-cus-card">
+            <div
+              class="card rounded-3 groupActivities-cus-card"
+              data-bs-toggle="modal"
+              data-bs-target="#groupActivitiesModal"
+            >
               <img
-                src="../assets/images/card-14.png"
+                src="../assets/images/lauraCoffee.svg"
                 class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-14"
+                alt="lauraCoffee"
               />
               <div
                 class="card-body cus-groupActivities-card-body position-relative"
@@ -198,734 +204,30 @@
                   alt="heart"
                   class="cus-groupActivities-card-body-heart"
                 />
-                <h5 class="mb-4">台中美食探索之旅</h5>
+                <h5 class="mb-4">想找人一起去咖啡廳</h5>
                 <div>
                   <div class="d-flex align-items-center mb-1">
                     <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
                       alt="groupActivities-card-locationIcon"
                     />
                     <p
                       class="text-gray-700 ms-1"
                       style="letter-spacing: 0.25px"
                     >
-                      台中市南屯區
+                      台北 信義區
                     </p>
                   </div>
                   <div class="d-flex align-items-center">
                     <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
                       alt="card-Calendar-Icon"
                     />
                     <p
                       class="text-gray-700 ms-1"
                       style="letter-spacing: 0.25px"
                     >
-                      2024/03/22
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      05:00
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-15.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-15"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">瑜伽冥想工作坊</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      台北市中山區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/24
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      08:00
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-16.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-16"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">台中美食探索之旅</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      台中市西區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/20
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      12:00
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-17.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-17"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">高雄電影同好會</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      高雄市前鎮區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/19
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      17:00
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-18.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-18"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">台中美食探索之旅</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      台中市北屯區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/25
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      18:00
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-19.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-19"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">台中美食探索之旅</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      台中市北區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/26
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      19:00
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-20.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-20"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">瑜伽冥想工作坊</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      新北市新莊區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/28
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      18:30
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-03.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-03"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">高雄電影同好會</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      高雄市鳳山區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/27
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      19:30
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-21.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-21"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">瑜伽冥想工作坊</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      基隆市安樂區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/21
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      20:00
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-22.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-22"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">台中美食探索之旅</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      台中市太平區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/23
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      14:00
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-23.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-23"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">高雄電影同好會</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      高雄市三民區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/17
-                    </p>
-                    <img
-                      src="../assets/images/groupActivities-card-text-line.svg"
-                      alt=""
-                      class="mx-2"
-                    />
-                    <p class="text-gray-700" style="letter-spacing: 0.25px">
-                      16:00
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer mt-1 groupActivities-cus-card-footer">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
-                    style="width: 24px; height: 24px"
-                  />
-                  <p class="text-gray-700 ms-2">Taylor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
-            <div class="card rounded-3 groupActivities-cus-card">
-              <img
-                src="../assets/images/card-24.png"
-                class="card-img-top groupActivities-cus-card-img-top"
-                alt="card-24"
-              />
-              <div
-                class="card-body cus-groupActivities-card-body position-relative"
-              >
-                <img
-                  src="../assets/images/heart.svg"
-                  alt="heart"
-                  class="cus-groupActivities-card-body-heart"
-                />
-                <h5 class="mb-4">台中美食探索之旅</h5>
-                <div>
-                  <div class="d-flex align-items-center mb-1">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.png"
-                      alt="groupActivities-card-locationIcon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      台中市大里區
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/groupActivities-search-dateIcon.png"
-                      alt="card-Calendar-Icon"
-                    />
-                    <p
-                      class="text-gray-700 ms-1"
-                      style="letter-spacing: 0.25px"
-                    >
-                      2024/03/15
+                      2024/07/24
                     </p>
                     <img
                       src="../assets/images/groupActivities-card-text-line.svg"
@@ -942,12 +244,809 @@
               <div class="card-footer mt-1 groupActivities-cus-card-footer">
                 <div class="d-flex align-items-center">
                   <img
-                    src="../assets/images/author-01.png"
-                    alt="author-01"
+                    src="../assets/images/laura.svg"
+                    alt="laura"
                     style="width: 24px; height: 24px"
                   />
-                  <p class="text-gray-700 ms-2">Taylor</p>
+                  <p class="text-gray-700 ms-2">Laura</p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/aluluSing.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="aluluSing"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">壽星歡唱局</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      台北 錢櫃 西門店
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/07/30
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      18:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/alulu.svg"
+                    alt="alulu"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">阿嚕嚕</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/happyMovie.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="happyMovie"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">多拉a夢 電影</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      台南 威秀
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/06/28
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      13:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/happy.svg"
+                    alt="happy"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">歡樂一百點</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/typhoonEat.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="typhoonEat"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">颱風天就是要吃吃喝喝</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      高雄 好吃小吃店
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/05/15
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      17:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/typhoon.svg"
+                    alt="typhoon"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">颱風天就是要泛舟</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/lifeCoding.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="lifeCoding"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">前端工程師交流會</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      其他 慈濟圖書館
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/09/12
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      16:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/life.svg"
+                    alt="life"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">人生好難</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/daiBadminton.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="daiBadminton"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">打羽球</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      新北 泰山國民運動中心
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/08/03
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      19:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/dai.svg"
+                    alt="dai"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">小戴</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/alexRun.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="alexRun"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">夜跑團聚</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      台北 大安森林公園
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/08/05
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      19:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/alex.svg"
+                    alt="alex"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">亞歷克斯</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/bellaTea.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="bellaTea"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">文青咖啡下午茶</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      新北 淡水老街咖啡館
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/06/06
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      14:30
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/Bella.svg"
+                    alt="Bella"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">Bella</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/qiuCamping.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="qiuCamping"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">露營小聚</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      其他 南投日月潭露營區
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/10/05
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      18:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/qiu.svg"
+                    alt="qiu"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">邱秋</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/disBicycle.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="disBicycle"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">動感單車課</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      高雄 美麗島捷運站健身房
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/03/25
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      10:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/dis.svg"
+                    alt="dis"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">迪斯</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/ethanGame.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="ethanGame"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">桌遊之夜</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      台中 東區桌遊館
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/02/20
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      20:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/ethan.svg"
+                    alt="ethan"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">Ethan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="../assets/images/fionaHiking.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="fionaHiking"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                />
+                <h5 class="mb-4">山間健行</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="../assets/images/groupActivities-search-locationIcon.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      其他 阿里山遊樂區
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/groupActivities-search-dateIcon.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/01/08
+                    </p>
+                    <img
+                      src="../assets/images/groupActivities-card-text-line.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      08:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/fiona.svg"
+                    alt="fiona"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">Fiona</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="groupActivitiesModal"
+          tabindex="-1"
+          aria-labelledby="groupActivitiesModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog groupActivities-list-modal-dialog">
+            <div class="modal-content p-10">
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="../assets/images/lauraCoffee.svg"
+                    alt="lauraCoffee"
+                    class="rounded-3"
+                  />
+                </div>
+                <div class="ms-5 d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/laura.svg"
+                      alt="laura"
+                      style="width: 40px; height: 40px"
+                    />
+                    <p class="fw-bold fs-5 ms-2">Laura</p>
+                  </div>
+                  <h5 class="fs-4 mt-2">想找人一起去咖啡廳</h5>
+                  <p class="fs-8 mt-1">地點：台北 信義區</p>
+                  <div class="mt-5" style="border-top: 3px solid #808080">
+                    <div class="d-flex align-items-center mt-3">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../assets/images/groupActivities-search-dateIcon.svg"
+                          alt="groupActivities-search-dateIcon"
+                        />
+                        <p class="ms-1">2024/07/24</p>
+                      </div>
+                      <div class="d-flex align-items-center ms-3">
+                        <img
+                          src="../assets/images/groupActivities-search-locationIcon.svg"
+                          alt="groupActivities-search-locationIcon"
+                        />
+                        <p class="ms-1">15:00</p>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-2">
+                      <i
+                        class="bi bi-cash-coin"
+                        style="font-size: 16px; color: #808080"
+                      ></i>
+                      <p class="ms-1">每人活動金額：500元</p>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-2">
+                      <i
+                        class="bi bi-bicycle"
+                        style="font-size: 16px; color: #808080"
+                      ></i>
+                      <p class="ms-1">分類：運動</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                      <i
+                        class="bi bi-person-arms-up"
+                        style="font-size: 16px; color: #808080"
+                      ></i>
+                      <p class="ms-1">3人</p>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn border-2 border-dark btn-outline-shadow mt-auto"
+                  >
+                    試試這個吧！
+                  </button>
+                </div>
+              </div>
+              <!-- <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button> -->
+
+              <div class="mt-5">
+                <h4 class="ps-4" style="border-left: 5px solid #808080">
+                  聚會介紹
+                </h4>
               </div>
             </div>
           </div>
