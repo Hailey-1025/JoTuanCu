@@ -23,6 +23,10 @@
 .groupActivitiesBannerTitle {
   padding-top: 22px;
   padding-bottom: 20px;
+  width: 552px;
+  // height: 76px;
+  height: 118px;
+  background-position: center 22px;
 }
 
 @media screen and (max-width: 575px) {
@@ -33,6 +37,10 @@
   .groupActivitiesBannerTitle {
     padding-top: 11px;
     padding-bottom: 11px;
+    width: 276px;
+    // height: 38px;
+    height: 60px;
+    background-position: center center;
   }
 
   .letter-rwd {
@@ -196,14 +204,25 @@ input[type="date"] {
 
 .cus-groupActivities-card-body-heart {
   position: absolute;
-  top: 16px;
-  right: 18px;
+  top: 8px;
+  right: 8px;
   cursor: pointer;
 }
 
 .groupActivities-list {
+  // .groupActivitiesModal {
+  //   width: 100%;
+  //   max-width: 740px;
+  // }
   .groupActivities-list-modal-dialog {
-    width: 820px;
-    max-width: 820px;
+    // width: 100%;
+    max-width: 740px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .groupActivities-list-modal-dialog {
+    margin-left: 12px;
+    margin-right: 12px;
   }
 }

@@ -43,7 +43,15 @@
                 />
               </picture>
               <div class="d-flex flex-column align-items-center pt-sm-27 pt-18">
-                <picture class="groupActivitiesBannerTitle">
+                <h1
+                  style="
+                    background-image: url(../assets/images/groupActivitiesBannerTitle.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                  "
+                  class="groupActivitiesBannerTitle"
+                ></h1>
+                <!-- <picture class="groupActivitiesBannerTitle">
                   <source
                     media="(max-width: 575px)"
                     srcset="../assets/images/groupActivitiesBannerTitleSm.svg"
@@ -53,7 +61,7 @@
                     src="../assets/images/groupActivitiesBannerTitle.svg"
                     alt="groupActivitiesBannerTitle"
                   />
-                </picture>
+                </picture> -->
 
                 <p
                   class="mt-sm-3 mt-4 mb-sm-12 mb-4 fs-sm-9 fs-10 letter-rwd text-center"
@@ -77,11 +85,11 @@
       <picture class="groupActivities-banner-rwd d-flex justify-content-center">
         <source
           media="(max-width: 375px)"
-          srcset="../assets/images/banner-02-sm.png"
+          srcset="../assets/images/banner-02-sm.svg"
         />
 
         <img
-          src="../assets/images/banner-02.png"
+          src="../assets/images/banner-02.svg"
           alt="banner-02"
           class="img-fluid"
         />
@@ -960,33 +968,36 @@
         </div>
         <!-- Modal -->
         <div
-          class="modal fade"
+          class="modal fade groupActivitiesModal"
           id="groupActivitiesModal"
           tabindex="-1"
           aria-labelledby="groupActivitiesModalLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog groupActivities-list-modal-dialog">
-            <div class="modal-content p-10">
-              <div class="d-flex">
+            <div class="modal-content p-10 position-relative">
+              <div class="d-flex flex-md-row flex-column">
                 <div>
                   <img
-                    src="../assets/images/lauraCoffee.svg"
+                    src="../assets/images/lauraCoffee300.svg"
                     alt="lauraCoffee"
-                    class="rounded-3"
+                    class="rounded-3 w-100"
                   />
                 </div>
-                <div class="ms-5 d-flex flex-column">
-                  <div class="d-flex align-items-center">
+                <div
+                  class="mt-md-0 mt-3 ms-md-6 ms-0 d-flex flex-column flex-md-grow-1 flex-grow-0"
+                >
+                  <h5 class="fs-4">想找人一起去咖啡廳</h5>
+                  <div class="d-flex align-items-center mt-2">
                     <img
                       src="../assets/images/laura.svg"
                       alt="laura"
-                      style="width: 40px; height: 40px"
+                      style="width: 30px; height: 30px"
                     />
                     <p class="fw-bold fs-5 ms-2">Laura</p>
                   </div>
-                  <h5 class="fs-4 mt-2">想找人一起去咖啡廳</h5>
-                  <div class="d-flex align-items-center mt-2">
+
+                  <div class="d-flex align-items-start mt-2">
                     <img
                       src="../assets/images/groupActivities-search-locationIcon.svg"
                       alt="groupActivities-search-locationIcon"
@@ -994,7 +1005,10 @@
                     <p class="fs-8 ms-1">地點：台北 信義區</p>
                   </div>
 
-                  <div class="mt-5" style="border-top: 3px solid #808080">
+                  <div
+                    class="mt-md-5 mt-2"
+                    style="border-top: 3px solid #808080"
+                  >
                     <div class="d-flex align-items-center mt-3">
                       <div class="d-flex align-items-center">
                         <img
@@ -1019,42 +1033,54 @@
                       ></i>
                       <p class="ms-1">每人活動金額：500元</p>
                     </div>
-
                     <div class="d-flex align-items-center mt-2">
-                      <i
-                        class="bi bi-bicycle"
-                        style="font-size: 16px; color: #808080"
-                      ></i>
-                      <p class="ms-1">分類：運動</p>
-                    </div>
-                    <div class="d-flex align-items-center mt-2">
-                      <i
-                        class="bi bi-person-arms-up"
-                        style="font-size: 16px; color: #808080"
-                      ></i>
-                      <p class="ms-1">3人</p>
+                      <div class="d-flex align-items-center">
+                        <i
+                          class="bi bi-cake2"
+                          style="font-size: 16px; color: #808080"
+                        ></i>
+                        <p class="ms-1">分類：美食</p>
+                      </div>
+                      <div class="d-flex align-items-center ms-3">
+                        <i
+                          class="bi bi-person-arms-up"
+                          style="font-size: 16px; color: #808080"
+                        ></i>
+                        <p class="ms-1">4人</p>
+                      </div>
                     </div>
                   </div>
                   <button
                     type="button"
-                    class="btn border-2 border-dark btn-outline-shadow mt-auto"
+                    class="btn border-2 border-dark btn-outline-shadow mt-md-auto mt-3"
                   >
-                    試試這個吧！
+                    我要報名！
                   </button>
                 </div>
               </div>
-              <!-- <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button> -->
 
               <div class="mt-5">
                 <h4 class="ps-4" style="border-left: 5px solid #808080">
-                  聚會介紹
+                  活動介紹
                 </h4>
+                <p class="mt-3">
+                  大家好，我是Laura，一位熱愛咖啡和好聊夥伴的都市人。最近我想為自己，也為同樣喜愛咖啡廳、喜歡交朋友的你們，發起一場小型聚會！這次我們選了一間氣氛舒適、咖啡香氣濃郁的小店，適合聊天放鬆。這場聚會限額4人，期待的是能在輕鬆的環境中互相交流，不論你是熱愛咖啡、剛搬來城市的新住戶，還是對各式話題有好奇心的夥伴，都歡迎加入！
+                </p>
+                <p class="mt-3">
+                  在這個忙碌的生活中，能夠和新朋友一起度過愉快的下午，交流生活中的點滴，實在是件美好的事。如果你有故事或想法想分享，或者單純想認識新朋友，都非常歡迎。別擔心內向或尷尬，這將是一個輕鬆無壓力的時光，我們會在彼此的話語中找到共鳴。
+                </p>
+                <p class="mt-3">
+                  如果你有興趣，請按下報名按鈕吧！期待一起度過這個愜意的咖啡時光～
+                </p>
               </div>
+
+              <button
+                type="button"
+                class="btn-close position-absolute"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                style="top: 14px; right: 14px"
+              ></button>
             </div>
           </div>
         </div>
