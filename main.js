@@ -3,8 +3,6 @@ import "bootstrap";
 // swiper 這段 import 請不要動它，因為還沒寫輪播，所以會顯示錯誤
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
-new WOW().init();
-
 //index
 //最新活動
 var swiper = new Swiper(".index-newActivitySwiper", {
@@ -487,3 +485,6 @@ typeElement.addEventListener("change", function () {
     this.style.fontWeight = "700"; // 字重變粗
   }
 });
+
+//不放最下面index輪播會出事
+new WOW().init();
