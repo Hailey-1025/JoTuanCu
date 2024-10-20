@@ -142,22 +142,26 @@
         }
     }
 
-
-
-    .modal {
+    .storemodal {
 
         --bs-modal-margin: 1.5rem;
-
-        .swiper {
-            width: auto;
-            max-width: 416px;
-        }
 
         .swiper-button-next,
         .swiper-button-prev {
             --swiper-navigation-size: 24px;
             color: white;
             font-weight: 900;
+        }
+
+        .storeSwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .footer {
@@ -187,13 +191,10 @@
             border-radius: 4px;
         }
 
-
         @media screen and (min-width: 1200px) {
             --bs-modal-width: 1200px;
 
             .store-img {
-                width: 453px;
-                height: 453px;
                 border-radius: 20px;
             }
 
@@ -204,10 +205,6 @@
             .modal-content {
                 height: 848px;
                 padding: 40px !important;
-            }
-
-            .other-user {
-                width: 539px;
             }
 
             .footer {
@@ -229,5 +226,69 @@
         }
     }
 
+    .interactionShare {
+        .photo-upload {
+            text-align: center;
+            border: 2px dashed #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
 
+        textarea {
+            resize: none;
+        }
+
+        .submit-btn {
+            text-align: right;
+        }
+
+        button {
+            border: 2px solid transparent !important;
+        }
+
+        button:hover {
+            border: 2px solid #333333 !important;
+        }
+
+        button:active {
+            box-shadow: 4px 4px 0px -1px #CEFF66, 4px 4px 0px 1px #FCFF6F inset;
+        }
+
+        input[type=date]::before {
+            content: "";
+        }
+
+        /* 控制日期輸入框內文字的位置與佔位符的顯示 */
+        input[type="date"] {
+            color: #808080;
+            ;
+            /* 確保選擇日期後的文字可見 */
+        }
+
+        #placeholderText {
+            transition: opacity 0.3s;
+        }
+
+        /* 當 input 有值時隱藏佔位符 */
+        input[type="date"]:valid+#placeholderText,
+        input[type="date"]:focus+#placeholderText {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .successmodal {
+        .modal-content {
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (min-width:401px) {
+        .successmodal {
+            .modal-content {
+                max-width: 401px !important;
+            }
+        }
+    }
 }
