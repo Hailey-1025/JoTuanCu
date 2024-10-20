@@ -21,6 +21,7 @@
     "sass": "^1.61.0",
     "sass-loader": "^13.2.2",
     "swiper": "^11.1.14",
-    "vite-plugin-live-reload": "^3.0.2"
+    "vite-plugin-live-reload": "^3.0.2",
+    "wowjs": "^1.1.3"
   }
 }

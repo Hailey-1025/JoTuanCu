@@ -3,6 +3,8 @@ import "bootstrap";
 // swiper 這段 import 請不要動它，因為還沒寫輪播，所以會顯示錯誤
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
+new WOW().init();
+
 //index
 //最新活動
 var swiper = new Swiper(".index-newActivitySwiper", {
@@ -128,24 +130,30 @@ var swiper = new Swiper(".featuredSwiper", {
   },
 });
 
-//interaction
+// interaction
 var swiper = new Swiper(".storeSwiper", {
   spaceBetween: 4,
   slidesPerView: 4,
   spaceBetween: 13,
+  freeMode: true,
+  watchSlidesProgress: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     992: {
-      slidesPerView: 4,
+      slidesPerView: 3.5,
       spaceBetween: 16,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+      centeredSlides: false,
     },
+  },
+});
+var swiper2 = new Swiper(".storeSwiper2", {
+  spaceBetween: 10,
+
+  thumbs: {
+    swiper: swiper,
   },
 });
 
@@ -444,6 +452,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //interaction
 //篩選部分
+const selectElement = document.getElementById("select");
+
+selectElement.addEventListener("change", function () {
+  if (this.value === "0") {
+    this.style.color = "#808080"; // 灰色
+    this.style.fontWeight = "400"; // 字重回到普通
+  } else {
+    this.style.color = "#000000"; // 黑色
+    this.style.fontWeight = "700"; // 字重變粗
+  }
+});
 
 const blockElement = document.getElementById("block");
 
