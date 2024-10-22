@@ -2,25 +2,25 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新手教學｜JO團趣</title>
-    <link rel="stylesheet" href="../assets/scss/all.scss">
 </head>
 <body>
     <%- include('./layout/header', {page: "tiroTeach" }); -%>
     <div class="tiroTeach container py-16 py-lg-30">
-        <h2 class="fw-light fs-3 fs-md-2 text-center mb-12 mb-md-10">基本介紹</h2>
+        <h2 class="fw-light fs-3 fs-md-2 text-center mb-12 mb-md-10 wow fadeInUp">基本介紹</h2>
         <div class="row justify-content-center mb-16 mb-lg-20">
             <!-- 基本介紹-內文 -->
             <div class="col-12 col-lg-6">
-                <div class="d-flex flex-column align-items-center">
+                <div class="d-flex flex-column align-items-center wow fadeInUp">
                     <img class="mb-4" src="../assets/images/Decorative-lines-02.png" alt="++++" width="204" height="21">
                     <p class="text-center">在這裡,我們相信共同的目標能夠讓陌生人成為朋友。無論你是想找人一起吃飯、看電影、旅遊、運動還是學習，JO團趣都是你最佳的選擇。快來加入我們，發起活動或參與其他人的活動，讓你的每一天都充滿樂趣和驚喜！</p>
                 </div>
             </div>
         </div>
         <!-- 1 -->
-        <div class="searchActivity position-relative row flex-column flex-lg-row mb-10 mb-lg-0">
+        <div class="searchActivity position-relative row flex-column flex-lg-row mb-10 mb-lg-0 wow fadeInRight">
             <div class="col-12 col-lg-6">
                 <img class="img-fluid" src="../assets/images/banner-09.png" alt="img-1">
             </div>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <!-- 2 -->
-        <div class="callActivity position-relative row flex-column flex-lg-row-reverse">
+        <div class="callActivity position-relative row flex-column flex-lg-row-reverse wow fadeInLeft">
             <div class="col-12 col-lg-6">
                 <img class="img-fluid" src="../assets/images/banner-10.png" alt="img-2">
             </div>
@@ -51,7 +51,7 @@
             </div>
         </div>
         <!-- 3 -->
-        <div class="friendHappy position-relative row Aflex-column flex-lg-row mb-16 mb-lg-20">
+        <div class="friendHappy position-relative row Aflex-column flex-lg-row mb-16 mb-lg-20 wow fadeInRight">
             <div class="col-12 col-lg-6">
                 <img class="img-fluid" src="../assets/images/banner-11.png" alt="img-1">
             </div>
@@ -67,7 +67,7 @@
             </div>
         </div>
         <!-- 常見問題 -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center wow fadeInUp">
             <h2 class="fw-light fs-3 fs-md-2 text-center mb-12 mb-md-10">常見問題</h2>
             <!-- 手風琴 -->
             <div class="col-12">
@@ -139,16 +139,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-
-            </div>
         </div>
     </div>
 
 
-
-    
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>

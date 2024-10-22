@@ -163,21 +163,21 @@
 }
 .featured{
     .heart {
-        background: url("/assets/images/heart.svg") no-repeat;
+        background: url(../images/heart.svg) no-repeat;
         width: 20px;
         height: 24px;
         display: block;
     }
+
     .btn-check:checked+.btn,
     :not(.btn-check)+.btn:active,
     .btn:first-child:active,
     .btn.active,
     .btn.show {
         .heart {
-            background: url("/assets/images/heart-fill.svg") no-repeat;
+            background: url(../images/heart-fill.svg) no-repeat;
         }
     }
-    
 }
 //========= Modal ===========
 .store-rounded{
@@ -283,11 +283,8 @@
     letter-spacing: 0.25px !important;
 }
 
-// 優惠券
-
 
 // *,*::after,*::before{
 //     outline: 1px solid red;
-    
 // }
 
