@@ -1,7 +1,7 @@
 // 刊頭
 .indexH1 {
     float: left;
-    background-image: url(../images/indexHeaderMobile.png);
+    background-image: url(../images/indexHeaderMobile.svg);
     width: 327px;
     height: 145px;
     display: block;
@@ -11,7 +11,7 @@
     z-index: 2;
 
     @media (min-width:768px) {
-        background-image: url(../images/indexHeader.png);
+        background-image: url(../images/indexHeader.svg);
         width: 713px;
         height: 76px;
         background-size: contain;
@@ -19,7 +19,7 @@
 }
 
 .indexBgRound {
-    background: url(../images/bg-heading.png) no-repeat;
+    background: url(../images/bg-heading.svg) no-repeat;
     background-position: 50% 0;
 
     @media (min-width:768px) {
@@ -34,7 +34,7 @@
     &::after {
         position: absolute;
         content: "";
-        background: url(../images/Decorative-lines-01.png) no-repeat;
+        background: url(../images/Decorative-lines-01.svg) no-repeat;
         width: 1767px;
         height: 1570px;
         top: -15%;
@@ -62,7 +62,7 @@
     &::after {
         position: absolute;
         content: "";
-        background: url(../images/img-bannerA.png) no-repeat;
+        background: url(../images/img-bannerA.svg) no-repeat;
         background-size: contain;
         width: 150px;
         height: 205px;
@@ -74,7 +74,7 @@
     &::before {
         position: absolute;
         content: "";
-        background: url(../images/img-bannerB.png) no-repeat;
+        background: url(../images/img-bannerB.svg) no-repeat;
         background-size: contain;
         width: 125px;
         height: 185px;
@@ -146,8 +146,16 @@
     }
 }
 
-.indexSelectMin {
+.w-100-media {
     width: 100%;
+
+    @media (min-width:992px) {
+        width: auto;
+    }
+}
+
+.indexSelectMin {
+    width: 50%;
 
     @media (min-width:992px) {
         width: 169px;
@@ -162,7 +170,7 @@
     &::after {
         position: absolute;
         content: "";
-        background: url(../images/banner-12.png) no-repeat;
+        background: url(../images/banner-12.svg) no-repeat;
         background-size: contain;
         top: 3%;
         right: 60px;
@@ -203,7 +211,7 @@
         &::before {
             position: absolute;
             content: "";
-            background: url(../images/Decorative-lines-10.png) no-repeat;
+            background: url(../images/Decorative-lines-10.svg) no-repeat;
             top: 0;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -220,7 +228,7 @@
     &::after {
         content: "";
         position: absolute;
-        background: url(../images/Decorative-lines-03.png) no-repeat;
+        background: url(../images/Decorative-lines-03.svg) no-repeat;
         width: 21px;
         height: 200px;
         bottom: calc(-100% - 91px);
@@ -241,7 +249,7 @@
     &::after {
         position: absolute;
         content: "";
-        background: url(../images/Decorative-lines-03.png) no-repeat;
+        background: url(../images/Decorative-lines-03.svg) no-repeat;
         width: 21px;
         height: 200px;
         left: 0;
@@ -258,7 +266,7 @@
     &::before {
         position: absolute;
         content: "";
-        background: url(../images/Decorative-lines-03.png) no-repeat;
+        background: url(../images/Decorative-lines-03.svg) no-repeat;
         width: 21px;
         height: 200px;
         right: 0;
@@ -279,7 +287,7 @@
     &::after {
         content: "";
         position: absolute;
-        background: url(../images/illustrate-02.png) no-repeat;
+        background: url(../images/illustrate-02.svg) no-repeat;
         background-size: contain;
         width: 144px;
         height: 108px;
@@ -311,7 +319,7 @@
     &::after {
         content: "";
         position: absolute;
-        background: url(../images/illustrate-01.png) no-repeat;
+        background: url(../images/illustrate-01.svg) no-repeat;
         background-size: contain;
         width: 136px;
         height: 144px;
@@ -345,7 +353,7 @@
     &::after {
         content: "";
         position: absolute;
-        background: url(../images/illustrate-03.png) no-repeat;
+        background: url(../images/illustrate-03.svg) no-repeat;
         background-size: contain;
         width: 104px;
         height: 144px;
@@ -412,11 +420,20 @@
 .index-featuredShop {
     position: relative;
 
+    // modal
+    // .modal-dialog {
+    //     max-height: auto;
+
+    //     @media (min-width:992px) {
+    //         max-height: 90%;
+    //     }
+    // }
+
     // 背景裝飾
     &::after {
         position: absolute;
         content: "";
-        background: url(../images/Decorative-lines-11.png) no-repeat;
+        background: url(../images/Decorative-lines-11.svg) no-repeat;
         width: 169px;
         height: 154px;
         top: 0;
@@ -434,7 +451,7 @@
     &::before {
         position: absolute;
         content: "";
-        background: url(../images/Decorative-lines-03.png) no-repeat;
+        background: url(../images/Decorative-lines-03.svg) no-repeat;
         width: 21px;
         height: 200px;
         bottom: 0;
