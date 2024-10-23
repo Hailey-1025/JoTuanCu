@@ -406,17 +406,73 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // 設定原始和點擊後的圖片路徑
-  const originalSrc = "../../assets/images/heart.svg";
-  const activeSrc = "../../assets/images/clickHeart.svg";
+  // const originalSrc = "../assets/images/heart.svg";
+  const originalSrc = `${import.meta.env.BASE_URL}assets/images/heart.svg`;
+  // const activeSrc = "../assets/images/clickHeart.svg";
+  const activeSrc = `${import.meta.env.BASE_URL}assets/images/clickHeart.svg`;
 
   // 選取所有 .cus-groupActivities-card-body-heart 圖片
   const hearts = document.querySelectorAll(
     ".cus-groupActivities-card-body-heart"
   );
 
+  const cardModal = document.getElementById("cardModal");
+  const groupActivitiesListCardModal = document.querySelector(
+    ".groupActivities-list-card-modal"
+  );
+  const groupActivitiesListCardModalClose = document.querySelector(
+    ".groupActivities-list-card-modal-close"
+  );
+
+  const groupActivitiesListCardModalDialog = document.querySelector(
+    ".groupActivities-list-card-modal-dialog"
+  );
+
+  // // const groupActivitiesListModalDialog = document.querySelector(
+  // //   ".groupActivities-list-modal-dialog"
+  // // );
+  // const modalDialog = groupActivitiesModal.querySelector(
+  //   ".groupActivities-list-modal-dialog-ani"
+  // );
+  // cardElement.addEventListener("click", function () {
+  //   groupActivitiesModal.style.display = "block"; // 顯示 Modal
+
+  //   // 使用小的延遲確保動畫可以被觸發
+  //   setTimeout(() => {
+  //     groupActivitiesModal.classList.add(
+  //       "groupActivities-list-groupActivitiesModal-fade-show"
+  //     );
+  //     modalDialog.classList.add("show"); // 添加動畫
+  //   }, 10);
+  // });
+
+  cardModal.addEventListener("click", function () {
+    groupActivitiesListCardModal.classList.add(
+      "groupActivities-list-card-modal-show"
+    );
+
+    //
+  });
+
+  //
+  groupActivitiesListCardModalClose.addEventListener("click", function () {
+    groupActivitiesListCardModal.classList.remove(
+      "groupActivities-list-card-modal-show"
+    ); // 移除 show 類
+
+    // setTimeout(() => {
+    //   groupActivitiesListCardModal.classList.remove(
+    //     "groupActivities-list-card-modal-show"
+    //   );
+    //   // modal.style.opacity = ""; // 重置 opacity，為下次顯示做準備
+    // }, 300); // 150 毫秒延遲與 CSS 過渡時間相符
+  });
+
   // 為每個圖片添加點擊事件監聽器
   hearts.forEach((heart) => {
-    heart.addEventListener("click", function () {
+    heart.addEventListener("click", function (event) {
+      // 防止點擊事件傳播到父層
+      event.stopPropagation();
       // 切換圖片src
       if (heart.src.includes("heart.svg")) {
         heart.src = activeSrc; // 切換到已填滿的心形圖片
