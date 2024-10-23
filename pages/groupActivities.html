@@ -13,7 +13,7 @@
     <!-- 揪團活動 - banner -- 倫倫 -->
     <section class="groupActivities overflow-hidden">
       <div class="banner-deco-wrap">
-        <picture class="groupActivities-bg-heading-line-cus">
+        <picture class="groupActivities-bg-heading-line-cus wow zoomIn">
           <source
             media="(max-width: 575px)"
             srcset="../assets/images/groupActivities-bg-heading-line-sm.svg"
@@ -31,7 +31,7 @@
             <div
               class="d-flex justify-content-center position-relative pt-sm-10 pt-12"
             >
-              <picture class="groupActivities-bg-heading-cus">
+              <picture class="groupActivities-bg-heading-cus wow flipInX">
                 <source
                   media="(max-width: 575px)"
                   srcset="../assets/images/groupActivities-bg-heading-sm.svg"
@@ -43,7 +43,15 @@
                 />
               </picture>
               <div class="d-flex flex-column align-items-center pt-sm-27 pt-18">
-                <picture class="groupActivitiesBannerTitle">
+                <h1
+                  style="
+                    background-image: url(../assets/images/groupActivitiesBannerTitle.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                  "
+                  class="groupActivitiesBannerTitle wow rubberBand"
+                ></h1>
+                <!-- <picture class="groupActivitiesBannerTitle">
                   <source
                     media="(max-width: 575px)"
                     srcset="../assets/images/groupActivitiesBannerTitleSm.svg"
@@ -53,17 +61,17 @@
                     src="../assets/images/groupActivitiesBannerTitle.svg"
                     alt="groupActivitiesBannerTitle"
                   />
-                </picture>
+                </picture> -->
 
                 <p
-                  class="mt-sm-3 mt-4 mb-sm-12 mb-4 fs-sm-9 fs-10 letter-rwd text-center"
+                  class="mt-sm-3 mt-4 mb-sm-12 mb-4 fs-sm-9 fs-10 letter-rwd text-center wow jackInTheBox"
                   style="width: 321px"
                 >
                   不論你是想揪伴吃飯、看電影、運動、旅遊，這裡都可以滿足你的需求。想找到志同道合的夥伴嗎？立馬開團吧！
                 </p>
                 <button
                   type="button"
-                  class="btn border-2 border-dark btn-outline-shadow"
+                  class="btn border-2 border-dark btn-outline-shadow wow heartBeat"
                   onclick="window.location.href='groupActivitiesStartEvent.html'"
                 >
                   馬上Jo!
@@ -74,14 +82,16 @@
         </div>
       </div>
 
-      <picture class="groupActivities-banner-rwd d-flex justify-content-center">
+      <picture
+        class="groupActivities-banner-rwd d-flex justify-content-center wow slideInUp"
+      >
         <source
           media="(max-width: 375px)"
-          srcset="../assets/images/banner-02-sm.png"
+          srcset="../assets/images/banner-02-sm.svg"
         />
 
         <img
-          src="../assets/images/banner-02.png"
+          src="../assets/images/banner-02.svg"
           alt="banner-02"
           class="img-fluid"
         />
@@ -94,7 +104,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-9 col-12 mx-auto">
             <div
-              class="border border-dark p-xl-20 p-md-16 p-6 rounded-3 bg-white"
+              class="border border-dark p-xl-20 p-md-16 p-6 rounded-3 bg-white wow bounceIn"
               style="box-shadow: 0px 10px 40px 0px #0000000f"
             >
               <h3 class="fs-lg-4 fs-5 text-center mb-10">
@@ -168,7 +178,7 @@
       <img
         src="../assets/images/illustrate-03.svg"
         alt="illustrate-03.svg"
-        class="groupActivities-search-deco d-md-block d-none"
+        class="groupActivities-search-deco d-md-block d-none wow fadeInRight"
       />
     </section>
 
@@ -185,12 +195,13 @@
       <p class="text-gray-700 text-center mb-10">總共 189 筆結果</p>
       <div class="container">
         <div class="row gy-6">
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp">
+            <!-- <div
               class="card rounded-3 groupActivities-cus-card"
               data-bs-toggle="modal"
               data-bs-target="#groupActivitiesModal"
-            >
+            > -->
+            <div class="card rounded-3 groupActivities-cus-card" id="cardModal">
               <img
                 src="../assets/images/lauraCoffee.svg"
                 class="card-img-top groupActivities-cus-card-img-top"
@@ -253,7 +264,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp">
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/aluluSing.svg"
@@ -317,7 +328,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp">
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/happyMovie.svg"
@@ -381,7 +392,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp">
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/typhoonEat.svg"
@@ -445,7 +456,9 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/lifeCoding.svg"
@@ -509,7 +522,9 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/daiBadminton.svg"
@@ -573,7 +588,9 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/alexRun.svg"
@@ -637,7 +654,9 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/bellaTea.svg"
@@ -701,7 +720,9 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/qiuCamping.svg"
@@ -765,7 +786,9 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/disBicycle.svg"
@@ -829,7 +852,9 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/ethanGame.svg"
@@ -893,7 +918,9 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
             <div class="card rounded-3 groupActivities-cus-card">
               <img
                 src="../assets/images/fionaHiking.svg"
@@ -959,105 +986,138 @@
           </div>
         </div>
         <!-- Modal -->
-        <div
-          class="modal fade"
+        <!-- <div
+          class="modal fade groupActivities-list-groupActivitiesModal groupActivities-list-groupActivitiesModal-fade"
           id="groupActivitiesModal"
           tabindex="-1"
           aria-labelledby="groupActivitiesModalLabel"
           aria-hidden="true"
-        >
-          <div class="modal-dialog groupActivities-list-modal-dialog">
-            <div class="modal-content p-10">
-              <div class="d-flex">
-                <div>
+        > -->
+        <!-- <div
+          class="groupActivities-list-groupActivitiesModal groupActivities-list-groupActivitiesModal-fade"
+          id="groupActivitiesModal"
+        > -->
+        <!-- <div class="modal-dialog groupActivities-list-modal-dialog"> -->
+        <!-- <div
+            class="groupActivities-list-modal-dialog groupActivities-list-modal-dialog-ani"
+          > -->
+        <!-- <div
+              class="modal-content groupActivities-list-modal-content p-10 position-relative"
+            > -->
+        <!-- <div
+              class="groupActivities-list-modal-content p-10 position-relative"
+            > -->
+
+        <div class="groupActivities-list-card-modal">
+          <div class="groupActivities-list-card-modal-backdrop"></div>
+          <div
+            class="groupActivities-list-card-modal-dialog px-md-10 py-md-10 px-5 pt-11 pb-5"
+          >
+            <div class="d-flex flex-md-row flex-column">
+              <div class="card-modal-cus-img-wrap">
+                <img
+                  src="../assets/images/lauraCoffee300.svg"
+                  alt="lauraCoffee"
+                  class="rounded-3 img-fluid"
+                />
+              </div>
+              <div
+                class="mt-md-0 mt-3 ms-md-6 ms-0 d-flex flex-column flex-md-grow-1 flex-grow-0"
+              >
+                <h5 class="fs-4">想找人一起去咖啡廳</h5>
+                <div class="d-flex align-items-center mt-2">
                   <img
-                    src="../assets/images/lauraCoffee.svg"
-                    alt="lauraCoffee"
-                    class="rounded-3"
+                    src="../assets/images/laura.svg"
+                    alt="laura"
+                    style="width: 30px; height: 30px"
                   />
+                  <p class="fw-bold fs-5 ms-2">Laura</p>
                 </div>
-                <div class="ms-5 d-flex flex-column">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/images/laura.svg"
-                      alt="laura"
-                      style="width: 40px; height: 40px"
-                    />
-                    <p class="fw-bold fs-5 ms-2">Laura</p>
+
+                <div class="d-flex align-items-start mt-2">
+                  <img
+                    src="../assets/images/groupActivities-search-locationIcon.svg"
+                    alt="groupActivities-search-locationIcon"
+                  />
+                  <p class="fs-8 ms-1">地點：台北 信義區</p>
+                </div>
+
+                <div class="mt-md-5 mt-2" style="border-top: 3px solid #808080">
+                  <div class="d-flex align-items-center mt-3">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../assets/images/groupActivities-search-dateIcon.svg"
+                        alt="groupActivities-search-dateIcon"
+                      />
+                      <p class="ms-1">2024/07/24</p>
+                    </div>
+                    <div class="d-flex align-items-center ms-3">
+                      <i
+                        class="bi bi-clock"
+                        style="font-size: 16px; color: #808080"
+                      ></i>
+                      <p class="ms-1">15:00</p>
+                    </div>
                   </div>
-                  <h5 class="fs-4 mt-2">想找人一起去咖啡廳</h5>
+
                   <div class="d-flex align-items-center mt-2">
-                    <img
-                      src="../assets/images/groupActivities-search-locationIcon.svg"
-                      alt="groupActivities-search-locationIcon"
-                    />
-                    <p class="fs-8 ms-1">地點：台北 信義區</p>
+                    <i
+                      class="bi bi-cash-coin"
+                      style="font-size: 16px; color: #808080"
+                    ></i>
+                    <p class="ms-1">每人活動金額：500元</p>
                   </div>
-
-                  <div class="mt-5" style="border-top: 3px solid #808080">
-                    <div class="d-flex align-items-center mt-3">
-                      <div class="d-flex align-items-center">
-                        <img
-                          src="../assets/images/groupActivities-search-dateIcon.svg"
-                          alt="groupActivities-search-dateIcon"
-                        />
-                        <p class="ms-1">2024/07/24</p>
-                      </div>
-                      <div class="d-flex align-items-center ms-3">
-                        <i
-                          class="bi bi-clock"
-                          style="font-size: 16px; color: #808080"
-                        ></i>
-                        <p class="ms-1">15:00</p>
-                      </div>
-                    </div>
-
-                    <div class="d-flex align-items-center mt-2">
+                  <div class="d-flex align-items-center mt-2">
+                    <div class="d-flex align-items-center">
                       <i
-                        class="bi bi-cash-coin"
+                        class="bi bi-cake2"
                         style="font-size: 16px; color: #808080"
                       ></i>
-                      <p class="ms-1">每人活動金額：500元</p>
+                      <p class="ms-1">分類：美食</p>
                     </div>
-
-                    <div class="d-flex align-items-center mt-2">
-                      <i
-                        class="bi bi-bicycle"
-                        style="font-size: 16px; color: #808080"
-                      ></i>
-                      <p class="ms-1">分類：運動</p>
-                    </div>
-                    <div class="d-flex align-items-center mt-2">
+                    <div class="d-flex align-items-center ms-3">
                       <i
                         class="bi bi-person-arms-up"
                         style="font-size: 16px; color: #808080"
                       ></i>
-                      <p class="ms-1">3人</p>
+                      <p class="ms-1">4人</p>
                     </div>
                   </div>
-                  <button
-                    type="button"
-                    class="btn border-2 border-dark btn-outline-shadow mt-auto"
-                  >
-                    試試這個吧！
-                  </button>
                 </div>
-              </div>
-              <!-- <button
+                <button
                   type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button> -->
-
-              <div class="mt-5">
-                <h4 class="ps-4" style="border-left: 5px solid #808080">
-                  聚會介紹
-                </h4>
+                  class="btn border-2 border-dark btn-outline-shadow mt-md-auto mt-3"
+                >
+                  我要報名！
+                </button>
               </div>
             </div>
+
+            <div class="mt-5 card-modal-cus-text-wrap">
+              <h4 class="ps-4" style="border-left: 5px solid #808080">
+                活動介紹
+              </h4>
+              <p class="mt-3">
+                大家好，我是Laura，一位熱愛咖啡和好聊夥伴的都市人。最近我想為自己，也為同樣喜愛咖啡廳、喜歡交朋友的你們，發起一場小型聚會！這次我們選了一間氣氛舒適、咖啡香氣濃郁的小店，適合聊天放鬆。這場聚會限額4人，期待的是能在輕鬆的環境中互相交流，不論你是熱愛咖啡、剛搬來城市的新住戶，還是對各式話題有好奇心的夥伴，都歡迎加入！
+              </p>
+              <p class="mt-3">
+                在這個忙碌的生活中，能夠和新朋友一起度過愉快的下午，交流生活中的點滴，實在是件美好的事。如果你有故事或想法想分享，或者單純想認識新朋友，都非常歡迎。別擔心內向或尷尬，這將是一個輕鬆無壓力的時光，我們會在彼此的話語中找到共鳴。
+              </p>
+              <p class="mt-3">
+                如果你有興趣，請按下報名按鈕吧！期待一起度過這個愜意的咖啡時光～
+              </p>
+            </div>
+
+            <button
+              type="button"
+              class="btn-close btn-close-cus position-absolute groupActivities-list-card-modal-close"
+              style="top: 14px; right: 14px"
+            ></button>
           </div>
         </div>
+        <!-- </div>
+          </div>
+        </div> -->
       </div>
       <div class="d-flex justify-content-center w-100 mt-10">
         <nav aria-label="Page navigation example">
@@ -1105,5 +1165,9 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
