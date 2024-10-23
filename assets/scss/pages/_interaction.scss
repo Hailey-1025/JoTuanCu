@@ -291,4 +291,10 @@
             }
         }
     }
+
+    @media screen and (min-width:576px) {
+        .modal-dialog-custom{
+            max-width: 530px;
+        }
+    }
 }
