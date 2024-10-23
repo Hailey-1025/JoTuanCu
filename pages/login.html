@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入｜JO團趣</title>
+</head>
+
+<body>
+    <%- include('./layout/header', {page: "login" }); -%>
+
+        <section class="container py-16 py-lg-30">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-between align-items-end mb-12 mb-md-10">
+                        <h1 class="fw-light fs-3 fs-md-2 text-center">會員登入</h1>
+                        <a class="fs-8 link-success text-decoration-underline" href="signup.html">快速註冊</a>
+                    </div>
+                    <form class="needs-validation was-validated" novalidate="">
+                        <div class="mb-4">
+                            <label for="accountNumber" class="form-label mb-3">會員帳號</label>
+                            <input type="text" class="form-control rounded bg-gray-100" id="accountNumber"
+                                placeholder="請輸入會員帳號" value="jotuancu">
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label mb-3">密碼</label>
+                            <input type="password" class="form-control rounded bg-gray-100" id="password"
+                                placeholder="請輸入密碼" value="jotuancu1003">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-10">
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label text-dark" for="flexCheckChecked">
+                                    記住我的帳號
+                                </label>
+                            </div>
+                            <a href="#">忘記密碼</a>
+                        </div>
+                        <a href="index.html" type="submit" class="btn btn-outline-shadow w-100">
+                            立即登入
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
