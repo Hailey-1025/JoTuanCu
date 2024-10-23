@@ -38,6 +38,21 @@ var swiper = new Swiper(".index-newActivitySwiper", {
   },
 });
 
+// 好評推薦
+var swiper = new Swiper(".recommendSwiper", {
+  slidesPerView: 2,
+  centeredSlides: true,
+  spaceBetween: 24,
+  grabCursor: true,
+});
+var swiper = new Swiper(".recommendSwiperPhone", {
+  slidesPerView: 1.8,
+  centeredSlides: true,
+  spaceBetween: 24,
+  grabCursor: true,
+});
+
+
 // 熱門商家
 var swiper = new Swiper(".index-featuredShopSwiper", {
   slidesPerView: 1,
@@ -113,24 +128,30 @@ var swiper = new Swiper(".featuredSwiper", {
   },
 });
 
-//interaction
+// interaction
 var swiper = new Swiper(".storeSwiper", {
   spaceBetween: 4,
   slidesPerView: 4,
   spaceBetween: 13,
+  freeMode: true,
+  watchSlidesProgress: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     992: {
-      slidesPerView: 4,
+      slidesPerView: 3.5,
       spaceBetween: 16,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+      centeredSlides: false,
     },
+  },
+});
+var swiper2 = new Swiper(".storeSwiper2", {
+  spaceBetween: 10,
+
+  thumbs: {
+    swiper: swiper,
   },
 });
 
@@ -485,6 +506,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //interaction
 //篩選部分
+const selectElement = document.getElementById("select");
+
+selectElement.addEventListener("change", function () {
+  if (this.value === "0") {
+    this.style.color = "#808080"; // 灰色
+    this.style.fontWeight = "400"; // 字重回到普通
+  } else {
+    this.style.color = "#000000"; // 黑色
+    this.style.fontWeight = "700"; // 字重變粗
+  }
+});
 
 const blockElement = document.getElementById("block");
 
@@ -509,3 +541,6 @@ typeElement.addEventListener("change", function () {
     this.style.fontWeight = "700"; // 字重變粗
   }
 });
+
+//不放最下面index輪播會出事
+new WOW().init();

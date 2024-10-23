@@ -7,7 +7,7 @@
     &::after {
         content: "";
         position: absolute;
-        background: url(../assets/images/illustrate-02.png) no-repeat;
+        background: url(../assets/images/illustrate-feature-02.svg) no-repeat;
         background-size: contain;
         width: 144px;
         height: 108px;
@@ -34,7 +34,7 @@
     &::after{
         position: absolute;
         content: "";
-        background-image: url(/assets/images/Decorative-lines-07.png);
+        background-image: url(../images/Decorative-lines-07.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 270px;
@@ -46,7 +46,7 @@
     &::before{
         content: "";
         position: absolute;
-        background: url(../assets/images/illustrate-01.png) no-repeat;
+        background: url(../images/illustrate-feature-01.svg) no-repeat;
         background-size: contain;
         width: 136px;
         height: 144px;
@@ -76,7 +76,7 @@
         
         content: "";
         position: absolute;
-        background: url(../assets/images/illustrate-03.png) no-repeat;
+        background: url(../images/illustrate-feature-03.svg) no-repeat;
         background-size: contain;
         width: 104px;
         height: 144px;
@@ -99,10 +99,12 @@
         }
     }
 }
-.accordion-text{
-    font-size: 20px !important;
-    @include self-lg{
-        font-size: 28px !important;
-        
+.accordion{
+    .accordion-text{
+        font-size: 20px !important;
+        @include self-lg{
+            font-size: 28px !important;
+            
+        }
     }
 }

@@ -29,6 +29,7 @@
     }
     @include self-lg{
         height: 350px;
+        
     }
     @include self-xxl{
         height: 600px;
@@ -71,17 +72,27 @@
 }
 // 大標題
 .featuredShop-h1{
-    max-width: 192px;
-    height: auto;
-    margin-top: 59px;
+    float: left;
+    background-image: url(../images/featuredShop-h1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 192px;
+    height: 46px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    z-index : 999;
+    margin-top: 72px; //加了13px，為圖片沒有的行高26px
     padding: 13px 0px;
     @include self-sm{
-        max-width: 256px;
-        margin-top: 80px;
+        width: 256px;
+        height: 96px;
+        margin-top: 87px;
     }
     @include self-xxl{
-        max-width: 320px;
-        margin-top: 80px;
+        width: 320px;
+        height: 120px;
+        margin-top: 102px; //加了22px，為圖片沒有的行高44px
     }
 }
 .featured-title-img{
@@ -90,7 +101,7 @@
     margin-top: 127px;
     @include self-sm{
         max-width: 153px;
-        margin-top: 171.5px;
+        margin-top: 150px;
     }
     @include self-xxl{
         max-width: 191px;
@@ -127,6 +138,9 @@
     @include self-xxl{
         top: -296px;
     }
+    button:hover{
+        border: 2px solid #333333 !important;
+    }
 }
 .featured-opacity80{
     background-color: rgba(255, 255, 255, 0.8) !important; 
@@ -149,21 +163,21 @@
 }
 .featured{
     .heart {
-        background: url("/assets/images/heart.svg") no-repeat;
+        background: url(../images/heart.svg) no-repeat;
         width: 20px;
         height: 24px;
         display: block;
     }
+
     .btn-check:checked+.btn,
     :not(.btn-check)+.btn:active,
     .btn:first-child:active,
     .btn.active,
     .btn.show {
         .heart {
-            background: url("/assets/images/heart-fill.svg") no-repeat;
+            background: url(../images/heart-fill.svg) no-repeat;
         }
     }
-    
 }
 //========= Modal ===========
 .store-rounded{
@@ -265,11 +279,12 @@
         padding: 0 !important;
     }
 }
-// 優惠券
+.letter-text-25{
+    letter-spacing: 0.25px !important;
+}
 
 
 // *,*::after,*::before{
 //     outline: 1px solid red;
-    
 // }
 
