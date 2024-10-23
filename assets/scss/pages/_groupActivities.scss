@@ -386,7 +386,13 @@ input[type="date"] {
     justify-content: center;
   }
 
+  .eventRegistrationSuccessfulModal-header {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
   .eventRegistrationSuccessfulModal-content {
+    border-radius: 0px;
     width: 401px;
   }
 }
