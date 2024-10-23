@@ -1086,7 +1086,9 @@
                 </div>
                 <button
                   type="button"
-                  class="btn border-2 border-dark btn-outline-shadow mt-md-auto mt-3"
+                  class="btn border-2 border-dark btn-outline-shadow mt-md-auto mt-3 eventRegistrationSuccessfulModal-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#eventRegistrationSuccessfulModal"
                 >
                   我要報名！
                 </button>
@@ -1113,6 +1115,40 @@
               class="btn-close btn-close-cus position-absolute groupActivities-list-card-modal-close"
               style="top: 14px; right: 14px"
             ></button>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="eventRegistrationSuccessfulModal"
+          tabindex="-1"
+          aria-labelledby="eventRegistrationSuccessfulModalLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered eventRegistrationSuccessfulModal-dialog"
+          >
+            <div
+              class="modal-content eventRegistrationSuccessfulModal-content"
+              style="background-color: #333333"
+            >
+              <div class="modal-header" style="border: none">
+                <i class="bi bi-check-lg fs-5" style="color: #abd354"></i>
+                <p
+                  class="modal-title ms-3"
+                  id="eventRegistrationSuccessfulModalLabel"
+                  style="color: #fafafa"
+                >
+                  報名成功！
+                </p>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
           </div>
         </div>
         <!-- </div>

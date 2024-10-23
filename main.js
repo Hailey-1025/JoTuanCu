@@ -52,7 +52,6 @@ var swiper = new Swiper(".recommendSwiperPhone", {
   grabCursor: true,
 });
 
-
 // 熱門商家
 var swiper = new Swiper(".index-featuredShopSwiper", {
   slidesPerView: 1,
@@ -449,6 +448,10 @@ document.addEventListener("DOMContentLoaded", function () {
     ".groupActivities-list-card-modal-dialog"
   );
 
+  const eventRegistrationSuccessfulModalBtn = document.querySelector(
+    ".eventRegistrationSuccessfulModal-btn"
+  );
+
   // // const groupActivitiesListModalDialog = document.querySelector(
   // //   ".groupActivities-list-modal-dialog"
   // // );
@@ -471,8 +474,6 @@ document.addEventListener("DOMContentLoaded", function () {
     groupActivitiesListCardModal.classList.add(
       "groupActivities-list-card-modal-show"
     );
-
-    //
   });
 
   //
@@ -480,13 +481,12 @@ document.addEventListener("DOMContentLoaded", function () {
     groupActivitiesListCardModal.classList.remove(
       "groupActivities-list-card-modal-show"
     ); // 移除 show 類
+  });
 
-    // setTimeout(() => {
-    //   groupActivitiesListCardModal.classList.remove(
-    //     "groupActivities-list-card-modal-show"
-    //   );
-    //   // modal.style.opacity = ""; // 重置 opacity，為下次顯示做準備
-    // }, 300); // 150 毫秒延遲與 CSS 過渡時間相符
+  eventRegistrationSuccessfulModalBtn.addEventListener("click", function () {
+    groupActivitiesListCardModal.classList.remove(
+      "groupActivities-list-card-modal-show"
+    ); // 移除 show 類
   });
 
   // 為每個圖片添加點擊事件監聽器
