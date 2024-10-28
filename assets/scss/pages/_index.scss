@@ -56,8 +56,8 @@
     }
 }
 
-.indexBg {
-    position: relative;
+.indexBgLeft {
+    // position: relative;
 
     &::after {
         position: absolute;
@@ -71,6 +71,38 @@
         z-index: -1;
     }
 
+    @media (min-width:576px) {
+        &::after {
+            width: 309px;
+            height: 508px;
+            bottom: calc(0% + 50px);
+        }
+    }
+
+    @media (min-width:768px) {
+        &::after {
+            width: 409px;
+            height: 608px;
+            bottom: 0;
+        }
+    }
+
+    @media (min-width:1200px) {
+        &::after {
+            width: 509px;
+            height: 708px;
+        }
+    }
+
+    @media (min-width:1400px) {
+        &::after {
+            width: 609px;
+            height: 808px;
+        }
+    }
+}
+
+.indexBgRight {
     &::before {
         position: absolute;
         content: "";
@@ -84,12 +116,6 @@
     }
 
     @media (min-width:576px) {
-        &::after {
-            width: 309px;
-            height: 508px;
-            bottom: calc(0% + 50px);
-        }
-
         &::before {
             width: 279px;
             height: 490px;
@@ -98,12 +124,6 @@
     }
 
     @media (min-width:768px) {
-        &::after {
-            width: 409px;
-            height: 608px;
-            bottom: 0;
-        }
-
         &::before {
             width: 279px;
             height: 490px;
@@ -113,11 +133,6 @@
 
 
     @media (min-width:1200px) {
-        &::after {
-            width: 509px;
-            height: 708px;
-        }
-
         &::before {
             width: 379px;
             height: 590px;
@@ -125,11 +140,6 @@
     }
 
     @media (min-width:1400px) {
-        &::after {
-            width: 609px;
-            height: 808px;
-        }
-
         &::before {
             width: 479px;
             height: 690px;
@@ -165,7 +175,7 @@
 
 // 最新活動
 .index-newActivity {
-    position: relative;
+    // position: relative;
 
     &::after {
         position: absolute;
@@ -282,7 +292,7 @@
 }
 
 .illustRead {
-    position: relative;
+    // position: relative;
 
     &::after {
         content: "";
@@ -315,7 +325,7 @@
 
 
 .illustSport {
-    position: relative;
+    // position: relative;
 
     &::after {
         content: "";
@@ -349,7 +359,7 @@
 }
 
 .illustDrink {
-    position: relative;
+    // position: relative;
 
     &::after {
         content: "";
@@ -421,15 +431,6 @@
 .index-featuredShop {
     position: relative;
 
-    // modal
-    // .modal-dialog {
-    //     max-height: auto;
-
-    //     @media (min-width:992px) {
-    //         max-height: 90%;
-    //     }
-    // }
-
     // 背景裝飾
     &::after {
         position: absolute;
@@ -467,6 +468,23 @@
         }
     }
 }
+
+
+// 跑馬燈
+.marquee-content {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-(20% * 5));
+    }
+  }
+
 
 //輪播+共用
 .index-newActivity,
