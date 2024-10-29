@@ -19,7 +19,7 @@
     }
 }
 
-// banner
+//============================================= banner  =============================================
 .featured-banner{
     max-width: 100%;
     height: 300px;
@@ -119,48 +119,48 @@
     margin-right: 80px;
 }
 
-// ==============卡片區塊=================
+//============================================= 卡片區塊  =============================================
 
 .featured-content{
     @include self-xxl{
         height: 2026px;
     }
+    // 卡片容器
+    .featured-card-all{
+        z-index: 5;
+        @include self-xxl{
+            top: -296px;
+        }
+        button:hover{
+            border: 2px solid #333333 !important;
+        }
+    }
+    // 容器透明度
+    .featured-opacity80{
+        background-color: rgba(255, 255, 255, 0.8) !important; 
+    }
     .card{
         background-color: rgba(255, 255, 255, 0.8) !important; 
     }
-}
-.people-circle{
-    margin-bottom: 175px;
-    margin-right: 44px;
-}
-.featured-card-all{
-    z-index: 5;
-    @include self-xxl{
-        top: -296px;
+    // 行數限制
+    .text-over{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 3; // 限制行數為3行
+        text-overflow: ellipsis;
     }
-    button:hover{
-        border: 2px solid #333333 !important;
+    // 右下圖片
+    .people-circle{
+        margin-bottom: 175px;
+        margin-right: 44px;
     }
 }
-.featured-opacity80{
-    background-color: rgba(255, 255, 255, 0.8) !important; 
-}
-
-.bg-C0ED5F{
-    background: #C0ED5F;
-}
-.text-over{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    -webkit-line-clamp: 3; // 限制行數為3行
-    text-overflow: ellipsis;
-}
-// 愛心樣式
-.heart-circle{
-    width: 40px;
-    height: 40px;
-}
+// ===愛心===
+// .heart-circle{
+//     width: 40px;
+//     height: 40px;
+// }
 .featured{
     .heart {
         background: url(../images/heart.svg) no-repeat;
@@ -179,7 +179,12 @@
         }
     }
 }
-//========= Modal ===========
+
+//============================================= modal  =============================================
+// badge
+.bg-C0ED5F{
+    background: #C0ED5F;
+}
 .store-rounded{
     border-radius: 4px;
     @include self-lg{
@@ -204,7 +209,6 @@
 .text-47481F{
     color: #47481F !important;
 }
-
 .messageBoard{
     @include self-lg{
         padding-top: 24px !important;
@@ -273,15 +277,30 @@
             background-image: url(/assets/images/star-full.png);
         }
     }
+    .score{
+        letter-spacing: 0.25px !important;
+        @include self-sm{
+            font-size: 16px !important;
+            
+        }
+    }
+    .message-btn{
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        font-size: 14px !important;
+        @include self-sm{
+            padding-left: 26px !important;
+            padding-right: 26px !important;
+            font-size: 16px !important;
+        }
+    }
 }
 .starGroup{
     .btn{
         padding: 0 !important;
     }
 }
-.letter-text-25{
-    letter-spacing: 0.25px !important;
-}
+
 
 
 // *,*::after,*::before{
