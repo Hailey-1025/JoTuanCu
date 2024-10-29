@@ -330,8 +330,41 @@ input[type="date"] {
     height: 300px;
   }
 
+  .card-modal-cus-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .btn-close-cus {
     box-shadow: none;
+  }
+
+  .groupActivitiesCardHeart-wrap > input {
+    display: none;
+  }
+
+  .groupActivitiesCardHeart-wrap
+    > input:checked
+    + label
+    > .groupActivitiesCardHeart {
+    background: url(../images/groupActivitiesClickHeart.svg) no-repeat;
+  }
+
+  .groupActivitiesCardHeart-wrap {
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  .groupActivitiesCardHeart {
+    background: url(../images/groupActivitiesHeart.svg) no-repeat;
+    width: 20px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 791px) {
@@ -358,7 +391,8 @@ input[type="date"] {
     }
 
     .card-modal-cus-img-wrap {
-      width: 250px;
+      // width: 250px;
+      width: 100%;
       height: 250px;
     }
 
@@ -372,13 +406,6 @@ input[type="date"] {
     .groupActivities-list-card-modal-dialog {
       margin-left: 12px;
       margin-right: 12px;
-    }
-  }
-
-  @media screen and (max-width: 350px) {
-    .card-modal-cus-img-wrap {
-      width: 200px;
-      height: 200px;
     }
   }
 
