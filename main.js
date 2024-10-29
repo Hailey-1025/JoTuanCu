@@ -85,7 +85,6 @@ var swiper = new Swiper(".index-featuredShopSwiper", {
     prevEl: ".swiper-button-prev-indexFeaturedShop",
   },
 });
-
 // // 熱門商家 modal
 var swiper = new Swiper(".indexModalMySwiper", {
   spaceBetween: 4,
@@ -116,16 +115,33 @@ var swiper2 = new Swiper(".indexModalMySwiper2", {
     swiper: swiper,
   },
 });
-
 // 精選商家-彈窗內商家圖片
-var swiper = new Swiper(".featuredSwiper", {
-  slidesPerView: "auto",
-  spaceBetween: 16,
+var swiper = new Swiper(".shopSwiper", {
+  slidesPerView: 4,            //顯示的滑動項目數量
+  spaceBetween: 16,            //圖片間距
+  freeMode: true,              // 啟用自由滑動，允許使用者滑動
+  watchSlidesProgress: true,   // 監控滑動進度，這樣可以讓主 Swiper 知道縮略圖的當前狀態
+  
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    992: {
+      slidesPerView: 3.5,
+      spaceBetween: 16,
+      centeredSlides: false,
+    },
+  },
 });
+var swiper2 = new Swiper(".shopSwiper2", {
+  spaceBetween: 16,
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
+
 
 // interaction
 var swiper = new Swiper(".storeSwiper", {
