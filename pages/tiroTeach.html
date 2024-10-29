@@ -2,29 +2,31 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新手教學｜JO團趣</title>
-    <link rel="stylesheet" href="../assets/scss/all.scss">
+    <link rel="icon" href="../assets/images/titleIcon.png">
 </head>
 <body>
     <%- include('./layout/header', {page: "tiroTeach" }); -%>
-    <div class="tiroTeach container">
-        <h3 class="text-center mb-4 mb-md-6 fs-lg-2">基本介紹</h3>
+    <div class="tiroTeach container py-16 py-lg-30">
+        <h2 class="fw-light fs-3 fs-md-2 text-center mb-12 mb-md-10 wow fadeInUp">基本介紹</h2>
         <div class="row justify-content-center mb-16 mb-lg-20">
             <!-- 基本介紹-內文 -->
             <div class="col-12 col-lg-6">
-                <div>
-                    <p class="fs-7">在這裡,我們相信共同的目標能夠讓陌生人成為朋友。無論你是想找人一起吃飯、看電影、旅遊、運動還是學習，JO團趣都是你最佳的選擇。快來加入我們，發起活動或參與其他人的活動，讓你的每一天都充滿樂趣和驚喜！</p>
+                <div class="d-flex flex-column align-items-center wow fadeInUp">
+                    <img class="mb-4" src="../assets/images/Decorative-lines-02.png" alt="++++" width="204" height="21">
+                    <p class="text-center">在這裡,我們相信共同的目標能夠讓陌生人成為朋友。無論你是想找人一起吃飯、看電影、旅遊、運動還是學習，JO團趣都是你最佳的選擇。快來加入我們，發起活動或參與其他人的活動，讓你的每一天都充滿樂趣和驚喜！</p>
                 </div>
             </div>
         </div>
         <!-- 1 -->
-        <div class="searchActivity position-relative row flex-column flex-lg-row mb-10 mb-lg-0">
+        <div class="searchActivity position-relative row flex-column flex-lg-row mb-10 mb-lg-0 ">
             <div class="col-12 col-lg-6">
-                <img class="img-fluid" src="../assets/images/banner-09.png" alt="img-1">
+                <img class="img-fluid wow fadeInLeft" src="../assets/images/banner-09.png" alt="img-1">
             </div>
             <div class="col-12 col-lg-6 d-flex flex-column justify-content-center my-6 my-xl-0">
-                <div class="px-lg-20 px-xxl-40">
+                <div class="px-lg-20 px-xxl-40 wow fadeInRight">
                     <div class="d-flex">
                         <img  class="me-6" src="../assets/images/icon-01.png" alt="search-img" width="40" height="40">
                         <h5 class="fs-lg-4">快速找到活動</h5>
@@ -37,10 +39,10 @@
         <!-- 2 -->
         <div class="callActivity position-relative row flex-column flex-lg-row-reverse">
             <div class="col-12 col-lg-6">
-                <img class="img-fluid" src="../assets/images/banner-10.png" alt="img-2">
+                <img class="img-fluid wow fadeInRight" src="../assets/images/banner-10.png" alt="img-2">
             </div>
             <div class="col-12 col-lg-6 d-flex flex-column justify-content-center my-6 my-xl-0">
-                <div class="px-lg-20 px-xxl-40">
+                <div class="px-lg-20 px-xxl-40 wow fadeInLeft">
                     <div class="initiate d-flex position-relative mb-11">
                         <img  class="me-6" src="../assets/images/icon-02.png" alt="flag-img" width="40" height="40">
                         <h5 class="fs-lg-4">輕鬆發起活動</h5>
@@ -50,12 +52,12 @@
             </div>
         </div>
         <!-- 3 -->
-        <div class="friendHappy position-relative row flex-column flex-lg-row mb-16 mb-lg-20">
+        <div class="friendHappy position-relative row Aflex-column flex-lg-row mb-16 mb-lg-20">
             <div class="col-12 col-lg-6">
-                <img class="img-fluid" src="../assets/images/banner-11.png" alt="img-1">
+                <img class="img-fluid wow fadeInLeft" src="../assets/images/banner-11.png" alt="img-1">
             </div>
             <div class="col-12 col-lg-6 d-flex flex-column justify-content-center my-6 my-xl-0">
-                <div class="px-xl-40">
+                <div class="px-xl-40 wow fadeInRight">
                     <div class="d-flex">
                         <img  class="me-6" src="../assets/images/icon-03.png" alt="search-img" width="40" height="40">
                         <h5 class="fs-lg-4">交友與快樂兼得</h5>
@@ -66,10 +68,10 @@
             </div>
         </div>
         <!-- 常見問題 -->
-        <div class="row justify-content-center mb-10 mb-lg-20">
-            <h3 class="text-center mb-4 mb-md-6 fs-lg-2">常見問題</h3>
+        <div class="row justify-content-center wow fadeInUp">
+            <h2 class="fw-light fs-3 fs-md-2 text-center mb-12 mb-md-10">常見問題</h2>
             <!-- 手風琴 -->
-            <div class="col-12 col-lg-10">
+            <div class="col-12">
                 <div class="accordion" id="accordionTiroTeach">
                     <!-- 1 -->
                     <div class="accordion-item">
@@ -86,12 +88,12 @@
                     </div>
                     <!-- 2 -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="TiroTeach1">
-                            <button class="accordion-button accordion-text fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA2" aria-expanded="true" aria-controls="collapseQA2">
+                        <h2 class="accordion-header" id="TiroTeach2">
+                            <button class="accordion-button accordion-text fw-bold collapsed" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA2"  aria-controls="collapseQA2">
                                 可以更改用戶名稱嗎？
                             </button>
                         </h2>
-                        <div id="collapseQA2" class="accordion-collapse collapse" aria-labelledby="headTiroTeach1" data-bs-parent="#accordionTiroTeach">
+                        <div id="collapseQA2" class="accordion-collapse collapse" aria-labelledby="headTiroTeach2" data-bs-parent="#accordionTiroTeach">
                             <div class="accordion-body fs-9 fs-lg-7">
                                 我們將提供一次更改用戶名稱的機會。
                             </div>
@@ -99,12 +101,12 @@
                     </div>
                     <!-- 3 -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="TiroTeach1">
-                            <button class="accordion-button accordion-text fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA3" aria-expanded="true" aria-controls="collapseQA3">
+                        <h2 class="accordion-header" id="TiroTeach3">
+                            <button class="accordion-button accordion-text fw-bold collapsed" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA3"  aria-controls="collapseQA3">
                                 如何參加活動
                             </button>
                         </h2>
-                        <div id="collapseQA3" class="accordion-collapse collapse" aria-labelledby="headTiroTeach1" data-bs-parent="#accordionTiroTeach">
+                        <div id="collapseQA3" class="accordion-collapse collapse" aria-labelledby="headTiroTeach3" data-bs-parent="#accordionTiroTeach">
                             <div class="accordion-body fs-9 fs-lg-7">
                                 只要註冊會員之後，就可以在喜歡的活動中點選參加活動囉！
                             </div>
@@ -112,12 +114,12 @@
                     </div>
                     <!-- 4 -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="TiroTeach1">
-                            <button class="accordion-button accordion-text fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA4" aria-expanded="true" aria-controls="collapseQA4">
+                        <h2 class="accordion-header" id="TiroTeach4">
+                            <button class="accordion-button accordion-text fw-bold collapsed" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA4"  aria-controls="collapseQA4">
                                 發起活動需要支付什麼費用嗎？
                             </button>
                         </h2>
-                        <div id="collapseQA4" class="accordion-collapse collapse" aria-labelledby="headTiroTeach1" data-bs-parent="#accordionTiroTeach">
+                        <div id="collapseQA4" class="accordion-collapse collapse" aria-labelledby="headTiroTeach4" data-bs-parent="#accordionTiroTeach">
                             <div class="accordion-body fs-9 fs-lg-7">
                                 我們不會主動向用戶收取任何費用。
                             </div>
@@ -125,12 +127,12 @@
                     </div>
                     <!-- 5 -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="TiroTeach1">
-                            <button class="accordion-button accordion-text fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA5" aria-expanded="true" aria-controls="collapseQA5">
+                        <h2 class="accordion-header" id="TiroTeach5">
+                            <button class="accordion-button accordion-text fw-bold collapsed" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA5"  aria-controls="collapseQA5">
                                 參加活動需要支付參加費用嗎？
                             </button>
                         </h2>
-                        <div id="collapseQA5" class="accordion-collapse collapse" aria-labelledby="headTiroTeach1" data-bs-parent="#accordionTiroTeach">
+                        <div id="collapseQA5" class="accordion-collapse collapse" aria-labelledby="headTiroTeach5" data-bs-parent="#accordionTiroTeach">
                             <div class="accordion-body fs-9 fs-lg-7">
                                 參加活動只需要支付活動發起人所告知的店家、場地等費用即可哦。
                             </div>
@@ -142,5 +144,7 @@
     </div>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>

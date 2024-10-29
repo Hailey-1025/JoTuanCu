@@ -19,7 +19,7 @@
     }
 }
 
-// banner
+//============================================= banner  =============================================
 .featured-banner{
     max-width: 100%;
     height: 300px;
@@ -29,6 +29,7 @@
     }
     @include self-lg{
         height: 350px;
+        
     }
     @include self-xxl{
         height: 600px;
@@ -71,17 +72,27 @@
 }
 // 大標題
 .featuredShop-h1{
-    max-width: 192px;
-    height: auto;
-    margin-top: 59px;
+    float: left;
+    background-image: url(../images/featuredShop-h1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 192px;
+    height: 46px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    z-index : 999;
+    margin-top: 72px; //加了13px，為圖片沒有的行高26px
     padding: 13px 0px;
     @include self-sm{
-        max-width: 256px;
-        margin-top: 80px;
+        width: 256px;
+        height: 96px;
+        margin-top: 87px;
     }
     @include self-xxl{
-        max-width: 320px;
-        margin-top: 80px;
+        width: 320px;
+        height: 120px;
+        margin-top: 102px; //加了22px，為圖片沒有的行高44px
     }
 }
 .featured-title-img{
@@ -90,7 +101,7 @@
     margin-top: 127px;
     @include self-sm{
         max-width: 153px;
-        margin-top: 171.5px;
+        margin-top: 150px;
     }
     @include self-xxl{
         max-width: 191px;
@@ -108,64 +119,72 @@
     margin-right: 80px;
 }
 
-// ==============卡片區塊=================
+//============================================= 卡片區塊  =============================================
 
 .featured-content{
     @include self-xxl{
         height: 2026px;
     }
+    // 卡片容器
+    .featured-card-all{
+        z-index: 5;
+        @include self-xxl{
+            top: -296px;
+        }
+        button:hover{
+            border: 2px solid #333333 !important;
+        }
+    }
+    // 容器透明度
+    .featured-opacity80{
+        background-color: rgba(255, 255, 255, 0.8) !important; 
+    }
     .card{
         background-color: rgba(255, 255, 255, 0.8) !important; 
     }
-}
-.people-circle{
-    margin-bottom: 175px;
-    margin-right: 44px;
-}
-.featured-card-all{
-    z-index: 5;
-    @include self-xxl{
-        top: -296px;
+    // 行數限制
+    .text-over{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 3; // 限制行數為3行
+        text-overflow: ellipsis;
+    }
+    // 右下圖片
+    .people-circle{
+        margin-bottom: 175px;
+        margin-right: 44px;
     }
 }
-.featured-opacity80{
-    background-color: rgba(255, 255, 255, 0.8) !important; 
-}
-
-.bg-C0ED5F{
-    background: #C0ED5F;
-}
-.text-over{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    -webkit-line-clamp: 3; // 限制行數為3行
-    text-overflow: ellipsis;
-}
-// 愛心樣式
-.heart-circle{
-    width: 40px;
-    height: 40px;
-}
+// ===愛心===
+// .heart-circle{
+//     width: 40px;
+//     height: 40px;
+// }
 .featured{
     .heart {
-        background: url("/assets/images/heart.svg") no-repeat;
+        background: url(../images/heart.svg) no-repeat;
         width: 20px;
         height: 24px;
         display: block;
     }
+
     .btn-check:checked+.btn,
     :not(.btn-check)+.btn:active,
     .btn:first-child:active,
     .btn.active,
     .btn.show {
         .heart {
-            background: url("/assets/images/heart-fill.svg") no-repeat;
+            background: url(../images/heart-fill.svg) no-repeat;
         }
     }
-    
 }
-//========= Modal ===========
+
+//============================================= modal  =============================================
+// badge
+.bg-C0ED5F{
+    background: #C0ED5F;
+}
 .store-rounded{
     border-radius: 4px;
     @include self-lg{
@@ -190,7 +209,6 @@
 .text-47481F{
     color: #47481F !important;
 }
-
 .messageBoard{
     @include self-lg{
         padding-top: 24px !important;
@@ -259,17 +277,33 @@
             background-image: url(/assets/images/star-full.png);
         }
     }
+    .score{
+        letter-spacing: 0.25px !important;
+        @include self-sm{
+            font-size: 16px !important;
+            
+        }
+    }
+    .message-btn{
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        font-size: 14px !important;
+        @include self-sm{
+            padding-left: 26px !important;
+            padding-right: 26px !important;
+            font-size: 16px !important;
+        }
+    }
 }
 .starGroup{
     .btn{
         padding: 0 !important;
     }
 }
-// 優惠券
+
 
 
 // *,*::after,*::before{
 //     outline: 1px solid red;
-    
 // }
 

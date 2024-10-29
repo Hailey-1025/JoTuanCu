@@ -2,6 +2,8 @@ import "./assets/scss/all.scss";
 import "bootstrap";
 // swiper 這段 import 請不要動它，因為還沒寫輪播，所以會顯示錯誤
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+//wow
+new WOW().init();
 
 //index
 //最新活動
@@ -39,19 +41,16 @@ var swiper = new Swiper(".index-newActivitySwiper", {
 });
 
 // 好評推薦
-var swiper = new Swiper(".recommendSwiper", {
-  slidesPerView: 2,
-  centeredSlides: true,
-  spaceBetween: 24,
-  grabCursor: true,
-});
 var swiper = new Swiper(".recommendSwiperPhone", {
   slidesPerView: 1.8,
   centeredSlides: true,
   spaceBetween: 24,
   grabCursor: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
-
 
 // 熱門商家
 var swiper = new Swiper(".index-featuredShopSwiper", {
@@ -128,24 +127,30 @@ var swiper = new Swiper(".featuredSwiper", {
   },
 });
 
-//interaction
+// interaction
 var swiper = new Swiper(".storeSwiper", {
   spaceBetween: 4,
   slidesPerView: 4,
   spaceBetween: 13,
+  freeMode: true,
+  watchSlidesProgress: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     992: {
-      slidesPerView: 4,
+      slidesPerView: 3.5,
       spaceBetween: 16,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+      centeredSlides: false,
     },
+  },
+});
+var swiper2 = new Swiper(".storeSwiper2", {
+  spaceBetween: 10,
+
+  thumbs: {
+    swiper: swiper,
   },
 });
 
@@ -421,17 +426,74 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // 設定原始和點擊後的圖片路徑
-  const originalSrc = "../../assets/images/heart.svg";
-  const activeSrc = "../../assets/images/clickHeart.svg";
+  // const originalSrc = "../assets/images/heart.svg";
+  const originalSrc = `${import.meta.env.BASE_URL}assets/images/heart.svg`;
+  // const activeSrc = "../assets/images/clickHeart.svg";
+  const activeSrc = `${import.meta.env.BASE_URL}assets/images/clickHeart.svg`;
 
   // 選取所有 .cus-groupActivities-card-body-heart 圖片
   const hearts = document.querySelectorAll(
     ".cus-groupActivities-card-body-heart"
   );
 
+  const cardModal = document.getElementById("cardModal");
+  const groupActivitiesListCardModal = document.querySelector(
+    ".groupActivities-list-card-modal"
+  );
+  const groupActivitiesListCardModalClose = document.querySelector(
+    ".groupActivities-list-card-modal-close"
+  );
+
+  const groupActivitiesListCardModalDialog = document.querySelector(
+    ".groupActivities-list-card-modal-dialog"
+  );
+
+  const eventRegistrationSuccessfulModalBtn = document.querySelector(
+    ".eventRegistrationSuccessfulModal-btn"
+  );
+
+  // // const groupActivitiesListModalDialog = document.querySelector(
+  // //   ".groupActivities-list-modal-dialog"
+  // // );
+  // const modalDialog = groupActivitiesModal.querySelector(
+  //   ".groupActivities-list-modal-dialog-ani"
+  // );
+  // cardElement.addEventListener("click", function () {
+  //   groupActivitiesModal.style.display = "block"; // 顯示 Modal
+
+  //   // 使用小的延遲確保動畫可以被觸發
+  //   setTimeout(() => {
+  //     groupActivitiesModal.classList.add(
+  //       "groupActivities-list-groupActivitiesModal-fade-show"
+  //     );
+  //     modalDialog.classList.add("show"); // 添加動畫
+  //   }, 10);
+  // });
+
+  cardModal.addEventListener("click", function () {
+    groupActivitiesListCardModal.classList.add(
+      "groupActivities-list-card-modal-show"
+    );
+  });
+
+  //
+  groupActivitiesListCardModalClose.addEventListener("click", function () {
+    groupActivitiesListCardModal.classList.remove(
+      "groupActivities-list-card-modal-show"
+    ); // 移除 show 類
+  });
+
+  eventRegistrationSuccessfulModalBtn.addEventListener("click", function () {
+    groupActivitiesListCardModal.classList.remove(
+      "groupActivities-list-card-modal-show"
+    ); // 移除 show 類
+  });
+
   // 為每個圖片添加點擊事件監聽器
   hearts.forEach((heart) => {
-    heart.addEventListener("click", function () {
+    heart.addEventListener("click", function (event) {
+      // 防止點擊事件傳播到父層
+      event.stopPropagation();
       // 切換圖片src
       if (heart.src.includes("heart.svg")) {
         heart.src = activeSrc; // 切換到已填滿的心形圖片
@@ -444,6 +506,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //interaction
 //篩選部分
+const selectElement = document.getElementById("select");
+
+selectElement.addEventListener("change", function () {
+  if (this.value === "0") {
+    this.style.color = "#808080"; // 灰色
+    this.style.fontWeight = "400"; // 字重回到普通
+  } else {
+    this.style.color = "#000000"; // 黑色
+    this.style.fontWeight = "700"; // 字重變粗
+  }
+});
 
 const blockElement = document.getElementById("block");
 
@@ -468,3 +541,6 @@ typeElement.addEventListener("change", function () {
     this.style.fontWeight = "700"; // 字重變粗
   }
 });
+
+//不放最下面index輪播會出事
+new WOW().init();

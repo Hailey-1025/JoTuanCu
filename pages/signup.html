@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊｜JO團趣</title>
+    <link rel="icon" href="../assets/images/titleIcon.png">
+</head>
+
+<body>
+    <%- include('./layout/header', {page: "signup" }); -%>
+
+        <section class="container py-16 py-lg-30">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-between align-items-end mb-12 mb-md-10">
+                        <h1 class="fw-light fs-3 fs-md-2 text-center">註冊會員</h1>
+                        <a class="fs-8 link-success text-decoration-underline" href="login.html">快速登入</a>
+                    </div>
+                    <form class="needs-validation " novalidate="">
+                        <div class="mb-4">
+                            <input type="text" class="form-control rounded bg-gray-100 mb-2" id="accountNumber"
+                                placeholder="請輸入帳號">
+                            <label for="accountNumber" class="form-label mb-0">請以半形輸入，6~16個英文、數字組合</label>
+                        </div>
+                        <input type="email" class="form-control rounded bg-gray-100 mb-4" id="accountNumber"
+                            placeholder="請輸入 Email">
+                        <div class="mb-4">
+                            <input type="text" class="form-control rounded bg-gray-100 mb-2" id="password"
+                                placeholder="請輸入密碼">
+                            <label for="password" class="form-label mb-0">請以半形輸入，6~16個英文、數字組合</label>
+                        </div>
+                        <input type="text" class="form-control rounded bg-gray-100 mb-4" placeholder="請再次輸入密碼">
+                        <div class="form-check d-flex align-items-center mb-2 was-validated">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label text-dark" for="flexCheckDefault">
+                                我已同意<a class="text-decoration-underline" data-bs-toggle="modal" href="#MembershipTerms
+                                ">會員條款</a>
+                            </label>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb-6 was-validated">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault2">
+                            <label class="form-check-label text-dark" for="flexCheckDefault2">
+                                我已同意透過 E-mail 通知網站活動訊息
+                            </label>
+                        </div>
+
+                        <a href="login.html" type="submit" class="btn btn-outline-shadow w-100">
+                            確認送出
+                        </a>
+                    </form>
+                    <div class="modal fade" id="MembershipTerms" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 800px;">
+                          <div class="modal-content border-0 p-4">
+                            <div class="modal-header border-0 p-0">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body py-0 my-6">
+                              <h2 class="fw-light fs-3 fs-md-2 text-center mb-6">JO團趣 會員註冊使用者條款</h2>
+                              <p class="mb-12 mb-md-10">歡迎使用JO團趣!<br>在您註冊成為JO團趣會員之前,請仔細閱讀以下使用者條款。<br>當您註冊成為會員,即表示您同意遵守以下條款。</p>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">1. 會員資格</h3>
+                                  <p>1.1 您必須年滿18歲才能註冊成為JO團趣的會員。<br>
+                                    1.2 您必須提供真實、準確、最新及完整的註冊資料。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">2. 使用者責任</h3>
+                                  <p>2.1 您對使用JO團趣帳號進行的所有活動負全責。<br>
+                                    2.2 您同意不會使用JO團趣進行任何違法、不當或侵害他人權益的活動。<br>
+                                    2.3 您不得在JO團趣上發布任何不雅、冒犯、誹謗或仇恨言論。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">3. 隱私政策</h3>
+                                  <p>3.1 JO團趣重視您的隱私,並遵守相關法律保護您的個人資料。<br>
+                                    3.2 您提供的註冊資料將用於帳號管理、活動匹配及其他平台服務。<br>
+                                    3.3 您同意JO團趣可以根據隱私政策使用您的資料。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">4. 服務使用</h3>
+                                  <p>4.1 JO團趣提供的平台僅供發起和參加各種活動,促進用戶間的交流和互動。<br>
+                                    4.2 JO團趣對用戶發布的活動內容不承擔責任,並有權在必要時刪除不當內容。<br>
+                                    4.3 JO團趣有權根據自身判斷,暫停或終止您的帳號及使用權限。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">5. 會員行為規範</h3>
+                                  <p>5.1 尊重其他會員,保持友善和禮貌的互動。<br>
+                                    5.2 不得在平台上進行任何形式的騷擾、欺詐或其他不當行為。<br>
+                                    5.3 對於任何違反本條款的行為,JO團趣保留采取適當行動的權利,包括但不限於帳號封禁或法律追訴。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">6. 免責聲明</h3>
+                                  <p>6.1 JO團趣對因平台使用或無法使用而造成的任何損失或損害不承擔責任。<br>
+                                    6.2 JO團趣不保證平台服務的連續性、準確性或完整性。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">7. 條款修改</h3>
+                                  <p>7.1 JO團趣有權隨時修改這些使用者條款,並將在平台上發布更新版本。<br>
+                                    7.2 修改後的條款一經發布即生效,繼續使用平台即表示您接受新的條款。</p>
+                              </div>
+                              <div>
+                                  <h3 class="fs-6 mb-2">8. 法律適用</h3>
+                                  <p>8.1 本條款適用於平台所在地的法律。<br>
+                                    8.2 任何因本條款引起的爭議,將提交平台所在地的法院解決。</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
