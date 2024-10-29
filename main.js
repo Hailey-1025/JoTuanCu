@@ -85,7 +85,6 @@ var swiper = new Swiper(".index-featuredShopSwiper", {
     prevEl: ".swiper-button-prev-indexFeaturedShop",
   },
 });
-
 // // 熱門商家 modal
 var swiper = new Swiper(".indexModalMySwiper", {
   spaceBetween: 4,
@@ -116,16 +115,33 @@ var swiper2 = new Swiper(".indexModalMySwiper2", {
     swiper: swiper,
   },
 });
-
 // 精選商家-彈窗內商家圖片
-var swiper = new Swiper(".featuredSwiper", {
-  slidesPerView: "auto",
-  spaceBetween: 16,
+var swiper = new Swiper(".shopSwiper", {
+  slidesPerView: 4,            //顯示的滑動項目數量
+  spaceBetween: 16,            //圖片間距
+  freeMode: true,              // 啟用自由滑動，允許使用者滑動
+  watchSlidesProgress: true,   // 監控滑動進度，這樣可以讓主 Swiper 知道縮略圖的當前狀態
+  
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    992: {
+      slidesPerView: 3.5,
+      spaceBetween: 16,
+      centeredSlides: false,
+    },
+  },
 });
+var swiper2 = new Swiper(".shopSwiper2", {
+  spaceBetween: 16,
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
+
 
 // interaction
 var swiper = new Swiper(".storeSwiper", {
@@ -427,13 +443,19 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   // 設定原始和點擊後的圖片路徑
   // const originalSrc = "../assets/images/heart.svg";
-  const originalSrc = `${import.meta.env.BASE_URL}assets/images/heart.svg`;
-  // const activeSrc = "../assets/images/clickHeart.svg";
-  const activeSrc = `${import.meta.env.BASE_URL}assets/images/clickHeart.svg`;
+  // const originalSrc = `${import.meta.env.BASE_URL}assets/images/heart.svg`;
+  // // const activeSrc = "../assets/images/clickHeart.svg";
+  // const activeSrc = `${import.meta.env.BASE_URL}assets/images/clickHeart.svg`;
 
   // 選取所有 .cus-groupActivities-card-body-heart 圖片
-  const hearts = document.querySelectorAll(
-    ".cus-groupActivities-card-body-heart"
+  // const hearts = document.querySelectorAll(
+  //   ".cus-groupActivities-card-body-heart"
+  // );
+
+  const cardHeart = document.querySelector("#cardHeart");
+  const cardHeartLabel = document.querySelector(".groupActivitiesCardHeart");
+  const groupActivitiesCardHeartWrap = document.querySelector(
+    ".groupActivitiesCardHeart-wrap"
   );
 
   const cardModal = document.getElementById("cardModal");
@@ -470,6 +492,10 @@ document.addEventListener("DOMContentLoaded", function () {
   //   }, 10);
   // });
 
+  groupActivitiesCardHeartWrap.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+
   cardModal.addEventListener("click", function () {
     groupActivitiesListCardModal.classList.add(
       "groupActivities-list-card-modal-show"
@@ -490,18 +516,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // 為每個圖片添加點擊事件監聽器
-  hearts.forEach((heart) => {
-    heart.addEventListener("click", function (event) {
-      // 防止點擊事件傳播到父層
-      event.stopPropagation();
-      // 切換圖片src
-      if (heart.src.includes("heart.svg")) {
-        heart.src = activeSrc; // 切換到已填滿的心形圖片
-      } else {
-        heart.src = originalSrc; // 切回原始心形圖片
-      }
-    });
-  });
+  // hearts.forEach((heart) => {
+  //   heart.addEventListener("click", function (event) {
+  //     // 防止點擊事件傳播到父層
+  //     event.stopPropagation();
+  //     // 切換圖片src
+  //     if (heart.src.includes("heart.svg")) {
+  //       heart.src = activeSrc; // 切換到已填滿的心形圖片
+  //     } else {
+  //       heart.src = originalSrc; // 切回原始心形圖片
+  //     }
+  //   });
+  // });
 });
 
 //interaction
