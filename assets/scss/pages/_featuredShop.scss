@@ -13,6 +13,11 @@
         @content ;
     }
 }
+@mixin self-xl{
+    @media(min-width:1200px){
+        @content ;
+    }
+}
 @mixin self-xxl{
     @media(min-width:1400px){
         @content ;
@@ -167,6 +172,7 @@
         width: 20px;
         height: 24px;
         display: block;
+        
     }
 
     .btn-check:checked+.btn,
@@ -191,11 +197,14 @@
         border-radius: 20px;
     }
 }
+// swiper
 .featuredSwiper{
     .swiper-slide,.featuredSwiper-img{
         width: 108px;
         height: 108px;
     }
+}
+.featuredSwiper2{
     .swiper-button-prev,.swiper-button-next{
         width: 15px;
         height: 24px;
@@ -206,6 +215,32 @@
         }
     }
 }
+// 主圖
+.modalRounded {
+    border-radius: 4px;
+    @media (min-width:992px) {
+        border-radius: 20px;
+    }
+}
+// 箭頭樣式
+.shopSwiper{
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        --swiper-navigation-size: 24px;
+        color: white;
+        font-weight: 900;
+    }
+    .swiper-button-next{
+        right: 0;
+        margin-right: 12px;
+    }
+    .swiper-button-prev{
+        left: 0;
+        margin-left: 12px;
+    }
+}
+// ====================================
 .text-47481F{
     color: #47481F !important;
 }
@@ -236,6 +271,13 @@
     }
 }
 .featured-modal{
+    // 視窗大小不限縮
+    @media (max-width: 1200px) {
+        .modal-dialog {
+            width: 100%;
+            max-width: none;
+        }
+    }
     li{
         line-height: 0 !important;
     }

@@ -272,17 +272,13 @@
         <div class="position-absolute bottom-0 end-0 d-none d-xxl-block wow fadeInRight" style="background-image: url(../assets/images/illustrate-feature-02.svg); background-size: contain; width: 303px;height: 227px; "></div>
         <div class="people-line position-absolute bottom-0 end-0 d-none d-xxl-block wow fadeInRight" style="background-image: url(../assets/images/Decorative-lines-03.png); background-size: contain; width: 21px;height: 200px;"></div>
     </div>
-
-
-
 <!-- Modal ------------------------------------------------------------------------------------------------->
     <div class="modal fade featured-modal px-6" id="featuredModal" tabindex="-1" aria-labelledby="featuredModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl mx-auto modal-dialog-scrollable">
-            <div class="modal-content position-relative px-4 p-md-10">
-                <div class="modal-header border-0">
-                    <button type="button" class="featured-modal-close btn-close position-absolute end-0 top-0 m-6" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body row px-0 flex-lg-row-reverse">
+            <div class="modal-content position-relative p-4 p-md-10">
+                <button type="button" class="btn-close position-absolute z-3 end-0 top-0 m-6" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+                <div class="modal-body row p-0 flex-lg-row-reverse">
 <!-- 標題-mobile -->
                     <div class="col-12 d-lg-none mb-6">
                         <div>
@@ -296,33 +292,53 @@
                     </div>
 <!-- 圖片+商家資訊 -->
                     <div class="col-12 col-lg-5 mb-6 mb-lg-0 order-lg-2 d-flex flex-column">
-                        <div class="position-relative">
-                            <img src="../assets/images/card-11.png" class="store-rounded mb-4 w-100 img-fluid" alt="img">
-                            <div class="position-absolute top-0 end-0 d-flex align-items-center m-4 d-lg-none">
-                                <input type="checkbox" class="btn-check" id="btnHeart10" autocomplete="off" checked>
-                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart10" style="padding: 8px 10px;">
-                                    <div class="heart"></div>
-                                </label>
-                            </div>
-                        </div>
-<!-- mobile-商家圖片 -->
-                        <ul class="list-unstyled d-flex d-gird gap-3 gap-lg-4 d-lg-none mb-4">
-                            <li><img class="rounded img-fluid" src="../assets/images/cafes-1.png" alt="img"></li>
-                            <li><img class="rounded img-fluid" src="../assets/images/cafes-2.png" alt="img"></li>
-                            <li><img class="rounded img-fluid" src="../assets/images/cafes-3.png" alt="img"></li>
-                            <li><img class="rounded img-fluid" src="../assets/images/cafes-4.png" alt="img"></li>
-                        </ul>
-<!-- PC-商家圖片-swiper -->
-                        <div class="swiper featuredSwiper d-none d-lg-block mb-4 w-100">
+<!-- swiper-主圖 -->
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper shopSwiper2 w-100 mb-4">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img class="featuredSwiper-img rounded-3" src="../assets/images/cafes-1.png" alt="img" ></div>
-                                <div class="swiper-slide"><img class="featuredSwiper-img rounded-3" src="../assets/images/cafes-2.png" alt="img" ></div>
-                                <div class="swiper-slide"><img class="featuredSwiper-img rounded-3" src="../assets/images/cafes-3.png" alt="img" ></div>
-                                <div class="swiper-slide"><img class="featuredSwiper-img rounded-3" src="../assets/images/cafes-4.png" alt="img" ></div>
+                                <div class="swiper-slide">
+                                    <!-- 設計稿上有愛心感覺很奇怪先註解掉了，有要再還原 -->
+                                    <!-- <div class="position-relative"> -->  
+                                        <img class="img-fluid modalRounded" src="../assets/images/card-11.png" style="width: 1000px;" />
+                                        <!-- <div class="position-absolute top-0 end-0 d-flex align-items-center m-4 d-sm-none">
+                                            <input type="checkbox" class="btn-check" id="swiperBtnLove03" autocomplete="off">
+                                            <label class="btn btn-white border-0 rounded-pill" for="swiperBtnLove03"
+                                              style="padding: 8px 10px;">
+                                              <div class="heart"></div>
+                                            </label>
+                                        </div> 
+                                    </div>-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="../assets/images/card-35.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="../assets/images/card-36.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="../assets/images/card-37.jpg" />
+                                </div>
                             </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
                         </div>
+<!-- swiper-縮圖 -->
+                        <div thumbsSlider="" class="swiper shopSwiper mb-4 w-100">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="../assets/images/card-11.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="../assets/images/card-35.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="../assets/images/card-36.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="../assets/images/card-37.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper-button-next-shopSwiper"></div>
+                            <div class="swiper-button-prev swiper-button-prev-shopSwiper"></div>
+                        </div>
+<!-- 店家資訊 -->
                         <p class="fs-10 text-gray-700 mb-2"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
                         <p class="fs-10 text-gray-700 mb-2"><i class="bi bi-clock me-1"></i>周一 ~ 周日 <span class="ms-6">13:00 - 20:00</span></p>
 <!-- map -->
