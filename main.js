@@ -427,13 +427,19 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   // 設定原始和點擊後的圖片路徑
   // const originalSrc = "../assets/images/heart.svg";
-  const originalSrc = `${import.meta.env.BASE_URL}assets/images/heart.svg`;
-  // const activeSrc = "../assets/images/clickHeart.svg";
-  const activeSrc = `${import.meta.env.BASE_URL}assets/images/clickHeart.svg`;
+  // const originalSrc = `${import.meta.env.BASE_URL}assets/images/heart.svg`;
+  // // const activeSrc = "../assets/images/clickHeart.svg";
+  // const activeSrc = `${import.meta.env.BASE_URL}assets/images/clickHeart.svg`;
 
   // 選取所有 .cus-groupActivities-card-body-heart 圖片
-  const hearts = document.querySelectorAll(
-    ".cus-groupActivities-card-body-heart"
+  // const hearts = document.querySelectorAll(
+  //   ".cus-groupActivities-card-body-heart"
+  // );
+
+  const cardHeart = document.querySelector("#cardHeart");
+  const cardHeartLabel = document.querySelector(".groupActivitiesCardHeart");
+  const groupActivitiesCardHeartWrap = document.querySelector(
+    ".groupActivitiesCardHeart-wrap"
   );
 
   const cardModal = document.getElementById("cardModal");
@@ -470,6 +476,10 @@ document.addEventListener("DOMContentLoaded", function () {
   //   }, 10);
   // });
 
+  groupActivitiesCardHeartWrap.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+
   cardModal.addEventListener("click", function () {
     groupActivitiesListCardModal.classList.add(
       "groupActivities-list-card-modal-show"
@@ -490,18 +500,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // 為每個圖片添加點擊事件監聽器
-  hearts.forEach((heart) => {
-    heart.addEventListener("click", function (event) {
-      // 防止點擊事件傳播到父層
-      event.stopPropagation();
-      // 切換圖片src
-      if (heart.src.includes("heart.svg")) {
-        heart.src = activeSrc; // 切換到已填滿的心形圖片
-      } else {
-        heart.src = originalSrc; // 切回原始心形圖片
-      }
-    });
-  });
+  // hearts.forEach((heart) => {
+  //   heart.addEventListener("click", function (event) {
+  //     // 防止點擊事件傳播到父層
+  //     event.stopPropagation();
+  //     // 切換圖片src
+  //     if (heart.src.includes("heart.svg")) {
+  //       heart.src = activeSrc; // 切換到已填滿的心形圖片
+  //     } else {
+  //       heart.src = originalSrc; // 切回原始心形圖片
+  //     }
+  //   });
+  // });
 });
 
 //interaction

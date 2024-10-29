@@ -340,6 +340,33 @@ input[type="date"] {
     box-shadow: none;
   }
 
+  .groupActivitiesCardHeart-wrap > input {
+    display: none;
+  }
+
+  .groupActivitiesCardHeart-wrap
+    > input:checked
+    + label
+    > .groupActivitiesCardHeart {
+    background: url(../images/groupActivitiesClickHeart.svg) no-repeat;
+  }
+
+  .groupActivitiesCardHeart-wrap {
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  .groupActivitiesCardHeart {
+    background: url(../images/groupActivitiesHeart.svg) no-repeat;
+    width: 20px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 791px) {
     .groupActivities-list-card-modal-dialog {
       // max-width: 540px;
