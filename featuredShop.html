@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精選商家｜JO團趣</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAORJREFUeNpiYBhowIhN0NjY+DyQMgDiA2fPnnXEZwATDnEDKH2BkAuYsNjugMS9SMgAFjy2w10ANFQBSPUDcQCS3ASg9wqxGWAPpT8AFVwAahYAsvcDsQKaugKg3EcmIvyfgKTZEWgoKOA3QPnxTGj+F0BSfBBK+0NpUIwcQAsbBSZC/scBYN48gB4GDlgMuAAVdwC6sB/qQpi6hUw4TH4AdO4DKLsRxIcFHFJMLACqWcCC5H9kk2F+ZQAq+gCUM4QGpgB6eDAiGbAfasAHIFYEaSQ6LwA1GyA5bQMo/umWGwECDAAFxUeC0oeMXQAAAABJRU5ErkJggg==">
+  <script type="module" crossorigin src="/JoTuanCu/assets/main-d62cfd54.js"></script>
+  <link rel="stylesheet" href="/JoTuanCu/assets/main-48d607ce.css">
+</head>
+<body>
+    <nav class="sticky-top bg-light">
+    <div class="container-fluid py-2 py-lg-6 px-xl-20 offcanvas-style">
+        <div class="navbar navbar-expand-lg justify-content-start py-0">
+            <a class="navbar-brand py-0 me-0" href="index.html">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="/JoTuanCu/assets/Logo-dark-lg-5ecf4a52.svg ">
+                    <img src="/JoTuanCu/assets/Logo-dark-sm-1cddce03.svg" alt="logo">
+                </picture>
+            </a>
+            <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end align-items-lg-center border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 255px;">
+                <ul class="navbar-nav px-6 py-4">
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="groupActivities.html">揪團活動</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 active" aria-current="page" href="featuredShop.html">精選商家</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="interaction.html">揪友交流</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 QA" aria-current="page" href="tiroTeach.html">新手指南</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn-close text-reset position-absolute d-lg-none bottom-0 start-50 translate-middle-x bg-white rounded-pill p-4 shadow mb-8" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <a href="#">
+                <img class="me-lg-2 ms-1" src="data:image/png;base64,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" alt="myPhoto">
+                <span class="d-none d-lg-inline-block">Hailey</span>
+            </a>
+        </div>
+    </div>
+</nav><!-- banner------------------------------------------------------------------------------------------------->
+<div class="featured">
+    <div class="featured-banner position-relative container-fluid">
+        <!-- banner-img(左) -->
+        <div class="featured-banner-img position-absolute top-0 start-0 wow fadeInLeft" style="background-image: url(/JoTuanCu/assets/banner-14-fa4d6903.png); background-size: contain; background-repeat: no-repeat;"></div>
+        <!-- banner-img(右) -->
+        <div class="featured-banner-img position-absolute top-0 end-0 wow fadeInRight" style="background-image: url(/JoTuanCu/assets/banner-13-2cfaf5e0.png); background-size: contain; background-repeat: no-repeat;"></div>
+        <!-- +++++ -->
+        <div class="featured-banner-line position-absolute d-none d-lg-block wow fadeInLeft" style="background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAC0CAYAAAB2SReaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVHgB7dfBCcJAFAbhiaawLSUXtQ1bsAItxQoMVuNB9FlB3CwusrDzncOQQwLvh4w5dtMt9sEKGyoyZmzBMMfhHMTEzyKN8D7BeFl8hFca4AjbxLe34nEnx9/J2H9iz2vug5UkKcvDxVhrMXdAOWOdxdwBkqQKPFyMtRZzB5Qz1lnMHSBJqsDDxVhrMXdAOWOdxdwBkqQKPFyMtRZzB5Qz1lls/Q74AEmzh4N6FKJJAAAAAElFTkSuQmCC) no-repeat; height: 200px; width: 21px;"></div>
+        <!-- title -->
+        <div class="d-flex justify-content-center wow fadeInUp">
+            <div class="featured-banner-center position-relative d-flex flex-column align-items-center" style="background-image: url(/JoTuanCu/assets/bg-heading-bcba4ae4.png);background-size: contain;">
+                <h1 class="featuredShop-h1">精選商家</h1>
+                <img class="featured-title-img position-absolute" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALwAAAAUCAYAAAA3BlcoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEQSURBVHgB7drBccJADIXh5zSQdJB0kHQQdxI6CSWkA+jEKQEqgBKgAiHP+sBp7YOWMaP/m9nxRYOF/G5aaYaZDX52WjnvcWPFu1bOezw900z1BKZv/ztX9yIgEQKPVAg8UiHwSIXAIxUCj1QIPFIh8MjFYpzU2LhUsBg/ash//8NiDGrM37GzGN9qyAJn2i1o9s/Pxc+2UnPtuu6ghsY/7Y/aFrVX6XHj51ypO3qvFzXifb7543OmbK/S47ZS84iZfvnjtVLSq/TYq24NM/1Xmeu+UnPVgpcNxtWCUMbVgnDTt+dqAXCPwCMVAo9UCDxSIfBIhcAjFQIP3BuXE9PSZ9WmbVzTjV+UsU9mGmvpTG9RtwMvMnHJzwAAAABJRU5ErkJggg==" alt="++++">
+            </div>
+        </div>
+    </div>
+
+
+<!-- 卡片區塊----------------------------------------------------------------------------------------------- -->
+    <div class="featured-content position-relative d-flex justify-content-center" >
+        <div class="featured-card-all position-absolute w-100 px-2">
+            <section class="featured-opacity80 container overflow-hidden mb-10 rounded-3 p-4 p-sm-10">
+                <div class="row g-6">
+                    <!-- 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card position-relative border-0 rounded-3 wow fadeInUp">
+                            <img class="rounded-3 card-img-top" src="/JoTuanCu/assets/card-11-89923fdd.png" alt="img" >
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart01" autocomplete="off" checked>
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart01" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="card-title me-4 mb-0">咖啡藝廊</h5>
+                                    <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
+                                </div>
+                                <p class="card-text text-over mb-6 ">咖啡藝廊是一間結合咖啡與藝術的獨特空間。<br class="d-sm-none">這裡的每一杯咖啡都由專業的咖啡師精心製作，使用高品質的咖啡豆，提供濃郁香醇的咖啡。同時，店內展示著本地藝術家的作品，無論是畫作、雕塑還是手工藝品，都讓整個空間...</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
+                                <button type="button" class="hoverBorder btn btn-gray-200 w-100 h9 rounded-1" data-bs-toggle="modal" data-bs-target="#featuredModal">查看完整內容</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card position-relative border-0 rounded-3 wow fadeInUp">
+                            <img class="rounded-3 card-img-top" src="/JoTuanCu/assets/card-12-9896c22e.png" alt="img" >
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart02" autocomplete="off" checked>
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart02" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="card-title me-4 mb-0">漫畫天地</h5>
+                                    <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
+                                </div>
+                                <p class="card-text text-over mb-6 ">漫畫天地是一個專為漫畫迷打造的夢幻場所，提供各類漫畫、動漫周邊商品，還會定期舉辦簽名會及漫畫創作講座，讓粉絲們不僅能購買心愛的漫畫，也能與作者近距離互動，體驗豐富的動漫文化。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>臺北市中正區信義路100號</p>
+                                <button type="button" class="hoverBorder btn btn-gray-200 w-100 h9 rounded-1">查看完整內容</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card position-relative border-0 rounded-3 wow fadeInUp">
+                            <img class="rounded-3 card-img-top" src="/JoTuanCu/assets/card-13-8dce1f11.png" alt="img" >
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart03" autocomplete="off" checked>
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart03" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="card-title me-4 mb-0">香氣工坊</h5>
+                                    <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
+                                </div>
+                                <p class="card-text text-over mb-6 ">香氣工坊專注於天然香精的製作，致力於讓客戶感受到香氛的魅力。這裡不僅有各式香精產品，還提供香氛調配課程，讓顧客能親自創造獨特的香氣，感受生活中的美好與愉悅。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>高雄市鼓山區蓮海路45號</p>
+                                <button type="button" class="hoverBorder btn btn-gray-200 w-100 h9 rounded-1">查看完整內容</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card position-relative border-0 rounded-3 wow fadeInUp">
+                            <img class="rounded-3 card-img-top" src="/JoTuanCu/assets/card-25-4f2118aa.png" alt="img" >
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart04" autocomplete="off" checked>
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart04" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="card-title me-4 mb-0">動力健身房</h5>
+                                    <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
+                                </div>
+                                <p class="card-text text-over mb-6 ">動力健身房是一個全方位的健身中心，設有先進的健身設備及多樣化的團體課程，如瑜伽、有氧舞蹈等。無論是新手還是專業健身者，這裡都能提供個性化的健身計畫，助你達成健康目標。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台中市南區建國北路88號</p>
+                                <button type="button" class="hoverBorder btn btn-gray-200 w-100 h9 rounded-1">查看完整內容</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card position-relative border-0 rounded-3 wow fadeInUp">
+                            <img class="rounded-3 card-img-top" src="/JoTuanCu/assets/card-26-9626a2f0.png" alt="img" >
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart05" autocomplete="off">
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart05" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="card-title me-4 mb-0">創意市集</h5>
+                                    <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
+                                </div>
+                                <p class="card-text text-over mb-6 ">創意市集是一個結合在地藝術家與設計師的平台，提供各式手作商品及文創產品，讓顧客能欣賞到獨特的藝術作品。定期舉辦市集活動和工作坊，促進創意交流，成為探索與支持在地藝術的重要據點。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市信義區松壽路22號</p>
+                                <button type="button" class="hoverBorder btn btn-gray-200 w-100 h9 rounded-1">查看完整內容</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card position-relative border-0 rounded-3 wow fadeInUp">
+                            <img class="rounded-3 card-img-top" src="/JoTuanCu/assets/card-27-73ab5a83.png" alt="img" >
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart06" autocomplete="off">
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart06" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="card-title me-4 mb-0">知識之源圖書館</h5>
+                                </div>
+                                <p class="card-text text-over mb-6 ">知識之源圖書館擁有豐富的書籍藏量，提供安靜舒適的閱讀空間，讓讀者可以沉浸於書海之中。定期舉辦講座、書友會和親子活動，鼓勵社區居民探索知識的魅力，提升閱讀風氣。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>新北市板橋區文化路118號</p>
+                                <button type="button" class="hoverBorder btn btn-gray-200 w-100 h9 rounded-1">查看完整內容</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card position-relative border-0 rounded-3 wow fadeInUp">
+                            <img class="rounded-3 card-img-top" src="/JoTuanCu/assets/card-28-a6b1f3c4.png" alt="img" >
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart07" autocomplete="off">
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart07" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="card-title me-4 mb-0">風情麵店</h5>
+                                    <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
+                                </div>
+                                <p class="card-text text-over mb-6 ">義大利風情義大利麵店專注於提供正宗的義大利美食，所有菜品皆由新鮮食材製作，包括手工義大利麵和薄底披薩。餐廳氛圍溫馨，適合家庭聚餐或浪漫約會，讓每位顧客都能享受一場美食盛宴。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>園市桃園區中正路145號</p>
+                                <button type="button" class="hoverBorder btn btn-gray-200 w-100 h9 rounded-1">查看完整內容</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card position-relative border-0 rounded-3 wow fadeInUp">
+                            <img class="rounded-3 card-img-top" src="/JoTuanCu/assets/card-29-743f8f40.png" alt="img" >
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart08" autocomplete="off">
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart08" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="card-title me-4 mb-0">夜幕酒吧</h5>
+                                </div>
+                                <p class="card-text text-over mb-6 ">夜幕酒吧以其獨特的調酒藝術和輕食而聞名，是放鬆和社交的理想場所。酒吧內部裝潢時尚，氛圍舒適，無論是和朋友聚會還是單獨享受，這裡都能帶來愉悅的夜晚體驗。</p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台北市大同區南京西路200號</p>
+                                <button type="button" class="hoverBorder btn btn-gray-200 w-100 h9 rounded-1">查看完整內容</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card position-relative border-0 rounded-3 wow fadeInUp">
+                            <img class="rounded-3 card-img-top" src="/JoTuanCu/assets/card-30-0ee226f3.png" alt="img" >
+                            <div class="position-absolute end-0 d-flex align-items-center m-4">
+                                <input type="checkbox" class="btn-check" id="btnHeart09" autocomplete="off">
+                                <label class="btn btn-white border-0 rounded-pill" for="btnHeart09" style="padding: 8px 10px;">
+                                    <div class="heart"></div>
+                                </label>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="card-title me-4 mb-0">星空酒吧</h5>
+                                    <div class="badge bg-C0ED5F h10"><i class="bi bi-bookmark-fill me-2"></i>優惠中</div>
+                                </div>
+                                <p class="card-text text-over mb-6 ">星空酒吧結合天文主題和美酒，設有觀星平台讓顧客在星空下品酒。除了特調飲品，酒吧內還會舉辦天文講座和活動，讓顧客在享受飲品的同時，探索宇宙的奧秘，增添夜晚的神秘色彩。
+                                </p>
+                                <p class="card-text text-gray-700 mb-6"><i class="bi bi-geo-alt me-1"></i>台中市北區中清路12號</p>
+                                <button type="button" class="hoverBorder btn btn-gray-200 w-100 h9 rounded-1">查看完整內容</button>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </section>
+<!-- 分頁 -->
+            <div class="d-flex justify-content-center w-100 mb-20 mb-lg-30">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&lt;</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <i class="bi bi-three-dots" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">6</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">7</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <i class="bi bi-three-dots" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">20</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&gt;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <footer class="bg-dark">
+    <div class="container-fluid py-10 pb-lg-6 px-xl-20">
+        <div class="d-flex flex-column flex-lg-row align-items-center mb-6">
+            <img class="me-lg-10 mb-10 mb-lg-0" src="/JoTuanCu/assets/Logo-af67ddf5.svg" alt="logo">
+            <ul class="d-flex flex-column flex-lg-row align-items-center mb-10 mb-lg-0 ps-0 list-unstyled">
+               <li><a class="link-white d-block py-2 px-lg-6" href="index.html">首頁</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="groupActivities.html">揪團活動</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="featuredShop.html">精選商家</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="interaction.html">揪友交流</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="QA.html">新手指南</a></li> 
+            </ul>
+            <ul class="d-flex align-items-center mb-0 ps-0 list-unstyled ms-lg-auto">
+                <li><a href="login.html"><img src="/JoTuanCu/assets/facebook-2fda7761.svg" alt="facebook"></a></li>
+                <li class="mx-6"><a href="login.html"><img src="/JoTuanCu/assets/instagram-ba5182ff.svg" alt="instagram"></a></li>
+                <li><a href="login.html"><img src="/JoTuanCu/assets/line-21d02cb0.svg" alt="line"></a></li>
+             </ul>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center text-gray-700 text-center">
+            <small class="mb-2 mb-lg-0">JO團趣 ©2024 Copyrights All Rights Reserved</small>
+            <small>本專題僅為學習用途,不做任何商業使用,圖片來源請見 GitHub Repo</small>
+        </div>
+    </div>
+</footer>        </div>
+<!-- 右下插圖 -->
+        <div class="people-circle position-absolute bottom-0 end-0 d-none d-xxl-block wow fadeInRight" style="background-image: url(/JoTuanCu/assets/bg-heading-2-1fec0767.png); background-size: contain; background-repeat: no-repeat; width: 391px; height: 344px;"></div>
+        <div class="position-absolute bottom-0 end-0 d-none d-xxl-block wow fadeInRight" style="background-image: url(/JoTuanCu/assets/illustrate-feature-02-fffbb68b.svg); background-size: contain; width: 303px;height: 227px; "></div>
+        <div class="people-line position-absolute bottom-0 end-0 d-none d-xxl-block wow fadeInRight" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAC0CAYAAAB2SReaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVHgB7dfBCcJAFAbhiaawLSUXtQ1bsAItxQoMVuNB9FlB3CwusrDzncOQQwLvh4w5dtMt9sEKGyoyZmzBMMfhHMTEzyKN8D7BeFl8hFca4AjbxLe34nEnx9/J2H9iz2vug5UkKcvDxVhrMXdAOWOdxdwBkqQKPFyMtRZzB5Qz1lnMHSBJqsDDxVhrMXdAOWOdxdwBkqQKPFyMtRZzB5Qz1lls/Q74AEmzh4N6FKJJAAAAAElFTkSuQmCC); background-size: contain; width: 21px;height: 200px;"></div>
+    </div>
+<!-- Modal ------------------------------------------------------------------------------------------------->
+    <div class="modal fade featured-modal px-6" id="featuredModal" tabindex="-1" aria-labelledby="featuredModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl mx-auto modal-dialog-scrollable">
+            <div class="modal-content position-relative p-4 p-md-10">
+                <button type="button" class="btn-close position-absolute z-3 end-0 top-0 m-6" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+                <div class="modal-body row p-0 flex-lg-row-reverse">
+<!-- 標題-mobile -->
+                    <div class="col-12 d-lg-none mb-6">
+                        <div>
+                            <p class="h5 mb-4">咖啡藝廊</p>
+                            <div class="d-flex align-items-center">
+                                <p class="fs-7 me-1">4.3</p>
+                                <img class="me-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBnZPPSxtBFMff7qa00JouGNomhXY9dHudJIXm5t6rJd7aXmoPbfXU+hckevcXiFe96VFQD4LgCp7UTQQv/gCNKFkUxJUoKCRZvy+YkB9GYx48dmfmzWfevPcdie6xcDgcxWcC7sD7LMuaoWYMoP3DdI+7ut7t4v9MCKHWi5XrLYRCoe4vna81v/8phcIv2VVZln8+GiRJUqyj41Vp/PvPO577Xy9eqZ4wDEP1+Xw9yOAbby6aP/CMEta5Kkut57qub6VSqauKgyORiJbNZv+5rqvBhdf7RHuD6zCk3WitOAQgGhrco92dSx5yAzaQ5YbH4xmVUIvk9x9vBddB//iCuCaNmG1fk52+omXzlKan0qaEbriLSxFqafFQs/b50wrJuM7I8NA+NWsD8R1ihmLb9sJFxtuGVEV1TRqBzM0eTyYSid5C1wCbeSysDPKLx6X238IMtFnT9ef3QkwUeHzswASkqzhXI8hAA10LQFOoS8VzqQaJDw9kw8YSgX60O0H8ICEBtVoGmUy2oJly4xiODQaD72tAUGdNNhAadX1dp96/mzQ/d1KxxrGKoogaEFJ1CmqFW3gK0c41Gh7cMx3nOnh0eNnWH9uejALKwEKWUHUul3NK+8tPwXOJARjHr5nP5+PJZHK5fB1Xacf6CFyg2HF0rb+4dgMXiM5vjGy+3QAAAABJRU5ErkJggg==" alt="star" width="16" height="16">
+                                <p class="h10 badge bg-C0ED5F text-dark"><i class="bi bi-bookmark-fill me-2"></i>優惠中</p>
+                            </div>
+                        </div>
+                    </div>
+<!-- 圖片+商家資訊 -->
+                    <div class="col-12 col-lg-5 mb-6 mb-lg-0 order-lg-2 d-flex flex-column">
+<!-- swiper-主圖 -->
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper shopSwiper2 w-100 mb-4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <!-- 設計稿上有愛心感覺很奇怪先註解掉了，有要再還原 -->
+                                    <!-- <div class="position-relative"> -->  
+                                        <img class="img-fluid modalRounded" src="/JoTuanCu/assets/card-11-89923fdd.png" style="width: 1000px;" />
+                                        <!-- <div class="position-absolute top-0 end-0 d-flex align-items-center m-4 d-sm-none">
+                                            <input type="checkbox" class="btn-check" id="swiperBtnLove03" autocomplete="off">
+                                            <label class="btn btn-white border-0 rounded-pill" for="swiperBtnLove03"
+                                              style="padding: 8px 10px;">
+                                              <div class="heart"></div>
+                                            </label>
+                                        </div> 
+                                    </div>-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="/JoTuanCu/assets/card-35-ea538eb1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="/JoTuanCu/assets/card-36-bb66cb8b.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="/JoTuanCu/assets/card-37-33053f87.jpg" />
+                                </div>
+                            </div>
+                        </div>
+<!-- swiper-縮圖 -->
+                        <div thumbsSlider="" class="swiper shopSwiper mb-4 w-100">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="/JoTuanCu/assets/card-11-89923fdd.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="/JoTuanCu/assets/card-35-ea538eb1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="/JoTuanCu/assets/card-36-bb66cb8b.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid modalRounded" src="/JoTuanCu/assets/card-37-33053f87.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper-button-next-shopSwiper"></div>
+                            <div class="swiper-button-prev swiper-button-prev-shopSwiper"></div>
+                        </div>
+<!-- 店家資訊 -->
+                        <p class="fs-10 text-gray-700 mb-2"><i class="bi bi-geo-alt me-1"></i>台北市大安區光復南路120號</p>
+                        <p class="fs-10 text-gray-700 mb-2"><i class="bi bi-clock me-1"></i>周一 ~ 周日 <span class="ms-6">13:00 - 20:00</span></p>
+<!-- map -->
+                        <img class="w-100 mb-4 d-xxl-none" src="/JoTuanCu/assets/map-sm-c1613d75.png" alt="map" height="100">
+                        <img class="w-100 mb-4 d-none d-xxl-block " src="/JoTuanCu/assets/map-lg-c6ba01e1.png" alt="map">
+<!-- 優惠券 --------------------------------------------------------------------------------------------------->
+                        <a class="btn btn-outline-shadow d-block mt-auto mb-lg-0" data-bs-toggle="offcanvas" href="#saleOffcanvas" role="button" aria-controls="offcanvas">領取優惠券</a>
+                        <div class="offcanvas offcanvas-start top-50 start-50 translate-middle p-4 border-0 bg-white" tabindex="-1" id="saleOffcanvas" aria-labelledby="offcanvasLabel" style="width: 300px; height: 339px;">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="text-47481F">領取優惠券</h6>
+                                <button type="button" class="btn-close p-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center my-4">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK5SURBVHgB7Z3bboNADAVD1f//5baKlBdUZHbXNjCaeU0CKCPrxHvL9vPHS7B8vQSNguEoGI6C4SgYjoLhKBiOguEoGM732Tdu2/bqJHuAbfX5o+e56/djBcNRMBwFwzmdwXvulpHR9fbPW52Zd/l+rGA4CoajYDjTGbxnNCNWMyq6X5S5o5kcfT6i+/v5YAXDUTAcBcNJy+Crqe5zn7r41AqGo2A4Cobz2AwezdzsvvspmWwFw1EwHAXDScvg6kwazcDVjM7O3Ksy2wqGo2A4CoYzncHd64CzWZ0vvts66SOsYDgKhqNgOKcz+Oqx1+o+dfT+o69fhRUMR8FwFAxnen/waB+YPTYcsdrXrq5jvsv8sRUMR8FwFAynbSw6e81U9fzs6G+M6sydvb4VDEfBcBQMZ5s98b26jx293mpfHlF9ztbo/cxgeaNgOAqGU5bBe7r3BmU/X/Zvjq6xaSsYjoLhKBhO2nnR3edeRZ/v7nO7z+2yD5Y3CoajYDi3WRcdZVB1xnVndnS9rLF8KxiOguEoGE7ZmqzsTBw9z3mUq9dUVe0ntoLhKBiOguGcng++ej529HmyMzW7b64eW/9gBcNRMBwFw5lekxVeuGm+s+p+VX3pWfzfJDmFguEoGE7ZfzZknyvVPVYc0b3XyP3B8i8KhqNgOGnrorPZZ0z2/HB231s99j2LFQxHwXAUDGe6D+7uQ7vXMXfv9626vhUMR8FwFAwnbSy6eix3dc1V9dj4Ko5FyxQKhqNgOGXzwdlUryuO3l+d0dn3/2AFw1EwHAXDeUwGr/bNo++vHntend+2D5Y3CoajYDhpGVy0xemQq9dArfat2WPpR1jBcBQMR8Fw2v67cJXqdcvV+4lXMzq63hFWMBwFw1EwnLIzOuQeWMFwFAxHwXAUDEfBcBQMR8FwFAxHwXB+AQtzm+7pxxy3AAAAAElFTkSuQmCC" alt="qrcode">
+                                <p class="my-4">2 本 95 折</p>
+                            </div>
+                            <div class="d-flex justify-content-end mt-3">
+                                <button type="button" class="btn btn-secondary " data-bs-dismiss="offcanvas" aria-label="Close">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+<!-- 留言 -->
+                    <div class="col-12 col-lg-7 order-lg-1 d-flex flex-column ">
+<!-- title-PC -->
+                        <div class="d-none d-lg-block mb-6">
+                            <h4 class="mb-4">咖啡藝廊</h4>
+                            <div class="d-flex align-items-center">
+                                <p class="fs-7 me-1">4.3</p>
+                                <img class="me-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBnZPPSxtBFMff7qa00JouGNomhXY9dHudJIXm5t6rJd7aXmoPbfXU+hckevcXiFe96VFQD4LgCp7UTQQv/gCNKFkUxJUoKCRZvy+YkB9GYx48dmfmzWfevPcdie6xcDgcxWcC7sD7LMuaoWYMoP3DdI+7ut7t4v9MCKHWi5XrLYRCoe4vna81v/8phcIv2VVZln8+GiRJUqyj41Vp/PvPO577Xy9eqZ4wDEP1+Xw9yOAbby6aP/CMEta5Kkut57qub6VSqauKgyORiJbNZv+5rqvBhdf7RHuD6zCk3WitOAQgGhrco92dSx5yAzaQ5YbH4xmVUIvk9x9vBddB//iCuCaNmG1fk52+omXzlKan0qaEbriLSxFqafFQs/b50wrJuM7I8NA+NWsD8R1ihmLb9sJFxtuGVEV1TRqBzM0eTyYSid5C1wCbeSysDPKLx6X238IMtFnT9ef3QkwUeHzswASkqzhXI8hAA10LQFOoS8VzqQaJDw9kw8YSgX60O0H8ICEBtVoGmUy2oJly4xiODQaD72tAUGdNNhAadX1dp96/mzQ/d1KxxrGKoogaEFJ1CmqFW3gK0c41Gh7cMx3nOnh0eNnWH9uejALKwEKWUHUul3NK+8tPwXOJARjHr5nP5+PJZHK5fB1Xacf6CFyg2HF0rb+4dgMXiM5vjGy+3QAAAABJRU5ErkJggg==" alt="star" width="16" height="16">
+                                <p class="h10 badge bg-C0ED5F text-dark"><i class="bi bi-bookmark-fill me-2"></i>優惠中</p>
+                            </div>
+                        </div>
+<!-- 留言板 -->
+                        <div class="messageBoard bg-light border border-gray-300 mb-4 px-6 py-4 rounded-3">
+                            <!-- 1 -->
+                            <div class="d-flex align-items-center mb-2">
+                                <img class="me-4" src="data:image/png;base64,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" alt="people">
+                                <h8 class="fw-bold">劉明</h8>
+                                <p class="fs-10 text-gray-700 ms-auto">2024/04/26</p>
+                            </div>
+                            <div class="bg-white mb-4 rounded-3 border border-1 py-5 py-lg-6 ps-5 ps-lg-8">
+                                <div class="d-flex mb-4">
+                                    <p>評分：</p>
+                                    <ul class="list-unstyled d-flex align-items-center d-grid gap-2 mb-0">
+                                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBnZPPSxtBFMff7qa00JouGNomhXY9dHudJIXm5t6rJd7aXmoPbfXU+hckevcXiFe96VFQD4LgCp7UTQQv/gCNKFkUxJUoKCRZvy+YkB9GYx48dmfmzWfevPcdie6xcDgcxWcC7sD7LMuaoWYMoP3DdI+7ut7t4v9MCKHWi5XrLYRCoe4vna81v/8phcIv2VVZln8+GiRJUqyj41Vp/PvPO577Xy9eqZ4wDEP1+Xw9yOAbby6aP/CMEta5Kkut57qub6VSqauKgyORiJbNZv+5rqvBhdf7RHuD6zCk3WitOAQgGhrco92dSx5yAzaQ5YbH4xmVUIvk9x9vBddB//iCuCaNmG1fk52+omXzlKan0qaEbriLSxFqafFQs/b50wrJuM7I8NA+NWsD8R1ihmLb9sJFxtuGVEV1TRqBzM0eTyYSid5C1wCbeSysDPKLx6X238IMtFnT9ef3QkwUeHzswASkqzhXI8hAA10LQFOoS8VzqQaJDw9kw8YSgX60O0H8ICEBtVoGmUy2oJly4xiODQaD72tAUGdNNhAadX1dp96/mzQ/d1KxxrGKoogaEFJ1CmqFW3gK0c41Gh7cMx3nOnh0eNnWH9uejALKwEKWUHUul3NK+8tPwXOJARjHr5nP5+PJZHK5fB1Xacf6CFyg2HF0rb+4dgMXiM5vjGy+3QAAAABJRU5ErkJggg==" alt="star" width="16" height="16"></li>
+                                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBnZPPSxtBFMff7qa00JouGNomhXY9dHudJIXm5t6rJd7aXmoPbfXU+hckevcXiFe96VFQD4LgCp7UTQQv/gCNKFkUxJUoKCRZvy+YkB9GYx48dmfmzWfevPcdie6xcDgcxWcC7sD7LMuaoWYMoP3DdI+7ut7t4v9MCKHWi5XrLYRCoe4vna81v/8phcIv2VVZln8+GiRJUqyj41Vp/PvPO577Xy9eqZ4wDEP1+Xw9yOAbby6aP/CMEta5Kkut57qub6VSqauKgyORiJbNZv+5rqvBhdf7RHuD6zCk3WitOAQgGhrco92dSx5yAzaQ5YbH4xmVUIvk9x9vBddB//iCuCaNmG1fk52+omXzlKan0qaEbriLSxFqafFQs/b50wrJuM7I8NA+NWsD8R1ihmLb9sJFxtuGVEV1TRqBzM0eTyYSid5C1wCbeSysDPKLx6X238IMtFnT9ef3QkwUeHzswASkqzhXI8hAA10LQFOoS8VzqQaJDw9kw8YSgX60O0H8ICEBtVoGmUy2oJly4xiODQaD72tAUGdNNhAadX1dp96/mzQ/d1KxxrGKoogaEFJ1CmqFW3gK0c41Gh7cMx3nOnh0eNnWH9uejALKwEKWUHUul3NK+8tPwXOJARjHr5nP5+PJZHK5fB1Xacf6CFyg2HF0rb+4dgMXiM5vjGy+3QAAAABJRU5ErkJggg==" alt="star" width="16" height="16"></li>
+                                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBnZPPSxtBFMff7qa00JouGNomhXY9dHudJIXm5t6rJd7aXmoPbfXU+hckevcXiFe96VFQD4LgCp7UTQQv/gCNKFkUxJUoKCRZvy+YkB9GYx48dmfmzWfevPcdie6xcDgcxWcC7sD7LMuaoWYMoP3DdI+7ut7t4v9MCKHWi5XrLYRCoe4vna81v/8phcIv2VVZln8+GiRJUqyj41Vp/PvPO577Xy9eqZ4wDEP1+Xw9yOAbby6aP/CMEta5Kkut57qub6VSqauKgyORiJbNZv+5rqvBhdf7RHuD6zCk3WitOAQgGhrco92dSx5yAzaQ5YbH4xmVUIvk9x9vBddB//iCuCaNmG1fk52+omXzlKan0qaEbriLSxFqafFQs/b50wrJuM7I8NA+NWsD8R1ihmLb9sJFxtuGVEV1TRqBzM0eTyYSid5C1wCbeSysDPKLx6X238IMtFnT9ef3QkwUeHzswASkqzhXI8hAA10LQFOoS8VzqQaJDw9kw8YSgX60O0H8ICEBtVoGmUy2oJly4xiODQaD72tAUGdNNhAadX1dp96/mzQ/d1KxxrGKoogaEFJ1CmqFW3gK0c41Gh7cMx3nOnh0eNnWH9uejALKwEKWUHUul3NK+8tPwXOJARjHr5nP5+PJZHK5fB1Xacf6CFyg2HF0rb+4dgMXiM5vjGy+3QAAAABJRU5ErkJggg==" alt="star" width="16" height="16"></li>
+                                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBnZPPSxtBFMff7qa00JouGNomhXY9dHudJIXm5t6rJd7aXmoPbfXU+hckevcXiFe96VFQD4LgCp7UTQQv/gCNKFkUxJUoKCRZvy+YkB9GYx48dmfmzWfevPcdie6xcDgcxWcC7sD7LMuaoWYMoP3DdI+7ut7t4v9MCKHWi5XrLYRCoe4vna81v/8phcIv2VVZln8+GiRJUqyj41Vp/PvPO577Xy9eqZ4wDEP1+Xw9yOAbby6aP/CMEta5Kkut57qub6VSqauKgyORiJbNZv+5rqvBhdf7RHuD6zCk3WitOAQgGhrco92dSx5yAzaQ5YbH4xmVUIvk9x9vBddB//iCuCaNmG1fk52+omXzlKan0qaEbriLSxFqafFQs/b50wrJuM7I8NA+NWsD8R1ihmLb9sJFxtuGVEV1TRqBzM0eTyYSid5C1wCbeSysDPKLx6X238IMtFnT9ef3QkwUeHzswASkqzhXI8hAA10LQFOoS8VzqQaJDw9kw8YSgX60O0H8ICEBtVoGmUy2oJly4xiODQaD72tAUGdNNhAadX1dp96/mzQ/d1KxxrGKoogaEFJ1CmqFW3gK0c41Gh7cMx3nOnh0eNnWH9uejALKwEKWUHUul3NK+8tPwXOJARjHr5nP5+PJZHK5fB1Xacf6CFyg2HF0rb+4dgMXiM5vjGy+3QAAAABJRU5ErkJggg==" alt="star" width="16" height="16"></li>
+                                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGtSURBVHgBpZM9bsJQDMedwArKwAJL0wXWF1jYygVAHSuWdoJuVU+Q9AAgegLYWCvBnnQHwlixgIQEY1NYOgDp36igpOG7lqwkz/bPju0n0QHJZDK3eNShDvS52+2+0SUC0HAymbidTsfF+6cQQtnnK+8zpNPph3w+r8bjcQayKrIs39Ml1XAlG/mtarjPP/T3IJfLKbFY7BFBd6VSaXueSCQIPVIkSfpKJpMfo9Ho2xsnZbNZdbFYPCGpChXRaHT9OwwB1JcEIKpUKjQYDPiTB9AHuB8Oh18l9MIuFouC+5BKpYghp8h0OiUMgizLomazaXEv3Nls5v5HmCHjWatWq3SpGIZBzFh/gNjAgXuu6LruojV1H/lc2E6IB2a2Wq2jENM0uS+mNzaw2adMjXcKPOUQSGDZ6JhwMuyPuhPEFzISibD6gubz+XpnvMI+7Ktp2lUAhO0MVINFo0KhQOVymdrtts/GvqFQSARAKNXhzKx8FXDz+TpYjuNo4/H4GlNqMJSBXCVv9XK5dLbx3iwYpw6ggVdrtVoZtm2/e+34lRvYa1CBZhu9Xu9lY/sBt6B5gOCdjdoAAAAASUVORK5CYII=" alt="star" width="16" height="16"></li>
+                                    </ul>
+                                </div>
+                                <p>邊喝咖啡邊閱讀的好去處!!</p>  
+                            </div>
+                            <!-- 2 -->
+                            <div class="d-flex align-items-center mb-2">
+                                <img class="me-4" src="data:image/png;base64,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" alt="people">
+                                <h8 class="fw-bold">Samew5151</h8>
+                                <p class="fs-10 text-gray-700 ms-auto">2024/04/26</p>
+                            </div>
+                            <div class="bg-white rounded-3 border border-1 py-5 py-lg-6 ps-5 ps-lg-8">
+                                <div class="d-flex mb-4">
+                                    <p>評分：</p>
+                                    <ul class="list-unstyled d-flex align-items-center d-grid gap-2 mb-0">
+                                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBnZPPSxtBFMff7qa00JouGNomhXY9dHudJIXm5t6rJd7aXmoPbfXU+hckevcXiFe96VFQD4LgCp7UTQQv/gCNKFkUxJUoKCRZvy+YkB9GYx48dmfmzWfevPcdie6xcDgcxWcC7sD7LMuaoWYMoP3DdI+7ut7t4v9MCKHWi5XrLYRCoe4vna81v/8phcIv2VVZln8+GiRJUqyj41Vp/PvPO577Xy9eqZ4wDEP1+Xw9yOAbby6aP/CMEta5Kkut57qub6VSqauKgyORiJbNZv+5rqvBhdf7RHuD6zCk3WitOAQgGhrco92dSx5yAzaQ5YbH4xmVUIvk9x9vBddB//iCuCaNmG1fk52+omXzlKan0qaEbriLSxFqafFQs/b50wrJuM7I8NA+NWsD8R1ihmLb9sJFxtuGVEV1TRqBzM0eTyYSid5C1wCbeSysDPKLx6X238IMtFnT9ef3QkwUeHzswASkqzhXI8hAA10LQFOoS8VzqQaJDw9kw8YSgX60O0H8ICEBtVoGmUy2oJly4xiODQaD72tAUGdNNhAadX1dp96/mzQ/d1KxxrGKoogaEFJ1CmqFW3gK0c41Gh7cMx3nOnh0eNnWH9uejALKwEKWUHUul3NK+8tPwXOJARjHr5nP5+PJZHK5fB1Xacf6CFyg2HF0rb+4dgMXiM5vjGy+3QAAAABJRU5ErkJggg==" alt="star" width="16" height="16"></li>
+                                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBnZPPSxtBFMff7qa00JouGNomhXY9dHudJIXm5t6rJd7aXmoPbfXU+hckevcXiFe96VFQD4LgCp7UTQQv/gCNKFkUxJUoKCRZvy+YkB9GYx48dmfmzWfevPcdie6xcDgcxWcC7sD7LMuaoWYMoP3DdI+7ut7t4v9MCKHWi5XrLYRCoe4vna81v/8phcIv2VVZln8+GiRJUqyj41Vp/PvPO577Xy9eqZ4wDEP1+Xw9yOAbby6aP/CMEta5Kkut57qub6VSqauKgyORiJbNZv+5rqvBhdf7RHuD6zCk3WitOAQgGhrco92dSx5yAzaQ5YbH4xmVUIvk9x9vBddB//iCuCaNmG1fk52+omXzlKan0qaEbriLSxFqafFQs/b50wrJuM7I8NA+NWsD8R1ihmLb9sJFxtuGVEV1TRqBzM0eTyYSid5C1wCbeSysDPKLx6X238IMtFnT9ef3QkwUeHzswASkqzhXI8hAA10LQFOoS8VzqQaJDw9kw8YSgX60O0H8ICEBtVoGmUy2oJly4xiODQaD72tAUGdNNhAadX1dp96/mzQ/d1KxxrGKoogaEFJ1CmqFW3gK0c41Gh7cMx3nOnh0eNnWH9uejALKwEKWUHUul3NK+8tPwXOJARjHr5nP5+PJZHK5fB1Xacf6CFyg2HF0rb+4dgMXiM5vjGy+3QAAAABJRU5ErkJggg==" alt="star" width="16" height="16"></li>
+                                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBnZPPSxtBFMff7qa00JouGNomhXY9dHudJIXm5t6rJd7aXmoPbfXU+hckevcXiFe96VFQD4LgCp7UTQQv/gCNKFkUxJUoKCRZvy+YkB9GYx48dmfmzWfevPcdie6xcDgcxWcC7sD7LMuaoWYMoP3DdI+7ut7t4v9MCKHWi5XrLYRCoe4vna81v/8phcIv2VVZln8+GiRJUqyj41Vp/PvPO577Xy9eqZ4wDEP1+Xw9yOAbby6aP/CMEta5Kkut57qub6VSqauKgyORiJbNZv+5rqvBhdf7RHuD6zCk3WitOAQgGhrco92dSx5yAzaQ5YbH4xmVUIvk9x9vBddB//iCuCaNmG1fk52+omXzlKan0qaEbriLSxFqafFQs/b50wrJuM7I8NA+NWsD8R1ihmLb9sJFxtuGVEV1TRqBzM0eTyYSid5C1wCbeSysDPKLx6X238IMtFnT9ef3QkwUeHzswASkqzhXI8hAA10LQFOoS8VzqQaJDw9kw8YSgX60O0H8ICEBtVoGmUy2oJly4xiODQaD72tAUGdNNhAadX1dp96/mzQ/d1KxxrGKoogaEFJ1CmqFW3gK0c41Gh7cMx3nOnh0eNnWH9uejALKwEKWUHUul3NK+8tPwXOJARjHr5nP5+PJZHK5fB1Xacf6CFyg2HF0rb+4dgMXiM5vjGy+3QAAAABJRU5ErkJggg==" alt="star" width="16" height="16"></li>
+                                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBnZPPSxtBFMff7qa00JouGNomhXY9dHudJIXm5t6rJd7aXmoPbfXU+hckevcXiFe96VFQD4LgCp7UTQQv/gCNKFkUxJUoKCRZvy+YkB9GYx48dmfmzWfevPcdie6xcDgcxWcC7sD7LMuaoWYMoP3DdI+7ut7t4v9MCKHWi5XrLYRCoe4vna81v/8phcIv2VVZln8+GiRJUqyj41Vp/PvPO577Xy9eqZ4wDEP1+Xw9yOAbby6aP/CMEta5Kkut57qub6VSqauKgyORiJbNZv+5rqvBhdf7RHuD6zCk3WitOAQgGhrco92dSx5yAzaQ5YbH4xmVUIvk9x9vBddB//iCuCaNmG1fk52+omXzlKan0qaEbriLSxFqafFQs/b50wrJuM7I8NA+NWsD8R1ihmLb9sJFxtuGVEV1TRqBzM0eTyYSid5C1wCbeSysDPKLx6X238IMtFnT9ef3QkwUeHzswASkqzhXI8hAA10LQFOoS8VzqQaJDw9kw8YSgX60O0H8ICEBtVoGmUy2oJly4xiODQaD72tAUGdNNhAadX1dp96/mzQ/d1KxxrGKoogaEFJ1CmqFW3gK0c41Gh7cMx3nOnh0eNnWH9uejALKwEKWUHUul3NK+8tPwXOJARjHr5nP5+PJZHK5fB1Xacf6CFyg2HF0rb+4dgMXiM5vjGy+3QAAAABJRU5ErkJggg==" alt="star" width="16" height="16"></li>
+                                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGtSURBVHgBpZM9bsJQDMedwArKwAJL0wXWF1jYygVAHSuWdoJuVU+Q9AAgegLYWCvBnnQHwlixgIQEY1NYOgDp36igpOG7lqwkz/bPju0n0QHJZDK3eNShDvS52+2+0SUC0HAymbidTsfF+6cQQtnnK+8zpNPph3w+r8bjcQayKrIs39Ml1XAlG/mtarjPP/T3IJfLKbFY7BFBd6VSaXueSCQIPVIkSfpKJpMfo9Ho2xsnZbNZdbFYPCGpChXRaHT9OwwB1JcEIKpUKjQYDPiTB9AHuB8Oh18l9MIuFouC+5BKpYghp8h0OiUMgizLomazaXEv3Nls5v5HmCHjWatWq3SpGIZBzFh/gNjAgXuu6LruojV1H/lc2E6IB2a2Wq2jENM0uS+mNzaw2adMjXcKPOUQSGDZ6JhwMuyPuhPEFzISibD6gubz+XpnvMI+7Ktp2lUAhO0MVINFo0KhQOVymdrtts/GvqFQSARAKNXhzKx8FXDz+TpYjuNo4/H4GlNqMJSBXCVv9XK5dLbx3iwYpw6ggVdrtVoZtm2/e+34lRvYa1CBZhu9Xu9lY/sBt6B5gOCdjdoAAAAASUVORK5CYII=" alt="star" width="16" height="16"></li>
+                                    </ul>
+                                </div>
+                                <p>書籍眾多，讓人放鬆的地方</p>  
+                            </div>
+                        </div>
+<!-- 輸入框+評分 -->
+                        <form class="message-texarea mt-auto" id="commentForm">
+                            <textarea id="messageText"  class="featured-texarea form-control border-gray-500 mb-4" placeholder="留下評論......" required></textarea>
+                            <div class="d-flex align-items-center">
+                                <p class="score">評分：</p>
+                                <ul class="starGroup list-unstyled d-flex align-items-center d-grid gap-2 mb-0">
+                                    <li class="lh-0">
+                                        <input type="checkbox" class="btn-check" id="btnStar01" autocomplete="off">
+                                        <label class="btn border-0 p-0 " for="btnStar01">
+                                            <div class="star"></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check" id="btnStar02" autocomplete="off">
+                                        <label class="btn border-0 p-0" for="btnStar02">
+                                            <div class="star"></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check" id="btnStar03" autocomplete="off">
+                                        <label class="btn border-0 p-0" for="btnStar03">
+                                            <div class="star"></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check" id="btnStar04" autocomplete="off">
+                                        <label class="btn border-0 p-0" for="btnStar04">
+                                            <div class="star"></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check" id="btnStar05" autocomplete="off">
+                                        <label class="btn border-0 p-0" for="btnStar05">
+                                            <div class="star"></div>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <button type="submit" class="message-btn btn btn-primary ms-auto flex-nowrap">送出評論</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 評論成功-modal ---------------------------------------------------------------------------------------------->
+    <div class="featuredSuccess modal fade" id="featuredSuccess" tabindex="-1" aria-labelledby="featuredSuccess" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-white">
+                <div class="modal-body mx-4 border-0 d-flex flex-column align-items-center bg-white">
+                    <h6 class="modal-title">評論成功</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>new WOW().init();</script>
+</body>
+</html>

@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>揪團活動｜JO團趣</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAORJREFUeNpiYBhowIhN0NjY+DyQMgDiA2fPnnXEZwATDnEDKH2BkAuYsNjugMS9SMgAFjy2w10ANFQBSPUDcQCS3ASg9wqxGWAPpT8AFVwAahYAsvcDsQKaugKg3EcmIvyfgKTZEWgoKOA3QPnxTGj+F0BSfBBK+0NpUIwcQAsbBSZC/scBYN48gB4GDlgMuAAVdwC6sB/qQpi6hUw4TH4AdO4DKLsRxIcFHFJMLACqWcCC5H9kk2F+ZQAq+gCUM4QGpgB6eDAiGbAfasAHIFYEaSQ6LwA1GyA5bQMo/umWGwECDAAFxUeC0oeMXQAAAABJRU5ErkJggg==">
+    <script type="module" crossorigin src="/JoTuanCu/assets/main-d62cfd54.js"></script>
+    <link rel="stylesheet" href="/JoTuanCu/assets/main-48d607ce.css">
+  </head>
+
+  <body>
+    <nav class="sticky-top bg-light">
+    <div class="container-fluid py-2 py-lg-6 px-xl-20 offcanvas-style">
+        <div class="navbar navbar-expand-lg justify-content-start py-0">
+            <a class="navbar-brand py-0 me-0" href="index.html">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="/JoTuanCu/assets/Logo-dark-lg-5ecf4a52.svg ">
+                    <img src="/JoTuanCu/assets/Logo-dark-sm-1cddce03.svg" alt="logo">
+                </picture>
+            </a>
+            <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end align-items-lg-center border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 255px;">
+                <ul class="navbar-nav px-6 py-4">
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 active" aria-current="page" href="groupActivities.html">揪團活動</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="featuredShop.html">精選商家</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="interaction.html">揪友交流</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 QA" aria-current="page" href="tiroTeach.html">新手指南</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn-close text-reset position-absolute d-lg-none bottom-0 start-50 translate-middle-x bg-white rounded-pill p-4 shadow mb-8" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <a href="#">
+                <img class="me-lg-2 ms-1" src="data:image/png;base64,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" alt="myPhoto">
+                <span class="d-none d-lg-inline-block">Hailey</span>
+            </a>
+        </div>
+    </div>
+</nav>
+    <!-- 揪團活動 - banner -- 倫倫 -->
+    <section class="groupActivities overflow-hidden">
+      <div class="banner-deco-wrap">
+        <picture class="groupActivities-bg-heading-line-cus wow zoomIn">
+          <source
+            media="(max-width: 575px)"
+            srcset="/JoTuanCu/assets/groupActivities-bg-heading-line-sm-b3cf7c89.svg "
+          />
+
+          <img
+            src="/JoTuanCu/assets/Decorative-lines-01-df18cb3a.svg"
+            alt="groupActivities-bg-heading-line"
+          />
+        </picture>
+      </div>
+      <div class="container groupActivitiesBanner">
+        <div class="row">
+          <div class="col-12 mb-sm-10 mb-0">
+            <div
+              class="d-flex justify-content-center position-relative pt-sm-10 pt-12"
+            >
+              <picture class="groupActivities-bg-heading-cus wow flipInX">
+                <source
+                  media="(max-width: 575px)"
+                  srcset="/JoTuanCu/assets/groupActivities-bg-heading-sm-fdfc44b7.svg "
+                />
+
+                <img
+                  src="/JoTuanCu/assets/groupActivities-bg-heading-78dcbffa.svg"
+                  alt="groupActivities-bg-heading"
+                />
+              </picture>
+              <div class="d-flex flex-column align-items-center pt-sm-27 pt-18">
+                <h1
+                  style="
+                    background-image: url(/JoTuanCu/assets/groupActivitiesBannerTitle-28899e95.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                  "
+                  class="groupActivitiesBannerTitle wow rubberBand"
+                ></h1>
+                <!-- <picture class="groupActivitiesBannerTitle">
+                  <source
+                    media="(max-width: 575px)"
+                    srcset="../assets/images/groupActivitiesBannerTitleSm.svg"
+                  />
+
+                  <img
+                    src="../assets/images/groupActivitiesBannerTitle.svg"
+                    alt="groupActivitiesBannerTitle"
+                  />
+                </picture> -->
+
+                <p
+                  class="mt-sm-3 mt-4 mb-sm-12 mb-4 fs-sm-9 fs-10 letter-rwd text-center wow jackInTheBox"
+                  style="width: 321px"
+                >
+                  不論你是想揪伴吃飯、看電影、運動、旅遊，這裡都可以滿足你的需求。想找到志同道合的夥伴嗎？立馬開團吧！
+                </p>
+                <button
+                  type="button"
+                  class="btn border-2 border-dark btn-outline-shadow wow heartBeat"
+                  onclick="window.location.href='groupActivitiesStartEvent.html'"
+                >
+                  馬上Jo!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <picture
+        class="groupActivities-banner-rwd d-flex justify-content-center wow slideInUp"
+      >
+        <source
+          media="(max-width: 375px)"
+          srcset="/JoTuanCu/assets/banner-02-sm-78a74b82.svg "
+        />
+
+        <img
+          src="/JoTuanCu/assets/banner-02-a6d6f456.svg"
+          alt="banner-02"
+          class="img-fluid"
+        />
+      </picture>
+    </section>
+
+    <!-- 揪團活動 - Jo到夥伴 -- 倫倫 -->
+    <section class="groupActivities-search py-sm-50 pt-20 pb-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-9 col-12 mx-auto">
+            <div
+              class="border border-dark p-xl-20 p-md-16 p-6 rounded-3 bg-white wow bounceIn"
+              style="box-shadow: 0px 10px 40px 0px #0000000f"
+            >
+              <h3 class="fs-lg-4 fs-5 text-center mb-10">
+                想要快速 Jo 到夥伴嗎？
+              </h3>
+              <form class="d-flex flex-column">
+                <select
+                  class="form-select form-select-sm mb-2 groupActivities-search-cusSelect"
+                  aria-label="Small select example"
+                  id="activitySelect"
+                  required
+                >
+                  <option value="" disabled selected hidden>選擇活動</option>
+                  <option value="sport">運動</option>
+                  <option value="learn">學習</option>
+                  <option value="food">美食</option>
+                  <option value="travel">旅遊</option>
+                  <option value="activities">休閒活動</option>
+                </select>
+                <div class="position-relative">
+                  <img
+                    src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                    alt="groupActivities-search-locationIcon"
+                    class="position-absolute groupActivities-locationIcon"
+                  />
+                  <select
+                    class="form-select form-select-sm mb-2 form-select-cusLocation"
+                    aria-label="Small select example"
+                    id="locationSelect"
+                    required
+                  >
+                    <option value="" disabled selected hidden>選擇地點</option>
+                    <option value="Keelung">基隆</option>
+                    <option value="Taipei">台北</option>
+                    <option value="NewTaipei">新北</option>
+                    <option value="Taichung">台中</option>
+                    <option value="Tainan">台南</option>
+                    <option value="Kaohsiung">高雄</option>
+                    <option value="Other">其他</option>
+                  </select>
+                </div>
+                <div class="custom-icon mb-10">
+                  <label for="dateInput" class="form-label d-none"
+                    >選擇日期</label
+                  >
+                  <input
+                    type="date"
+                    id="dateInput"
+                    class="form-control groupActivities-search-cusInput custom-date"
+                    required
+                  />
+                  <img
+                    src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                    alt="Calendar Icon"
+                    id="customIcon"
+                    class="groupActivities-locationIcon"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  class="btn border-2 border-dark btn-outline-shadow mx-auto"
+                >
+                  試試這個吧！
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/JoTuanCu/assets/illustrate-03-1741fc8f.svg"
+        alt="illustrate-03.svg"
+        class="groupActivities-search-deco d-md-block d-none wow fadeInRight"
+      />
+    </section>
+
+    <!-- 揪團活動 - 活動一覽 -- 倫倫 -->
+    <section
+      class="pt-sm-30 pb-sm-30 pt-30 pb-20 position-relative groupActivities-list"
+    >
+      <img
+        src="/JoTuanCu/assets/Decorative-lines-10-86b9b798.svg"
+        alt="groupActivitiesNextDeco"
+        class="groupActivitiesNextDeco"
+      />
+      <h3 class="fs-2 fw-light text-center mb-10">活動一覽</h3>
+      <p class="text-gray-700 text-center mb-10">總共 189 筆結果</p>
+      <div class="container">
+        <div class="row gy-6">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp">
+            <!-- <div
+              class="card rounded-3 groupActivities-cus-card"
+              data-bs-toggle="modal"
+              data-bs-target="#groupActivitiesModal"
+            > -->
+            <div class="card rounded-3 groupActivities-cus-card" id="cardModal">
+              <img
+                src="/JoTuanCu/assets/lauraCoffee-e955fa58.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="lauraCoffee"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart" />
+                  <label for="cardHeart">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+
+                <h5 class="mb-4">找人一起去咖啡廳</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      台北 信義區
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/07/24
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      15:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/laura-680ea3d9.svg"
+                    alt="laura"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">Laura</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/aluluSing-d9811b2d.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="aluluSing"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart2" />
+                  <label for="cardHeart2">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">壽星歡唱局</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      台北 錢櫃 西門店
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/07/30
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      18:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/alulu-d4bcc4d3.svg"
+                    alt="alulu"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">阿嚕嚕</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/happyMovie-74546080.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="happyMovie"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart3" />
+                  <label for="cardHeart3">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">多拉a夢 電影</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      台南 威秀
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/06/28
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      13:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/happy-b4b2896f.svg"
+                    alt="happy"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">歡樂一百點</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp">
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/typhoonEat-222b0d28.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="typhoonEat"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart4" />
+                  <label for="cardHeart4">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">颱風天吃吃喝喝</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      高雄 好吃小吃店
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/05/15
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      17:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/typhoon-73b1a6f9.svg"
+                    alt="typhoon"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">颱風天就是要泛舟</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/lifeCoding-4dedb2d8.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="lifeCoding"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart5" />
+                  <label for="cardHeart5">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">前端工程師交流會</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      其他 慈濟圖書館
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/09/12
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      16:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/life-daad9953.svg"
+                    alt="life"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">人生好難</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/daiBadminton-2677f862.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="daiBadminton"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart6" />
+                  <label for="cardHeart6">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">打羽球</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      新北 泰山國民運動中心
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/08/03
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      19:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/dai-db51fa05.svg"
+                    alt="dai"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">小戴</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/alexRun-635434e9.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="alexRun"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart7" />
+                  <label for="cardHeart7">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">夜跑團聚</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      台北 大安森林公園
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/08/05
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      19:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/alex-799e03bd.svg"
+                    alt="alex"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">亞歷克斯</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/bellaTea-95bed235.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="bellaTea"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart8" />
+                  <label for="cardHeart8">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">文青咖啡下午茶</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      新北 淡水老街咖啡館
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/06/06
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      14:30
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/Bella-925d4504.svg"
+                    alt="Bella"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">Bella</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/qiuCamping-81e41423.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="qiuCamping"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart9" />
+                  <label for="cardHeart9">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">露營小聚</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      其他 南投日月潭露營區
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/10/05
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      18:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/qiu-2939adaf.svg"
+                    alt="qiu"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">邱秋</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/disBicycle-0982fe8c.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="disBicycle"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart10" />
+                  <label for="cardHeart10">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">動感單車課</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      高雄 美麗島捷運站健身房
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/03/25
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      10:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/dis-4d70d31f.svg"
+                    alt="dis"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">迪斯</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/ethanGame-06b76789.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="ethanGame"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart11" />
+                  <label for="cardHeart11">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">桌遊之夜</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      台中 東區桌遊館
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/02/20
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      20:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/ethan-ec3281b8.svg"
+                    alt="ethan"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">Ethan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-12 d-md-block d-none wow fadeInUp"
+          >
+            <div class="card rounded-3 groupActivities-cus-card">
+              <img
+                src="/JoTuanCu/assets/fionaHiking-a725e958.svg"
+                class="card-img-top groupActivities-cus-card-img-top"
+                alt="fionaHiking"
+              />
+              <div
+                class="card-body cus-groupActivities-card-body position-relative"
+              >
+                <!-- <img
+                  src="../assets/images/heart.svg"
+                  alt="heart"
+                  class="cus-groupActivities-card-body-heart"
+                /> -->
+                <div class="groupActivitiesCardHeart-wrap">
+                  <input type="checkbox" id="cardHeart12" />
+                  <label for="cardHeart12">
+                    <div class="groupActivitiesCardHeart"></div>
+                  </label>
+                </div>
+                <h5 class="mb-4">山間健行</h5>
+                <div>
+                  <div class="d-flex align-items-center mb-1">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                      alt="groupActivities-card-locationIcon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      其他 阿里山遊樂區
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                      alt="card-Calendar-Icon"
+                    />
+                    <p
+                      class="text-gray-700 ms-1"
+                      style="letter-spacing: 0.25px"
+                    >
+                      2024/01/08
+                    </p>
+                    <img
+                      src="/JoTuanCu/assets/groupActivities-card-text-line-3c246d3c.svg"
+                      alt=""
+                      class="mx-2"
+                    />
+                    <p class="text-gray-700" style="letter-spacing: 0.25px">
+                      08:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer mt-1 groupActivities-cus-card-footer">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/JoTuanCu/assets/fiona-90ec88e6.svg"
+                    alt="fiona"
+                    style="width: 24px; height: 24px"
+                  />
+                  <p class="text-gray-700 ms-2">Fiona</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <!-- <div
+          class="modal fade groupActivities-list-groupActivitiesModal groupActivities-list-groupActivitiesModal-fade"
+          id="groupActivitiesModal"
+          tabindex="-1"
+          aria-labelledby="groupActivitiesModalLabel"
+          aria-hidden="true"
+        > -->
+        <!-- <div
+          class="groupActivities-list-groupActivitiesModal groupActivities-list-groupActivitiesModal-fade"
+          id="groupActivitiesModal"
+        > -->
+        <!-- <div class="modal-dialog groupActivities-list-modal-dialog"> -->
+        <!-- <div
+            class="groupActivities-list-modal-dialog groupActivities-list-modal-dialog-ani"
+          > -->
+        <!-- <div
+              class="modal-content groupActivities-list-modal-content p-10 position-relative"
+            > -->
+        <!-- <div
+              class="groupActivities-list-modal-content p-10 position-relative"
+            > -->
+
+        <div class="groupActivities-list-card-modal">
+          <div class="groupActivities-list-card-modal-backdrop"></div>
+          <div
+            class="groupActivities-list-card-modal-dialog px-md-10 py-md-10 px-5 pt-11 pb-5"
+          >
+            <div class="d-flex flex-md-row flex-column">
+              <div class="card-modal-cus-img-wrap">
+                <img
+                  src="/JoTuanCu/assets/lauraCoffee300-59ccff52.svg"
+                  alt="lauraCoffee"
+                  class="rounded-3 card-modal-cus-img"
+                />
+              </div>
+              <div
+                class="mt-md-0 mt-3 ms-md-6 ms-0 d-flex flex-column flex-md-grow-1 flex-grow-0"
+              >
+                <h5 class="fs-4">找人一起去咖啡廳</h5>
+                <div class="d-flex align-items-center mt-2">
+                  <img
+                    src="/JoTuanCu/assets/laura-680ea3d9.svg"
+                    alt="laura"
+                    style="width: 30px; height: 30px"
+                  />
+                  <p class="fw-bold fs-5 ms-2">Laura</p>
+                </div>
+
+                <div class="d-flex align-items-start mt-2">
+                  <img
+                    src="/JoTuanCu/assets/groupActivities-search-locationIcon-330c70b1.svg"
+                    alt="groupActivities-search-locationIcon"
+                  />
+                  <p class="fs-8 ms-1">地點：台北 信義區</p>
+                </div>
+
+                <div class="mt-md-5 mt-2" style="border-top: 3px solid #808080">
+                  <div class="d-flex align-items-center mt-3">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="/JoTuanCu/assets/groupActivities-search-dateIcon-00d16293.svg"
+                        alt="groupActivities-search-dateIcon"
+                      />
+                      <p class="ms-1">2024/07/24</p>
+                    </div>
+                    <div class="d-flex align-items-center ms-3">
+                      <i
+                        class="bi bi-clock"
+                        style="font-size: 16px; color: #808080"
+                      ></i>
+                      <p class="ms-1">15:00</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center mt-2">
+                    <i
+                      class="bi bi-cash-coin"
+                      style="font-size: 16px; color: #808080"
+                    ></i>
+                    <p class="ms-1">每人活動金額：500元</p>
+                  </div>
+                  <div class="d-flex align-items-center mt-2">
+                    <div class="d-flex align-items-center">
+                      <i
+                        class="bi bi-cake2"
+                        style="font-size: 16px; color: #808080"
+                      ></i>
+                      <p class="ms-1">分類：美食</p>
+                    </div>
+                    <div class="d-flex align-items-center ms-3">
+                      <i
+                        class="bi bi-person-arms-up"
+                        style="font-size: 16px; color: #808080"
+                      ></i>
+                      <p class="ms-1">4人</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn border-2 border-dark btn-outline-shadow mt-md-auto mt-3 eventRegistrationSuccessfulModal-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#eventRegistrationSuccessfulModal"
+                >
+                  我要報名！
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-5 card-modal-cus-text-wrap">
+              <h4 class="ps-4" style="border-left: 5px solid #808080">
+                活動介紹
+              </h4>
+              <p class="mt-3">
+                大家好，我是Laura，一位熱愛咖啡和好聊夥伴的都市人。最近我想為自己，也為同樣喜愛咖啡廳、喜歡交朋友的你們，發起一場小型聚會！這次我們選了一間氣氛舒適、咖啡香氣濃郁的小店，適合聊天放鬆。這場聚會限額4人，期待的是能在輕鬆的環境中互相交流，不論你是熱愛咖啡、剛搬來城市的新住戶，還是對各式話題有好奇心的夥伴，都歡迎加入！
+              </p>
+              <p class="mt-3">
+                在這個忙碌的生活中，能夠和新朋友一起度過愉快的下午，交流生活中的點滴，實在是件美好的事。如果你有故事或想法想分享，或者單純想認識新朋友，都非常歡迎。別擔心內向或尷尬，這將是一個輕鬆無壓力的時光，我們會在彼此的話語中找到共鳴。
+              </p>
+              <p class="mt-3">
+                如果你有興趣，請按下報名按鈕吧！期待一起度過這個愜意的咖啡時光～
+              </p>
+            </div>
+
+            <button
+              type="button"
+              class="btn-close btn-close-cus position-absolute groupActivities-list-card-modal-close"
+              style="top: 14px; right: 14px"
+            ></button>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="eventRegistrationSuccessfulModal"
+          tabindex="-1"
+          aria-labelledby="eventRegistrationSuccessfulModalLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered eventRegistrationSuccessfulModal-dialog"
+          >
+            <div
+              class="modal-content eventRegistrationSuccessfulModal-content"
+              style="background-color: #333333"
+            >
+              <div
+                class="modal-header eventRegistrationSuccessfulModal-header"
+                style="border: none"
+              >
+                <i class="bi bi-check-lg fs-5" style="color: #abd354"></i>
+                <p
+                  class="modal-title ms-3"
+                  id="eventRegistrationSuccessfulModalLabel"
+                  style="color: #fafafa"
+                >
+                  報名成功！
+                </p>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="d-flex justify-content-center w-100 mt-10">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&lt;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <i class="bi bi-three-dots" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">6</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">7</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <i class="bi bi-three-dots" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">20</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&gt;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <footer class="bg-dark">
+    <div class="container-fluid py-10 pb-lg-6 px-xl-20">
+        <div class="d-flex flex-column flex-lg-row align-items-center mb-6">
+            <img class="me-lg-10 mb-10 mb-lg-0" src="/JoTuanCu/assets/Logo-af67ddf5.svg" alt="logo">
+            <ul class="d-flex flex-column flex-lg-row align-items-center mb-10 mb-lg-0 ps-0 list-unstyled">
+               <li><a class="link-white d-block py-2 px-lg-6" href="index.html">首頁</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="groupActivities.html">揪團活動</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="featuredShop.html">精選商家</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="interaction.html">揪友交流</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="QA.html">新手指南</a></li> 
+            </ul>
+            <ul class="d-flex align-items-center mb-0 ps-0 list-unstyled ms-lg-auto">
+                <li><a href="login.html"><img src="/JoTuanCu/assets/facebook-2fda7761.svg" alt="facebook"></a></li>
+                <li class="mx-6"><a href="login.html"><img src="/JoTuanCu/assets/instagram-ba5182ff.svg" alt="instagram"></a></li>
+                <li><a href="login.html"><img src="/JoTuanCu/assets/line-21d02cb0.svg" alt="line"></a></li>
+             </ul>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center text-gray-700 text-center">
+            <small class="mb-2 mb-lg-0">JO團趣 ©2024 Copyrights All Rights Reserved</small>
+            <small>本專題僅為學習用途,不做任何商業使用,圖片來源請見 GitHub Repo</small>
+        </div>
+    </div>
+</footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

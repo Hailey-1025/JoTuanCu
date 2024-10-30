@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊｜JO團趣</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAORJREFUeNpiYBhowIhN0NjY+DyQMgDiA2fPnnXEZwATDnEDKH2BkAuYsNjugMS9SMgAFjy2w10ANFQBSPUDcQCS3ASg9wqxGWAPpT8AFVwAahYAsvcDsQKaugKg3EcmIvyfgKTZEWgoKOA3QPnxTGj+F0BSfBBK+0NpUIwcQAsbBSZC/scBYN48gB4GDlgMuAAVdwC6sB/qQpi6hUw4TH4AdO4DKLsRxIcFHFJMLACqWcCC5H9kk2F+ZQAq+gCUM4QGpgB6eDAiGbAfasAHIFYEaSQ6LwA1GyA5bQMo/umWGwECDAAFxUeC0oeMXQAAAABJRU5ErkJggg==">
+  <script type="module" crossorigin src="/JoTuanCu/assets/main-d62cfd54.js"></script>
+  <link rel="stylesheet" href="/JoTuanCu/assets/main-48d607ce.css">
+</head>
+
+<body>
+    <nav class="sticky-top bg-light">
+    <div class="container-fluid py-2 py-lg-6 px-xl-20 offcanvas-style">
+        <div class="navbar navbar-expand-lg justify-content-start py-0">
+            <a class="navbar-brand py-0 me-0" href="index.html">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="/JoTuanCu/assets/Logo-dark-lg-5ecf4a52.svg ">
+                    <img src="/JoTuanCu/assets/Logo-dark-sm-1cddce03.svg" alt="logo">
+                </picture>
+            </a>
+            <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end align-items-lg-center border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 255px;">
+                <ul class="navbar-nav px-6 py-4">
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="groupActivities.html">揪團活動</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="featuredShop.html">精選商家</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="interaction.html">揪友交流</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 QA" aria-current="page" href="tiroTeach.html">新手指南</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn-close text-reset position-absolute d-lg-none bottom-0 start-50 translate-middle-x bg-white rounded-pill p-4 shadow mb-8" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <a href="#">
+                <img class="me-lg-2 ms-1" src="data:image/png;base64,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" alt="myPhoto">
+                <span class="d-none d-lg-inline-block">Hailey</span>
+            </a>
+        </div>
+    </div>
+</nav>
+        <section class="container py-16 py-lg-30">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-between align-items-end mb-12 mb-md-10">
+                        <h1 class="fw-light fs-3 fs-md-2 text-center">註冊會員</h1>
+                        <a class="fs-8 link-success text-decoration-underline" href="login.html">快速登入</a>
+                    </div>
+                    <form class="needs-validation " novalidate="">
+                        <div class="mb-4">
+                            <input type="text" class="form-control rounded bg-gray-100 mb-2" id="accountNumber"
+                                placeholder="請輸入帳號">
+                            <label for="accountNumber" class="form-label mb-0">請以半形輸入，6~16個英文、數字組合</label>
+                        </div>
+                        <input type="email" class="form-control rounded bg-gray-100 mb-4" id="accountNumber"
+                            placeholder="請輸入 Email">
+                        <div class="mb-4">
+                            <input type="text" class="form-control rounded bg-gray-100 mb-2" id="password"
+                                placeholder="請輸入密碼">
+                            <label for="password" class="form-label mb-0">請以半形輸入，6~16個英文、數字組合</label>
+                        </div>
+                        <input type="text" class="form-control rounded bg-gray-100 mb-4" placeholder="請再次輸入密碼">
+                        <div class="form-check d-flex align-items-center mb-2 was-validated">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label text-dark" for="flexCheckDefault">
+                                我已同意<a class="text-decoration-underline" data-bs-toggle="modal" href="#MembershipTerms
+                                ">會員條款</a>
+                            </label>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb-6 was-validated">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault2">
+                            <label class="form-check-label text-dark" for="flexCheckDefault2">
+                                我已同意透過 E-mail 通知網站活動訊息
+                            </label>
+                        </div>
+
+                        <a href="login.html" type="submit" class="btn btn-outline-shadow w-100">
+                            確認送出
+                        </a>
+                    </form>
+                    <div class="modal fade" id="MembershipTerms" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 800px;">
+                          <div class="modal-content border-0 p-4">
+                            <div class="modal-header border-0 p-0">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body py-0 my-6">
+                              <h2 class="fw-light fs-3 fs-md-2 text-center mb-6">JO團趣 會員註冊使用者條款</h2>
+                              <p class="mb-12 mb-md-10">歡迎使用JO團趣!<br>在您註冊成為JO團趣會員之前,請仔細閱讀以下使用者條款。<br>當您註冊成為會員,即表示您同意遵守以下條款。</p>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">1. 會員資格</h3>
+                                  <p>1.1 您必須年滿18歲才能註冊成為JO團趣的會員。<br>
+                                    1.2 您必須提供真實、準確、最新及完整的註冊資料。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">2. 使用者責任</h3>
+                                  <p>2.1 您對使用JO團趣帳號進行的所有活動負全責。<br>
+                                    2.2 您同意不會使用JO團趣進行任何違法、不當或侵害他人權益的活動。<br>
+                                    2.3 您不得在JO團趣上發布任何不雅、冒犯、誹謗或仇恨言論。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">3. 隱私政策</h3>
+                                  <p>3.1 JO團趣重視您的隱私,並遵守相關法律保護您的個人資料。<br>
+                                    3.2 您提供的註冊資料將用於帳號管理、活動匹配及其他平台服務。<br>
+                                    3.3 您同意JO團趣可以根據隱私政策使用您的資料。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">4. 服務使用</h3>
+                                  <p>4.1 JO團趣提供的平台僅供發起和參加各種活動,促進用戶間的交流和互動。<br>
+                                    4.2 JO團趣對用戶發布的活動內容不承擔責任,並有權在必要時刪除不當內容。<br>
+                                    4.3 JO團趣有權根據自身判斷,暫停或終止您的帳號及使用權限。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">5. 會員行為規範</h3>
+                                  <p>5.1 尊重其他會員,保持友善和禮貌的互動。<br>
+                                    5.2 不得在平台上進行任何形式的騷擾、欺詐或其他不當行為。<br>
+                                    5.3 對於任何違反本條款的行為,JO團趣保留采取適當行動的權利,包括但不限於帳號封禁或法律追訴。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">6. 免責聲明</h3>
+                                  <p>6.1 JO團趣對因平台使用或無法使用而造成的任何損失或損害不承擔責任。<br>
+                                    6.2 JO團趣不保證平台服務的連續性、準確性或完整性。</p>
+                              </div>
+                              <div class="mb-4">
+                                  <h3 class="fs-6 mb-2">7. 條款修改</h3>
+                                  <p>7.1 JO團趣有權隨時修改這些使用者條款,並將在平台上發布更新版本。<br>
+                                    7.2 修改後的條款一經發布即生效,繼續使用平台即表示您接受新的條款。</p>
+                              </div>
+                              <div>
+                                  <h3 class="fs-6 mb-2">8. 法律適用</h3>
+                                  <p>8.1 本條款適用於平台所在地的法律。<br>
+                                    8.2 任何因本條款引起的爭議,將提交平台所在地的法院解決。</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="bg-dark">
+    <div class="container-fluid py-10 pb-lg-6 px-xl-20">
+        <div class="d-flex flex-column flex-lg-row align-items-center mb-6">
+            <img class="me-lg-10 mb-10 mb-lg-0" src="/JoTuanCu/assets/Logo-af67ddf5.svg" alt="logo">
+            <ul class="d-flex flex-column flex-lg-row align-items-center mb-10 mb-lg-0 ps-0 list-unstyled">
+               <li><a class="link-white d-block py-2 px-lg-6" href="index.html">首頁</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="groupActivities.html">揪團活動</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="featuredShop.html">精選商家</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="interaction.html">揪友交流</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="QA.html">新手指南</a></li> 
+            </ul>
+            <ul class="d-flex align-items-center mb-0 ps-0 list-unstyled ms-lg-auto">
+                <li><a href="login.html"><img src="/JoTuanCu/assets/facebook-2fda7761.svg" alt="facebook"></a></li>
+                <li class="mx-6"><a href="login.html"><img src="/JoTuanCu/assets/instagram-ba5182ff.svg" alt="instagram"></a></li>
+                <li><a href="login.html"><img src="/JoTuanCu/assets/line-21d02cb0.svg" alt="line"></a></li>
+             </ul>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center text-gray-700 text-center">
+            <small class="mb-2 mb-lg-0">JO團趣 ©2024 Copyrights All Rights Reserved</small>
+            <small>本專題僅為學習用途,不做任何商業使用,圖片來源請見 GitHub Repo</small>
+        </div>
+    </div>
+</footer>
+            
+</body>
+
+</html>

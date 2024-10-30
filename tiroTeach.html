@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新手教學｜JO團趣</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAORJREFUeNpiYBhowIhN0NjY+DyQMgDiA2fPnnXEZwATDnEDKH2BkAuYsNjugMS9SMgAFjy2w10ANFQBSPUDcQCS3ASg9wqxGWAPpT8AFVwAahYAsvcDsQKaugKg3EcmIvyfgKTZEWgoKOA3QPnxTGj+F0BSfBBK+0NpUIwcQAsbBSZC/scBYN48gB4GDlgMuAAVdwC6sB/qQpi6hUw4TH4AdO4DKLsRxIcFHFJMLACqWcCC5H9kk2F+ZQAq+gCUM4QGpgB6eDAiGbAfasAHIFYEaSQ6LwA1GyA5bQMo/umWGwECDAAFxUeC0oeMXQAAAABJRU5ErkJggg==">
+  <script type="module" crossorigin src="/JoTuanCu/assets/main-d62cfd54.js"></script>
+  <link rel="stylesheet" href="/JoTuanCu/assets/main-48d607ce.css">
+</head>
+<body>
+    <nav class="sticky-top bg-light">
+    <div class="container-fluid py-2 py-lg-6 px-xl-20 offcanvas-style">
+        <div class="navbar navbar-expand-lg justify-content-start py-0">
+            <a class="navbar-brand py-0 me-0" href="index.html">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="/JoTuanCu/assets/Logo-dark-lg-5ecf4a52.svg ">
+                    <img src="/JoTuanCu/assets/Logo-dark-sm-1cddce03.svg" alt="logo">
+                </picture>
+            </a>
+            <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end align-items-lg-center border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 255px;">
+                <ul class="navbar-nav px-6 py-4">
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="groupActivities.html">揪團活動</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="featuredShop.html">精選商家</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 " aria-current="page" href="interaction.html">揪友交流</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-8 px-lg-6 py-3 py-lg-2 mb-4 mb-lg-0 QA" aria-current="page" href="tiroTeach.html">新手指南</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn-close text-reset position-absolute d-lg-none bottom-0 start-50 translate-middle-x bg-white rounded-pill p-4 shadow mb-8" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <a href="#">
+                <img class="me-lg-2 ms-1" src="data:image/png;base64,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" alt="myPhoto">
+                <span class="d-none d-lg-inline-block">Hailey</span>
+            </a>
+        </div>
+    </div>
+</nav>    <div class="tiroTeach container py-16 py-lg-30">
+        <h2 class="fw-light fs-3 fs-md-2 text-center mb-12 mb-md-10 wow fadeInUp">基本介紹</h2>
+        <div class="row justify-content-center mb-16 mb-lg-20">
+            <!-- 基本介紹-內文 -->
+            <div class="col-12 col-lg-6">
+                <div class="d-flex flex-column align-items-center wow fadeInUp">
+                    <img class="mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAAAVCAYAAAAKEwEVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHYSURBVHgB7dpPTsJAGAXwNwaMiQu9gXgEPQHeQG/Axj8JC/AEcgNwYWLiAr0BNwAPIPUG4A1wAQgk/fwKMW5spxMZaJP3S1oWncX0tY+EfAAWgdyUAqkfIuOiPUZ7RQ4w0/XbVKY79iXSDjFtIvPG54Jw0JfqETIv7OYpU+TAap+TGjxLURgi+sHCEDlgYYgcsDBEDlgYIgcsDJEDFobIQcE+mBJtlVgHWCfmcQiPVkOpr4TBlBxEezWYHeteTfy6vdGJaY3gkT3TMEWmm9hnuky3/ewjtj3oHEbPxnumhfSDqfA84eJQj2N4NakJ0LCt0np3sQzvbwaTin68wJPogaXMtJSc6binpzN4NW0KpGJbZbufvlyWT83TKzxJm6neSx3LI87/My0AxVLykkVHX9ShQbGOrZrfA/vPcVcN5jqVNi0NrAzsDhFr/AmPom/bvlRLSWsMFj2t9Pv2M53daqaNuKu/mSa/IyYDmep7qu8oWoJiC9sUyHX3Ta7byLhALit9uZI8/DUmkKtBnjJFDkT71Fzv4Bl/9BM5YGGIHLAwRA5YGCIHLAyRAxaGyAELQ+SgYF8yu8hHqxYdHcJ1T83DBzJOh2vlHc/DvvVYZYpciIar/jP9BtfU2lrUVL7HAAAAAElFTkSuQmCC" alt="++++" width="204" height="21">
+                    <p class="text-center">在這裡,我們相信共同的目標能夠讓陌生人成為朋友。無論你是想找人一起吃飯、看電影、旅遊、運動還是學習，JO團趣都是你最佳的選擇。快來加入我們，發起活動或參與其他人的活動，讓你的每一天都充滿樂趣和驚喜！</p>
+                </div>
+            </div>
+        </div>
+        <!-- 1 -->
+        <div class="searchActivity position-relative row flex-column flex-lg-row mb-10 mb-lg-0 ">
+            <div class="col-12 col-lg-6">
+                <img class="img-fluid wow fadeInLeft" src="/JoTuanCu/assets/banner-09-2d865023.png" alt="img-1">
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center my-6 my-xl-0">
+                <div class="px-lg-20 px-xxl-40 wow fadeInRight">
+                    <div class="d-flex">
+                        <img  class="me-6" src="data:image/png;base64,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" alt="search-img" width="40" height="40">
+                        <h5 class="fs-lg-4">快速找到活動</h5>
+                    </div>
+                    <img class="mb-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP0AAAATCAYAAABbewsOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATUSURBVHgB7ZvtUdtKFIbfI+PMvb/gVoBuBbgDTAVABYECkqiDkA6cZPI7poLQQUQHpoOlgohfycRYm3O0u0ZWbEsWsvHHPjMa2UaWxWrf87kieHaWnzoKW8BBAHQI6T5Aoeb3/KcDAkKY13CfTTlFwsclstd2z+8Vf0OlCO7ks1fUG8CzVhA8W43W0cGQBWyErY+0EXR3jpCbRozBgH9zoEG3bGRiol4Cz4vhRb9FiMAfWdwBUhY3day4Q6wfMV9tf4jg9l/qKXhWihf9BiPheZuFzQI6XmOBlxGLAdijT9fwrAQv+g1CRP4K6al4cX57hueH51kOzsZC2Vw8CbK9hOSat1SZw9oP00JyiSyA4f4Q7f/aGElN4CDlSEP2OttnW9VrVHzGKy/+5eNFv+YMddQNoE/55VldT26FLXm14nMNOKy+a4vQV5Bbs2EI2XgcpaAuTDTSKfkKXytdtqkXw7MUvOjXDJeXc9HtNWp4c1MwE4HrwYhz5lWJuypiBEYmJZH/rzvzONAHFv4VPI2zNqL/mXkEoGWqy65lBNNKepr4PBnCsnPRODzN4HZS8ADbVpJt3YQgOI/O13eB6kK3lXF9Ix6cR+9ukyrjYgBS6PeYXY+IW6BzX+1vlqWJPtcDDpGJOD20ud5EH3iFraMiLp+V/cD1lvdERCuaZNarRyzad6g+BjEfH7PIufX1+RZbgBO/NXgTyL0JQCde+M1RS/STvd903xaWRMidFxRxkygYDxqLIWg6vxSvTtbDVThcJvtNi705OFzf5slvxf99iteP9+jjCWoi8/UXz8lcFDmeo8YZ2eNAYeGrIeqR2A3mN7TK/y0fecoHbPjVKluXpaJ3bSG7sCO0wg6xe4iHvZE8uc4qM5l4KVLOYymqMH4SffS5336zLd68Klb434oFPxbkSdH4FpzPoRXtOJLcRAfkuinIrW5kI3EvBqIp4/CX6H/rqNNCeqxttRWrG7Tikk6F8UU+Wcog9/ks0ombPU4pQnOubDKEeB6Kt5jH6LosClgghLcePe3vmtCLGAOZefy88Pt8926t81m0HbhVTBoGqeUgkYi0qlHIRG/DzVrV4nkXBiNge3FZcY1bRi70cX3g6T3gZWN6zKMj11u2K9jCCi2lIoq3eMjV5uKAswGNAhPGzxvT2BTigmuftz5h5+R3eBaFa1N0Pi8aJR7cnvVCC5Hv/VoxK+7/3rcx/EH05R4bjEQ7dq36MRZb6dYX8f/DL0bQXzE7Z/devQKP+t0PNOOEXBQJPV58ZN7PjyK1Qi1oIq1Ic/MnVzdwaUi2bzhlnlsDIR5YjfnYtpBUUc3Cjl17cirXW5ZFMrwvnYgJZj6Vpnvs1T96r17OSL/lij5dzTkkyTmfXCQpYjWrCTfJAbkahV3dGBpjQc4gyHyqnNLY9RpKwn+uCdzxuZTTrYheQqhu7niZjFlbqG7RatvR+u0ph1CyQq5qOuTFXoMpub0tcOqYTcJg0yPKuti622mJQZyGGMSIbLU0C+93sVr8HGRScgRwRqbHHM44TPL9S/80WX20fnM8ROthHRdVvSSPOroomXvTSJa2OGfXmHEDFOdW/8PjWSKFGlSnpBitvOgbRvJQzpoudFacoXP/4IjnJRBD0EZ6KA86uRYnZa09uvwDeIhyRn+gcdEAAAAASUVORK5CYII=" alt="line">
+                    <p>想加入現成的活動？在JO團趣上，你可以輕鬆瀏覽各種活動，找到最適合自己的那一場。</p>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="callActivity position-relative row flex-column flex-lg-row-reverse">
+            <div class="col-12 col-lg-6">
+                <img class="img-fluid wow fadeInRight" src="/JoTuanCu/assets/banner-10-cfcf6ac6.png" alt="img-2">
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center my-6 my-xl-0">
+                <div class="px-lg-20 px-xxl-40 wow fadeInLeft">
+                    <div class="initiate d-flex position-relative mb-11">
+                        <img  class="me-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAvCAYAAACc5fiSAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO5SURBVHgB7ZlNTBNREMfntSCiRRolCChSJWJMIEKrcjFprwhGiAcllsDBj8QLNWAMN4w346FojAoe4GRMPJSAXmkTL4ZCmngwlgOFA0Q+zJbWRJHuOrPdrdtS6PLhpiT7T17at91985uZ1134F0CXtmLyG5vNNt3VdbLvemtZoQAQymHPhpQnOhwOcyQScTDG7IIgWHDUJi3EWAhfODzuNRqNvvHx8QBsQxQnGo26cJ1OnJpxDPb0VA63XCupoM9XwTCcz9whJbjw8nUNWG2FckaB/lczLQMDs1cRqpnWLCjIgdNVB8VRVrYfTCZjIuD8/G+YCv6E4Leo+B4VKirK9S4vrw35/X5vJtiVlZVmjNNOUxze8vJ8T0NDkXnM+6OX4hLbPwkdOamLRCJrMDERhndv52onJ8LTUhUH+55XW6prCiy0SCbNz/2iNSwfRhc6lpbCHVgUDg8HECzA83wI34dxVOBc7Bx2krrHYaKetrbj7tabxwC73ksVr6wywcPurykRmDup4nbHEUBYcX65qRjKSvLcTuf7+zRfEzrHpGpsSZREEDtBxaCOyMdKsWM0qrB7pyoPcPUXzRzCWlKvp+vu3f0Cn/2Xko4nlY+qfevOCWhEaKosA4FzOmFHkgGpKJvILMT3s2olgd9GaHmPZ7sMsEelg2stHVxr6eD/U/QcSJVeca2lg2stHVxr6eBaK+vB6Z+bdMp68OheBd9IOrjWymySKBRUGD6S6ZNQaWkeyIYRWQ5q/Be1MWntVG26+uLiH7PVau1E48ZRf/5TrQwoWw5KkR9DdwDZOxETOGMCu/2w6BxsJREqyujId3FNGk+enlUHTibMm/5ZgnCB5GR1P6jkGhqLzWoAKBhVyuddhsePpsSEZNuOXuXkE6BoEEWjMfGaST8ngtM5TVeOitDpYiY5WWh4ihWjwGTgWOsO7djJUiYyh4C0PoEqtxpBmhCOOkTbjGKn2x4KcUmpfBxdgBsIL2epwsniMHNOnkhu1DpHirbKbhpNyOVOAifgTQIQoAcv8sbA4MtFN5YxN5fuxFXBVZsLfAUPzIHJ0HfDAbsjL5Zn0IgWuOpvTA7ra1F77j7mJm+cxjDNBcGFXYid48HQLCVCQ41XGHd5QfAYwDCkLNTu3LMySArok4aoeFdi2F5m4RUuLT5YQnHgGNrSL2Y2WlMT8HSSukLywTakP/K1lg6utRLgGZ5UWafEXcUzcgH2kvQ9rrWU4Ov+7hDiT7GsVGKPG4HV8cC3Kz7jjCm/52eT/gKzGnz9eyvkDgAAAABJRU5ErkJggg==" alt="flag-img" width="40" height="40">
+                        <h5 class="fs-lg-4">輕鬆發起活動</h5>
+                    </div>
+                    <p>想吃美食、看電影還是出去玩?只需幾步,就能輕鬆發起自己的活動,吸引志同道合的朋友一起參加。</p>
+                </div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="friendHappy position-relative row Aflex-column flex-lg-row mb-16 mb-lg-20">
+            <div class="col-12 col-lg-6">
+                <img class="img-fluid wow fadeInLeft" src="/JoTuanCu/assets/banner-11-f2bc1f63.png" alt="img-1">
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center my-6 my-xl-0">
+                <div class="px-xl-40 wow fadeInRight">
+                    <div class="d-flex">
+                        <img  class="me-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAsCAYAAAAacYo8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUoSURBVHgB7ZlfTFtVHMd/pxTYIoVOEgcYtZKAzGRJYZDxotRXhwma6Pw3YRE1vrii4ptru0SjzmmZif+T1aibPo0pLvFprfGBh43V+GCExDQmA/XBdBSSrbS9+30P95bL7W25/cPoEr4J6e29p7/zub/zO+f8zg+ibW1rW1UpYaWRx+NxLi4uDvHlPdkfCvFbbW1tdHp6OkZFqK+vz51Op93l2ioI3tvb61EUxQf21tZ66ryvgRocdlqYv0aJRIrmZpeJn0e54+CvFx+I7BTBWD5bPT09I/xxhNu6Gxvt8e6eJqdmS/4tXEez8Ph4++RjB++M1IlglIoFh4cTiUSQL4cPPLKbBgfvoJ59TTnt0OEXn/9NP039J597x+4NtXc5AvoX6O/vd62srJziF3Tv798VfuvtLldjk91ttAUnnDl9Rdp68qk2en70rhi389vFya8sgaOjVCp1tqW13v3Ou13xrj0NTtpAeIHx1/+gpaU0ffLZXmpp3RGoFUG/Cn2Bm8R+mOoL726p91ux9fJLv8uRhS2Hwx5eIXHYOJo54BwelwGNHyE8itEbDD/Lnvv6WzfNX7kWeu7ZqKe5uS56/uf9V4mUYat2NPjWth0SnhVj+If08MIA7WdoXynQEOL+0NOXpbeg5eV0fPJcb0whchdrC/CHnonS6It3y9Axwtu0hhhWjsPhF7hhKdCQQx3ef3iiIWw+/nSvsxRoCN4+yMBf8hyCQ1iuOlLOas+z4Mlk0sONXQd4IpYjdPje+3voOP+V6gBNqqflhIXghKTi9eI6C87L1LDZylGKYKej8zYqVxjBh9mRM5euZu/ZSPEpiteZBecwcQ0M3E7Vpk52ACa8TrzKZQb0Hnc51ElVTULoYaLqlSYxZKNbU55bFXwtxrECzK/mC1UlhAnCxaA18A5OoGb/XKJqE1YUs2U1C86zN/ZL5H+qNgF8kBM9g2JZ8MefaIthWPRr5lZr6sd/Zbprsr+sge9y1oSxa35w4i+qFmG7R1ptDBVBymQWPEO2yNhr7TLP+LAK4KUDhSDkTkYlyXYuC875cxi575u+DvruzLw8IGyV0Pf3zJAn3wkhQ1y3jiskAgOeZjrK8BimrYDXoI/6O03zHU5tA/hct8fD62nlSJDjSmZgxwJz8r7ZcG2GjvlnCSsbUmMzaI5t/04xEVu9NgiZV4aUC0ghcQ7ESeRBdRQ2S8i3Ma9mZhZleOTJLCftYuJR7UvOls8H9riNTxr8RlEYwNvPXIxL76sJfcWh4RxA5/c0hWr43Gm4Zy54Pk3KKb4cMjnAUiVkPGSb7ZASWkwcNrlfWCnFG8JBVw9//MT9ZZ9uNHtY8vJDK/4acTJg9ntLlay08oqPVxy/lc6KgS40goWgIUtpLQzAkFYuaGiokR0vlJBNGksPpUBbBq8UPFYplByQexSA9m4EXRS4Hh4dfnO6m+uBjbKOMrf+TGiqS5y84UWRD2FzMZcywn1MkAVZinGjeMKO0OqKI3OK81w+QEkiX5UA5QVsLtjIRs03s3gNZYaE+ChCFlXS0c0ugiF+Z2wG8Vc5MUP9A97U6h96Ie/ZCDqDfaMIaKgkj2vi4oyb6xwoajq13GZMfREI33G/AHROTfCmgEO8UbnUFMGlwSNktPo54jlPdaxkaKhscEgPj+VuikMGE3hf/opWWdBQRcAhPTwV7jCa5PlRDrRqp3LaCB7QMoHjRI7KVEULQkKeTEQ3AHOecbJUKWjV3uZIXevxX4g4b1pRK7thMboBEaV2/d+iFNoAAAAASUVORK5CYII=" alt="search-img" width="40" height="40">
+                        <h5 class="fs-lg-4">交友與快樂兼得</h5>
+                    </div>
+                    <img class="mb-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP0AAAARCAYAAAAWs6oFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOjSURBVHgB7ZrRcdpAEIZ3D5yZPJkOrFQQOgipwO4g5DmTsVJBSAXBzuTZpAO7A9yBU0HkCiI/JROMLrvSnXwIgSwhjIT3m2FAJ+lswf337+4dgiBURGu/9xegx5879I7ms3nv2esQoqP0HkAv083Ccfbeh/vy24ug/oJMP0HmktC8zPU6c726XXc/HYdz5/6XOA6g4SAIz4o/2vf43YrUFZkVZ0aYXnLuQZw6I1RhLSE6k0LxpMOfdehekJl4Qu1cb/osNfGI6FsIC9cRrcdtiWCx5zhiKuiqLinsDXbiCRXg28aLnkPIe4C+gug1OVCf/uG+cRp3EPNDBdR+EwGevcDxDbQI675dei6MX9EhxGJFbrfCFvEKNaCHjRQ9Cz2C6B0N+hM67EP5gT6dAb7fZX5l3VgZwSZCRs8I17MO3fJQeVXoujJPVrnh7UM4O4PO3QHMfsMSB3eI4xBKovWHo8UW5blHc1BTeEZ0QJ80SvQz7Q9ogHyGakLPY0o/+6SL5z9gA2zBalnEqRszsZCb7sZOYcvmhqlAHXFSGGhFa9uiIO0Dv9/CnnCvT3mC2fT34u9q4+gSSxhARbMIZk0I762r0yMPdSL2bRDQ64YG9ZSKIne2cVXhqum5sBWucdYgaYvFuSBW1zX3Sah18k/7vgL9FTYj7AC+qhKJbAvWFdno4WJrEi3tTPQmV/dpsJ5CgbBMvj6l0ITCdvWTB7I7iJMHjN7MAX06HED7iMNkK2JbwTWhsAl/2WmrhbjCemj8ePN43OhjE62VNp84bMbzK2gBTy76x4od43BJXyqYT8q4lNYfSfxqBDsWf9aNjZAD48QhTV632clLaA4UAfQPKBKM4sIxemAiwBUTQhw2t2GNnklF7260YNzNFlnsumDZh+ScnUKpi4J8ZNKBiIT+7Ro2gGfvKKkPDGoolqVLHiYPzroxJLlvkveKkPebpDjIBUE06Z+6alMEhklooy+gujOaIoaekHtd500Ext1Hxt1z+6BzYwXqbBtfHrs/LeX1nep5zKrCleTCwj6Dc336q8Zlo4C6/NTF8aVtKHD3rYpdEIRlsKYliwx6yFsHzfLbIO8KOjcSsQvC09Nlp6VCxYgPcHHjxNIeX4uzpOXld4sT5Mw/n4By9uGmObsgCNWIC3mc83IeW2X7Klc5ScTHduIo+GMUyuMXcXdB2B21LdkVbHKgNfZoJO4uCLun1nX6e+0PuUJv1jLZzVnsYxG7IDSH/4vEufOOqiBPAAAAAElFTkSuQmCC" alt="line">
+                    <p>透過參加活動,你不僅能夠實現自己的目標,還能結交新朋友,擴展自己的社交圈。</p>
+                </div>
+            </div>
+        </div>
+        <!-- 常見問題 -->
+        <div class="row justify-content-center wow fadeInUp">
+            <h2 class="fw-light fs-3 fs-md-2 text-center mb-12 mb-md-10">常見問題</h2>
+            <!-- 手風琴 -->
+            <div class="col-12">
+                <div class="accordion" id="accordionTiroTeach">
+                    <!-- 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="TiroTeach1">
+                            <button class="accordion-button accordion-text fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA1" aria-expanded="true" aria-controls="collapseQA1">
+                                揪團趣是什麼？
+                            </button>
+                        </h2>
+                        <div id="collapseQA1" class="accordion-collapse collapse show" aria-labelledby="headTiroTeach1" data-bs-parent="#accordionTiroTeach">
+                            <div class="accordion-body fs-9 fs-lg-7">
+                                這裡是熱愛生活、渴望探索的人的聚集地。在JO團趣，你可以輕鬆發現和發起各種活動，從美食之旅到電影之夜，從戶外探險到學習交流。我們相信，分享的快樂能讓陌生人變成摯友。加入我們，開啟你的精彩之旅，讓每一天都充滿新鮮與驚喜！
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="TiroTeach2">
+                            <button class="accordion-button accordion-text fw-bold collapsed" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA2"  aria-controls="collapseQA2">
+                                可以更改用戶名稱嗎？
+                            </button>
+                        </h2>
+                        <div id="collapseQA2" class="accordion-collapse collapse" aria-labelledby="headTiroTeach2" data-bs-parent="#accordionTiroTeach">
+                            <div class="accordion-body fs-9 fs-lg-7">
+                                我們將提供一次更改用戶名稱的機會。
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="TiroTeach3">
+                            <button class="accordion-button accordion-text fw-bold collapsed" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA3"  aria-controls="collapseQA3">
+                                如何參加活動
+                            </button>
+                        </h2>
+                        <div id="collapseQA3" class="accordion-collapse collapse" aria-labelledby="headTiroTeach3" data-bs-parent="#accordionTiroTeach">
+                            <div class="accordion-body fs-9 fs-lg-7">
+                                只要註冊會員之後，就可以在喜歡的活動中點選參加活動囉！
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="TiroTeach4">
+                            <button class="accordion-button accordion-text fw-bold collapsed" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA4"  aria-controls="collapseQA4">
+                                發起活動需要支付什麼費用嗎？
+                            </button>
+                        </h2>
+                        <div id="collapseQA4" class="accordion-collapse collapse" aria-labelledby="headTiroTeach4" data-bs-parent="#accordionTiroTeach">
+                            <div class="accordion-body fs-9 fs-lg-7">
+                                我們不會主動向用戶收取任何費用。
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="TiroTeach5">
+                            <button class="accordion-button accordion-text fw-bold collapsed" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA5"  aria-controls="collapseQA5">
+                                參加活動需要支付參加費用嗎？
+                            </button>
+                        </h2>
+                        <div id="collapseQA5" class="accordion-collapse collapse" aria-labelledby="headTiroTeach5" data-bs-parent="#accordionTiroTeach">
+                            <div class="accordion-body fs-9 fs-lg-7">
+                                參加活動只需要支付活動發起人所告知的店家、場地等費用即可哦。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark">
+    <div class="container-fluid py-10 pb-lg-6 px-xl-20">
+        <div class="d-flex flex-column flex-lg-row align-items-center mb-6">
+            <img class="me-lg-10 mb-10 mb-lg-0" src="/JoTuanCu/assets/Logo-af67ddf5.svg" alt="logo">
+            <ul class="d-flex flex-column flex-lg-row align-items-center mb-10 mb-lg-0 ps-0 list-unstyled">
+               <li><a class="link-white d-block py-2 px-lg-6" href="index.html">首頁</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="groupActivities.html">揪團活動</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="featuredShop.html">精選商家</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="interaction.html">揪友交流</a></li>
+               <li><a class="link-white d-block py-2 px-lg-6" href="QA.html">新手指南</a></li> 
+            </ul>
+            <ul class="d-flex align-items-center mb-0 ps-0 list-unstyled ms-lg-auto">
+                <li><a href="login.html"><img src="/JoTuanCu/assets/facebook-2fda7761.svg" alt="facebook"></a></li>
+                <li class="mx-6"><a href="login.html"><img src="/JoTuanCu/assets/instagram-ba5182ff.svg" alt="instagram"></a></li>
+                <li><a href="login.html"><img src="/JoTuanCu/assets/line-21d02cb0.svg" alt="line"></a></li>
+             </ul>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center text-gray-700 text-center">
+            <small class="mb-2 mb-lg-0">JO團趣 ©2024 Copyrights All Rights Reserved</small>
+            <small>本專題僅為學習用途,不做任何商業使用,圖片來源請見 GitHub Repo</small>
+        </div>
+    </div>
+</footer>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>new WOW().init();</script>
+</body>
+</html>
