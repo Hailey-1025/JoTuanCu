@@ -1,4 +1,4 @@
-# ![JO-logo](https://ibb.co/vjdXjhq) JO團趣
+# JO團趣
 
 我們皆來自六角學院2024年九個月的前端課程。在這段時間裡，我們彼此合作，攜手解決各種挑戰，充分發揮各自的專長，並相信團隊協作是成功的關鍵。透過交流與分享經驗，我們不僅提升了技術能力，也加強了彼此的信任與默契。
 
@@ -58,7 +58,7 @@ Clone 專案
 - [使用者故事、流程、線稿圖](https://miro.com/app/board/uXjVKxfa4O8=/)
 - [設計稿](https://www.figma.com/design/BfXXggibEsSVUUaVBfjBeV/%23D-2-JO%E5%9C%98%E8%B6%A3?node-id=0-1&node-type=canvas&t=ymMfDMW0YWExuHHf-0)
 
-## 🛠 技術工具
+## 技術工具
 
 ### 設計
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
@@ -72,6 +72,8 @@ Clone 專案
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Swiper](https://img.shields.io/badge/swiper-blue?style=for-the-badge&logo=swiper&logoColor=white)
+![Animate.css](https://img.shields.io/badge/animate.css-00BFFF?style=for-the-badge&logo=css3&logoColor=white)
+![WOW.js](https://img.shields.io/badge/wow.js-32CD32?style=for-the-badge&logo=javascript&logoColor=white)
 
 ### 溝通、協作
 ![Discord](https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
