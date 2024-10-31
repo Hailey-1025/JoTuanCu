@@ -58,7 +58,7 @@ Clone 專案
 - [使用者故事、流程、線稿圖](https://miro.com/app/board/uXjVKxfa4O8=/)
 - [設計稿](https://www.figma.com/design/BfXXggibEsSVUUaVBfjBeV/%23D-2-JO%E5%9C%98%E8%B6%A3?node-id=0-1&node-type=canvas&t=ymMfDMW0YWExuHHf-0)
 
-## 🛠 技術工具
+## 技術工具
 
 ### 設計
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
