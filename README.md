@@ -1,48 +1,84 @@
-# 網頁切版直播班 Vite 範例
+# ![JO-logo](https://ibb.co/vjdXjhq) JO團趣
 
-## Node.js 版本
-  - 專案的 Node.js 版本需為 v16 以上
-  - 查看自己版本指令：`node -v`
+我們皆來自六角學院2024年九個月的前端課程。在這段時間裡，我們彼此合作，攜手解決各種挑戰，充分發揮各自的專長，並相信團隊協作是成功的關鍵。透過交流與分享經驗，我們不僅提升了技術能力，也加強了彼此的信任與默契。
 
-
-## 指令列表
-- `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
-- `npm run dev` - 執行開發模式
-  - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入
-    `http://localhost:5173/<專案名稱>/pages/index.html`
-- `npm run build` - 執行編譯模式（不會開啟瀏覽器）
-- `npm run deploy` - 自動化部署
-
-## 資料夾結構
-  - assets # 靜態資源放置處
-    - images # 圖片放置處
-    - scss # SCSS 的樣式放置處
-
-  - layout # ejs 模板放置處
-  - pages # 頁面放置處
-
-- JavaScript 程式碼可寫在 main.js 檔案
-
-### 注意事項
-- 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
-- .gitignore 檔案是用來忽略掉不該上傳到 GitHub 的檔案（例如 node_modules），請不要移除 .gitignore
-
-## 開發模式的監聽
-vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使用 `Live Sass Compiler` 的 `Watch SCSS` 功能
+JO團趣是一個多功能的揪團平台，為會員提供多元社交和優惠體驗。
+在這裡，會員可以領取商家的專屬優惠券，發起或參加各式活動，從美食團、電影同好到運動、學習應有盡有。
+還可以留下活動心得和商家評論，與其他會員分享寶貴的經驗，讓更多人發現好去處。透過JO團趣，找到志同道合的夥伴，開啟豐富多彩的生活新篇章！
 
 
-## 部署 gh-pages 流程說明
-### Windows 版本
-1. 在 GitHub 建立一個新的 Repository
+## 前端開發者
+- [Hailey](https://github.com/Hailey-1025)
+- [Kaya](https://github.com/kayaribi)
+- [倫倫](https://github.com/D1034422045)
+- [蘑菇星星](https://github.com/hbill320115)
 
-2. 部署前請務必先將原始碼上傳到 GitHub Repository 也就是初始化 GitHub，因此通常第一步驟會在專案終端機輸入以下指令
-```cmd
-git init # 若已經初始化過就可以不用輸入
-git add .
-git commit -m 'first commit'
-git branch -M main
-git remote add origin [GitHub Repositories Url]
-git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
+## 功能介紹
+
+- 使用者可登入註冊
+- 會員可發起活動
+- 會員可參加活動
+- 會員可領取商家優惠
+- 會員可針對單一商家進行評價
+- 會員可分享活動心得
+- 會員可收藏活動、商家
+- 會員與其他會員交流心得
+- 會員可搜尋或瀏覽他人活動
+
+
+## 下載專案
+
+Clone 專案
+
+```bash
+  git clone https://github.com/Hailey-1025/JoTuanCu.git
 ```
 
-3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+移至專案目錄
+
+```bash
+  cd my-project
+```
+
+安裝套件
+
+```bash
+  npm install
+```
+
+啟動專案
+
+```bash
+  npm run dev
+```
+
+## 相關連結
+- [GitHub repo](https://github.com/Hailey-1025/JoTuanCu)
+- [gh-pages](https://hailey-1025.github.io/JoTuanCu/)
+- [使用者故事、流程、線稿圖](https://miro.com/app/board/uXjVKxfa4O8=/)
+- [設計稿](https://www.figma.com/design/BfXXggibEsSVUUaVBfjBeV/%23D-2-JO%E5%9C%98%E8%B6%A3?node-id=0-1&node-type=canvas&t=ymMfDMW0YWExuHHf-0)
+
+## 🛠 技術工具
+
+### 設計
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Miro](https://img.shields.io/badge/miro-FFD700?style=for-the-badge&logo=miro&logoColor=white)
+
+### 前端
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Swiper](https://img.shields.io/badge/swiper-blue?style=for-the-badge&logo=swiper&logoColor=white)
+
+### 溝通、協作
+![Discord](https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+![Notion](https://img.shields.io/badge/notion-blue?style=for-the-badge&logo=notion&logoColor=white)
+
+## 特別感謝
+- 六角學院 / 洧杰 校長
+- 六角學院 / 卡斯柏 老師
+- 專題教練 / [樂樂](https://github.com/PinyiW0)
+- 六角助教群
