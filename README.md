@@ -74,6 +74,7 @@ Clone 專案
 ![Swiper](https://img.shields.io/badge/swiper-blue?style=for-the-badge&logo=swiper&logoColor=white)
 ![Animate.css](https://img.shields.io/badge/animate.css-00BFFF?style=for-the-badge&logo=css3&logoColor=white)
 ![WOW.js](https://img.shields.io/badge/wow.js-32CD32?style=for-the-badge&logo=javascript&logoColor=white)
+![Bootstrap 5](https://img.shields.io/badge/bootstrap%205-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ### 溝通、協作
 ![Discord](https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
